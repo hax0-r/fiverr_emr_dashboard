@@ -1,13 +1,24 @@
 import React, { useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import logo from "../assets/logo.svg"
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
     const togglePasswordVisibility = () => setShowPassword(!showPassword);
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const naviagte = useNavigate()
+
+    const submitHandler = (e) => {
+        e.preventDefault();
+        if (!username || !password) {
+            alert("Please fill in all fields");
+            return
+        }
+        naviagte("/dashboard")
+    }
+
 
     return (
         <div className="flex items-center justify-center min-h-screen bg-[#edeef2] p-5">
@@ -22,7 +33,7 @@ const Login = () => {
                     </div>
 
                     {/* Form */}
-                    <form>
+                    <form onSubmit={submitHandler}>
                         {/* Email Field */}
                         <div className="mb-8">
                             <label htmlFor="email" className="block mb-2 font-medium text-[#1D1D1D]">
