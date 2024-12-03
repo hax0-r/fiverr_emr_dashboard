@@ -8,6 +8,7 @@ import calender from "../assets/calender.svg"
 import { IoMaleSharp } from 'react-icons/io5'
 import { RiBarcodeLine } from 'react-icons/ri'
 import { FaPhoneAlt } from 'react-icons/fa'
+import MedicalNotes from '../Components/Patient/MedicalNotes/MedicalNotes'
 
 const Emr = () => {
     return (
@@ -61,24 +62,26 @@ const Emr = () => {
                 </div>
 
                 <div className=" bg-white flex items-center mt-5 rounded-lg overflow-hidden border-[#CFD1D4] border">
-                    <button className='bg-secondary text-white p-4 px-[11px] text-lg font-medium'>Medical Notes</button>
+                    <button className='bg-secondary text-white p-4 px-[10.59px] text-lg font-medium'>Medical Notes</button>
                     <div className="h-5 border-l border-[#cfd1d4]"></div>
-                    <button className=' p-4 px-[11px] text-lg font-medium text-[#6E6E6E]'>Nursing Records</button>
+                    <button className=' p-4 px-[10.59px] text-lg font-medium text-[#6E6E6E]'>Nursing Records</button>
                     <div className="h-5 border-l border-[#cfd1d4]"></div>
-                    <button className=' p-4 px-[11px] text-lg font-medium text-[#6E6E6E]'>Lab Reports</button>
+                    <button className=' p-4 px-[10.59px] text-lg font-medium text-[#6E6E6E]'>Lab Reports</button>
                     <div className="h-5 border-l border-[#cfd1d4]"></div>
-                    <button className=' p-4 px-[11px] text-lg font-medium text-[#6E6E6E]'>Radiology</button>
+                    <button className=' p-4 px-[10.59px] text-lg font-medium text-[#6E6E6E]'>Radiology</button>
                     <div className="h-5 border-l border-[#cfd1d4]"></div>
-                    <button className=' p-4 px-[11px] text-lg font-medium text-[#6E6E6E]'>Surgical Records</button>
+                    <button className=' p-4 px-[10.59px] text-lg font-medium text-[#6E6E6E]'>Surgical Records</button>
                     <div className="h-5 border-l border-[#cfd1d4]"></div>
-                    <button className=' p-4 px-[11px] text-lg font-medium text-[#6E6E6E]'>Discharge Records</button>
+                    <button className=' p-4 px-[10.59px] text-lg font-medium text-[#6E6E6E]'>Discharge Records</button>
                     <div className="h-5 border-l border-[#cfd1d4]"></div>
-                    <button className=' p-4 px-[11px] text-lg font-medium text-[#6E6E6E]'>Admission</button>
+                    <button className=' p-4 px-[10.59px] text-lg font-medium text-[#6E6E6E]'>Admission</button>
                     <div className="h-5 border-l border-[#cfd1d4]"></div>
-                    <button className=' p-4 px-[11px] text-lg font-medium text-[#6E6E6E]'>Consent</button>
+                    <button className=' p-4 px-[10.59px] text-lg font-medium text-[#6E6E6E]'>Consent</button>
                     <div className="h-5 border-l border-[#cfd1d4]"></div>
-                    <button className=' p-4 px-[11px] text-lg font-medium text-[#6E6E6E]'>Admin Records</button>
+                    <button className=' p-4 px-[10.59px] text-lg font-medium text-[#6E6E6E]'>Admin Records</button>
                 </div>
+
+                <MedicalNotes />
 
 
             </div>
