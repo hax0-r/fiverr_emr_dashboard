@@ -6,6 +6,7 @@ import { FaPlus } from 'react-icons/fa';
 import { BsThreeDots } from 'react-icons/bs';
 import { IoArrowForward } from 'react-icons/io5';
 import { TABLE_DATA } from '../Data/Data';
+import { Link } from 'react-router';
 
 const Dashboard = () => {
     const itemsPerPage = 10;
@@ -48,7 +49,7 @@ const Dashboard = () => {
     };
 
     return (
-        <div className="pl-[84px] px-4 pb-10 bg-[#f6f6f7] fastFadeIn">
+        <div className="pl-[84px] px-4 pb-10 bg-[#f6f6f7] ">
             <div className="">
                 <div className="bg-white inline-flex pl-3 pr-5 items-center p-1 justify-center gap-2 border-[#CFD1D4] border rounded-full">
                     <GoHomeFill className="text-[#CFD1D4]" />
@@ -62,9 +63,11 @@ const Dashboard = () => {
                 <div className="flex items-center justify-between p-4">
                     <h2 className="text-lg font-semibold text-[#484848]">Lastest Batch</h2>
                     <div className="flex items-center justify-center gap-3">
-                        <button className="bg-white border border-[#CFD1D4] px-5 py-3 rounded-full text-sm text-[#434343]">
-                            View All
-                        </button>
+                        <Link to={"/patient"}>
+                            <button className="bg-white border border-[#CFD1D4] px-5 py-3 rounded-full text-sm text-[#434343]">
+                                View All
+                            </button>
+                        </Link>
                         <button className="bg-primary border-2 flex items-center justify-center gap-2 border-primary px-5 py-2.5 transition-all duration-500 hover:opacity-95 rounded-full text-[#fff]">
                             <FaPlus />
                             Create New Batch
@@ -96,7 +99,7 @@ const Dashboard = () => {
                                         <td className="border-t border-[#CFD1D4] px-2 py-4 text-sm">{row.doctorName}</td>
                                         <td className="border-t border-[#CFD1D4] px-2 py-4 text-sm">{row.totalDocuments}</td>
                                         <td className="border-t border-[#CFD1D4] px-2 py-4 text-sm">{row.scanDateTime}</td>
-                                        <td className="border-t border-[#CFD1D4] px-2 py-4 text-center flex items-center justify-center">
+                                        <td className="border-t border-[#CFD1D4] px-2 py-4 text-center flex items-center ">
                                             <button className="flex items-center transition-all duration-500 justify-center w-8 h-8 bg-primary text-white rounded-full hover:opacity-95">
                                                 <IoArrowForward />
                                             </button>
