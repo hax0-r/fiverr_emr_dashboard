@@ -3,6 +3,7 @@ import Consent from "../../../assets/ConsentforAnaesthesia.svg"
 import Senarai from "../../../assets/Senarai.svg"
 import { PiArrowsOutSimpleBold } from 'react-icons/pi'
 import ButirPopup from './ButirPopup'
+import SurgicalOperationPopup from './SurgicalOperationPopup'
 
 
 const SurgicalRecords = () => {
@@ -45,7 +46,7 @@ const SurgicalRecords = () => {
                             <img src={Consent} alt="" />
                             <h2 className='text-lg font-semibold'>Perkhidmatan Bedah</h2>
                         </div>
-                        <PiArrowsOutSimpleBold className='text-[#9F9FA1] cursor-pointer text-2xl' onClick={() => setPopup1(true)} />
+                        <PiArrowsOutSimpleBold className='text-[#9F9FA1] cursor-pointer text-2xl' onClick={() => setPopup2(true)} />
                     </div>
                     <div className="border-b border-[#cfd1d4]"></div>
                     <div className="p-4 flex flex-col gap-3">
@@ -100,7 +101,7 @@ const SurgicalRecords = () => {
             {
                 popup2 && (
                     <div className="fastFadeIn">
-                        {/* <XRayPopup setPopup2={setPopup2} /> */}
+                        <SurgicalOperationPopup setPopup2={setPopup2} />
                     </div>
                 )
             }

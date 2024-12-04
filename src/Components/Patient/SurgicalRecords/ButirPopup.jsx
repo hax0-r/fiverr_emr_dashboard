@@ -13,7 +13,6 @@ const ButirPopup = ({ setPopup3 }) => {
 
     const popUp = useRef()
 
-
     const handleClose = () => {
 
         popUp.current.style.opacity = "0"
@@ -27,9 +26,9 @@ const ButirPopup = ({ setPopup3 }) => {
 
     // Example data for table
     const data = [
-        { id: 1, recovery: "Implant Name", comment: "",Catitan:"" },
-        { id: 2, recovery: "Implant Name", comment: "",Catitan:"" },
-        { id: 3, recovery: "Implant Name", comment: "",Catitan:"" },
+        { id: 1, recovery: "Implant Name", comment: "", Catitan: "" },
+        { id: 2, recovery: "Implant Name", comment: "", Catitan: "" },
+        { id: 3, recovery: "Implant Name", comment: "", Catitan: "" },
         // Add more rows as needed
     ];
 
