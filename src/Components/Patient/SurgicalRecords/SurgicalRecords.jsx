@@ -4,6 +4,7 @@ import Senarai from "../../../assets/Senarai.svg"
 import { PiArrowsOutSimpleBold } from 'react-icons/pi'
 import ButirPopup from './ButirPopup'
 import SurgicalOperationPopup from './SurgicalOperationPopup'
+import Perkhidmatan from './Perkhidmatan'
 
 
 const SurgicalRecords = () => {
@@ -94,14 +95,14 @@ const SurgicalRecords = () => {
             {
                 popup1 && (
                     <div className="fastFadeIn">
-                        {/* <Report setPopup1={setPopup1} /> */}
+                        <SurgicalOperationPopup setPopup1={setPopup1} />
                     </div>
                 )
             }
             {
                 popup2 && (
                     <div className="fastFadeIn">
-                        <SurgicalOperationPopup setPopup2={setPopup2} />
+                        <Perkhidmatan setPopup2={setPopup2} />
                     </div>
                 )
             }

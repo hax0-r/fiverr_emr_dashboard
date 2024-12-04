@@ -118,12 +118,13 @@ const Emr = () => {
                         <div key={tab} className="flex items-center">
                             <button
                                 onClick={() => setActiveTab(tab)}
-                                className={`p-4 px-[10.59px] text-lg font-medium ${activeTab === tab ? 'bg-secondary text-white' : 'text-[#6E6E6E]'
+                                className={`p-4 px-[10px] text-lg font-medium ${activeTab === tab ? 'bg-secondary text-white' : 'text-[#6E6E6E]'
                                     }`}
                             >
                                 {tab}
                             </button>
-                            <div className="h-5 border-l last:border-none border-[#cfd1d4]" />
+                            <div className="h-5 border-l border-[#cfd1d4]" />
+
                         </div>
                     ))}
                 </div>

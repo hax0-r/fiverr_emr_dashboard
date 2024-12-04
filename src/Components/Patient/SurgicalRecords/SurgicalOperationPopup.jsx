@@ -8,7 +8,7 @@ import { MdClose } from 'react-icons/md'
 import Print from '../Print'
 
 
-const SurgicalOperationPopup = ({ setPopup2 }) => {
+const SurgicalOperationPopup = ({ setPopup1 }) => {
     const [previewDocument, setPreviewDocument] = useState(false)
     const [activeTab, setActiveTab] = useState("Procedure");
 
@@ -19,7 +19,7 @@ const SurgicalOperationPopup = ({ setPopup2 }) => {
         popUp.current.style.opacity = "0"
 
         setTimeout(() => {
-            setPopup2(false)
+            setPopup1(false)
         }, 500)
     }
     return (
