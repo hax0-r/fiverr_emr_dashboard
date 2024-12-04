@@ -3,6 +3,7 @@ import FinalReport from "../../../assets/FinalReport.svg"
 import Discharges from "../../../assets/Discharges.svg"
 import { PiArrowsOutSimpleBold } from 'react-icons/pi'
 import DischargesPopup from './DischargesPopup'
+import FinalReportPopup from './FinalReportPopup'
 
 const DischargeRecords = () => {
   const [popup1, setPopup1] = useState(false)
@@ -73,7 +74,7 @@ const DischargeRecords = () => {
       {
         popup2 && (
           <div className="fastFadeIn">
-            {/* <Perkhidmatan setPopup2={setPopup2} /> */}
+            <FinalReportPopup setPopup2={setPopup2} />
           </div>
         )
       }

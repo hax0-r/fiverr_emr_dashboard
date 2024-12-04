@@ -1,8 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
-import Senarai from "../../../assets/Senarai.svg"
-import receipt from "../../../assets/receipt10.png"
-import sign from "../../../assets/sign.png"
+import receipt from "../../../assets/receipt13.png"
 import Discharges from "../../../assets/Discharges.svg"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
@@ -59,7 +57,7 @@ const DischargesPopup = ({ setPopup1 }) => {
                         {
                             !previewDocument && (
                                 <div className="max-w-[30%]   w-full">
-                                    <div className="p-4 flex flex-col gap-3">
+                                    <div className=" flex flex-col gap-3">
                                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
                                             <h3 className='font-medium text-[#1D1D1D]'>Discharge</h3>
                                             <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
@@ -79,39 +77,108 @@ const DischargesPopup = ({ setPopup1 }) => {
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
                             <div className="border p-3 rounded-lg border-[#cfd1d4]">
                                 <h3 className='font-semibold text-[#1D1D1D] text-xl mt-3'>Pusat Pakar UKM</h3>
+                                <div className="">
+                                    <div className="mx-auto bg-white rounded-lg">
+                                        {/* Patient Info Section */}
+                                        <div className="grid p-3 rounded-lg mt-4 grid-cols-2 gap-4 bg-[#f7f8fa] border pb-4 mb-4">
+                                            <div>
+                                                <p className='pt-0.5'>
+                                                    <span className="font-bold ">Patient Name:</span> Lorem Ipsum
+                                                </p>
+                                                <p className='pt-0.5'>
+                                                    <span className="font-bold ">No. KP:</span> 12345678910
+                                                </p>
+                                                <p className='pt-0.5'>
+                                                    <span className="font-bold ">Jantina:</span> 11122233334
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p className='pt-0.5'>
+                                                    <span className="font-bold ">T/Lahir:</span> 18/11/1990
+                                                </p>
+                                                <p className='pt-0.5'>
+                                                    <span className="font-bold ">Alamat:</span> No. 0, Jalan Jalan Besar
+                                                </p>
+                                                <p className='pt-0.5'>
+                                                    <span className="font-bold ">No. Tel:</span> 0213456789
+                                                </p>
+                                            </div>
+                                        </div>
 
+                                        {/* Table Section */}
+                                        <div className="overflow-x-auto rounded-l overflow-hidden">
+                                            <table className="table-auto w-full text-sm text-left border border-gray-300">
+                                                <thead className="bg-gray-100">
+                                                    <tr>
+                                                        <th className="px-4 py-2 border">Masuk Wad</th>
+                                                        <th className="px-4 py-2 border"></th>
+                                                        <th className="px-4 py-2 border">Discaj Wad</th>
+                                                        <th className="px-4 py-2 border"></th>
+                                                        <th className="px-4 py-2 border">Tarikh T/J</th>
+                                                        <th className="px-4 py-2 border"></th>
+                                                        <th className="px-4 py-2 border">NRP</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td className="px-4 py-2 border">Jenis</td>
+                                                        <td className="px-4 py-2 border"></td>
+                                                        <td className="px-4 py-2 border">Jenis</td>
+                                                        <td className="px-4 py-2 border"></td>
+                                                        <td className="px-4 py-2 border">Klinik</td>
+                                                        <td className="px-4 py-2 border"></td>
+                                                        <td className="px-4 py-2 border">Terima</td>
+                                                        <td className="px-4 py-2 border"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td className="px-4 py-2 border">Jenis</td>
+                                                        <td className="px-4 py-2 border"></td>
+                                                        <td className="px-4 py-2 border">Jenis</td>
+                                                        <td className="px-4 py-2 border"></td>
+                                                        <td className="px-4 py-2 border">Klinik</td>
+                                                        <td className="px-4 py-2 border"></td>
+                                                        <td className="px-4 py-2 border">Terima</td>
+                                                        <td className="px-4 py-2 border"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
 
-                                <div className="mx-auto bg-[#f7f8fa] border text-sm mt-4 rounded-lg p-4 flex gap-10">
-                                    <ul className='space-y-1'>
-                                        <li> Name : <span className='font-semibold'>Lorem Ipsum</span></li>
-                                        <li> Malysia New IC : <span className='font-semibold'>Lorem Ipsum</span></li>
-                                        <li> Date of Birth : <span className='font-semibold'>07/10/1978</span></li>
-                                    </ul>
-                                    <ul className='space-y-1'>
-                                        <li> Age/Gender : <span className='font-semibold'>64 / Lelaki</span></li>
-                                        <li> No X-Ray : <span className='font-semibold'>1122</span></li>
-                                        <li> Syarikat : <span className='font-semibold'>-</span></li>
-                                    </ul>
-                                </div>
-                                <div className="mx-auto text-[#1D1D1D] bg-[#f7f8fa] border text-sm mt-4 rounded-lg p-4">
-                                    <h2 className='text-sm  font-semibold mb-3'>Sejarah / Diagnosis</h2>
-                                    <p>
-                                        Pen x [circled P] Hp ~ 2 weeks chest ache <br /> A TRO PID / OA of hip
-                                    </p>
-                                </div>
-                                <div className="mx-auto text-[#1D1D1D] bg-[#f7f8fa] border text-sm mt-4 rounded-lg p-4">
-                                    <h2 className='text-sm  font-semibold mb-3'>Bahagian X-Ray</h2>
-                                    <p>
-                                        1. Lumbosacral - AP / Lateral <br />
-                                        2. Hip - AP / Lateral frog view
-                                    </p>
-                                </div>
-                                <div className="mx-auto text-[#1D1D1D] bg-[#f7f8fa] border text-sm mt-4 rounded-lg p-4">
-                                    <h2 className='text-sm  font-semibold'>Laporan X-Ray</h2>
-                                </div>
-                                <div className="mx-auto text-[#1D1D1D] bg-[#f7f8fa] border text-sm mt-4 rounded-lg p-4">
-                                    <h2 className='text-sm  font-semibold'>Tandatangan & Cap Doktor</h2>
-                                    <img src={sign} alt="" className='h-28' />
+                                        {/* Summary Section */}
+                                        <div className="mt-6">
+                                            <h3 className="text-lg font-semibold mb-2">Ringkasan Discaj</h3>
+                                            <table className="table-auto w-full text-sm text-left border border-gray-300">
+                                                <thead className="bg-gray-100">
+                                                    <tr>
+                                                        <th className="px-4 py-2 border">Provisional Diagnosis</th>
+                                                        <th className="px-4 py-2 border">Kegunaan Jabatan Maklumat Kesihatan</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td className="px-4 py-2 border">Lorem Ipsum</td>
+                                                        <td className="px-4 py-2 border">None</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td className="px-4 py-2 border">Principal Diagnosis</td>
+                                                        <td className="px-4 py-2 border">None</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td className="px-4 py-2 border">Additional Diagnosis</td>
+                                                        <td className="px-4 py-2 border">None</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td className="px-4 py-2 border">Operative Procedure</td>
+                                                        <td className="px-4 py-2 border">None</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td className="px-4 py-2 border">Brief history and physical findings</td>
+                                                        <td className="px-4 py-2 border">None</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
