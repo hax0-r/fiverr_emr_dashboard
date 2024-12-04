@@ -5,11 +5,15 @@ import KertasAnestesia from "../../../assets/KertasAnestesia.svg"
 import { PiArrowsOutSimpleBold } from 'react-icons/pi'
 import ClinicalNotesPopup from './ClinicalNotesPopup'
 import ClinicalTHTPopup from './ClinicalTHTPopup'
+import ConsentPopup from './ConsentPopup'
+import KertasPopup from './KertasPopup'
 
 const MedicalNotes = () => {
 
     const [popup1, setPopup1] = useState(false)
     const [popup2, setPopup2] = useState(false)
+    const [popup3, setPopup3] = useState(false)
+    const [popup4, setPopup4] = useState(false)
 
     return (
         <div className="">
@@ -71,7 +75,7 @@ const MedicalNotes = () => {
                             <img src={KertasAnestesia} alt="" />
                             <h2 className='text-lg font-semibold'>Consent for Anaesthesia</h2>
                         </div>
-                        <PiArrowsOutSimpleBold className='text-[#9F9FA1] text-2xl' />
+                        <PiArrowsOutSimpleBold className='text-[#9F9FA1] text-2xl cursor-pointer' onClick={() => setPopup3(true)} />
                     </div>
                     <div className="border-b border-[#cfd1d4]"></div>
                     <div className="p-4 flex flex-col gap-3">
@@ -96,7 +100,7 @@ const MedicalNotes = () => {
                             <img src={ConsentforAnaesthesia} alt="" />
                             <h2 className='text-lg font-semibold'>Kertas Anestesia</h2>
                         </div>
-                        <PiArrowsOutSimpleBold className='text-[#9F9FA1] text-2xl' />
+                        <PiArrowsOutSimpleBold className='text-[#9F9FA1] text-2xl cursor-pointer'  onClick={() => setPopup4(true)} />
                     </div>
                     <div className="border-b border-[#cfd1d4]"></div>
                     <div className="p-4 flex flex-col gap-3">
@@ -128,6 +132,20 @@ const MedicalNotes = () => {
                 popup2 && (
                     <div className="fastFadeIn">
                         <ClinicalTHTPopup setPopup2={setPopup2} />
+                    </div>
+                )
+            }
+            {
+                popup3 && (
+                    <div className="fastFadeIn">
+                        <ConsentPopup setPopup3={setPopup3} />
+                    </div>
+                )
+            }
+            {
+                popup4 && (
+                    <div className="fastFadeIn">
+                        <KertasPopup setPopup4={setPopup4} />
                     </div>
                 )
             }

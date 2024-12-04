@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
 import ClinicalNotes from "../../../assets/ClinicalNotes.svg"
 import receipt from "../../../assets/receipt1.png"
@@ -12,9 +12,22 @@ const ClinicalNotesPopup = ({ setPopup1 }) => {
 
     const [previewDocument, setPreviewDocument] = useState(false)
 
+    const popUp = useRef()
+
+
+    const handleClose = () => {
+
+        popUp.current.style.opacity = "0"
+
+        setTimeout(() => {
+            setPopup1(false)
+        }, 500)
+    }
+
+
     return (
-        <div className="fixed flex items-center justify-center inset-0">
-            <div className="fixed top-0 left-0 w-screen h-screen bg-[#0000006e]" onClick={() => setPopup1(false)}></div>
+        <div className="fixed flex items-center transition-all duration-500 justify-center inset-0" ref={popUp}>
+            <div className="fixed top-0 left-0 w-screen h-screen transition-all duration-500 bg-[#0000006e]" onClick={handleClose}></div>
             <div className="max-w-[90%] w-full bg-white border border-[#CFD1D4] z-10 rounded-lg ">
                 <div className="flex items-center justify-between p-4 ">
                     <div className="flex items-center justify-between gap-3">
@@ -23,9 +36,9 @@ const ClinicalNotesPopup = ({ setPopup1 }) => {
                     </div>
                     {
                         previewDocument ? (
-                            <MdClose className='text-[#9F9FA1] text-2xl cursor-pointer' onClick={() => setPopup1(false)} />
+                            <MdClose className='text-[#9F9FA1] text-2xl cursor-pointer' onClick={handleClose} />
                         ) : (
-                            <PiArrowsOutSimpleBold className='text-[#9F9FA1] text-2xl cursor-pointer' onClick={() => setPopup1(false)} />
+                            <PiArrowsOutSimpleBold className='text-[#9F9FA1] text-2xl cursor-pointer' onClick={handleClose} />
                         )
                     }
                 </div>

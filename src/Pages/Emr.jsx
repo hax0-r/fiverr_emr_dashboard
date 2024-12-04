@@ -9,6 +9,7 @@ import { IoMaleSharp } from 'react-icons/io5'
 import { RiBarcodeLine } from 'react-icons/ri'
 import { FaPhoneAlt } from 'react-icons/fa'
 import MedicalNotes from '../Components/Patient/MedicalNotes/MedicalNotes'
+import NursingRecords from '../Components/Patient/NursingRecords.jsx/NursingRecords'
 
 const Emr = () => {
     return (
@@ -82,6 +83,7 @@ const Emr = () => {
                 </div>
 
                 <MedicalNotes />
+                <NursingRecords />
 
 
             </div>
