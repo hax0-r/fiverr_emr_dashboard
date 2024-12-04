@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { GoHomeFill } from 'react-icons/go'
 import { IoIosArrowForward } from 'react-icons/io'
 import { PiSquaresFourBold } from 'react-icons/pi'
@@ -10,12 +10,50 @@ import { RiBarcodeLine } from 'react-icons/ri'
 import { FaPhoneAlt } from 'react-icons/fa'
 import MedicalNotes from '../Components/Patient/MedicalNotes/MedicalNotes'
 import NursingRecords from '../Components/Patient/NursingRecords.jsx/NursingRecords'
+import AdminRecords from '../Components/Patient/AdminRecords/AdminRecords'
+import Consent from '../Components/Patient/Consent/Consent'
+import Admission from '../Components/Patient/Admission/Admission'
+import DischargeRecords from '../Components/Patient/DischargeRecords/DischargeRecords'
+import SurgicalRecords from '../Components/Patient/SurgicalRecords/SurgicalRecords'
+import Radiology from '../Components/Patient/Radiology/Radiology'
+import LabReports from '../Components/Patient/LabReports/LabReports'
 
 const Emr = () => {
+    // State to track the active tab
+    const [activeTab, setActiveTab] = useState('Medical Notes');
+
+    // Helper function to render the active component
+    const renderContent = () => {
+        switch (activeTab) {
+            case 'Medical Notes':
+                return <MedicalNotes />;
+            case 'Nursing Records':
+                return <NursingRecords />;
+            case 'Lab Reports':
+                return <LabReports />;
+            case 'Radiology':
+                return <Radiology />;
+            case 'Surgical Records':
+                return <SurgicalRecords />;
+            case 'Discharge Records':
+                return <DischargeRecords />;
+            case 'Admission':
+                return <Admission />;
+            case 'Consent':
+                return <Consent />;
+            case 'Admin Records':
+                return <AdminRecords />;
+            default:
+                return null;
+        }
+    };
+
     return (
+        
+        
         <div className="pl-[84px] px-4 pb-10 bg-[#f6f6f7] min-h-[85.5vh]">
-            <div>
-                <div className="bg-white inline-flex pl-3 pr-5 items-center p-1 justify-center gap-2 border-[#CFD1D4] border rounded-full">
+
+            <div className="bg-white inline-flex pl-3 pr-5 items-center p-1 justify-center gap-2 border-[#CFD1D4] border rounded-full">
                     <GoHomeFill className="text-[#CFD1D4]" />
                     <IoIosArrowForward className="text-[#CFD1D4]" />
                     <Link to={"/patient"}>
@@ -61,34 +99,43 @@ const Emr = () => {
                         <h3 className='text-[#1D1D1D] font-medium text-lg'>04/09/1990 (34Y 5M)</h3>
                     </div>
                 </div>
-
-                <div className=" bg-white flex items-center mt-5 rounded-lg overflow-hidden border-[#CFD1D4] border">
-                    <button className='bg-secondary text-white p-4 px-[10.59px] text-lg font-medium'>Medical Notes</button>
-                    <div className="h-5 border-l border-[#cfd1d4]"></div>
-                    <button className=' p-4 px-[10.59px] text-lg font-medium text-[#6E6E6E]'>Nursing Records</button>
-                    <div className="h-5 border-l border-[#cfd1d4]"></div>
-                    <button className=' p-4 px-[10.59px] text-lg font-medium text-[#6E6E6E]'>Lab Reports</button>
-                    <div className="h-5 border-l border-[#cfd1d4]"></div>
-                    <button className=' p-4 px-[10.59px] text-lg font-medium text-[#6E6E6E]'>Radiology</button>
-                    <div className="h-5 border-l border-[#cfd1d4]"></div>
-                    <button className=' p-4 px-[10.59px] text-lg font-medium text-[#6E6E6E]'>Surgical Records</button>
-                    <div className="h-5 border-l border-[#cfd1d4]"></div>
-                    <button className=' p-4 px-[10.59px] text-lg font-medium text-[#6E6E6E]'>Discharge Records</button>
-                    <div className="h-5 border-l border-[#cfd1d4]"></div>
-                    <button className=' p-4 px-[10.59px] text-lg font-medium text-[#6E6E6E]'>Admission</button>
-                    <div className="h-5 border-l border-[#cfd1d4]"></div>
-                    <button className=' p-4 px-[10.59px] text-lg font-medium text-[#6E6E6E]'>Consent</button>
-                    <div className="h-5 border-l border-[#cfd1d4]"></div>
-                    <button className=' p-4 px-[10.59px] text-lg font-medium text-[#6E6E6E]'>Admin Records</button>
+            
+            
+            <div className='pt-5'>
+                {/* Tabs */}
+                <div className="bg-white flex items-center rounded-lg overflow-hidden border-[#CFD1D4] border">
+                    {[
+                        'Medical Notes',
+                        'Nursing Records',
+                        'Lab Reports',
+                        'Radiology',
+                        'Surgical Records',
+                        'Discharge Records',
+                        'Admission',
+                        'Consent',
+                        'Admin Records',
+                    ].map((tab) => (
+                        <div key={tab} className="flex items-center">
+                            <button
+                                onClick={() => setActiveTab(tab)}
+                                className={`p-4 px-[10.59px] text-lg font-medium ${activeTab === tab ? 'bg-secondary text-white' : 'text-[#6E6E6E]'
+                                    }`}
+                            >
+                                {tab}
+                            </button>
+                            <div className="h-5 border-l border-[#cfd1d4]" />
+                        </div>
+                    ))}
                 </div>
 
-                <MedicalNotes />
-                <NursingRecords />
-
-
+                {/* Content */}
+                <div className="mt-5 fastFadeIn">
+                    {renderContent()}
+                </div>
             </div>
         </div>
-    )
-}
+    );
+};
+
 
 export default Emr
