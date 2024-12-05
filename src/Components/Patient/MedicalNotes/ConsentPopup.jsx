@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
-import img from "../../../assets/KertasAnestesia.svg"
+import img from "../../../assets/ConsentforAnaesthesia.svg"
 import receipt from "../../../assets/receipt2.png"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
@@ -8,7 +8,7 @@ import { MdClose } from 'react-icons/md'
 import Print from '../Print'
 import { RiImage2Line } from 'react-icons/ri'
 
-const ConsentPopup = ({ setPopup3 }) => {
+const ConsentPopup = ({ setPopup4 }) => {
 
 
     const [previewDocument, setPreviewDocument] = useState(false)
@@ -21,7 +21,7 @@ const ConsentPopup = ({ setPopup3 }) => {
         popUp.current.style.opacity = "0"
 
         setTimeout(() => {
-            setPopup3(false)
+            setPopup4(false)
         }, 500)
     }
     return (

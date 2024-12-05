@@ -138,14 +138,14 @@ const MedicalNotes = () => {
             {
                 popup3 && (
                     <div className="fastFadeIn">
-                        <ConsentPopup setPopup3={setPopup3} />
+                        <KertasPopup setPopup3={setPopup3} />
                     </div>
                 )
             }
             {
                 popup4 && (
                     <div className="fastFadeIn">
-                        <KertasPopup setPopup4={setPopup4} />
+                        <ConsentPopup setPopup4={setPopup4} />
                     </div>
                 )
             }

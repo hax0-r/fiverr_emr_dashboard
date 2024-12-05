@@ -1,13 +1,14 @@
 import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
-import img from "../../../assets/ConsentforAnaesthesia.svg"
+import KertasAnestesia from "../../../assets/KertasAnestesia.svg"
 import receipt from "../../../assets/receipt3.png"
+import sign3 from "../../../assets/sign4.png"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
 import { MdClose } from 'react-icons/md'
 import Print from '../Print'
 
-const KertasPopup = ({ setPopup4 }) => {
+const KertasPopup = ({ setPopup3 }) => {
 
     const [previewDocument, setPreviewDocument] = useState(false)
 
@@ -19,7 +20,7 @@ const KertasPopup = ({ setPopup4 }) => {
         popUp.current.style.opacity = "0"
 
         setTimeout(() => {
-            setPopup4(false)
+            setPopup3(false)
         }, 500)
     }
 
@@ -29,7 +30,7 @@ const KertasPopup = ({ setPopup4 }) => {
             <div className="max-w-[90%] w-full bg-white border border-[#CFD1D4] z-10 rounded-lg ">
                 <div className="flex items-center justify-between p-4 ">
                     <div className="flex items-center justify-between gap-3">
-                        <img src={img} alt="" />
+                        <img src={KertasAnestesia} alt="" />
                         <h2 className='text-lg font-semibold'>Consent for Anaesthesia</h2>
                     </div>
                     {
@@ -78,12 +79,12 @@ const KertasPopup = ({ setPopup4 }) => {
 
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
 
-                            <div className="border p-3 rounded-lg border-[#cfd1d4]">
+                            <div className="border p-3 rounded-lg border-[#cfd1d4] max-h-[70vh] overflow-auto">
                                 <h3 className='font-semibold text-[#1D1D1D] text-xl'>Consent for Anaesthesia</h3>
                                 <p className='font-medium text-[#6E6E6E]'>Patient Info </p>
-                                <div className="w-full mt-4 p-6 bg-white border border-gray-300 rounded-md text-sm">
+                                <div className="w-full mt-4 p-3 bg-white border border-gray-300 rounded-md text-sm">
                                     {/* Patient Details Section */}
-                                    <div className="grid grid-cols-2 gap-4 border-b border-gray-200 pb-4 mb-4">
+                                    <div className="grid border  p-3 rounded-lg grid-cols-2 gap-4 border-b border-gray-200 pb-4 mb-4">
                                         <div>
                                             <p>
                                                 <span className="font-semibold">Patient’s Name :</span> Lorem Ipsum
@@ -115,16 +116,16 @@ const KertasPopup = ({ setPopup4 }) => {
                                     </div>
 
                                     {/* A. Patient Specific Information */}
-                                    <div className="mb-6">
+                                    <div className="mb-3 border rounded-lg p-3">
                                         <h3 className="font-semibold text-lg mb-3">A. Patient Specific Information</h3>
-                                        <div className="grid grid-cols-12 gap-4 border border-gray-200 rounded-md">
-                                            <div className="col-span-7 border-b border-gray-200 p-4">
+                                        <div className="grid grid-cols-12 gap-x-4 border border-gray-200 rounded-md">
+                                            <div className="col-span-7 bg-zinc-100 border-b border-gray-200 p-4">
                                                 <p>1. Specific risk of anesthesia to the *patient/parents/guardian</p>
                                             </div>
                                             <div className="col-span-5 border-b border-gray-200 p-4">
                                                 Lorem ipsum dolor sit amet consectetur. Amet vivamus vitae.
                                             </div>
-                                            <div className="col-span-7 p-4">
+                                            <div className="col-span-7 p-4 bg-zinc-100">
                                                 <p>2. Anesthetic plan disclosed to the *patient/parents/guardian</p>
                                             </div>
                                             <div className="col-span-5 p-4">
@@ -134,18 +135,22 @@ const KertasPopup = ({ setPopup4 }) => {
                                     </div>
 
                                     {/* B. Practitioner’s Declaration */}
-                                    <div className="mb-6">
+                                    <div className="mb-3 border rounded-lg p-3">
                                         <h3 className="font-semibold text-lg mb-3">B. Practitioner’s Declaration</h3>
                                         <p className="mb-6">
                                             Lorem ipsum dolor sit amet consectetur. Tempor viverra eget ultrices ac amet viverra et. Eu arcu quis ante orci donec nibh mus. Morbi egestas feugiat sagittis commodo ornare tempus consequat risus. Augue nulla vel ornare pulvinar.
                                         </p>
-                                        <div className="flex justify-between items-center">
+                                        <div className="flex max-w-lg justify-between items-center">
                                             <div>
                                                 <p className="font-semibold">Signature</p>
                                             </div>
                                             <div>
                                                 <p className="font-semibold">Name & Official Stamp</p>
                                             </div>
+                                        </div>
+                                        <div className="flex max-w-lg justify-between items-center">
+                                            <img src={sign3} className='h-28' alt="" />
+                                            <img src={sign3} className='h-28' alt="" />
                                         </div>
                                     </div>
                                 </div>
