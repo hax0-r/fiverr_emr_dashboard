@@ -8,6 +8,8 @@ import Jabatan from "../../../assets/Jabatan.svg"
 import RadiologyReport2 from "../../../assets/RadiologyReport2.svg"
 import { PiArrowsOutSimpleBold, PiPackageBold } from 'react-icons/pi'
 import LabReportPopup from './LabReportPopup'
+import LabRequestPopup from './LabRequestPopup'
+import PathologyReportPopup from './PathologyReportPopup'
 
 const LabReports = () => {
   const [popup1, setPopup1] = useState(false)
@@ -335,14 +337,14 @@ const LabReports = () => {
       {
         popup2 && (
           <div className="fastFadeIn">
-            {/* <RekodPopup setPopup2={setPopup2} /> */}
+            <LabRequestPopup setPopup2={setPopup2} />
           </div>
         )
       }
       {
         popup3 && (
           <div className="fastFadeIn">
-            {/* <SenaraiSemak setPopup3={setPopup3} /> */}
+            <PathologyReportPopup setPopup3={setPopup3} />
           </div>
         )
       }
