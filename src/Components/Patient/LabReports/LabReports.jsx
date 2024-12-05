@@ -12,6 +12,8 @@ import LabRequestPopup from './LabRequestPopup'
 import PathologyReportPopup from './PathologyReportPopup'
 import MicrobiologyReportpopup from './MicrobiologyReportpopup'
 import RadiologyReportPopup from './RadiologyReportPopup'
+import HistoPopup from './HistoPopup'
+import JabatanPopup from './JabatanPopup'
 
 const LabReports = () => {
   const [popup1, setPopup1] = useState(false)
@@ -360,7 +362,7 @@ const LabReports = () => {
       {
         popup5 && (
           <div className="fastFadeIn">
-            {/* <CaraPopup setPopup5={setPopup5} /> */}
+            <HistoPopup setPopup5={setPopup5} />
           </div>
         )
       }
@@ -368,6 +370,13 @@ const LabReports = () => {
         popup6 && (
           <div className="fastFadeIn">
             <RadiologyReportPopup setPopup6={setPopup6} />
+          </div>
+        )
+      }
+      {
+        popup7 && (
+          <div className="fastFadeIn">
+            <JabatanPopup setPopup7={setPopup7} />
           </div>
         )
       }
