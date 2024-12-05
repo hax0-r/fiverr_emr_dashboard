@@ -9,6 +9,7 @@ import ChecklistPopup from './ChecklistPopup'
 import PatientInformationPopup from './PatientInformationPopup'
 import WardProceduresPopup from './WardProceduresPopup'
 import InpatientRegistrationPopup from './InpatientRegistrationPopup'
+import AdmissionLetterPopup from './AdmissionLetterPopup'
 
 
 const Admission = () => {
@@ -165,7 +166,7 @@ const Admission = () => {
                             <img src={AdmissionLetter} alt="" />
                             <h2 className='text-lg font-semibold'>Admission Letter</h2>
                         </div>
-                        <PiArrowsOutSimpleBold className='text-[#9F9FA1] cursor-pointer text-2xl' onClick={() => setPopup5(true)} />
+                        <PiArrowsOutSimpleBold className='text-[#9F9FA1] cursor-pointer text-2xl' onClick={() => setPopup2(true)} />
                     </div>
                     <div className="border-b border-[#cfd1d4]"></div>
                     <div className="p-4 flex flex-col gap-3 font-medium">
@@ -233,6 +234,13 @@ const Admission = () => {
                 popup1 && (
                     <div className="fastFadeIn">
                         <ChecklistPopup setPopup1={setPopup1} />
+                    </div>
+                )
+            }
+            {
+                popup2 && (
+                    <div className="fastFadeIn">
+                        <AdmissionLetterPopup setPopup2={setPopup2} />
                     </div>
                 )
             }
