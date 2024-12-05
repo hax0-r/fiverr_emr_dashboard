@@ -1,14 +1,15 @@
 
 import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPackageBold, PiPrinterBold } from 'react-icons/pi'
-import MicrobiologyReport from "../../../assets/MicrobiologyReport.svg"
-import receipt from "../../../assets/receipt27.png"
+import PathologyReport from "../../../assets/PathologyReport.svg"
+import receipt from "../../../assets/receipt26.png"
+import pdfFile from "../../../assets/pdfFile.svg"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
 import { MdClose } from 'react-icons/md'
 import Print from '../Print'
 
-const PathologyReportPopup = ({ setPopup3 }) => {
+const MicrobiologyReportpopup = ({ setPopup4 }) => {
     const [previewDocument, setPreviewDocument] = useState(false)
 
     const popUp = useRef()
@@ -19,7 +20,7 @@ const PathologyReportPopup = ({ setPopup3 }) => {
         popUp.current.style.opacity = "0"
 
         setTimeout(() => {
-            setPopup3(false)
+            setPopup4(false)
         }, 500)
     }
 
@@ -30,8 +31,8 @@ const PathologyReportPopup = ({ setPopup3 }) => {
             <div className="max-w-[90%] w-full bg-white border border-[#CFD1D4] z-10 rounded-lg ">
                 <div className="flex items-center justify-between p-4 ">
                     <div className="flex items-center justify-between gap-3">
-                        <img src={MicrobiologyReport} alt="" />
-                        <h2 className='text-lg font-semibold'>Microbiology Report</h2>
+                        <img src={PathologyReport} alt="" />
+                        <h2 className='text-lg font-semibold'>Pathology Report</h2>
                     </div>
                     {
                         previewDocument ? (
@@ -96,13 +97,7 @@ const PathologyReportPopup = ({ setPopup3 }) => {
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
                             <div className="border p-3 max-h-[65vh] overflow-y-auto rounded-t-lg border-[#cfd1d4]">
 
-                                <h3 className='font-semibold text-[#1D1D1D] text-xl '>Microbiology Report</h3>
-
-                                <div className="rounded-lg border p-3 mt-3 text-[#1D1D1D] border-[#cfd1d4]">
-                                    <p className='text-[#6E6E6E] pb-3'>Urine Culture & Sensitivity</p>
-                                    <h2 className='font-medium'>100,000 CFU/ml. Significant growth of :</h2>
-                                    <h2 className='font-medium'>Escherichia coli (Isolate 1)</h2>
-                                </div>
+                                <h3 className='font-semibold text-[#1D1D1D] text-xl '>Pathology (Haematology) 05/08/2024</h3>
                                
                                 <div className="flex justify-center items-center">
                                     <div className="w-full bg-white rounded-lg border mt-4">
@@ -110,79 +105,98 @@ const PathologyReportPopup = ({ setPopup3 }) => {
                                             {/* Table Header */}
                                             <thead className=" border-b">
                                                 <tr>
-                                                    <th className="px-4 py-2.5 text-left font-medium">No</th>
-                                                    <th className="px-4 py-2.5 text-left font-medium">Antibiotic</th>
-                                                    <th className="px-4 py-2.5 text-left font-medium">MIC</th>
-                                                    <th className="px-4 py-2.5 text-left font-medium">Interpretation</th>
+                                                    <th className="px-4 py-2.5 text-left font-medium">Test</th>
+                                                    <th className="px-4 py-2.5 text-left font-medium">ABN</th>
+                                                    <th className="px-4 py-2.5 text-left font-medium">Result</th>
+                                                    <th className="px-4 py-2.5 text-left font-medium">Range</th>
+                                                    <th className="px-4 py-2.5 text-left font-medium">Unit</th>
+                                                    <th className="px-4 py-2.5 text-left font-medium">Comments</th>
+                                                    <th className="px-4 py-2.5 text-left font-medium">Cumulative</th>
+                                                    <th className="px-4 py-2.5 text-left font-medium">Report</th>
                                                 </tr>
                                             </thead>
 
                                             {/* Table Body */}
                                             <tbody>
                                                 <tr className="border-b bg-[#f5f7fa]">
-                                                    <td className="px-4 py-2.5">1</td>
-                                                    <td className="px-4 py-2.5">22</td>
+                                                    <td className="px-4 py-2.5">MPV</td>
+                                                    <td className="px-4 py-2.5"></td>
                                                     <td className="px-4 py-2.5">10.3</td>
                                                     <td className="px-4 py-2.5">(8.9-11.9)</td>
+                                                    <td className="px-4 py-2.5">%</td>
+                                                    <td className="px-4 py-2.5">Report</td>
+                                                    <td className="px-4 py-2.5"></td>
+                                                    <td className="px-4 py-2.5"></td>
                                                 </tr>
                                                 <tr className="border-b ">
-                                                    <td className="px-4 py-2.5">1</td>
-                                                    <td className="px-4 py-2.5">234</td>
-                                                    <td className="px-4 py-2.5">10.3</td>
-                                                    <td className="px-4 py-2.5">(8.9-11.9)</td>
-                                                </tr>
-                                                <tr className="border-b bg-[#f5f7fa]">
-                                                    <td className="px-4 py-2.5">1</td>
+                                                    <td className="px-4 py-2.5">MPV</td>
+                                                    <td className="px-4 py-2.5"></td>
                                                     <td className="px-4 py-2.5">10.3</td>
                                                     <td className="px-4 py-2.5">(8.9-11.9)</td>
                                                     <td className="px-4 py-2.5">%</td>
-                                                    
-                                                    
+                                                    <td className="px-4 py-2.5">Report</td>
+                                                    <td className="px-4 py-2.5"></td>
+                                                    <td className="px-4 py-2.5"></td>
+                                                </tr>
+                                                <tr className="border-b bg-[#f5f7fa]">
+                                                    <td className="px-4 py-2.5">MPV</td>
+                                                    <td className="px-4 py-2.5"></td>
+                                                    <td className="px-4 py-2.5">10.3</td>
+                                                    <td className="px-4 py-2.5">(8.9-11.9)</td>
+                                                    <td className="px-4 py-2.5">%</td>
+                                                    <td className="px-4 py-2.5">Report</td>
+                                                    <td className="px-4 py-2.5"></td>
+                                                    <td className="px-4 py-2.5"></td>
                                                 </tr>
                                                 <tr className="border-b ">
-                                                    <td className="px-4 py-2.5">1</td>
-                                                    
+                                                    <td className="px-4 py-2.5">MPV</td>
+                                                    <td className="px-4 py-2.5"></td>
                                                     <td className="px-4 py-2.5">10.3</td>
                                                     <td className="px-4 py-2.5">(8.9-11.9)</td>
                                                     <td className="px-4 py-2.5">%</td>
-                                                    
-                                                    
+                                                    <td className="px-4 py-2.5">Report</td>
+                                                    <td className="px-4 py-2.5"></td>
+                                                    <td className="px-4 py-2.5"></td>
                                                 </tr>
                                                 <tr className="border-b bg-[#f5f7fa]">
-                                                    <td className="px-4 py-2.5">1</td>
-                                                    
+                                                    <td className="px-4 py-2.5">MPV</td>
+                                                    <td className="px-4 py-2.5"></td>
                                                     <td className="px-4 py-2.5">10.3</td>
                                                     <td className="px-4 py-2.5">(8.9-11.9)</td>
                                                     <td className="px-4 py-2.5">%</td>
-                                                    
-                                                    
+                                                    <td className="px-4 py-2.5">Report</td>
+                                                    <td className="px-4 py-2.5"></td>
+                                                    <td className="px-4 py-2.5"></td>
                                                 </tr>
                                                 <tr className="border-b ">
-                                                    <td className="px-4 py-2.5">1</td>
-                                                    
+                                                    <td className="px-4 py-2.5">MPV</td>
+                                                    <td className="px-4 py-2.5"></td>
                                                     <td className="px-4 py-2.5">10.3</td>
                                                     <td className="px-4 py-2.5">(8.9-11.9)</td>
                                                     <td className="px-4 py-2.5">%</td>
-                                                    
-                                                    
+                                                    <td className="px-4 py-2.5">Report</td>
+                                                    <td className="px-4 py-2.5"></td>
+                                                    <td className="px-4 py-2.5"></td>
                                                 </tr>
                                                 <tr className="border-b bg-[#f5f7fa]">
-                                                    <td className="px-4 py-2.5">1</td>
-                                                    
+                                                    <td className="px-4 py-2.5">MPV</td>
+                                                    <td className="px-4 py-2.5"></td>
                                                     <td className="px-4 py-2.5">10.3</td>
                                                     <td className="px-4 py-2.5">(8.9-11.9)</td>
                                                     <td className="px-4 py-2.5">%</td>
-                                                    
-                                                    
+                                                    <td className="px-4 py-2.5">Report</td>
+                                                    <td className="px-4 py-2.5"></td>
+                                                    <td className="px-4 py-2.5"></td>
                                                 </tr>
                                                 <tr className="">
-                                                    <td className="px-4 py-2.5">1</td>
-                                                    
+                                                    <td className="px-4 py-2.5">MPV</td>
+                                                    <td className="px-4 py-2.5"></td>
                                                     <td className="px-4 py-2.5">10.3</td>
                                                     <td className="px-4 py-2.5">(8.9-11.9)</td>
                                                     <td className="px-4 py-2.5">%</td>
-                                                    
-                                                    
+                                                    <td className="px-4 py-2.5">Report</td>
+                                                    <td className="px-4 py-2.5"></td>
+                                                    <td className="px-4 py-2.5"></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -246,4 +260,4 @@ const PathologyReportPopup = ({ setPopup3 }) => {
     )
 }
 
-export default PathologyReportPopup
+export default MicrobiologyReportpopup

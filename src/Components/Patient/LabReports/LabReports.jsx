@@ -10,6 +10,8 @@ import { PiArrowsOutSimpleBold, PiPackageBold } from 'react-icons/pi'
 import LabReportPopup from './LabReportPopup'
 import LabRequestPopup from './LabRequestPopup'
 import PathologyReportPopup from './PathologyReportPopup'
+import MicrobiologyReportpopup from './MicrobiologyReportpopup'
+import RadiologyReportPopup from './RadiologyReportPopup'
 
 const LabReports = () => {
   const [popup1, setPopup1] = useState(false)
@@ -351,7 +353,7 @@ const LabReports = () => {
       {
         popup4 && (
           <div className="fastFadeIn">
-            {/* <PostPopup setPopup4={setPopup4} /> */}
+            <MicrobiologyReportpopup setPopup4={setPopup4} />
           </div>
         )
       }
@@ -359,6 +361,13 @@ const LabReports = () => {
         popup5 && (
           <div className="fastFadeIn">
             {/* <CaraPopup setPopup5={setPopup5} /> */}
+          </div>
+        )
+      }
+      {
+        popup6 && (
+          <div className="fastFadeIn">
+            <RadiologyReportPopup setPopup6={setPopup6} />
           </div>
         )
       }
