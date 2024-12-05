@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, {  useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
 import receipt from "../../../assets/receipt22.png"
 import umb from "../../../assets/umb.svg"
@@ -21,7 +21,6 @@ const LivingPopup = ({ setPopup1 }) => {
             setPopup1(false)
         }, 500)
     }
-
 
     return (
         <div className="fixed flex items-center justify-center transition-all duration-500 inset-0" ref={popUp}>
@@ -134,37 +133,37 @@ const LivingPopup = ({ setPopup1 }) => {
 
 
                             </div>
-                                <div className="flex items-center justify-between mt-4">
-                                    <div className="flex items-center gap-4">
+                            <div className="flex items-center justify-between mt-4">
+                                <div className="flex items-center gap-4">
 
-                                        <select
-                                            className="border rounded p-2 text-sm"
-                                            readOnly
-                                        >
-                                            <option>10</option>
-                                        </select>
-                                        <span className="text-sm text-gray-600">
-                                            Show 1 of 10 data
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center space-x-2">
-                                        <button
-                                            className="px-3 py-1 bg-white border-2 rounded-lg"
-                                        >
-                                            &lt;
-                                        </button>
-                                        <button
-                                            className={`px-3 py-1 bg-primary text-white rounded`}
-                                        >
-                                            1
-                                        </button>
-                                        <button
-                                            className="px-3 py-1 bg-white border-2 rounded-lg"
-                                        >
-                                            &gt;
-                                        </button>
-                                    </div>
+                                    <select
+                                        className="border rounded p-2 text-sm"
+                                        readOnly
+                                    >
+                                        <option>10</option>
+                                    </select>
+                                    <span className="text-sm text-gray-600">
+                                        Show 1 of 10 data
+                                    </span>
                                 </div>
+                                <div className="flex items-center space-x-2">
+                                    <button
+                                        className="px-3 py-1 bg-white border-2 rounded-lg"
+                                    >
+                                        &lt;
+                                    </button>
+                                    <button
+                                        className={`px-3 py-1 bg-primary text-white rounded`}
+                                    >
+                                        1
+                                    </button>
+                                    <button
+                                        className="px-3 py-1 bg-white border-2 rounded-lg"
+                                    >
+                                        &gt;
+                                    </button>
+                                </div>
+                            </div>
                             {
                                 !previewDocument && (
                                     <div className="flex gap-2 items-center mt-4 justify-end">
