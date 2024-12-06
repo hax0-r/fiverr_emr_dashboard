@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import pdfFile from "../../../assets/pdfFile.svg"
 import pdf from "../../../assets/pdf.svg"
 import RadiologyReport from "../../../assets/RadiologyReport.svg"
-import { PiArrowsOutSimpleBold } from 'react-icons/pi'
+import { PiArrowsOutSimpleBold, PiPackageBold } from 'react-icons/pi'
 import Report from './Report'
 import XRayPopup from './XRayPopup'
 
@@ -24,18 +24,37 @@ const Radiology = () => {
                     </div>
                     <div className="border-b border-[#cfd1d4]"></div>
                     <div className="p-4 flex flex-col gap-3">
-                        <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>SUNGKE922</p>
+                        <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
+                            <h3 className='font-medium text-[#1D1D1D]'>CT Abdomen</h3>
+                            <div className="flex items-center justify-between mt-2">
+                                <div className="flex items-center gap-2">
+                                    <PiPackageBold />
+                                    <p className='text-sm font-medium'>CT Scan</p>
+                                </div>
+                                <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
+                            </div>
                         </div>
-                        <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>SUNGKE922</p>
+                        <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
+                            <h3 className='font-medium text-[#1D1D1D]'>CT Abdomen</h3>
+                            <div className="flex items-center justify-between mt-2">
+                                <div className="flex items-center gap-2">
+                                    <PiPackageBold />
+                                    <p className='text-sm font-medium'>CT Scan</p>
+                                </div>
+                                <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
+                            </div>
                         </div>
-                        <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>SUNGKE922</p>
+                        <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
+                            <h3 className='font-medium text-[#1D1D1D]'>CT Abdomen</h3>
+                            <div className="flex items-center justify-between mt-2">
+                                <div className="flex items-center gap-2">
+                                    <PiPackageBold />
+                                    <p className='text-sm font-medium'>CT Scan</p>
+                                </div>
+                                <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
+                            </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -90,7 +109,7 @@ const Radiology = () => {
                 )
             }
 
-        </div>
+        </div >
     )
 }
 

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
 import receipt from "../../../assets/receipt31.png"
+import sign5 from "../../../assets/sign5.png"
 import AdmissionChecklist from "../../../assets/AdmissionChecklist.svg"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
@@ -247,14 +248,19 @@ const ChecklistPopup = ({ setPopup1 }) => {
                                     {/* Patient Info Section */}
                                     <div className="p-3 rounded-lg mt-3   border pb-3 mb-3">
                                         <h2 className='text-[#6E6E6E] pb-3'>Verified by :</h2>
-                                        <div className='flex items-center justify-between'>
+                                        <div className='flex max-w-2xl items-center justify-between'>
                                             <div className="">
-
                                                 <p className='pt-0.5'>
                                                     Date : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span className='font-semibold'> 18/8/23 </span>
                                                 </p>
                                                 <p className='pt-0.5'>
                                                     Anaesthesist : &nbsp; &nbsp; &nbsp; &nbsp;   <span className='font-semibold'> Lorem Ipsum</span>
+                                                </p>
+                                            </div>
+                                            <div className="">
+                                                <p className='pt-0.5 flex items-center gap-2'>
+                                                Patient name & Signature : 
+                                                <img src={sign5} className='h-10' alt="" />
                                                 </p>
                                             </div>
                                         </div>

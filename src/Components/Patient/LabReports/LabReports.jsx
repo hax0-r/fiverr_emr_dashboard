@@ -49,7 +49,7 @@ const LabReports = () => {
               </div>
             </div>
             <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Full Blood Count</h3>
+              <h3 className='font-medium text-[#1D1D1D]'>Endocrine Test </h3>
               <div className="flex items-center justify-between mt-2">
                 <div className="flex items-center gap-2">
                   <PiPackageBold />
@@ -59,7 +59,7 @@ const LabReports = () => {
               </div>
             </div>
             <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Full Blood Count</h3>
+              <h3 className='font-medium text-[#1D1D1D]'>Liver</h3>
               <div className="flex items-center justify-between mt-2">
                 <div className="flex items-center gap-2">
                   <PiPackageBold />
@@ -92,7 +92,7 @@ const LabReports = () => {
               </div>
             </div>
             <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Endocrine Test</h3>
+              <h3 className='font-medium text-[#1D1D1D]'>Full Blood Count</h3>
               <div className="flex items-center justify-between mt-2">
                 <div className="flex items-center gap-2">
                   <PiPackageBold />
@@ -102,7 +102,7 @@ const LabReports = () => {
               </div>
             </div>
             <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Endocrine Test</h3>
+              <h3 className='font-medium text-[#1D1D1D]'>Urine Test</h3>
               <div className="flex items-center justify-between mt-2">
                 <div className="flex items-center gap-2">
                   <PiPackageBold />
@@ -167,35 +167,15 @@ const LabReports = () => {
           </div>
           <div className="border-b border-[#cfd1d4]"></div>
           <div className="p-4 flex flex-col gap-3">
-            <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Full Blood Count</h3>
-              <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
-                  <PiPackageBold />
-                  <p className='text-sm'>Histopathology</p>
-                </div>
-                  <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
-              </div>
-            </div>
-            <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Full Blood Count</h3>
-              <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
-                  <PiPackageBold />
-                  <p className='text-sm'>Histopathology</p>
-                </div>
-                  <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
-              </div>
-            </div>
-            <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Full Blood Count</h3>
-              <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
-                  <PiPackageBold />
-                  <p className='text-sm'>Histopathology</p>
-                </div>
-                  <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
-              </div>
+            <div className="border grid grid-cols-2 rounded-lg border-[#cfd1d4] w-full">
+              <p className='font-semibold  px-3 py-[18px] border-b'>Test</p>
+              <p className='font-semibold  px-3 py-[18px] border-b'>Result</p>
+              <p className='  px-3 py-5 border-b'>MPV</p>
+              <p className='  px-3 py-5 border-b'>10.3</p>
+              <p className='  px-3 py-5 bg-[#f5f7fa] border-b'>MPV</p>
+              <p className='  px-3 py-5 bg-[#f5f7fa] border-b'>10.3</p>
+              <p className='  px-3 py-5'>MPV</p>
+              <p className='  px-3 py-5'>10.3</p>
             </div>
           </div>
         </div>
@@ -215,27 +195,27 @@ const LabReports = () => {
               <div className="flex items-center justify-between mt-2">
                 <div className="flex items-center gap-2">
                   <PiPackageBold />
-                  <p className='text-sm'>Histopathology</p>
+                  <p className='text-sm'>Request Form</p>
                 </div>
                   <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
               </div>
             </div>
             <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Histopathology Request</h3>
+              <h3 className='font-medium text-[#1D1D1D]'>Cytopathology</h3>
               <div className="flex items-center justify-between mt-2">
                 <div className="flex items-center gap-2">
                   <PiPackageBold />
-                  <p className='text-sm'>Histopathology</p>
+                  <p className='text-sm'>Request Form</p>
                 </div>
                   <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
               </div>
             </div>
             <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Histopathology Request</h3>
+              <h3 className='font-medium text-[#1D1D1D]'>Haematology</h3>
               <div className="flex items-center justify-between mt-2">
                 <div className="flex items-center gap-2">
                   <PiPackageBold />
-                  <p className='text-sm'>Histopathology</p>
+                  <p className='text-sm'>Request Form</p>
                 </div>
                   <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
               </div>
@@ -301,13 +281,13 @@ const LabReports = () => {
               <div className="flex items-center justify-between mt-2">
                 <div className="flex items-center gap-2">
                   <PiPackageBold />
-                  <p className='text-sm'>Histopathology</p>
+                  <p className='text-sm'>Request Form</p>
                 </div>
                   <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
               </div>
             </div>
             <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Haematologi Rutin</h3>
+              <h3 className='font-medium text-[#1D1D1D]'>Unit Patologi</h3>
               <div className="flex items-center justify-between mt-2">
                 <div className="flex items-center gap-2">
                   <PiPackageBold />
@@ -317,7 +297,7 @@ const LabReports = () => {
               </div>
             </div>
             <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Haematologi Rutin</h3>
+              <h3 className='font-medium text-[#1D1D1D]'>Haematologi</h3>
               <div className="flex items-center justify-between mt-2">
                 <div className="flex items-center gap-2">
                   <PiPackageBold />

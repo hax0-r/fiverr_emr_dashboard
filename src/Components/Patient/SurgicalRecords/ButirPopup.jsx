@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
-import Senarai from "../../../assets/Senarai.svg"
+import Consent from "../../../assets/ConsentforAnaesthesia.svg"
 import receipt from "../../../assets/receipt11.png"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
@@ -45,8 +45,8 @@ const ButirPopup = ({ setPopup3 }) => {
             <div className="max-w-[90%] w-full bg-white border border-[#CFD1D4] z-10 rounded-lg ">
                 <div className="flex items-center justify-between p-4 ">
                     <div className="flex items-center justify-between gap-3">
-                        <img src={Senarai} alt="" />
-                        <h2 className='text-lg font-semibold'>Post Operative Nursing Record</h2>
+                        <img src={Consent} alt="" />
+                        <h2 className='text-lg font-semibold'>Butir Implant Pesakit Dewan Bedah</h2>
                     </div>
                     {
                         previewDocument ? (
@@ -91,8 +91,8 @@ const ButirPopup = ({ setPopup3 }) => {
                             )
                         }
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
-                            <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                {/* <h3 className='font-semibold text-[#1D1D1D] text-xl'>Sebelum Prosedur - Sila Tandakan Ya (✓) dan Tidak (X)</h3> */}
+                            <div className="border p-3 max-h-[70vh] overflow-auto rounded-lg border-[#cfd1d4]">
+                                <h3 className='font-semibold pb-4 text-[#1D1D1D] text-xl'>Butir Implant Pesakit Dewan Bedah</h3>
 
 
                                 <div className="">
@@ -100,7 +100,7 @@ const ButirPopup = ({ setPopup3 }) => {
                                         <div className="bg-white border rounded-lg  p-4 w-full ">
                                             <div className="grid grid-cols-2 gap-4 text-sm text-gray-800">
                                                 {/* Left Column */}
-                                                <div>
+                                                <div className='space-y-1'>
                                                     <p>
                                                         <span className="font-semibold">Name</span>: Lorem Ipsum
                                                     </p>
@@ -149,7 +149,7 @@ const ButirPopup = ({ setPopup3 }) => {
                                                 </div>
 
                                                 {/* Right Column */}
-                                                <div>
+                                                <div className='space-y-1'>
                                                     <p>
                                                         <span className="font-semibold">Tarik</span>:{" "}
                                                         <span className="font-bold">12/11/2024</span>
@@ -182,9 +182,9 @@ const ButirPopup = ({ setPopup3 }) => {
                                     </div>
 
                                     {/* Assessment Table */}
-                                    <div className="bg-white border rounded-lg shadow p-4">
+                                    <div className="bg-white border rounded-lg overflow-hidden p-4">
                                         {/* <h2 className="font-semibold text-center text-lg mb-4">ASSESSMENT</h2> */}
-                                        <table className="table-auto w-full border-collapse">
+                                        <table className="table-auto w-full border-collapse rounded-lg overflow-hidden">
                                             <thead>
                                                 <tr className="bg-gray-100 text-left text-gray-600">
                                                     <th className="p-2.5 border font-medium">Bill</th>

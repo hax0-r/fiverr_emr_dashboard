@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPackageBold, PiPrinterBold } from 'react-icons/pi'
-import RadiologyReport from "../../../assets/RadiologyReport2.svg"
+import Histo from "../../../assets/Histo.svg"
 import receipt from "../../../assets/receipt29.png"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
@@ -29,8 +29,8 @@ const HistoPopup = ({ setPopup5 }) => {
             <div className="max-w-[90%] w-full bg-white border border-[#CFD1D4] z-10 rounded-lg ">
                 <div className="flex items-center justify-between p-4 ">
                     <div className="flex items-center justify-between gap-3">
-                        <img src={RadiologyReport} alt="" />
-                        <h2 className='text-lg font-semibold'>Radiology Report</h2>
+                        <img src={Histo} alt="" />
+                        <h2 className='text-lg font-semibold'>Histo & Cyto Pathology Request Form</h2>
                     </div>
                     {
                         previewDocument ? (
@@ -59,31 +59,31 @@ const HistoPopup = ({ setPopup5 }) => {
                                 <div className="max-w-[30%]   w-full">
                                     <div className=" flex flex-col gap-3">
                                         <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Histopathology & Cytopathology</h3>
                                             <div className="flex items-center justify-between mt-2">
                                                 <div className="flex items-center gap-2">
                                                     <PiPackageBold />
-                                                    <p className='text-sm'>CT ABDOMEN</p>
+                                                    <p className='text-sm'>Request Form</p>
                                                 </div>
                                                 <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
                                             </div>
                                         </div>
                                         <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Haematology</h3>
                                             <div className="flex items-center justify-between mt-2">
                                                 <div className="flex items-center gap-2">
                                                     <PiPackageBold />
-                                                    <p className='text-sm'>CT ABDOMEN</p>
+                                                    <p className='text-sm'>Request Form</p>
                                                 </div>
                                                 <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
                                             </div>
                                         </div>
                                         <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Haematology</h3>
                                             <div className="flex items-center justify-between mt-2">
                                                 <div className="flex items-center gap-2">
                                                     <PiPackageBold />
-                                                    <p className='text-sm'>CT ABDOMEN</p>
+                                                    <p className='text-sm'>Request Form</p>
                                                 </div>
                                                 <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
                                             </div>

@@ -10,7 +10,7 @@ import Print from '../Print'
 
 const SurgicalOperationPopup = ({ setPopup1 }) => {
     const [previewDocument, setPreviewDocument] = useState(false)
-    const [activeTab, setActiveTab] = useState("Procedure");
+    const [activeTab, setActiveTab] = useState("Infection Surveillance");
 
     const popUp = useRef()
 
@@ -29,7 +29,7 @@ const SurgicalOperationPopup = ({ setPopup1 }) => {
                 <div className="flex items-center justify-between p-4 ">
                     <div className="flex items-center justify-between gap-3">
                         <img src={Senarai} alt="" />
-                        <h2 className='text-lg font-semibold'>Post Operative Nursing Record</h2>
+                        <h2 className='text-lg font-semibold'>Surgical Operation Report</h2>
                     </div>
                     {
                         previewDocument ? (
@@ -74,7 +74,7 @@ const SurgicalOperationPopup = ({ setPopup1 }) => {
                             )
                         }
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
-                            <div className="border p-3 rounded-lg border-[#cfd1d4]">
+                            <div className="border p-3 rounded-lg max-h-[70vh] overflow-auto border-[#cfd1d4]">
                                 <h3 className='font-semibold text-[#1D1D1D] text-xl'>Abdoment Urogenital : Surgery For Bladder Tumours</h3>
                                 <p className='font-medium text-[#6E6E6E] pt-2'>Booking Information</p>
 
@@ -104,16 +104,6 @@ const SurgicalOperationPopup = ({ setPopup1 }) => {
                                     </ul>
                                 </div>
 
-
-
-
-
-
-
-
-
-
-
                                 <div className="border mt-3  rounded-lg border-[#cfd1d4]">
                                     <div className="flex text-lg p-3 font-medium items-center border-[#cfd1d4] border-b pb-2 gap-2 text-[#6E6E6E]">
                                         <p className={`p-1 cursor-pointer  ${activeTab == "Infection Surveillance" && "text-secondary"} `} onClick={() => setActiveTab("Infection Surveillance")}>Infection Surveillance</p>
@@ -137,27 +127,27 @@ const SurgicalOperationPopup = ({ setPopup1 }) => {
                                                     <table className="w-full border-collapse text-sm text-gray-800">
                                                         <tbody>
                                                             <tr className="border-b">
-                                                                <td className="px-4 py-2.5">Wound Contamination Class</td>
-                                                                <td className="px-4 py-2.5">Clean-Contaminated</td>
+                                                                <td className="px-4 py-2.5 bg-zinc-100">Wound Contamination Class</td>
+                                                                <td className="px-4 font-medium py-2.5">Clean-Contaminated</td>
                                                             </tr>
                                                             <tr className="border-b">
-                                                                <td className="px-4 py-2.5">Is patient already on antibiotic treatment</td>
+                                                                <td className="px-4 py-2.5 bg-zinc-100">Is patient already on antibiotic treatment</td>
                                                                 <td className="px-4 py-2.5 font-medium">No</td>
                                                             </tr>
                                                             <tr className="border-b">
-                                                                <td className="px-4 py-2.5">Were pre-operative prophylactic antibiotic given</td>
+                                                                <td className="px-4 py-2.5 bg-zinc-100">Were pre-operative prophylactic antibiotic given</td>
                                                                 <td className="px-4 py-2.5 font-medium">No</td>
                                                             </tr>
                                                             <tr className="border-b">
-                                                                <td className="px-4 py-2.5">Intra-operative prophylactic antibiotic given</td>
+                                                                <td className="px-4 py-2.5 bg-zinc-100">Intra-operative prophylactic antibiotic given</td>
                                                                 <td className="px-4 py-2.5 font-medium">No</td>
                                                             </tr>
                                                             <tr className="border-b">
-                                                                <td className="px-4 py-2.5">Post Operative Antibiotic</td>
+                                                                <td className="px-4 py-2.5 bg-zinc-100">Post Operative Antibiotic</td>
                                                                 <td className="px-4 py-2.5 font-medium">No</td>
                                                             </tr>
                                                             <tr>
-                                                                <td className="px-4 py-2.5">Post-op diagnosis</td>
+                                                                <td className="px-4 py-2.5 bg-zinc-100">Post-op diagnosis</td>
                                                                 <td className="px-4 py-2.5 font-medium">No</td>
                                                             </tr>
                                                         </tbody>

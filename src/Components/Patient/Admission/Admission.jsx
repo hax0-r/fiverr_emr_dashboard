@@ -37,22 +37,22 @@ const Admission = () => {
                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
                             <h3 className='font-medium '>Admission Checklist</h3>
                             <div className="flex items-center justify-between">
-                            <p className='text-sm pt-1'>Lorem Ipsum</p>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                             </div>
                         </div>
                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
                             <h3 className='font-medium '>Admission Checklist</h3>
                             <div className="flex items-center justify-between">
-                            <p className='text-sm pt-1'>Lorem Ipsum</p>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                             </div>
                         </div>
                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
                             <h3 className='font-medium '>Admission Checklist</h3>
                             <div className="flex items-center justify-between">
-                            <p className='text-sm pt-1'>Lorem Ipsum</p>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                             </div>
                         </div>
                     </div>
@@ -71,22 +71,22 @@ const Admission = () => {
                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
                             <h3 className='font-medium '>Admission Letter</h3>
                             <div className="flex items-center justify-between">
-                            <p className='text-sm pt-1'>Lorem Ipsum</p>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                             </div>
                         </div>
                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
                             <h3 className='font-medium '>Admission Letter</h3>
                             <div className="flex items-center justify-between">
-                            <p className='text-sm pt-1'>Lorem Ipsum</p>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                             </div>
                         </div>
                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
                             <h3 className='font-medium '>Admission Letter</h3>
                             <div className="flex items-center justify-between">
-                            <p className='text-sm pt-1'>Lorem Ipsum</p>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                             </div>
                         </div>
                     </div>
@@ -105,22 +105,22 @@ const Admission = () => {
                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
                             <h3 className='font-medium '>Inpatient Registration</h3>
                             <div className="flex items-center justify-between">
-                            <p className='text-sm pt-1'>Lorem Ipsum</p>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                             </div>
                         </div>
                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
                             <h3 className='font-medium '>Inpatient Registration</h3>
                             <div className="flex items-center justify-between">
-                            <p className='text-sm pt-1'>Lorem Ipsum</p>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                             </div>
                         </div>
                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
                             <h3 className='font-medium '>Inpatient Registration</h3>
                             <div className="flex items-center justify-between">
-                            <p className='text-sm pt-1'>Lorem Ipsum</p>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                             </div>
                         </div>
                     </div>
@@ -137,24 +137,24 @@ const Admission = () => {
                     <div className="border-b border-[#cfd1d4]"></div>
                     <div className="p-4 flex flex-col gap-3 font-medium">
                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Patient Information</h3>
+                            <h3 className='font-medium '>Lorem Ipsum</h3>
                             <div className="flex items-center justify-between">
-                            <p className='text-sm pt-1'>Lorem Ipsum</p>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                <p className='text-sm pt-1'>N739168</p>
+                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                             </div>
                         </div>
                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Patient Information</h3>
+                            <h3 className='font-medium '>Lorem Ipsum</h3>
                             <div className="flex items-center justify-between">
-                            <p className='text-sm pt-1'>Lorem Ipsum</p>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                <p className='text-sm pt-1'>N739168</p>
+                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                             </div>
                         </div>
                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Patient Information</h3>
+                            <h3 className='font-medium '>Lorem Ipsum</h3>
                             <div className="flex items-center justify-between">
-                            <p className='text-sm pt-1'>Lorem Ipsum</p>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                <p className='text-sm pt-1'>N739168</p>
+                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                             </div>
                         </div>
                     </div>
@@ -164,31 +164,31 @@ const Admission = () => {
                     <div className="flex items-center justify-between p-4 ">
                         <div className="flex items-center justify-between gap-3">
                             <img src={AdmissionLetter} alt="" />
-                            <h2 className='text-lg font-semibold'>Admission Letter</h2>
+                            <h2 className='text-lg font-semibold'>Discharge Chit</h2>
                         </div>
                         <PiArrowsOutSimpleBold className='text-[#9F9FA1] cursor-pointer text-2xl' onClick={() => setPopup2(true)} />
                     </div>
                     <div className="border-b border-[#cfd1d4]"></div>
                     <div className="p-4 flex flex-col gap-3 font-medium">
                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Admission Letter</h3>
+                            <h3 className='font-medium '>Discharge Chit</h3>
                             <div className="flex items-center justify-between">
-                            <p className='text-sm pt-1'>Lorem Ipsum</p>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                             </div>
                         </div>
                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Admission Letter</h3>
+                            <h3 className='font-medium '>Discharge Chit</h3>
                             <div className="flex items-center justify-between">
-                            <p className='text-sm pt-1'>Lorem Ipsum</p>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                             </div>
                         </div>
                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Admission Letter</h3>
+                            <h3 className='font-medium '>Discharge Chit</h3>
                             <div className="flex items-center justify-between">
-                            <p className='text-sm pt-1'>Lorem Ipsum</p>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                             </div>
                         </div>
                     </div>
@@ -208,21 +208,30 @@ const Admission = () => {
                             <img src={pdfFile} alt="" />
                             <div className="">
                                 <h3 className='font-medium text-[#1D1D1D]'>Admission Ward Procedures</h3>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
+                                <div className="flex items-center justify-between">
+                                    <p className='text-sm pt-1 text-[#1d1d1d]'>Lorem Ipsum</p>
+                                    <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
+                                </div>
                             </div>
                         </div>
                         <div className="border p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
                             <img src={pdfFile} alt="" />
                             <div className="">
                                 <h3 className='font-medium text-[#1D1D1D]'>Admission Ward Procedures</h3>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
+                               <div className="flex items-center justify-between">
+                                    <p className='text-sm pt-1 text-[#1d1d1d]'>Lorem Ipsum</p>
+                                    <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
+                                </div>
                             </div>
                         </div>
                         <div className="border p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
                             <img src={pdfFile} alt="" />
                             <div className="">
                                 <h3 className='font-medium text-[#1D1D1D]'>Admission Ward Procedures</h3>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
+                               <div className="flex items-center justify-between">
+                                    <p className='text-sm pt-1 text-[#1d1d1d]'>Lorem Ipsum</p>
+                                    <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
+                                </div>
                             </div>
                         </div>
                     </div>

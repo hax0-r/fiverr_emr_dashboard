@@ -25,7 +25,7 @@ const DischargeRecords = () => {
           <div className="p-4 flex flex-col gap-3">
               <p className='text-sm text-center text-[#6E6E6E]'>Ringkasan Discaj</p>
             <div className="border p-3 rounded-lg border-[#cfd1d4]">
-              <ul className='pl-5 text-[#1D1D1D] list-decimal space-y-2'>
+              <ul className='pl-5 text-[#1D1D1D] list-decimal space-y-1'>
                 <li> Provisional Diagnosis</li>
                 <li> Principal Diagnosis</li>
                 <li> Additional Diagnosis</li>
@@ -52,11 +52,11 @@ const DischargeRecords = () => {
               <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
             </div>
             <div className="border p-3 rounded-lg border-[#cfd1d4]">
-              <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
+              <h3 className='font-medium text-[#1D1D1D]'>Aminah Rahman</h3>
               <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
             </div>
             <div className="border p-3 rounded-lg border-[#cfd1d4]">
-              <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
+              <h3 className='font-medium text-[#1D1D1D]'>Zainal Abidin</h3>
               <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
             </div>
           </div>

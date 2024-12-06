@@ -160,7 +160,7 @@ const Consent = () => {
             <div className="border bg-zinc-100 p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
               <img src={pdfFile} alt="" />
               <div className="w-full">
-                <h3 className='font-medium text-[#1D1D1D]'>Borang Keizinan</h3>
+                <h3 className='font-medium text-[#1D1D1D]'>Pra-kebenaran</h3>
                 <div className="flex items-center justify-between w-full">
                   <p className='text-sm pt-1 text-[#1d1d1d]'>Lorem Ipsum</p>
                   <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
@@ -170,7 +170,7 @@ const Consent = () => {
             <div className="border p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
               <img src={pdfFile} alt="" />
               <div className="w-full">
-                <h3 className='font-medium text-[#1D1D1D]'>Borang Keizinan</h3>
+                <h3 className='font-medium text-[#1D1D1D]'>Pra-kebenaran</h3>
                 <div className="flex items-center justify-between w-full">
                   <p className='text-sm pt-1 text-[#1d1d1d]'>Lorem Ipsum</p>
                   <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
@@ -180,7 +180,7 @@ const Consent = () => {
             <div className="border p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
               <img src={pdfFile} alt="" />
               <div className="w-full">
-                <h3 className='font-medium text-[#1D1D1D]'>Borang Keizinan</h3>
+                <h3 className='font-medium text-[#1D1D1D]'>Pra-kebenaran</h3>
                 <div className="flex items-center justify-between w-full">
                   <p className='text-sm pt-1 text-[#1d1d1d]'>Lorem Ipsum</p>
                   <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>

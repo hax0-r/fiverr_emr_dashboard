@@ -77,13 +77,13 @@ const ConsentPopup = ({ setPopup4 }) => {
                         }
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
 
-                            <div className="border p-3 rounded-lg border-[#cfd1d4]">
+                            <div className="max-h-[70vh] overflow-auto">
                                 <h3 className='font-semibold text-[#1D1D1D] text-xl'>Kertas Anestesia</h3>
                                 <p className='text-primary text-sm font-medium inline-flex mt-1 items-center gap-2 border border-primary rounded-lg py-1.5 px-2'><RiImage2Line className='text-lg' /> Attachment - Investigation Image <PiArrowsOutSimpleBold className='text-lg' /> </p>
-                                <div className="max-w-5xl mt-4 mx-auto p-4 bg-gray-50 border border-gray-200 rounded-md text-sm">
+                                <div className="max-w-5xl mt-4 mx-auto p-3 border border-gray-200 rounded-md text-sm">
                                     {/* DIAGNOSIS Section */}
-                                    <div className="mb-4">
-                                        <h2 className="font-bold uppercase mb-2">Diagnosis</h2>
+                                    <div className="mb-5 border p-3 rounded-lg border-[#cfd1d4]">
+                                        <h2 className="uppercase text-[#6E6E6E] font-medium mb-2">Diagnosis</h2>
                                         <div className="grid grid-cols-2 gap-4">
                                             <div>
                                                 <p>Pra-pembedahan : <span>Bladder Ca</span></p>
@@ -121,8 +121,8 @@ const ConsentPopup = ({ setPopup4 }) => {
                                     </div>
 
                                     {/* PENILAIAN PRA-ANESTESIA Section */}
-                                    <div className="mb-4">
-                                        <h2 className="font-bold uppercase mb-2">Penilaian Pra-Anestesia</h2>
+                                    <div className="mb-5">
+                                        <h2 className="uppercase text-[#6E6E6E] font-medium mb-2">Penilaian Pra-Anestesia</h2>
                                         <div className="grid grid-cols-2 gap-4">
                                             <div>
                                                 <p>Maklumat umum : <span>67 / ♂</span></p>
@@ -138,8 +138,8 @@ const ConsentPopup = ({ setPopup4 }) => {
                                     </div>
 
                                     {/* PENEMUAN KLINIKAL Section */}
-                                    <div className="mb-4">
-                                        <h2 className="font-bold uppercase mb-2">Penemuan Klinikal</h2>
+                                    <div className="mb-5">
+                                        <h2 className="uppercase text-[#6E6E6E] font-medium mb-2">Penemuan Klinikal</h2>
                                         <div className="grid grid-cols-2 gap-4">
                                             <div>
                                                 <p>Kepucatan :
@@ -165,9 +165,39 @@ const ConsentPopup = ({ setPopup4 }) => {
                                     </div>
 
                                     {/* SISTEM PERNAFASAN Section */}
-                                    <div className="mb-4">
-                                        <h2 className="font-bold uppercase mb-2">Sistem Pernafasan</h2>
+                                    <div className="mb-2">
+                                        <h2 className=" uppercase text-[#6E6E6E] font-medium">PENYELIDIKAN</h2>
                                         {/* Content not specified */}
+                                    </div>
+
+                                    <div className={` text-[#1D1D1D] ${previewDocument ? " grid-cols-1" : "grid-cols-2"} text-sm grid `}>
+                                        <div className="grid-cols-2 grid space-y-1">
+                                            <p className=''>Hb</p>
+                                            <p className='font-semibold'>: 13.8</p>
+                                            <p className=''>Urea darah</p>
+                                            <p className='font-semibold'>: 5.7 mg% (  )</p>
+                                            <p className=''>Serum (Na+)</p>
+                                            <p className='font-semibold'>: 188 </p>
+                                            <p className=''>UPH (LPH) </p>
+                                            <p className='font-semibold'>: A/B 41 AL7 21 AS7 21 </p>
+                                            <p className='col-span-2'>pa02      mv paCO2      tar PH      BE      mEq/L</p>
+                                            <p className=''>CV</p>
+                                            <p className='font-semibold'>: 68 mEg/L </p>
+                                        </div>
+                                        <div className="grid-cols-2 grid space-y-1">
+
+                                            <p className=''>IV</p>
+                                            <p className='font-semibold'>: - </p>
+                                            <p className=''>Gula darah</p>
+                                            <p className='font-semibold'>: - </p>
+                                            <p className=''>(K+)</p>
+                                            <p className='font-semibold'>: - </p>
+                                            <p className='col-span-2'>Sputum AFB+(BTA+) AFB+(BTA+) Isipadu SXD (CXR)</p>
+                                            <p className=''>EKG (ECG)</p>
+                                            <p className='font-semibold'>: W&R, LAD </p>
+                                            <p className=''>Lain-lain</p>
+                                            <p className='font-semibold'>: - </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -5,7 +5,7 @@ import Senarai from "../../../assets/Senarai.svg"
 import pdfFile from "../../../assets/pdfFile.svg"
 import pdf from "../../../assets/pdf.svg"
 import KertasAnestesia from "../../../assets/KertasAnestesia.svg"
-import { PiArrowsOutSimpleBold } from 'react-icons/pi'
+import { PiArrowsOutSimpleBold, PiBedBold } from 'react-icons/pi'
 import PadPopup from './PadPopup'
 import RekodPopup from './RekodPopup'
 import SenaraiSemak from './SenaraiSemak'
@@ -109,16 +109,34 @@ const NursingRecords = () => {
                     <div className="border-b border-[#cfd1d4]"></div>
                     <div className="p-4 flex flex-col gap-3">
                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                            <h3 className='font-medium text-[#1D1D1D]'>Kertas Anestesia</h3>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>FROSTY728</p>
+                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
+                            <div className="flex items-center font-medium justify-between">
+                                <div className="flex items-center gap-1">
+                                    <PiBedBold />
+                                    <p className='text-sm pt-1 '>SUNGKE922</p>
+                                </div>
+                                <p className='text-sm pt-1 text-[#6E6E6E]'>N867921</p>
+                            </div>
                         </div>
                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                            <h3 className='font-medium text-[#1D1D1D]'>Kertas Anestesia</h3>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>FROSTY728</p>
+                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
+                            <div className="flex items-center font-medium justify-between">
+                                <div className="flex items-center gap-1">
+                                    <PiBedBold />
+                                    <p className='text-sm pt-1 '>FROSTY728</p>
+                                </div>
+                                <p className='text-sm pt-1 text-[#6E6E6E]'>N867921</p>
+                            </div>
                         </div>
                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                            <h3 className='font-medium text-[#1D1D1D]'>Kertas Anestesia</h3>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>FROSTY728</p>
+                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
+                            <div className="flex items-center font-medium justify-between">
+                                <div className="flex items-center gap-1">
+                                    <PiBedBold />
+                                    <p className='text-sm pt-1 '>BREEZY314</p>
+                                </div>
+                                <p className='text-sm pt-1 text-[#6E6E6E]'>N867921</p>
+                            </div>
                         </div>
                     </div>
                 </div>
