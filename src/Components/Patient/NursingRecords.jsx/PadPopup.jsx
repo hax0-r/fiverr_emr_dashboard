@@ -108,23 +108,23 @@ const PadPopup = ({ setPopup1 }) => {
                                 <h3 className='font-semibold text-[#1D1D1D] text-xl'>Pad/Stool/Vomid Chart</h3>
                                 <div className="mt-4">
                                     {/* Patient Information Card */}
-                                    <div className="border rounded-md p-4 bg-white shadow mb-4">
-                                        <h2 className="font-bold text-lg mb-4">Patient Information</h2>
+                                    <div className="border rounded-lg p-4 mb-3 bg-[#f7f8fa]">
+                                        <h2 className="font-medium text-sm mb-2 text-[#6E6E6E]">Patient Information</h2>
                                         <div>
                                             <p>
-                                                <span className="font-semibold">Name:</span> Lorem Ipsum
+                                                Name:<span className="font-semibold ml-2"> Lorem Ipsum</span>
                                             </p>
                                             <p>
-                                                <span className="font-semibold">NRP:</span>
+                                                NRP:<span className="font-semibold ml-2"></span>
                                             </p>
                                             <p>
-                                                <span className="font-semibold">Katil:</span> SUNGKE922
+                                                Katil :<span className="font-semibold ml-2"> SUNGKE922</span>
                                             </p>
                                         </div>
                                     </div>
 
                                     {/* Data Table */}
-                                    <div className="border rounded-md bg-white shadow">
+                                    <div className="border rounded-md bg-white">
                                         <table className="table-auto w-full text-left">
                                             <thead>
                                                 <tr className="bg-gray-100 text-sm font-semibold text-gray-700">
@@ -168,8 +168,8 @@ const PadPopup = ({ setPopup1 }) => {
                                                         key={index}
                                                         onClick={() => handlePageChange(index + 1)}
                                                         className={`w-8 h-8 flex items-center justify-center text-sm rounded-lg ${currentPage === index + 1
-                                                                ? "bg-primary text-white"
-                                                                : "border border-[#CFD1D4] text-[#1D1D1D] hover:bg-gray-100"
+                                                            ? "bg-primary text-white"
+                                                            : "border border-[#CFD1D4] text-[#1D1D1D] hover:bg-gray-100"
                                                             }`}
                                                     >
                                                         {index + 1}
