@@ -59,7 +59,7 @@ const PadPopup = ({ setPopup1 }) => {
                 <div className="flex items-center justify-between p-4 ">
                     <div className="flex items-center justify-between gap-3">
                         <img src={ClinicalNotes} alt="" />
-                        <h2 className='text-lg font-semibold'>Clinical Notes</h2>
+                        <h2 className='text-lg font-semibold'>Pad/Stool/Vomid Chart</h2>
                     </div>
                     {
                         previewDocument ? (
@@ -88,15 +88,15 @@ const PadPopup = ({ setPopup1 }) => {
                                 <div className="max-w-[30%]   w-full">
                                     <div className="flex flex-col gap-3 rounded-lg border border-[#CFD1D4] p-3">
                                         <div className="border p-3 rounded-lg bg-[#f7f8fa] border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Clinic Notes THT</h3>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
                                             <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
                                         </div>
                                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Clinic Notes THT</h3>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
                                             <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
                                         </div>
                                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Clinic Notes THT</h3>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
                                             <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
                                         </div>
                                     </div>
@@ -105,7 +105,7 @@ const PadPopup = ({ setPopup1 }) => {
                         }
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
                             <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                <h3 className='font-semibold text-[#1D1D1D] text-xl'>Clinic Notes THT</h3>
+                                <h3 className='font-semibold text-[#1D1D1D] text-xl'>Pad/Stool/Vomid Chart</h3>
                                 <div className="mt-4">
                                     {/* Patient Information Card */}
                                     <div className="border rounded-md p-4 bg-white shadow mb-4">
