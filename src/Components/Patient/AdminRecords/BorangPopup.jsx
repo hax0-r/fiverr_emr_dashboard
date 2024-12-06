@@ -30,7 +30,7 @@ const BorangPopup = ({setPopup2}) => {
                 <div className="flex items-center justify-between p-4 ">
                     <div className="flex items-center justify-between gap-3">
                         <img src={pptx} alt="" />
-                        <h2 className='text-lg font-semibold'>Living Assurance</h2>
+                        <h2 className='text-lg font-semibold'>Borang Tuntutan Rawatan Hospital</h2>
                     </div>
                     {
                         previewDocument ? (

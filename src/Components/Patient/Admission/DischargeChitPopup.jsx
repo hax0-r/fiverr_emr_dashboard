@@ -1,13 +1,13 @@
 import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
-import receipt from "../../../assets/receipt34.png"
+import receipt from "../../../assets/receipt35.png"
 import AdmissionLetter from "../../../assets/AdmissionLetter.svg"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
 import { MdClose } from 'react-icons/md'
 import Print from '../Print'
 
-const InpatientRegistrationPopup = ({ setPopup3 }) => {
+const DischargeChitPopup = ({ setPopup5 }) => {
     const [previewDocument, setPreviewDocument] = useState(false)
 
     const popUp = useRef()
@@ -18,7 +18,7 @@ const InpatientRegistrationPopup = ({ setPopup3 }) => {
         popUp.current.style.opacity = "0"
 
         setTimeout(() => {
-            setPopup3(false)
+            setPopup5(false)
         }, 500)
     }
 
@@ -30,7 +30,7 @@ const InpatientRegistrationPopup = ({ setPopup3 }) => {
                 <div className="flex items-center justify-between p-4 ">
                     <div className="flex items-center justify-between gap-3">
                         <img src={AdmissionLetter} alt="" />
-                        <h2 className='text-lg font-semibold'>Inpatient Registration</h2>
+                        <h2 className='text-lg font-semibold'>Admission Letter  </h2>
                     </div>
                     {
                         previewDocument ? (
@@ -59,21 +59,21 @@ const InpatientRegistrationPopup = ({ setPopup3 }) => {
                                 <div className="max-w-[30%]   w-full">
                                     <div className=" flex flex-col gap-3 font-medium">
                                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                                            <h3 className='font-medium '>Inpatient Registration</h3>
+                                            <h3 className='font-medium '>Admission Letter </h3>
                                             <div className="flex items-center justify-between">
                                                 <p className='text-sm pt-1'>Lorem Ipsum</p>
                                                 <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                                             </div>
                                         </div>
                                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                                            <h3 className='font-medium '>Inpatient Registration</h3>
+                                            <h3 className='font-medium '>Admission Letter </h3>
                                             <div className="flex items-center justify-between">
                                                 <p className='text-sm pt-1'>Lorem Ipsum</p>
                                                 <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                                             </div>
                                         </div>
                                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                                            <h3 className='font-medium '>Inpatient Registration</h3>
+                                            <h3 className='font-medium '>Admission Letter </h3>
                                             <div className="flex items-center justify-between">
                                                 <p className='text-sm pt-1'>Lorem Ipsum</p>
                                                 <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
@@ -86,99 +86,71 @@ const InpatientRegistrationPopup = ({ setPopup3 }) => {
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
                             <div className="border p-3 text-[#1D1D1D] rounded-lg border-[#cfd1d4] text-sm max-h-[70vh] overflow-auto">
                                 <div className="flex items-center gap-4 ">
-                                    <h3 className={`font-semibold text-[#1D1D1D] text-xl`}>BORANG PENDAFTARAN PESAKIT DALAM </h3>
+                                    <h3 className={`font-semibold text-[#1D1D1D] text-xl`}>Admission Checklist </h3>
                                     <p className='text-[#1d1d1d] bg-[#F5F7FA] px-2 py-1 rounded-md font-medium'>Lorem Ipsum <span className='text-[#6E6E6E]'>08 Aug 2023</span></p>
                                 </div>
-                                <p className='pt-3 text-[#6E6E6E] font-medium'>BUTIR - BUTIR PESAKIT / PARTICULAR OF PATIENT</p>
-
-                                <div className={` ${previewDocument ? " grid-cols-1" : "grid-cols-2"} border p-3 rounded-lg border-[#cfd1d4] mt-1 text-sm grid gap4`}>
-                                    <div className="grid-cols-2 grid gap-x-4 space-y-1">
-                                        <p> No. Pesakit / NRIC</p>
-                                        <p className='font-semibold'>: 11887921 </p>
-                                        <p> No. Pesakit / NRIC</p>
-                                        <p className='font-semibold'>: Lorem Ipsum</p>
-                                        <p> Umur / Age</p>
-                                        <p className='font-semibold'>: 66</p>
-                                        <p> Tarikh Lahir / Date of Birth</p>
-                                        <p className='font-semibold'>: 15/9/1956 </p>
-                                        <p> Jantina / Sex</p>
-                                        <p className='font-semibold'>: Perempuan / Female</p>
-                                        <p> Taraf Perkahwinan / Status</p>
-                                        <p className='font-semibold'>: Berkahwin / Married</p>
-                                        <p> No. K/p / NRIC</p>
-                                        <p className='font-semibold'>: - </p>
-                                        <p> No. Passport / Passport No.</p>
-                                        <p className='font-semibold'>: -</p>
-                                        <p> Kewarganegaraan / Citizenship</p>
-                                        <p className='font-semibold'>:  MALAYSIA</p>
-                                        <p> Alamat Terkini / Current Address</p>
-                                        <p className='font-semibold'>: T/S XXX,  SANAJ SELANGOR</p>
-                                        <p> Daerah / District</p>
-                                        <p className='font-semibold'>: AMPANG</p>
-                                        <p> Poskod / Post Code:</p>
-                                        <p className='font-semibold'>: -</p>
-                                        <p> Negeri / State:</p>
-                                        <p className='font-semibold'>:  Selangor</p>
-                                    </div>
-                                    <div className="grid-cols-2 grid space-y-1 gap-x-4">
-                                        <p className=''>Bangsa / Race</p>
-                                        <p className='font-semibold'>: Cina / Chinese</p>
-                                        <p className=''>Agama / Religion</p>
-                                        <p className='font-semibold'>: Lorem Ipsum</p>
-                                        <p className=''>Hubungan dengan Pesakit / Relationship with Patient</p>
-                                        <p className='font-semibold'>: Buddha </p>
-                                        <p className=''>Nama Waris / Next of Kin</p>
-                                        <p className='font-semibold'>: Isteri / Wife</p>
-                                        <p className=''>Name</p>
-                                        <p className='font-semibold'>: Lorem Ipsum</p>
-                                        <p className=''>Alamat Waris / Next of Kin's Address</p>
-                                        <p className='font-semibold'>: SAMA / SAME AS ABOVE </p>
-                                        <p className=''>Nama Majikan / Employer's Name</p>
-                                        <p className='font-semibold'>: -</p>
-                                        <p className=''>No. Telefon / No.</p>
-                                        <p className='font-semibold'>: 012-1112223 </p>
-                                        <p className=''>No. Faks / Fax No.</p>
-                                        <p className='font-semibold'>: -</p>
-                                        <p className=''>Jenis Perusahaan / Type of Business</p>
-                                        <p className='font-semibold'>: -</p>
-                                        <p className=''>Posisi / Position</p>
-                                        <p className='font-semibold'>: -</p>
-                                        <p className=''>Punca Rujukan / Referral Source</p>
-                                        <p className='font-semibold'>: Klinik Swasta / Private Clinic</p>
-                                    </div>
-                                </div>
-                                <p className='pt-3 text-[#6E6E6E] font-medium'>LENGKAPKAN BAHAGIAN INI SEKIRANYA PESAKIT BAWAH UMUR</p>
+                                <p className='pt-3 text-[#6E6E6E] font-medium'>Admission Letter</p>
 
                                 <div className={` ${previewDocument ? " grid-cols-1" : "grid-cols-2"} border p-3 rounded-lg border-[#cfd1d4] mt-1 text-sm grid gap4`}>
                                     <div className="grid-cols-2 grid space-y-1">
-                                        <p className=''>Nama Ibu / Name of Mother</p>
+                                        <p className=''>Patient’s Name</p>
+                                        <p className='font-semibold'>: Lorem Ipsum</p>
+                                        <p className=''>Sex</p>
+                                        <p className='font-semibold'>: - </p>
+                                        <p className=''>Age</p>
+                                        <p className='font-semibold'>: 07/10/1956 </p>
+                                        <p className=''>NRIC/Birth Cert/Passport/Others</p>
+                                        <p className='font-semibold'>: - </p>
+                                        <p className=''>Type of Accommodation</p>
+                                        <div className=""><input type="checkbox" className='mr-1' /> <label htmlFor="">Vip Suite</label><input type="checkbox" className='mr-1 ml-3' /> <label htmlFor="">Exec. Deluxe</label><input type="checkbox" className='mr-1 ml-3' /> <label htmlFor=""> Deluxe</label><input type="checkbox" className='mr-1 ml-3' /> <label htmlFor=""> Single</label><input type="checkbox" className='mr-1 ml-3' /> <label htmlFor="">Two Bedded</label>    </div>
+                                    </div>
+                                    <div className="grid-cols-2 grid space-y-1">
+                                        <p className=''>Admission Date</p>
+                                        <p className='font-semibold'>: 5/9/23</p>
+                                        <p className=''>Time</p>
+                                        <p className='font-semibold'>: 9 am</p>
+                                        <p className=''>Operation Date</p>
+                                        <p className='font-semibold'>: 5/9/23</p>
+                                        <p className=''>Provisional Diagnosis</p>
+                                        <p className='font-semibold'>: Bladder tumour </p>
+                                        <p className=''>Nature of Operation (if applicable):</p>
+                                        <p className='font-semibold'>: Cystectomy </p>
+                                    </div>
+                                </div>
+                                <p className='pt-3 text-[#6E6E6E] font-medium'>Procedure</p>
+
+                                <div className={` ${previewDocument ? " grid-cols-1" : "grid-cols-2"} border p-3 rounded-lg border-[#cfd1d4] mt-1 text-sm grid gap4`}>
+                                    <div className="grid-cols-2 grid space-y-1">
+                                        <div className=""><input type="checkbox" className='mr-1' /> <label htmlFor="">Major Procedure</label></div>
+                                        <div className=""><input type="checkbox" className='mr-1' /> <label htmlFor=""> Minor Procedure</label></div>
+                                        <p className=''>Operation involve</p>
                                         <p className='font-semibold'>: -</p>
-                                        <p className=''>Nama Majikan Ibu / Employer’s Name</p>
-                                        <p className='font-semibold'>: - </p>
-                                        <p className=''>No. K/P Ibu / NRIC / Passport No</p>
-                                        <p className='font-semibold'>: - </p>
-                                        <p className=''>Alamat Majikan Ibu / Employer’s Address:</p>
-                                        <p className='font-semibold'>: - </p>
-                                        <p className=''>Nama Bapa / Name of Father</p>
-                                        <p className='font-semibold'>: - </p>
-                                        <p className=''>Nama Majikan Bapa / Employer’s Name</p>
-                                        <p className='font-semibold'>: - </p>
+                                        <div className=""><input type="checkbox" className='mr-1' /> <label htmlFor="">  Implant</label></div>
+                                        <p></p>
+                                        <div className=""><input type="checkbox" className='mr-1' /> <label htmlFor="">  Non-implant</label></div>
                                     </div>
                                     <div className="grid-cols-2 grid space-y-1">
 
-                                        <p className=''>Alamat Majikan Bapa / Employer’s Address</p>
-                                        <p className='font-semibold'>: - </p>
-                                        <p className=''>No. Telefon Majikan / Employer’s Tel. No.</p>
-                                        <p className='font-semibold'>: - </p>
-                                        <p className=''>Alamat Ibu dan Pesakit / Address of Mother and Patient</p>
-                                        <p className='font-semibold'>: - </p>
-                                        <p className=''>Nama Majikan Bapa / Employer’s Address</p>
-                                        <p className='font-semibold'>: - </p>
-                                        <p className=''>No. Telefon Majikan / Employer’s Tel. No</p>
-                                        <p className='font-semibold'>: - </p>
+                                        <p className='font-semibold col-span-2'>Instructions On Admission To    :</p>
+                                        <div className=""><input type="checkbox" className='mr-1' /> <label htmlFor="">   O&G</label></div>
+                                        <div className=""><input type="checkbox" className='mr-1' /> <label htmlFor="">   Surgical</label></div>
+                                        <div className=""><input type="checkbox" className='mr-1' /> <label htmlFor="">   Orthopaedic</label></div>
+                                        <div className=""><input type="checkbox" className='mr-1' /> <label htmlFor=""> Orthopaedic</label></div>
+                                    </div>
+                                    <div className="border-b w-full col-span-2 my-3"></div>
+                                    <div className="grid-cols-2 grid space-y-1">
+
+                                        <p className='font-semibold col-span-2'>Mode of Payment:</p>
+                                        <div className=""><input type="checkbox" className='mr-1' /> <label htmlFor="">   Self Pay</label></div>
+                                        <p></p>
+                                        <div className=""><input type="checkbox" className='mr-1' /> <label htmlFor="">   Guarantee Letter</label></div>
+                                        <p></p>
+                                        <p className=''>Instruction for Ward Staff</p>
+                                        <p className='font-semibold'>: -</p>
+                                        <p className=''>Estimated Total Bill</p>
+                                        <p className='font-bold'>: RM 1800</p>
                                     </div>
                                 </div>
-
 
 
                             </div>
@@ -207,4 +179,4 @@ const InpatientRegistrationPopup = ({ setPopup3 }) => {
     )
 }
 
-export default InpatientRegistrationPopup
+export default DischargeChitPopup

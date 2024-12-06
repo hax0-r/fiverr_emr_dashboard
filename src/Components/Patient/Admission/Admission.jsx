@@ -10,6 +10,7 @@ import PatientInformationPopup from './PatientInformationPopup'
 import WardProceduresPopup from './WardProceduresPopup'
 import InpatientRegistrationPopup from './InpatientRegistrationPopup'
 import AdmissionLetterPopup from './AdmissionLetterPopup'
+import DischargeChitPopup from './DischargeChitPopup'
 
 
 const Admission = () => {
@@ -64,7 +65,7 @@ const Admission = () => {
                             <img src={AdmissionLetter} alt="" />
                             <h2 className='text-lg font-semibold'>Admission Letter</h2>
                         </div>
-                        <PiArrowsOutSimpleBold className='text-[#9F9FA1] cursor-pointer text-2xl' onClick={() => setPopup2(true)} />
+                        <PiArrowsOutSimpleBold className='text-[#9F9FA1] cursor-pointer text-2xl' onClick={() => setPopup5(true)} />
                     </div>
                     <div className="border-b border-[#cfd1d4]"></div>
                     <div className="p-4 flex flex-col gap-3 font-medium">
@@ -218,7 +219,7 @@ const Admission = () => {
                             <img src={pdfFile} alt="" />
                             <div className="">
                                 <h3 className='font-medium text-[#1D1D1D]'>Admission Ward Procedures</h3>
-                               <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between">
                                     <p className='text-sm pt-1 text-[#1d1d1d]'>Lorem Ipsum</p>
                                     <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
                                 </div>
@@ -228,7 +229,7 @@ const Admission = () => {
                             <img src={pdfFile} alt="" />
                             <div className="">
                                 <h3 className='font-medium text-[#1D1D1D]'>Admission Ward Procedures</h3>
-                               <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between">
                                     <p className='text-sm pt-1 text-[#1d1d1d]'>Lorem Ipsum</p>
                                     <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
                                 </div>
@@ -246,6 +247,8 @@ const Admission = () => {
                     </div>
                 )
             }
+            {/* Discharge Chit == Addmission letter */}
+            {/* due to mistake */}
             {
                 popup2 && (
                     <div className="fastFadeIn">
@@ -264,6 +267,15 @@ const Admission = () => {
                 popup4 && (
                     <div className="fastFadeIn">
                         <PatientInformationPopup setPopup4={setPopup4} />
+                    </div>
+                )
+            }
+            {/*  Addmission letter Discharge Chit == */}
+            {/* due to mistake */}
+            {
+                popup5 && (
+                    <div className="fastFadeIn">
+                        <DischargeChitPopup setPopup5={setPopup5} />
                     </div>
                 )
             }

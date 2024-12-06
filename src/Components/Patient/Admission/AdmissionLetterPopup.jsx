@@ -30,7 +30,7 @@ const AdmissionLetterPopup = ({ setPopup2 }) => {
                 <div className="flex items-center justify-between p-4 ">
                     <div className="flex items-center justify-between gap-3">
                         <img src={AdmissionLetter} alt="" />
-                        <h2 className='text-lg font-semibold'>Admission Letter </h2>
+                        <h2 className='text-lg font-semibold'>Discharge Chit </h2>
                     </div>
                     {
                         previewDocument ? (
@@ -59,21 +59,21 @@ const AdmissionLetterPopup = ({ setPopup2 }) => {
                                 <div className="max-w-[30%]   w-full">
                                     <div className=" flex flex-col gap-3 font-medium">
                                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                                            <h3 className='font-medium '>Admission Letter </h3>
+                                            <h3 className='font-medium '>Discharge Chit </h3>
                                             <div className="flex items-center justify-between">
                                                 <p className='text-sm pt-1'>Lorem Ipsum</p>
                                                 <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                                             </div>
                                         </div>
                                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                                            <h3 className='font-medium '>Admission Letter </h3>
+                                            <h3 className='font-medium '>Discharge Chit </h3>
                                             <div className="flex items-center justify-between">
                                                 <p className='text-sm pt-1'>Lorem Ipsum</p>
                                                 <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                                             </div>
                                         </div>
                                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                                            <h3 className='font-medium '>Admission Letter </h3>
+                                            <h3 className='font-medium '>Discharge Chit </h3>
                                             <div className="flex items-center justify-between">
                                                 <p className='text-sm pt-1'>Lorem Ipsum</p>
                                                 <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
