@@ -1,11 +1,13 @@
 import React, { useRef, useState } from 'react'
-import { PiArrowsOutSimpleBold, PiPackageBold, PiPrinterBold } from 'react-icons/pi'
+import { PiArrowsOutSimpleBold, PiBuildings, PiPackageBold, PiPrinterBold } from 'react-icons/pi'
 import receipt from "../../../assets/receipt24.png"
 import LabReport from "../../../assets/LabReport.svg"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
 import { MdClose } from 'react-icons/md'
 import Print from '../Print'
+import { IoLocationOutline } from 'react-icons/io5'
+import { SlLocationPin } from 'react-icons/sl'
 
 const LabReportPopup = ({ setPopup1 }) => {
     const [previewDocument, setPreviewDocument] = useState(false)
@@ -71,7 +73,7 @@ const LabReportPopup = ({ setPopup1 }) => {
                                                 <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
                                             </div>
                                         </div>
-                                        <div className={` cursor-pointer ${activeTabLeft == "" && "bg-[#f5f7fa]"} border p-3 rounded-lg border-[#cfd1d4] w-full`}>
+                                        <div className={` cursor-pointer ${activeTabLeft == "Endocrine Test" && "bg-[#f5f7fa]"} border p-3 rounded-lg border-[#cfd1d4] w-full`} onClick={() => setActiveTabLeft("Endocrine Test")}>
                                             <h3 className='font-medium text-[#1D1D1D]'>Endocrine Test</h3>
                                             <div className="flex items-center justify-between mt-2">
                                                 <div className="flex items-center gap-2">
@@ -482,13 +484,13 @@ const LabReportPopup = ({ setPopup1 }) => {
                                                                         <td className="px-4 py-2.5">3.1</td>
                                                                         <td className="px-4 py-2.5">-</td>
                                                                         <td className="px-4 py-2.5">Normal Value
-                                                                           <br /> MALE
-                                                                           <br /> (Under 50 yrs old): 0 - 15 mm/hour
-                                                                           <br /> (Over 50 yrs old): 0 - 20 mm/hour
-                                                                           <br /> FEMALE
-                                                                           <br /> (Under 50 yrs old): 0 - 20 mm/hour
-                                                                           <br /> (Over 50 yrs old): 0 - 15 mm/hour
-                                                                            </td>
+                                                                            <br /> MALE
+                                                                            <br /> (Under 50 yrs old): 0 - 15 mm/hour
+                                                                            <br /> (Over 50 yrs old): 0 - 20 mm/hour
+                                                                            <br /> FEMALE
+                                                                            <br /> (Under 50 yrs old): 0 - 20 mm/hour
+                                                                            <br /> (Over 50 yrs old): 0 - 15 mm/hour
+                                                                        </td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -577,7 +579,110 @@ const LabReportPopup = ({ setPopup1 }) => {
                                                 )
                                             }
 
+
                                         </div>
+                                    )
+                                }
+                                {
+                                    activeTabLeft == "Endocrine Test" && (
+
+
+                                        <div className="">
+                                            <div className={` bg-[#f7f8fa] ${previewDocument ? " grid-cols-1" : "grid-cols-3"} border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm grid gap4`}>
+                                                <div className="grid-cols-2 grid space-y-1">
+                                                    <p className=''> Name</p>
+                                                    <p className='font-semibold'>: Lorem Ipsum</p>
+                                                    <p className=''>Malysia New IC</p>
+                                                    <p className='font-semibold'>: 1111222233334 </p>
+                                                    <p className=''>DOB</p>
+                                                    <p className='font-semibold'>: 07/10/1956 </p>
+                                                    <p className=''>Age/Gender</p>
+                                                    <p className='font-semibold'>: F241004001 </p>
+                                                </div>
+                                                <div className="grid-cols-2 grid space-y-1">
+                                                    <p className=''>Lab No</p>
+                                                    <p className='font-semibold'>: -</p>
+                                                    <p className=''>MRN</p>
+                                                    <p className='font-semibold'>: Lorem Ipsum</p>
+                                                    <p className=''>Location</p>
+                                                    <p className='font-semibold'>: V12121212 </p>
+                                                    <p className=''>Reference</p>
+                                                    <p className='font-semibold'>: - </p>
+                                                </div>
+                                                <div className="grid-cols-2 grid space-y-1">
+                                                    <p className=''>Branch</p>
+                                                    <p className='font-semibold'>: -</p>
+                                                    <p className=''>Collected</p>
+                                                    <p className='font-semibold'>: Lorem Ipsum</p>
+                                                    <p className=''>Received</p>
+                                                    <p className='font-semibold'>: 24/07/2024 09:18:15 </p>
+                                                    <p className=''>Reported</p>
+                                                    <p className='font-semibold'>: - </p>
+                                                </div>
+                                            </div>
+                                            <div className={` ${previewDocument ? " grid-cols-1" : "grid-cols-2"} border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm grid gap4`}>
+                                                <p className='text-[#6E6E6E]'> Requester :</p>
+                                                <div className="flex items-center gap-1">
+                                                    <PiBuildings className='text-[#6E6E6E] text-lg' />
+                                                    <p className='font-medium'> UKM SPECIALIST CLINIC (UKMSC)</p>
+                                                </div>
+                                                <p className='text-lg font-semibold'>PROF. DR Norlela Sukor</p>
+                                                <div className="flex items-center gap-1">
+                                                    <SlLocationPin className='text-[#6E6E6E]' />
+                                                    <p className='font-medium'>7th Floor, Clinic Blok UKMMC, Cheras, 65000 </p>
+                                                </div>
+                                            </div>
+
+                                            <div className="flex justify-center items-center">
+                                                <div className="w-full bg-white rounded-lg border mt-4">
+                                                    <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
+                                                        {/* Table Header */}
+                                                        <thead className=" border-b">
+                                                            <tr>
+                                                                <th className="px-4 py-2.5 text-left font-medium">No</th>
+                                                                <th className="px-4 py-2.5 text-left font-medium">Test Name</th>
+                                                                <th className="px-4 py-2.5 text-left font-medium">Result</th>
+                                                                <th className="px-4 py-2.5 text-left font-medium">Flag</th>
+                                                                <th className="px-4 py-2.5 text-left font-medium">Unit</th>
+                                                                <th className="px-4 py-2.5 text-left font-medium">Reference Range</th>
+                                                            </tr>
+                                                        </thead>
+
+                                                        {/* Table Body */}
+                                                        <tbody>
+                                                            <tr className="border-b bg-[#f5f7fa]">
+                                                                <td className="px-4 py-2.5">1</td>
+                                                                <td className="px-4 py-2.5">Total Cholesterol</td>
+                                                                <td className="px-4 py-2.5">4.4</td>
+                                                                <td className="px-4 py-2.5"></td>
+                                                                <td className="px-4 py-2.5">(&lt;20)</td>
+                                                                <td className="px-4 py-2.5">(&lt;20)</td>
+                                                            </tr>
+                                                            <tr className="border-b">
+                                                                <td className="px-4 py-2.5">2</td>
+                                                                <td className="px-4 py-2.5">HDL Cholesterol</td>
+                                                                <td className="px-4 py-2.5">1.43</td>
+                                                                <td className="px-4 py-2.5"></td>
+                                                                <td className="px-4 py-2.5">(1.04-1.55)</td>
+                                                                <td className="px-4 py-2.5">(1.04-1.55)</td>
+                                                            </tr>
+                                                            <tr className="border-b bg-[#f5f7fa]">
+                                                                <td className="px-4 py-2.5">3</td>
+                                                                <td className="px-4 py-2.5">LDL Cholesterol</td>
+                                                                <td className="px-4 py-2.5">2.7</td>
+                                                                <td className="px-4 py-2.5"></td>
+                                                                <td className="px-4 py-2.5">(&lt;20)</td>
+                                                                <td className="px-4 py-2.5">(&lt;20)</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
                                     )
                                 }
 
