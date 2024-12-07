@@ -129,8 +129,11 @@ const DischargeChitPopup = ({ setPopup5 }) => {
                                         <p></p>
                                         <div className=""><input type="checkbox" className='mr-1' /> <label htmlFor="">  Non-implant</label></div>
                                     </div>
-                                    <div className="grid-cols-2 grid space-y-1">
-
+                                    <div className="grid-cols-2 grid space-y-1 gap-x-5">
+                                    <p className='font-semibold col-span-2'></p>
+                                    <p className='font-semibold col-span-2'></p>
+                                    <p className='font-semibold col-span-2'></p>
+                                    <p className='font-semibold col-span-2'></p>
                                         <p className='font-semibold col-span-2'>Instructions On Admission To    :</p>
                                         <div className=""><input type="checkbox" className='mr-1' /> <label htmlFor="">   O&G</label></div>
                                         <div className=""><input type="checkbox" className='mr-1' /> <label htmlFor="">   Surgical</label></div>
