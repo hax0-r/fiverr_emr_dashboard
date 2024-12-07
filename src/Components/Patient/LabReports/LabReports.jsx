@@ -92,7 +92,7 @@ const LabReports = () => {
               </div>
             </div>
             <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Full Blood Count</h3>
+              <h3 className='font-medium text-[#1D1D1D]'>Endocrine Test</h3>
               <div className="flex items-center justify-between mt-2">
                 <div className="flex items-center gap-2">
                   <PiPackageBold />
@@ -102,7 +102,7 @@ const LabReports = () => {
               </div>
             </div>
             <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Urine Test</h3>
+              <h3 className='font-medium text-[#1D1D1D]'>Endocrine Test</h3>
               <div className="flex items-center justify-between mt-2">
                 <div className="flex items-center gap-2">
                   <PiPackageBold />
