@@ -126,7 +126,7 @@ const Patient = () => {
                                         <td className="border-t border-[#CFD1D4] px-2 py-4 text-sm">{row.totalDocuments}</td>
                                         <td className="border-t border-[#CFD1D4] px-2 py-4 text-sm">{row.scanDateTime}</td>
                                         <td className="border-t border-[#CFD1D4] px-2 py-4  flex ">
-                                            <Link to={"/emr"} className="flex items-center transition-all duration-500 justify-center w-8 h-8 bg-primary text-white rounded-full hover:opacity-95">
+                                            <Link to={`/${row.linked}`} className="flex items-center transition-all duration-500 justify-center w-8 h-8 bg-primary text-white rounded-full hover:opacity-95">
                                                 <IoArrowForward />
                                             </Link>
                                         </td>

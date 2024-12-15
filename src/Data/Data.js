@@ -5,6 +5,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 2,
@@ -12,6 +13,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "6 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr2"
     },
     {
       id: 3,
@@ -19,6 +21,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 4,
@@ -26,6 +29,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Amirul Hakim bin Hamzah",
       totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 5,
@@ -33,6 +37,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Amirul Hakim bin Hamzah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 6,
@@ -40,6 +45,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Amirul Hakim bin Hamzah",
       totalDocuments: "7 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 7,
@@ -47,6 +53,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Amirul Hakim bin Hamzah",
       totalDocuments: "3 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 8,
@@ -54,6 +61,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 9,
@@ -61,6 +69,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "3 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -68,6 +77,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -75,6 +85,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -82,6 +93,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -89,6 +101,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -96,6 +109,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -103,6 +117,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -110,6 +125,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -117,6 +133,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -124,6 +141,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -131,6 +149,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -138,6 +157,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -145,6 +165,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -152,6 +173,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -159,6 +181,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -166,6 +189,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -173,6 +197,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -180,6 +205,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -187,6 +213,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -194,6 +221,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -201,6 +229,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -208,6 +237,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -215,6 +245,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -222,6 +253,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -229,6 +261,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -236,6 +269,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -243,6 +277,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -250,6 +285,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -257,6 +293,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -264,6 +301,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -271,6 +309,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -278,6 +317,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -285,6 +325,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -292,6 +333,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -299,6 +341,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -306,6 +349,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -313,6 +357,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -320,6 +365,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -327,6 +373,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -334,6 +381,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -341,6 +389,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -348,6 +397,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -355,6 +405,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -362,6 +413,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -369,6 +421,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -376,6 +429,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -383,6 +437,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -390,6 +445,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -397,6 +453,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -404,6 +461,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -411,6 +469,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -418,6 +477,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -425,6 +485,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -432,6 +493,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -439,6 +501,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -446,6 +509,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -453,6 +517,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -460,6 +525,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -467,6 +533,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -474,6 +541,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -481,6 +549,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -488,6 +557,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -495,6 +565,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -502,6 +573,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -509,6 +581,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -516,6 +589,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -523,6 +597,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -530,6 +605,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -537,6 +613,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -544,6 +621,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -551,6 +629,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -558,6 +637,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -565,6 +645,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -572,6 +653,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -579,6 +661,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -586,6 +669,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -593,6 +677,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -600,6 +685,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -607,6 +693,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -614,6 +701,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -621,6 +709,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -628,6 +717,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -635,6 +725,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
     {
       id: 10,
@@ -642,6 +733,7 @@ export const TABLE_DATA = [
       doctorName: "Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
+      linked:"emr"
     },
   ];
   
