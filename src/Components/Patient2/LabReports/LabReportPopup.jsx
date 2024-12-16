@@ -11,10 +11,10 @@ import { SlLocationPin } from 'react-icons/sl'
 
 const LabReportPopup = ({ setPopup1 }) => {
     const [previewDocument, setPreviewDocument] = useState(false)
-    const [activeTab, setActiveTab] = useState("Lifid Profile")
-    const [activeTab2, setActiveTab2] = useState("Renal Test")
-    const [activeTab3, setActiveTab3] = useState("Haematology")
-    const [activeTabLeft, setActiveTabLeft] = useState("Full Blood Count")
+    const [activeTab, setActiveTab] = useState("Special Chemistry")
+    const [activeTab2, setActiveTab2] = useState("Haematology")
+    const [activeTab3, setActiveTab3] = useState("Urine Appearance")
+    const [activeTabLeft, setActiveTabLeft] = useState("Thyroid Function Tests")
 
     const popUp = useRef()
 
@@ -63,8 +63,8 @@ const LabReportPopup = ({ setPopup1 }) => {
                             !previewDocument && (
                                 <div className="max-w-[30%]  w-full">
                                     <div className="flex flex-col gap-3">
-                                        <div className={` cursor-pointer ${activeTabLeft == "Full Blood Count" && "bg-[#f5f7fa]"} border p-3 rounded-lg border-[#cfd1d4] w-full`} onClick={() => setActiveTabLeft("Full Blood Count")}>
-                                            <h3 className='font-medium text-[#1D1D1D]'> Full Blood Count</h3>
+                                        <div className={` cursor-pointer ${activeTabLeft == "Thyroid Function Tests" && "bg-[#f5f7fa]"} border p-3 rounded-lg border-[#cfd1d4] w-full`} onClick={() => setActiveTabLeft("Thyroid Function Tests")}>
+                                            <h3 className='font-medium text-[#1D1D1D]'> Thyroid Function Tests</h3>
                                             <div className="flex items-center justify-between mt-2">
                                                 <div className="flex items-center gap-2">
                                                     <PiPackageBold />
@@ -73,8 +73,8 @@ const LabReportPopup = ({ setPopup1 }) => {
                                                 <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
                                             </div>
                                         </div>
-                                        <div className={` cursor-pointer ${activeTabLeft == "Endocrine Test" && "bg-[#f5f7fa]"} border p-3 rounded-lg border-[#cfd1d4] w-full`} onClick={() => setActiveTabLeft("Endocrine Test")}>
-                                            <h3 className='font-medium text-[#1D1D1D]'>Endocrine Test</h3>
+                                        <div className={` cursor-pointer ${activeTabLeft == "General Screening DPS3C Profile" && "bg-[#f5f7fa]"} border p-3 rounded-lg border-[#cfd1d4] w-full`} onClick={() => setActiveTabLeft("General Screening DPS3C Profile")}>
+                                            <h3 className='font-medium text-[#1D1D1D]'>General Screening DPS3C Profile</h3>
                                             <div className="flex items-center justify-between mt-2">
                                                 <div className="flex items-center gap-2">
                                                     <PiPackageBold />
@@ -83,8 +83,8 @@ const LabReportPopup = ({ setPopup1 }) => {
                                                 <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
                                             </div>
                                         </div>
-                                        <div className={` cursor-pointer ${activeTabLeft == "Liver" && "bg-[#f5f7fa]"} border p-3 rounded-lg border-[#cfd1d4] w-full`} onClick={() => setActiveTabLeft("Liver")}>
-                                            <h3 className='font-medium text-[#1D1D1D]'>Liver</h3>
+                                        <div className={` cursor-pointer ${activeTabLeft == "Serum/Plasma Glucose" && "bg-[#f5f7fa]"} border p-3 rounded-lg border-[#cfd1d4] w-full`} onClick={() => setActiveTabLeft("Serum/Plasma Glucose")}>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Serum/Plasma Glucose</h3>
                                             <div className="flex items-center justify-between mt-2">
                                                 <div className="flex items-center gap-2">
                                                     <PiPackageBold />
@@ -93,8 +93,28 @@ const LabReportPopup = ({ setPopup1 }) => {
                                                 <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
                                             </div>
                                         </div>
-                                        <div className={` cursor-pointer ${activeTabLeft == "Urine Test" && "bg-[#f5f7fa]"} border p-3 rounded-lg border-[#cfd1d4] w-full`} onClick={() => setActiveTabLeft("Urine Test")}>
-                                            <h3 className='font-medium text-[#1D1D1D]'>Urine Test</h3>
+                                        <div className={` cursor-pointer ${activeTabLeft == "Urine Feme" && "bg-[#f5f7fa]"} border p-3 rounded-lg border-[#cfd1d4] w-full`} onClick={() => setActiveTabLeft("Urine Feme")}>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Urine Feme</h3>
+                                            <div className="flex items-center justify-between mt-2">
+                                                <div className="flex items-center gap-2">
+                                                    <PiPackageBold />
+                                                    <p className='text-sm'>Histopathology</p>
+                                                </div>
+                                                <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
+                                            </div>
+                                        </div>
+                                        <div className={` cursor-pointer ${activeTabLeft == "General Biochemistry" && "bg-[#f5f7fa]"} border p-3 rounded-lg border-[#cfd1d4] w-full`} onClick={() => setActiveTabLeft("General Biochemistry")}>
+                                            <h3 className='font-medium text-[#1D1D1D]'>General Biochemistry</h3>
+                                            <div className="flex items-center justify-between mt-2">
+                                                <div className="flex items-center gap-2">
+                                                    <PiPackageBold />
+                                                    <p className='text-sm'>Histopathology</p>
+                                                </div>
+                                                <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
+                                            </div>
+                                        </div>
+                                        <div className={` cursor-pointer ${activeTabLeft == "Special Chemistry" && "bg-[#f5f7fa]"} border p-3 rounded-lg border-[#cfd1d4] w-full`} onClick={() => setActiveTabLeft("Special Chemistry")}>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Special Chemistry</h3>
                                             <div className="flex items-center justify-between mt-2">
                                                 <div className="flex items-center gap-2">
                                                     <PiPackageBold />
@@ -108,615 +128,636 @@ const LabReportPopup = ({ setPopup1 }) => {
                             )
                         }
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
-                            <div className="border max-h-[65vh] overflow-auto px-3 pb-4 rounded-lg border-[#cfd1d4]">
+                            <div className="border max-h-[60vh] overflow-auto px-3 pb-4 rounded-lg border-[#cfd1d4]">
                                 <div className="flex py-3 border-b items-center justify-between">
-                                    <h3 className='font-semibold text-[#1D1D1D] text-xl mt-2'>{activeTabLeft === "Endocrine Test"
-                                        ? "Endocrine Test"
-                                        : activeTabLeft === "Liver"
-                                            ? "Liver"
-                                            : activeTabLeft == "Urine Test" ? "Urine Test": "Full Blood Count"}
+                                    <h3 className='font-semibold text-[#1D1D1D] text-xl mt-2'>{activeTabLeft === "Serum/Plasma Glucose"
+                                        ? "Serum/Plasma Glucose"
+                                        : activeTabLeft === "General Screening DPS3C Profile"
+                                            ? "General Screening DPS3C Profile"
+                                            : activeTabLeft == "Urine Feme" ? "Urine Feme" : activeTabLeft == "Thyroid Function Tests" ? "Thyroid Function Tests" : activeTabLeft == "General Biochemistry" ? "General Biochemistry" : "Special Chemistry"}
                                     </h3>
-                                    <div className="flex gap-3 items-center">
-                                        <label className='font-medium' htmlFor="">Test Date : </label>
-                                        <input type="date" className='border p-2 rounded-lg' />
-                                    </div>
                                 </div>
 
                                 {
-                                    activeTabLeft == "Full Blood Count" && (
-                                        <div className="py-3 rounded-lg border border-[#cfd1d4]">
-                                            <div className="flex text-lg border-b pb-2 border-[#cfd1d4] text-[#6E6E6E] items-center gap-3 px-3">
-                                                <p onClick={() => setActiveTab("Lifid Profile")} className={`cursor-pointer ${activeTab == "Lifid Profile" && "text-secondary"}`}>Lifid Profile</p>
-                                                <div className="h-5 border border-[#cfd1d4]"></div>
-                                                <p onClick={() => setActiveTab("Biochemistry")} className={`cursor-pointer ${activeTab == "Biochemistry" && "text-secondary"}`}>Biochemistry</p>
-                                                <div className="h-5 border border-[#cfd1d4]"></div>
-                                                <p className={`cursor-pointer ${activeTab == "Full Blood Count" && "text-secondary"}`} onClick={() => setActiveTab("Full Blood Count")}>Full Blood Count</p>
-                                            </div>
-                                            {
-                                                activeTab == "Lifid Profile" && (
-                                                    <div className="flex justify-center items-center">
-                                                        <div className="w-full bg-white rounded-lg">
-                                                            <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
-                                                                {/* Table Header */}
-                                                                <thead className=" border-b">
-                                                                    <tr>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">No</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Name</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Result</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Unit</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Ref Range</th>
-                                                                    </tr>
-                                                                </thead>
-
-                                                                {/* Table Body */}
-                                                                <tbody>
-                                                                    <tr className="border-b bg-[#f5f7fa]">
-                                                                        <td className="px-4 py-2.5">1</td>
-                                                                        <td className="px-4 py-2.5">Total Cholesterol</td>
-                                                                        <td className="px-4 py-2.5">4.4</td>
-                                                                        <td className="px-4 py-2.5">mmol/L</td>
-                                                                        <td className="px-4 py-2.5">(&lt;20)</td>
-                                                                    </tr>
-                                                                    <tr className="border-b">
-                                                                        <td className="px-4 py-2.5">2</td>
-                                                                        <td className="px-4 py-2.5">HDL Cholesterol</td>
-                                                                        <td className="px-4 py-2.5">1.43</td>
-                                                                        <td className="px-4 py-2.5">mmol/L</td>
-                                                                        <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                                    </tr>
-                                                                    <tr className="border-b bg-[#f5f7fa]">
-                                                                        <td className="px-4 py-2.5">3</td>
-                                                                        <td className="px-4 py-2.5">LDL Cholesterol</td>
-                                                                        <td className="px-4 py-2.5">2.7</td>
-                                                                        <td className="px-4 py-2.5">mmol/L</td>
-                                                                        <td className="px-4 py-2.5">(&lt;20)</td>
-                                                                    </tr>
-                                                                    <tr className="border-b">
-                                                                        <td className="px-4 py-2.5">4</td>
-                                                                        <td className="px-4 py-2.5">Triglycerides</td>
-                                                                        <td className="px-4 py-2.5">0.6</td>
-                                                                        <td className="px-4 py-2.5">mmol/L</td>
-                                                                        <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                                    </tr>
-                                                                    <tr className='bg-[#f5f7fa]'>
-                                                                        <td className="px-4 py-2.5">5</td>
-                                                                        <td className="px-4 py-2.5">Total/ HDL Ratio</td>
-                                                                        <td className="px-4 py-2.5">3.1</td>
-                                                                        <td className="px-4 py-2.5">-</td>
-                                                                        <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                )
-                                            }
-                                            {
-                                                activeTab == "Biochemistry" && (
-                                                    <div className="flex justify-center items-center">
-                                                        <div className="w-full bg-white rounded-lg">
-                                                            <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
-                                                                {/* Table Header */}
-                                                                <thead className=" border-b">
-                                                                    <tr>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">No</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Name</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Result</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Unit</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Ref Range</th>
-                                                                    </tr>
-                                                                </thead>
-
-                                                                {/* Table Body */}
-                                                                <tbody>
-                                                                    <tr className='bg-[#f5f7fa]'>
-                                                                        <td className="px-4 py-2.5">1</td>
-                                                                        <td className="px-4 py-2.5">Total/ HDL Ratio</td>
-                                                                        <td className="px-4 py-2.5">3.1</td>
-                                                                        <td className="px-4 py-2.5">-</td>
-                                                                        <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                )
-                                            }
-                                            {
-                                                activeTab == "Full Blood Count" && (
-                                                    <div className="flex justify-center items-center">
-                                                        <div className="w-full bg-white rounded-lg">
-                                                            <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
-                                                                {/* Table Header */}
-                                                                <thead className=" border-b">
-                                                                    <tr>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">No</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Name</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Result</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Unit</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Ref Range</th>
-                                                                    </tr>
-                                                                </thead>
-
-                                                                {/* Table Body */}
-                                                                <tbody>
-                                                                    <tr className="border-b bg-[#f5f7fa]">
-                                                                        <td className="px-4 py-2.5">1</td>
-                                                                        <td className="px-4 py-2.5">Total Cholesterol</td>
-                                                                        <td className="px-4 py-2.5">4.4</td>
-                                                                        <td className="px-4 py-2.5">mmol/L</td>
-                                                                        <td className="px-4 py-2.5">(&lt;20)</td>
-                                                                    </tr>
-                                                                    <tr className="border-b">
-                                                                        <td className="px-4 py-2.5">2</td>
-                                                                        <td className="px-4 py-2.5">HDL Cholesterol</td>
-                                                                        <td className="px-4 py-2.5">1.43</td>
-                                                                        <td className="px-4 py-2.5">mmol/L</td>
-                                                                        <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                                    </tr>
-                                                                    <tr className="border-b bg-[#f5f7fa]">
-                                                                        <td className="px-4 py-2.5">3</td>
-                                                                        <td className="px-4 py-2.5">LDL Cholesterol</td>
-                                                                        <td className="px-4 py-2.5">2.7</td>
-                                                                        <td className="px-4 py-2.5">mmol/L</td>
-                                                                        <td className="px-4 py-2.5">(&lt;20)</td>
-                                                                    </tr>
-                                                                    <tr className="border-b">
-                                                                        <td className="px-4 py-2.5">4</td>
-                                                                        <td className="px-4 py-2.5">Triglycerides</td>
-                                                                        <td className="px-4 py-2.5">0.6</td>
-                                                                        <td className="px-4 py-2.5">mmol/L</td>
-                                                                        <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                                    </tr>
-                                                                    <tr className='bg-[#f5f7fa]'>
-                                                                        <td className="px-4 py-2.5">5</td>
-                                                                        <td className="px-4 py-2.5">Total/ HDL Ratio</td>
-                                                                        <td className="px-4 py-2.5">3.1</td>
-                                                                        <td className="px-4 py-2.5">-</td>
-                                                                        <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                                    </tr>
-                                                                    <tr className="border-b bg-[#f5f7fa]">
-                                                                        <td className="px-4 py-2.5">6</td>
-                                                                        <td className="px-4 py-2.5">LDL Cholesterol</td>
-                                                                        <td className="px-4 py-2.5">2.7</td>
-                                                                        <td className="px-4 py-2.5">mmol/L</td>
-                                                                        <td className="px-4 py-2.5">(&lt;20)</td>
-                                                                    </tr>
-                                                                    <tr className="border-b">
-                                                                        <td className="px-4 py-2.5">7</td>
-                                                                        <td className="px-4 py-2.5">Triglycerides</td>
-                                                                        <td className="px-4 py-2.5">0.6</td>
-                                                                        <td className="px-4 py-2.5">mmol/L</td>
-                                                                        <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                                    </tr>
-                                                                    <tr className='bg-[#f5f7fa]'>
-                                                                        <td className="px-4 py-2.5">8</td>
-                                                                        <td className="px-4 py-2.5">Total/ HDL Ratio</td>
-                                                                        <td className="px-4 py-2.5">3.1</td>
-                                                                        <td className="px-4 py-2.5">-</td>
-                                                                        <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                )
-                                            }
-
-                                        </div>
-                                    )
-                                }
-                                {
-                                    activeTabLeft == "Liver" && (
-                                        <div className="py-3 rounded-lg border border-[#cfd1d4]">
-                                            <div className="flex text-lg border-b pb-2 border-[#cfd1d4] text-[#6E6E6E] items-center gap-3 px-3">
-                                                <p onClick={() => setActiveTab2("Renal Test")} className={`cursor-pointer ${activeTab2 == "Renal Test" && "text-secondary"}`}>Renal Test</p>
-                                                <div className="h-5 border border-[#cfd1d4]"></div>
-                                                <p onClick={() => setActiveTab2("Liver Test")} className={`cursor-pointer ${activeTab2 == "Liver Test" && "text-secondary"}`}>Liver Test</p>
-                                            </div>
-                                            {
-                                                activeTab2 == "Renal Test" && (
-                                                    <div className="flex justify-center items-center">
-                                                        <div className="w-full bg-white rounded-lg">
-                                                            <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
-                                                                {/* Table Header */}
-                                                                <thead className=" border-b">
-                                                                    <tr>
-                                                                        <th className="p-4 text-left font-medium">No</th>
-                                                                        <th className="p-4 text-left font-medium">Test Name</th>
-                                                                        <th className="p-4 text-left font-medium">Result</th>
-                                                                        <th className="p-4 text-left font-medium">Unit</th>
-                                                                        <th className="p-4 text-left font-medium">Reference Range</th>
-                                                                    </tr>
-                                                                </thead>
-
-                                                                {/* Table Body */}
-                                                                <tbody>
-                                                                    <tr className="border-b bg-[#f5f7fa]">
-                                                                        <td className="p-4">1</td>
-                                                                        <td className="p-4">Sodium</td>
-                                                                        <td className="p-4">136.0</td>
-                                                                        <td className="p-4">mmol/L</td>
-                                                                        <td className="p-4">(136-145)</td>
-                                                                    </tr>
-                                                                    <tr className="border-b">
-                                                                        <td className="p-4">2</td>
-                                                                        <td className="p-4">Potassium</td>
-                                                                        <td className="p-4">136.0</td>
-                                                                        <td className="p-4">mmol/L</td>
-                                                                        <td className="p-4">(136-145)</td>
-                                                                    </tr>
-                                                                    <tr className="border-b bg-[#f5f7fa]">
-                                                                        <td className="p-4">3</td>
-                                                                        <td className="p-4">Chloride</td>
-                                                                        <td className="p-4">4.4</td>
-                                                                        <td className="p-4">mmol/L</td>
-                                                                        <td className="p-4">(3.5-5.1)</td>
-                                                                    </tr>
-                                                                    <tr className="border-b">
-                                                                        <td className="p-4">4</td>
-                                                                        <td className="p-4">Creatinine</td>
-                                                                        <td className="p-4">2.7</td>
-                                                                        <td className="p-4">umol/L</td>
-                                                                        <td className="p-4">(3.5-5.1)</td>
-                                                                    </tr>
-                                                                    <tr className='bg-[#f5f7fa]'>
-                                                                        <td className="p-4">5</td>
-                                                                        <td className="p-4">Estimated-GFR</td>
-                                                                        <td className="p-4">2.7</td>
-                                                                        <td className="p-4">mL/min/1.73m</td>
-                                                                        <td className="p-4">(&lt;.90)</td>
-                                                                    </tr>
-                                                                    <tr className="border-b">
-                                                                        <td className="p-4">6</td>
-                                                                        <td className="p-4">Urea</td>
-                                                                        <td className="p-4">2.7</td>
-                                                                        <td className="p-4">mmol/L</td>
-                                                                        <td className="p-4">(3.5-5.1)</td>
-                                                                    </tr>
-                                                                    <tr className='bg-[#f5f7fa]'>
-                                                                        <td className="p-4">7</td>
-                                                                        <td className="p-4">Uric Acid</td>
-                                                                        <td className="p-4">2.7</td>
-                                                                        <td className="p-4">umol/L</td>
-                                                                        <td className="p-4">(3.5-5.1)</td>
-                                                                    </tr>
-                                                                    <tr className="border-b">
-                                                                        <td className="p-4">8</td>
-                                                                        <td className="p-4">Phosporus</td>
-                                                                        <td className="p-4">2.7</td>
-                                                                        <td className="p-4">mmol/L</td>
-                                                                        <td className="p-4">(3.5-5.1)</td>
-                                                                    </tr>
-                                                                    <tr className='bg-[#f5f7fa]'>
-                                                                        <td className="p-4">9</td>
-                                                                        <td className="p-4">Calcium</td>
-                                                                        <td className="p-4">2.7</td>
-                                                                        <td className="p-4">umol/L</td>
-                                                                        <td className="p-4">(3.5-5.1)</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                )
-                                            }
-                                            {
-                                                activeTab2 == "Liver Test" && (
-                                                    <div className="flex justify-center items-center">
-                                                        <div className="w-full bg-white rounded-lg">
-                                                            <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
-                                                                {/* Table Header */}
-                                                                <thead className=" border-b">
-                                                                    <tr>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">No</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Test Name</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Result</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Unit</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Reference Range</th>
-                                                                    </tr>
-                                                                </thead>
-
-                                                                {/* Table Body */}
-                                                                <tbody>
-                                                                    <tr className="border-b bg-[#f5f7fa]">
-                                                                        <td className="px-4 py-2.5">1</td>
-                                                                        <td className="px-4 py-2.5">Total Protein</td>
-                                                                        <td className="px-4 py-2.5">136.0</td>
-                                                                        <td className="px-4 py-2.5">g/L</td>
-                                                                        <td className="px-4 py-2.5">(136-145)</td>
-                                                                    </tr>
-                                                                    <tr className="border-b">
-                                                                        <td className="px-4 py-2.5">2</td>
-                                                                        <td className="px-4 py-2.5">Albumin</td>
-                                                                        <td className="px-4 py-2.5">136.0</td>
-                                                                        <td className="px-4 py-2.5">g/L</td>
-                                                                        <td className="px-4 py-2.5">(136-145)</td>
-                                                                    </tr>
-                                                                    <tr className="border-b bg-[#f5f7fa]">
-                                                                        <td className="px-4 py-2.5">3</td>
-                                                                        <td className="px-4 py-2.5">Globulin</td>
-                                                                        <td className="px-4 py-2.5">4.4</td>
-                                                                        <td className="px-4 py-2.5">g/L</td>
-                                                                        <td className="px-4 py-2.5">(3.5-5.1)</td>
-                                                                    </tr>
-                                                                    <tr className="border-b">
-                                                                        <td className="px-4 py-2.5">4</td>
-                                                                        <td className="px-4 py-2.5">Albumin-Globulin Ration</td>
-                                                                        <td className="px-4 py-2.5">2.7</td>
-                                                                        <td className="px-4 py-2.5"></td>
-                                                                        <td className="px-4 py-2.5"></td>
-                                                                    </tr>
-                                                                    <tr className='bg-[#f5f7fa]'>
-                                                                        <td className="px-4 py-2.5">5</td>
-                                                                        <td className="px-4 py-2.5">Total Bilirubin</td>
-                                                                        <td className="px-4 py-2.5">2.7</td>
-                                                                        <td className="px-4 py-2.5">umol/L</td>
-                                                                        <td className="px-4 py-2.5">(&lt;.90)</td>
-                                                                    </tr>
-                                                                    <tr className="border-b bg-[#f5f7fa]">
-                                                                        <td className="px-4 py-2.5">6</td>
-                                                                        <td className="px-4 py-2.5">Alkaline Phpsphatase (ALP)</td>
-                                                                        <td className="px-4 py-2.5">2.7</td>
-                                                                        <td className="px-4 py-2.5">U/L</td>
-                                                                        <td className="px-4 py-2.5">(3.5-5.1)</td>
-                                                                    </tr>
-                                                                    <tr className="border-b">
-                                                                        <td className="px-4 py-2.5">7</td>
-                                                                        <td className="px-4 py-2.5">Aspartate Transaminase</td>
-                                                                        <td className="px-4 py-2.5">0.6</td>
-                                                                        <td className="px-4 py-2.5">U/L</td>
-                                                                        <td className="px-4 py-2.5">(3.5-5.1)</td>
-                                                                    </tr>
-                                                                    <tr className='bg-[#f5f7fa]'>
-                                                                        <td className="px-4 py-2.5">8</td>
-                                                                        <td className="px-4 py-2.5">Alanine Transaminase</td>
-                                                                        <td className="px-4 py-2.5">3.1</td>
-                                                                        <td className="px-4 py-2.5">U/L</td>
-                                                                        <td className="px-4 py-2.5">(3.5-5.1)</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                )
-                                            }
-
-                                        </div>
-                                    )
-                                }
-                                {
-                                    activeTabLeft == "Urine Test" && (
-                                        <div className="py-3 rounded-lg border border-[#cfd1d4]">
-                                            <div className="flex text-lg border-b pb-2 border-[#cfd1d4] text-[#6E6E6E] items-center gap-3 px-3">
-                                                <p onClick={() => setActiveTab3("Haematology")} className={`cursor-pointer ${activeTab3 == "Haematology" && "text-secondary"}`}>Haematology</p>
-                                                <div className="h-5 border border-[#cfd1d4]"></div>
-                                                <p onClick={() => setActiveTab3("Urine Feme")} className={`cursor-pointer ${activeTab3 == "Urine Feme" && "text-secondary"}`}>Urine Feme</p>
-                                            </div>
-                                            {
-                                                activeTab3 == "Haematology" && (
-                                                    <div className="flex justify-center items-center">
-                                                        <div className="w-full bg-white rounded-lg">
-                                                            <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
-                                                                {/* Table Header */}
-                                                                <thead className=" border-b">
-                                                                    <tr>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">No</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Name</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Result</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Unit</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Ref Range</th>
-                                                                    </tr>
-                                                                </thead>
-
-                                                                {/* Table Body */}
-                                                                <tbody>
-                                                                    <tr className='bg-[#f5f7fa]'>
-                                                                        <td className="px-4 py-2.5">1</td>
-                                                                        <td className="px-4 py-2.5">Erythrocyte Sedimentation Rate (ESR)</td>
-                                                                        <td className="px-4 py-2.5">3.1</td>
-                                                                        <td className="px-4 py-2.5">-</td>
-                                                                        <td className="px-4 py-2.5">Normal Value
-                                                                            <br /> MALE
-                                                                            <br /> (Under 50 yrs old): 0 - 15 mm/hour
-                                                                            <br /> (Over 50 yrs old): 0 - 20 mm/hour
-                                                                            <br /> FEMALE
-                                                                            <br /> (Under 50 yrs old): 0 - 20 mm/hour
-                                                                            <br /> (Over 50 yrs old): 0 - 15 mm/hour
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                )
-                                            }
-                                            {
-                                                activeTab3 == "Urine Feme" && (
-                                                    <div className="flex justify-center items-center">
-                                                        <div className="w-full bg-white rounded-lg">
-                                                            <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
-                                                                {/* Table Header */}
-                                                                <thead className=" border-b">
-                                                                    <tr>
-                                                                        <th className="p-4 text-left font-medium">No</th>
-                                                                        <th className="p-4 text-left font-medium">Name</th>
-                                                                        <th className="p-4 text-left font-medium">Result</th>
-                                                                        <th className="p-4 text-left font-medium">Unit</th>
-                                                                        <th className="p-4 text-left font-medium">Ref Range</th>
-                                                                    </tr>
-                                                                </thead>
-
-                                                                {/* Table Body */}
-                                                                <tbody>
-                                                                    <tr className="border-b bg-[#f5f7fa]">
-                                                                        <td className="p-4">1</td>
-                                                                        <td className="p-4">Glucose</td>
-                                                                        <td className="p-4">Negative</td>
-                                                                        <td className="p-4">-</td>
-                                                                        <td className="p-4">-</td>
-                                                                    </tr>
-                                                                    <tr className="border-b">
-                                                                        <td className="p-4">2</td>
-                                                                        <td className="p-4">Bilirubin</td>
-                                                                        <td className="p-4">Negative</td>
-                                                                        <td className="p-4">-</td>
-                                                                        <td className="p-4">-</td>
-                                                                    </tr>
-                                                                    <tr className="border-b bg-[#f5f7fa]">
-                                                                        <td className="p-4">3</td>
-                                                                        <td className="p-4">Ketone</td>
-                                                                        <td className="p-4">Negative</td>
-                                                                        <td className="p-4">-</td>
-                                                                        <td className="p-4">-</td>
-                                                                    </tr>
-                                                                    <tr className="border-b">
-                                                                        <td className="p-4">4</td>
-                                                                        <td className="p-4">Specific Gravity</td>
-                                                                        <td className="p-4">1.020</td>
-                                                                        <td className="p-4">-</td>
-                                                                        <td className="p-4">-</td>
-                                                                    </tr>
-                                                                    <tr className='bg-[#f5f7fa]'>
-                                                                        <td className="p-4">5</td>
-                                                                        <td className="p-4">Blood</td>
-                                                                        <td className="p-4">Negative</td>
-                                                                        <td className="p-4">-</td>
-                                                                        <td className="p-4">-</td>
-                                                                    </tr>
-                                                                    <tr className="border-b bg-[#f5f7fa]">
-                                                                        <td className="p-4">6</td>
-                                                                        <td className="p-4">pH</td>
-                                                                        <td className="p-4">6.0</td>
-                                                                        <td className="p-4">-</td>
-                                                                        <td className="p-4">-</td>
-                                                                    </tr>
-                                                                    <tr className="border-b">
-                                                                        <td className="p-4">7</td>
-                                                                        <td className="p-4">Protein</td>
-                                                                        <td className="p-4">+/-</td>
-                                                                        <td className="p-4">-</td>
-                                                                        <td className="p-4">-</td>
-                                                                    </tr>
-                                                                    <tr className='bg-[#f5f7fa]'>
-                                                                        <td className="p-4">8</td>
-                                                                        <td className="p-4">Urobilinogen</td>
-                                                                        <td className="p-4">Negative</td>
-                                                                        <td className="p-4">-</td>
-                                                                        <td className="p-4">-</td>
-                                                                    </tr>
-                                                                    <tr className="border-b">
-                                                                        <td className="p-4">9</td>
-                                                                        <td className="p-4">Nitrate</td>
-                                                                        <td className="p-4">Negative</td>
-                                                                        <td className="p-4">-</td>
-                                                                        <td className="p-4">-</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                )
-                                            }
-
-
-                                        </div>
-                                    )
-                                }
-                                {
-                                    activeTabLeft == "Endocrine Test" && (
-
+                                    activeTabLeft == "Serum/Plasma Glucose" && (
 
                                         <div className="">
-                                            <div className={` bg-[#f7f8fa] ${previewDocument ? " grid-cols-2" : "grid-cols-3"} border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm grid gap4`}>
-                                                <div className="grid-cols-2 grid space-y-1">
+                                            <div className={` bg-[#f7f8fa] ${previewDocument ? " grid-cols-2" : "grid-cols-3"} border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm grid gap-4`}>
+                                                <div className=" space-y-1">
+                                                    <p className='font-semibold pb-3'>Patient Details</p>
                                                     <p className=''> Name</p>
-                                                    <p className='font-semibold'>: Lorem Ipsum</p>
-                                                    <p className=''>Malysia New IC</p>
-                                                    <p className='font-semibold'>: 1111222233334 </p>
-                                                    <p className=''>DOB</p>
-                                                    <p className='font-semibold'>: 07/10/1956 </p>
-                                                    <p className=''>Age/Gender</p>
-                                                    <p className='font-semibold'>: F241004001 </p>
+                                                    <p className=''>UR</p>
+                                                    <p className=''>Address</p>
                                                 </div>
-                                                <div className="grid-cols-2 grid space-y-1">
-                                                    <p className=''>Lab No</p>
-                                                    <p className='font-semibold'>: -</p>
-                                                    <p className=''>MRN</p>
-                                                    <p className='font-semibold'>: Lorem Ipsum</p>
-                                                    <p className=''>Location</p>
-                                                    <p className='font-semibold'>: V12121212 </p>
-                                                    <p className=''>Reference</p>
-                                                    <p className='font-semibold'>: - </p>
+                                                <div className=" space-y-1">
+                                                    <p className='font-semibold pb-3'>&nbsp;</p>
+                                                    <p className='font-semibold'>Norartin Binti Sulong (Mokhtar)</p>
+                                                    <p className='font-semibold'>: 03/07/1985 </p>
+                                                    <p className='font-semibold'>: 850703115180 </p>
+                                                </div>
+                                                <div className=" space-y-1">
+                                                    <p className='font-semibold pb-3'>Doctor Details</p>
+                                                    <p className=''>DR KAMINI VETHAGURU
+                                                        <br /> POLIKLINIK JOHAN
+                                                        <br /> 48-G.BLOK 3 JLN PAHAT G 15/G
+                                                        <br /> DATARAN OTOMOBIL
+                                                        <br /> SHAH ALAM SEL 40200
+                                                    </p>
+                                                </div>
+
+                                                <div className={` ${previewDocument ? " grid-cols-2 col-span-2" : "grid-cols-3 col-span-3 "}  gap-5 grid mt-3`}>
+                                                    <div className=" space-y-1 grid grid-cols-2">
+                                                        <p className=''>DOB</p>
+                                                        <p className='font-semibold'>: 03/07/85</p>
+                                                        <p className=''>IC No.</p>
+                                                        <p className='font-semibold'>: 850703115180 </p>
+                                                        <p className=''>Collected</p>
+                                                        <p className='font-semibold'>: 31/01/24 09:10 </p>
+                                                        <p className=''>Referred</p>
+                                                        <p className='font-semibold'>: 31/01/24 </p>
+                                                    </div>
+                                                    <div className=" space-y-1 grid grid-cols-2">
+                                                        <p className=''>Sex</p>
+                                                        <p className='font-semibold'>: Female</p>
+                                                        <p className=''>Age</p>
+                                                        <p className='font-semibold'>: 38 Years </p>
+                                                        <p className=''>Ward</p>
+                                                        <p className='font-semibold'>: - </p>
+                                                        <p className=''>Yr Ref.</p>
+                                                        <p className='font-semibold'>: - </p>
+                                                    </div>
+                                                    <div className=" space-y-1 grid grid-cols-2">
+                                                        <p className=''>Lab No.</p>
+                                                        <p className='font-semibold'>: 24-7403676</p>
+                                                        <p className=''>Courier Run</p>
+                                                        <p className='font-semibold'>: SA1 </p>
+                                                        <p className=''>Report Printed</p>
+                                                        <p className='font-semibold'>: 01/02/24 06:15</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div className={` flex gap-3 items-center border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm`}>
+                                                <p className='text-[#6E6E6E] font-medium'>Analytes:</p>
+                                                <p className='font-semibold'> Serum/Plasma Glucose</p>
+                                            </div>
+
+                                            <div className="py-1 rounded-lg border mt-3 border-[#cfd1d4]">
+                                                <div className="flex justify-center items-center">
+                                                    <div className="w-full bg-white rounded-lg">
+                                                        <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
+                                                            {/* Table Header */}
+                                                            <thead className=" border-b">
+                                                                <tr>
+                                                                    <th className="p-4 text-left font-medium">No</th>
+                                                                    <th className="p-4 text-left font-medium">Result</th>
+                                                                    <th className="p-4 text-left font-medium">Unit</th>
+                                                                    <th className="p-4 text-left font-medium">Ref. Ranges</th>
+                                                                </tr>
+                                                            </thead>
+
+                                                            {/* Table Body */}
+                                                            <tbody>
+                                                                <tr className="border-b bg-[#f5f7fa]">
+                                                                    <td className="p-4">1</td>
+                                                                    <td className="p-4">5.0</td>
+                                                                    <td className="p-4">mmol/L</td>
+                                                                    <td className="p-4">(3.9 - 7.7)</td>
+                                                                </tr>
+                                                                <tr className="border-b">
+                                                                    <td className="p-4">2</td>
+                                                                    <td className="p-4">Speciman collected</td>
+                                                                    <td className="p-4">09:10 h</td>
+                                                                    <td className="p-4"></td>
+                                                                </tr>
+                                                                <tr className="border-b bg-[#f5f7fa]">
+                                                                    <td className="p-4">3</td>
+                                                                    <td className="p-4">Speciman type</td>
+                                                                    <td className="p-4">Random</td>
+                                                                    <td className="p-4"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    )
+                                }
+                                {
+                                    activeTabLeft == "General Screening DPS3C Profile" && (
+                                        <div className="">
+
+                                            <div className={` bg-[#f7f8fa] ${previewDocument ? " grid-cols-2" : "grid-cols-3"} border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm grid gap-4`}>
+                                                <div className=" space-y-1">
+                                                    <p className='font-semibold pb-3'>Patient Details</p>
+                                                    <p className=''> Name</p>
+                                                    <p className=''>UR</p>
+                                                    <p className=''>Address</p>
+                                                </div>
+                                                <div className=" space-y-1">
+                                                    <p className='font-semibold pb-3'>&nbsp;</p>
+                                                    <p className='font-semibold'>Norartin Binti Sulong (Mokhtar)</p>
+                                                    <p className='font-semibold'>: 03/07/1985 </p>
+                                                    <p className='font-semibold'>: 850703115180 </p>
+                                                </div>
+                                                <div className=" space-y-1">
+                                                    <p className='font-semibold pb-3'>Doctor Details</p>
+                                                    <p className=''>DR KAMINI VETHAGURU
+                                                        <br /> POLIKLINIK JOHAN
+                                                        <br /> 48-G.BLOK 3 JLN PAHAT G 15/G
+                                                        <br /> DATARAN OTOMOBIL
+                                                        <br /> SHAH ALAM SEL 40200
+                                                    </p>
+                                                </div>
+
+                                                <div className={` ${previewDocument ? " grid-cols-2 col-span-2" : "grid-cols-3 col-span-3 "}  gap-5 grid mt-3`}>
+                                                    <div className=" space-y-1 grid grid-cols-2">
+                                                        <p className=''>DOB</p>
+                                                        <p className='font-semibold'>: 03/07/85</p>
+                                                        <p className=''>IC No.</p>
+                                                        <p className='font-semibold'>: 850703115180 </p>
+                                                        <p className=''>Collected</p>
+                                                        <p className='font-semibold'>: 31/01/24 09:10 </p>
+                                                        <p className=''>Referred</p>
+                                                        <p className='font-semibold'>: 31/01/24 </p>
+                                                    </div>
+                                                    <div className=" space-y-1 grid grid-cols-2">
+                                                        <p className=''>Sex</p>
+                                                        <p className='font-semibold'>: Female</p>
+                                                        <p className=''>Age</p>
+                                                        <p className='font-semibold'>: 38 Years </p>
+                                                        <p className=''>Ward</p>
+                                                        <p className='font-semibold'>: - </p>
+                                                        <p className=''>Yr Ref.</p>
+                                                        <p className='font-semibold'>: - </p>
+                                                    </div>
+                                                    <div className=" space-y-1 grid grid-cols-2">
+                                                        <p className=''>Lab No.</p>
+                                                        <p className='font-semibold'>: 24-7403676</p>
+                                                        <p className=''>Courier Run</p>
+                                                        <p className='font-semibold'>: SA1 </p>
+                                                        <p className=''>Report Printed</p>
+                                                        <p className='font-semibold'>: 01/02/24 06:15</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div className={` flex gap-3 items-center border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm`}>
+                                                <p className='text-[#6E6E6E] font-medium'>Analytes:</p>
+                                                <p className='font-semibold'> General Screening DPS3C Profile</p>
+                                            </div>
+
+                                            <div className="py-3 mt-3 rounded-lg border border-[#cfd1d4]">
+                                                <div className="flex text-lg border-b pb-2 border-[#cfd1d4] text-[#6E6E6E] items-center gap-3 px-3">
+                                                    <p onClick={() => setActiveTab2("Haematology")} className={`cursor-pointer ${activeTab2 == "Haematology" && "text-secondary"}`}>Haematology</p>
+                                                    <div className="h-5 border border-[#cfd1d4]"></div>
+                                                    <p onClick={() => setActiveTab2("White Cell Count")} className={`cursor-pointer ${activeTab2 == "White Cell Count" && "text-secondary"}`}>White Cell Count</p>
+                                                    <div className="h-5 border border-[#cfd1d4]"></div>
+                                                    <p onClick={() => setActiveTab2("Platelets")} className={`cursor-pointer ${activeTab2 == "Platelets" && "text-secondary"}`}>Platelets</p>
                                                 </div>
                                                 {
-                                                    !previewDocument && (
-                                                        <div className="grid-cols-2 grid space-y-1">
-                                                            <p className=''>Branch</p>
-                                                            <p className='font-semibold'>: -</p>
-                                                            <p className=''>Collected</p>
-                                                            <p className='font-semibold'>: Lorem Ipsum</p>
-                                                            <p className=''>Received</p>
-                                                            <p className='font-semibold'>: 24/07/2024 09:18:15 </p>
-                                                            <p className=''>Reported</p>
-                                                            <p className='font-semibold'>: - </p>
+                                                    activeTab2 == "Haematology" && (
+                                                        <div className="flex justify-center items-center">
+                                                            <div className="w-full bg-white rounded-lg">
+                                                                <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
+                                                                    {/* Table Header */}
+                                                                    <thead className=" border-b">
+                                                                        <tr>
+                                                                            <th className="p-4 text-left font-medium">No</th>
+                                                                            <th className="p-4 text-left font-medium">Analytes</th>
+                                                                            <th className="p-4 text-left font-medium">Result</th>
+                                                                            <th className="p-4 text-left font-medium">Unit</th>
+                                                                            <th className="p-4 text-left font-medium">Ref. Ranges</th>
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                    {/* Table Body */}
+                                                                    <tbody>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">1</td>
+                                                                            <td className="p-4">Haemoglobin</td>
+                                                                            <td className="p-4">132</td>
+                                                                            <td className="p-4">g/L</td>
+                                                                            <td className="p-4">(64 - 85)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b">
+                                                                            <td className="p-4">2</td>
+                                                                            <td className="p-4">RBC</td>
+                                                                            <td className="p-4">5.08</td>
+                                                                            <td className="p-4">x 10¹²/L</td>
+                                                                            <td className="p-4">(34 - 50)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">3</td>
+                                                                            <td className="p-4">PCV</td>
+                                                                            <td className="p-4">0.44</td>
+                                                                            <td className="p-4">L/L</td>
+                                                                            <td className="p-4">(20 - 39)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b">
+                                                                            <td className="p-4">4</td>
+                                                                            <td className="p-4">MCV</td>
+                                                                            <td className="p-4">86</td>
+                                                                            <td className="p-4">f/L</td>
+                                                                            <td className="p-4"></td>
+                                                                        </tr>
+                                                                        <tr className='bg-[#f5f7fa]'>
+                                                                            <td className="p-4">5</td>
+                                                                            <td className="p-4">MCH</td>
+                                                                            <td className="p-4">26</td>
+                                                                            <td className="p-4">pg</td>
+                                                                            <td className="p-4">(38 - 124)</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                }
+                                                {
+                                                    activeTab2 == "White Cell Count" && (
+                                                        <div className="flex justify-center items-center">
+                                                            <div className="w-full bg-white rounded-lg">
+                                                                <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
+                                                                    {/* Table Header */}
+                                                                    <thead className=" border-b">
+                                                                        <tr>
+                                                                            <th className="p-4 text-left font-medium">No</th>
+                                                                            <th className="p-4 text-left font-medium">Analytes</th>
+                                                                            <th className="p-4 text-left font-medium">Result</th>
+                                                                            <th className="p-4 text-left font-medium">Unit</th>
+                                                                            <th className="p-4 text-left font-medium">Ref. Ranges</th>
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                    {/* Table Body */}
+                                                                    <tbody>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">1</td>
+                                                                            <td className="p-4">White Cell Count</td>
+                                                                            <td className="p-4">6.5</td>
+                                                                            <td className="p-4">x 10¹²/L</td>
+                                                                            <td className="p-4">(4.0 - 10.0)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b">
+                                                                            <td className="p-4">2</td>
+                                                                            <td className="p-4">Neutrophils</td>
+                                                                            <td className="p-4">3.8</td>
+                                                                            <td className="p-4">x 10¹²/L</td>
+                                                                            <td className="p-4">(2.0 - 7.0)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">3</td>
+                                                                            <td className="p-4">Lymphocytes</td>
+                                                                            <td className="p-4">1.8</td>
+                                                                            <td className="p-4">x 10¹²/L</td>
+                                                                            <td className="p-4">(1.0 - 4.0)</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                }
+                                                {
+                                                    activeTab2 == "Platelets" && (
+                                                        <div className="flex justify-center items-center">
+                                                            <div className="w-full bg-white rounded-lg">
+                                                                <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
+                                                                    <thead className=" border-b">
+                                                                        <tr>
+                                                                            <th className="p-4 text-left font-medium">No</th>
+                                                                            <th className="p-4 text-left font-medium">Analytes</th>
+                                                                            <th className="p-4 text-left font-medium">Result</th>
+                                                                            <th className="p-4 text-left font-medium">Unit</th>
+                                                                            <th className="p-4 text-left font-medium">Ref. Ranges</th>
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                    <tbody>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">1</td>
+                                                                            <td className="p-4">Platetlets</td>
+                                                                            <td className="p-4">371</td>
+                                                                            <td className="p-4">x 10¹²/L</td>
+                                                                            <td className="p-4">(150 - 410)</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
                                                         </div>
                                                     )
                                                 }
                                             </div>
-                                            <div className={` ${previewDocument ? " grid-cols-2 gap-y-3" : " gap-y-2 grid-cols-2"} border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm grid gap4`}>
-                                                <p className='text-[#6E6E6E]'> Requester :</p>
-                                                <div className="flex items-center gap-1">
-                                                    <PiBuildings className='text-[#6E6E6E] text-lg' />
-                                                    <p className='font-medium'> UKM SPECIALIST CLINIC (UKMSC)</p>
+                                            <div className={` flex gap-3 items-center border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm`}>
+                                                <p className='text-[#6E6E6E] font-medium'>Validated by Sri Wahyuni Bt Wahab (Diploma In MLT. KLMUC)</p>
+                                            </div>
+                                        </div>
+                                    )
+                                }
+                                {
+                                    activeTabLeft == "Urine Feme" && (
+                                        <div className="">
+
+                                            <div className={` bg-[#f7f8fa] ${previewDocument ? " grid-cols-2" : "grid-cols-3"} border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm grid gap-4`}>
+                                                <div className=" space-y-1">
+                                                    <p className='font-semibold pb-3'>Patient Details</p>
+                                                    <p className=''> Name</p>
+                                                    <p className=''>UR</p>
+                                                    <p className=''>Address</p>
                                                 </div>
-                                                <p className='text-lg font-semibold'>PROF. DR Norlela Sukor</p>
-                                                <div className="flex items-center gap-1">
-                                                    <SlLocationPin className='text-[#6E6E6E] text-lg' />
-                                                    <p className='font-medium'>7th Floor, Clinic Blok UKMMC, Cheras, 65000 </p>
+                                                <div className=" space-y-1">
+                                                    <p className='font-semibold pb-3'>&nbsp;</p>
+                                                    <p className='font-semibold'>Norartin Binti Sulong (Mokhtar)</p>
+                                                    <p className='font-semibold'>: 03/07/1985 </p>
+                                                    <p className='font-semibold'>: 850703115180 </p>
                                                 </div>
+                                                <div className=" space-y-1">
+                                                    <p className='font-semibold pb-3'>Doctor Details</p>
+                                                    <p className=''>DR KAMINI VETHAGURU
+                                                        <br /> POLIKLINIK JOHAN
+                                                        <br /> 48-G.BLOK 3 JLN PAHAT G 15/G
+                                                        <br /> DATARAN OTOMOBIL
+                                                        <br /> SHAH ALAM SEL 40200
+                                                    </p>
+                                                </div>
+
+                                                <div className={` ${previewDocument ? " grid-cols-2 col-span-2" : "grid-cols-3 col-span-3 "}  gap-5 grid mt-3`}>
+                                                    <div className=" space-y-1 grid grid-cols-2">
+                                                        <p className=''>DOB</p>
+                                                        <p className='font-semibold'>: 03/07/85</p>
+                                                        <p className=''>IC No.</p>
+                                                        <p className='font-semibold'>: 850703115180 </p>
+                                                        <p className=''>Collected</p>
+                                                        <p className='font-semibold'>: 31/01/24 09:10 </p>
+                                                        <p className=''>Referred</p>
+                                                        <p className='font-semibold'>: 31/01/24 </p>
+                                                    </div>
+                                                    <div className=" space-y-1 grid grid-cols-2">
+                                                        <p className=''>Sex</p>
+                                                        <p className='font-semibold'>: Female</p>
+                                                        <p className=''>Age</p>
+                                                        <p className='font-semibold'>: 38 Years </p>
+                                                        <p className=''>Ward</p>
+                                                        <p className='font-semibold'>: - </p>
+                                                        <p className=''>Yr Ref.</p>
+                                                        <p className='font-semibold'>: - </p>
+                                                    </div>
+                                                    <div className=" space-y-1 grid grid-cols-2">
+                                                        <p className=''>Lab No.</p>
+                                                        <p className='font-semibold'>: 24-7403676</p>
+                                                        <p className=''>Courier Run</p>
+                                                        <p className='font-semibold'>: SA1 </p>
+                                                        <p className=''>Report Printed</p>
+                                                        <p className='font-semibold'>: 01/02/24 06:15</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div className={` flex gap-3 items-center border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm`}>
+                                                <p className='text-[#6E6E6E] font-medium'>Analytes:</p>
+                                                <p className='font-semibold'> Urine Appearance</p>
+                                            </div>
+
+                                            <div className="py-3 mt-3 rounded-lg border border-[#cfd1d4]">
+                                                <div className="flex text-lg border-b pb-2 border-[#cfd1d4] text-[#6E6E6E] items-center gap-3 px-3">
+                                                    <p onClick={() => setActiveTab3("Urine Appearance")} className={`cursor-pointer ${activeTab3 == "Urine Appearance" && "text-secondary"}`}>Urine Appearance</p>
+                                                    <div className="h-5 border border-[#cfd1d4]"></div>
+                                                    <p onClick={() => setActiveTab3("Chemistry")} className={`cursor-pointer ${activeTab3 == "Chemistry" && "text-secondary"}`}>Chemistry</p>
+                                                    <div className="h-5 border border-[#cfd1d4]"></div>
+                                                    <p onClick={() => setActiveTab3("Microscopy")} className={`cursor-pointer ${activeTab3 == "Microscopy" && "text-secondary"}`}>Microscopy</p>
+                                                </div>
+                                                {
+                                                    activeTab3 == "Urine Appearance" && (
+                                                        <div className="flex justify-center items-center">
+                                                            <div className="w-full bg-white rounded-lg">
+                                                                <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
+                                                                    {/* Table Header */}
+                                                                    <thead className=" border-b">
+                                                                        <tr>
+                                                                            <th className="p-4 text-left font-medium">No</th>
+                                                                            <th className="p-4 text-left font-medium">Analytes</th>
+                                                                            <th className="p-4 text-left font-medium">Result</th>
+                                                                            <th className="p-4 text-left font-medium">Unit</th>
+                                                                            <th className="p-4 text-left font-medium">Ref. Ranges</th>
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                    {/* Table Body */}
+                                                                    <tbody>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">1</td>
+                                                                            <td className="p-4">Transparency</td>
+                                                                            <td className="p-4">Turbid</td>
+                                                                            <td className="p-4"></td>
+                                                                            <td className="p-4"></td>
+                                                                        </tr>
+                                                                        <tr className="border-b">
+                                                                            <td className="p-4">2</td>
+                                                                            <td className="p-4">Colour</td>
+                                                                            <td className="p-4">Amber</td>
+                                                                            <td className="p-4"></td>
+                                                                            <td className="p-4"></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                }
+                                                {
+                                                    activeTab3 == "Chemistry" && (
+                                                        <div className="flex justify-center items-center">
+                                                            <div className="w-full bg-white rounded-lg">
+                                                                <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
+                                                                    {/* Table Header */}
+                                                                    <thead className=" border-b">
+                                                                        <tr>
+                                                                            <th className="p-4 text-left font-medium">No</th>
+                                                                            <th className="p-4 text-left font-medium">Analytes</th>
+                                                                            <th className="p-4 text-left font-medium">Result</th>
+                                                                            <th className="p-4 text-left font-medium">Unit</th>
+                                                                            <th className="p-4 text-left font-medium">Ref. Ranges</th>
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                    {/* Table Body */}
+                                                                    <tbody>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">1</td>
+                                                                            <td className="p-4">SG:</td>
+                                                                            <td className="p-4">1.025</td>
+                                                                            <td className="p-4"></td>
+                                                                            <td className="p-4">(1.004-1.030)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b">
+                                                                            <td className="p-4">2</td>
+                                                                            <td className="p-4">pH:</td>
+                                                                            <td className="p-4">6.0</td>
+                                                                            <td className="p-4"></td>
+                                                                            <td className="p-4">(4.8-7.4)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">3</td>
+                                                                            <td className="p-4">Leucocytes:</td>
+                                                                            <td className="p-4">±±</td>
+                                                                            <td className="p-4"></td>
+                                                                            <td className="p-4">(Nil)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">4</td>
+                                                                            <td className="p-4">Blood:</td>
+                                                                            <td className="p-4">Nil</td>
+                                                                            <td className="p-4"></td>
+                                                                            <td className="p-4">(Nil)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">5</td>
+                                                                            <td className="p-4">Nitrite:</td>
+                                                                            <td className="p-4">Negative:</td>
+                                                                            <td className="p-4"></td>
+                                                                            <td className="p-4">(Negative)</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                }
+                                                {
+                                                    activeTab3 == "Microscopy" && (
+                                                        <div className="flex justify-center items-center">
+                                                            <div className="w-full bg-white rounded-lg">
+                                                                <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
+                                                                    <thead className=" border-b">
+                                                                        <tr>
+                                                                            <th className="p-4 text-left font-medium">No</th>
+                                                                            <th className="p-4 text-left font-medium">Analytes</th>
+                                                                            <th className="p-4 text-left font-medium">Result</th>
+                                                                            <th className="p-4 text-left font-medium">Unit</th>
+                                                                            <th className="p-4 text-left font-medium">Ref. Ranges</th>
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                    <tbody>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">1</td>
+                                                                            <td className="p-4">Leucocytes</td>
+                                                                            <td className="p-4">81 x 10⁹/L</td>
+                                                                            <td className="p-4"></td>
+                                                                            <td className="p-4">(10 x 10⁹/L)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b ">
+                                                                            <td className="p-4">2</td>
+                                                                            <td className="p-4">Erythrocytes</td>
+                                                                            <td className="p-4">0 x 10⁹/L</td>
+                                                                            <td className="p-4"></td>
+                                                                            <td className="p-4">(3 x 10⁹/L)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">1</td>
+                                                                            <td className="p-4">Epithelial Cells</td>
+                                                                            <td className="p-4">Nil</td>
+                                                                            <td className="p-4"></td>
+                                                                            <td className="p-4">(Nil)</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p className='px-4 pt-4 text-sm text-[#1d1d1d]'>Nunerous amorphous urates.
+                                                                    <br /> Casts not detected.</p>
+                                                            </div>
+
+
+                                                        </div>
+                                                    )
+                                                }
+                                            </div>
+                                            <div className={` border p-3 rounded-lg border-[#cfd1d4] bg-[#f7f8fa] mt-3 text-sm`}>
+                                                <p className='text-[#6E6E6E] font-medium'>
+                                                    <span className='text-[#1d1d1d] block p-2 font-semibold text-center'>REPORT COMPLETED</span>
+                                                    Tests Requested: <br />
+                                                    HAEMATOLOGY GENERAL, QDX TAG ON ORDERING, GENERAL SCREEN-BIOCHEM, HAEMOGLOBIN A1C (HBA1C), GLUCOSE, SERUM/PLASMA, TFT MASTER PANEL, GLUCOSE, SERUM/PLASMA, GENERAL SCREEN-MICROBIOL
+                                                </p>
+                                            </div>
+                                        </div>
+                                    )
+                                }
+                                {
+                                    activeTabLeft == "Thyroid Function Tests" && (
+
+
+                                        <div className="">
+                                            <div className={` bg-[#f7f8fa] ${previewDocument ? " grid-cols-2" : "grid-cols-3"} border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm grid gap-4`}>
+                                                <div className=" space-y-1">
+                                                    <p className='font-semibold pb-4'>Patient Details</p>
+                                                    <p className=''> Name</p>
+                                                    <p className=''>DOB</p>
+                                                    <p className=''>IC No.</p>
+                                                    <p className=''>Date of Test</p>
+                                                    <p className=''>Generated</p>
+                                                </div>
+                                                <div className=" space-y-1">
+                                                    <p className='font-semibold pb-3'></p>
+                                                    <p className='font-semibold'>Norartin Binti Sulong (Mokhtar) (39y Female)</p>
+                                                    <p className='font-semibold'>: 03/07/1985 </p>
+                                                    <p className='font-semibold'>: 850703115180 </p>
+                                                    <p className='font-semibold'>: 11/05/2024 </p>
+                                                    <p className='font-semibold'>: 14/05/2024 </p>
+                                                </div>
+                                                <div className=" space-y-1">
+                                                    <p className='font-semibold pb-4'>Clinic Details</p>
+                                                    <p className=''>POLIKLINIK JOHAN
+                                                        <br /> POLIKLINIK JOHAN (JOMEZBM)
+                                                        <br /> Lab No.: 24-8766231</p>
+                                                </div>
+                                            </div>
+                                            <div className={` flex justify-between items-center border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm`}>
+                                                <p className='font-semibold'> THYROID FUNCTION TESTS</p>
+                                                <p className='text-[#6E6E6E] font-medium'></p>
+                                            </div>
+                                            <div className={` flex justify-between items-center border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm`}>
+                                                <p className='text-[#6E6E6E] font-medium'>ENDOCRINOLOGY</p>
+                                                <p className='font-semibold'> SPECIMEN: SERUM</p>
                                             </div>
 
                                             <div className="flex justify-center items-center">
                                                 <div className="w-full bg-white rounded-lg border mt-4">
+                                                    <p className='text-sm font-medium p-4 border-b  text-[#6E6E6E]'>THROID FUNCTION ASSAYS</p>
                                                     <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
-                                                        {/* Table Header */}
                                                         <thead className=" border-b">
                                                             <tr>
                                                                 <th className="p-4 text-left font-medium">No</th>
-                                                                <th className="px-4 py-2.5 text-left font-medium">Test Name</th>
-                                                                <th className="px-4 py-2.5 text-left font-medium">Result</th>
-                                                                <th className="px-4 py-2.5 text-left font-medium">Flag</th>
-                                                                <th className="px-4 py-2.5 text-left font-medium">Unit</th>
-                                                                <th className="px-4 py-2.5 text-left font-medium">Reference Range</th>
+                                                                <th className="p-4 text-left font-medium">Analytes</th>
+                                                                <th className="p-4 text-left font-medium">Result</th>
+                                                                <th className="p-4 text-left font-medium">Unit</th>
+                                                                <th className="p-4 text-left font-medium">Ref. Ranges</th>
                                                             </tr>
                                                         </thead>
 
                                                         {/* Table Body */}
                                                         <tbody>
                                                             <tr className="border-b bg-[#f5f7fa]">
-                                                                <td className="px-4 py-2.5">1</td>
-                                                                <td className="px-4 py-2.5">Total Cholesterol</td>
-                                                                <td className="px-4 py-2.5">4.4</td>
-                                                                <td className="px-4 py-2.5"></td>
-                                                                <td className="px-4 py-2.5">(&lt;20)</td>
-                                                                <td className="px-4 py-2.5">(&lt;20)</td>
+                                                                <td className="p-4">1</td>
+                                                                <td className="p-4">Free Thyroxine (FT4)</td>
+                                                                <td className="p-4">16.7</td>
+                                                                <td className="p-4">µmol/L</td>
+                                                                <td className="p-4">(9.0 - 25.0)</td>
                                                             </tr>
-                                                            <tr className="border-b">
-                                                                <td className="px-4 py-2.5">2</td>
-                                                                <td className="px-4 py-2.5">HDL Cholesterol</td>
-                                                                <td className="px-4 py-2.5">1.43</td>
-                                                                <td className="px-4 py-2.5"></td>
-                                                                <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                                <td className="px-4 py-2.5">(1.04-1.55)</td>
+                                                            <tr className="border-b ">
+                                                                <td className="p-4">2</td>
+                                                                <td className="p-4">Thyroid Stimulating Hormone</td>
+                                                                <td className="p-4">0.375</td>
+                                                                <td className="p-4">mIU/L</td>
+                                                                <td className="p-4">(0.400 - 4.700)</td>
                                                             </tr>
                                                             <tr className="border-b bg-[#f5f7fa]">
-                                                                <td className="px-4 py-2.5">3</td>
-                                                                <td className="px-4 py-2.5">LDL Cholesterol</td>
-                                                                <td className="px-4 py-2.5">2.7</td>
-                                                                <td className="px-4 py-2.5"></td>
-                                                                <td className="px-4 py-2.5">(&lt;20)</td>
-                                                                <td className="px-4 py-2.5">(&lt;20)</td>
+                                                                <td className="p-4">3</td>
+                                                                <td className="p-4">Free Tri-iodothyronine (FT3)</td>
+                                                                <td className="p-4">5.8</td>
+                                                                <td className="p-4">µmol/L</td>
+                                                                <td className="p-4">(3.5 - 6.5)</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -726,6 +767,254 @@ const LabReportPopup = ({ setPopup1 }) => {
                                         </div>
 
 
+
+                                    )
+                                }
+                                {
+                                    activeTabLeft == "General Biochemistry" && (
+
+
+                                        <div className="">
+                                            <div className={` bg-[#f7f8fa] ${previewDocument ? " grid-cols-2" : "grid-cols-3"} border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm grid gap-4`}>
+                                                <div className=" space-y-1">
+                                                    <p className='font-semibold pb-4'>Patient Details</p>
+                                                    <p className=''> Name</p>
+                                                    <p className=''>DOB</p>
+                                                    <p className=''>IC No.</p>
+                                                    <p className=''>Date of Test</p>
+                                                    <p className=''>Generated</p>
+                                                </div>
+                                                <div className=" space-y-1">
+                                                    <p className='font-semibold pb-3'></p>
+                                                    <p className='font-semibold'>Norartin Binti Sulong (Mokhtar) (39y Female)</p>
+                                                    <p className='font-semibold'>: 03/07/1985 </p>
+                                                    <p className='font-semibold'>: 850703115180 </p>
+                                                    <p className='font-semibold'>: 11/05/2024 </p>
+                                                    <p className='font-semibold'>: 14/05/2024 </p>
+                                                </div>
+                                                <div className=" space-y-1">
+                                                    <p className='font-semibold pb-4'>Clinic Details</p>
+                                                    <p className=''>POLIKLINIK JOHAN
+                                                        <br /> POLIKLINIK JOHAN (JOMEZBM)
+                                                        <br /> Lab No.: 24-8766231</p>
+                                                </div>
+                                            </div>
+                                            <div className={` flex justify-between items-center border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm`}>
+                                                <p className='font-semibold'> THYROID FUNCTION TESTS</p>
+                                                <p className='text-[#6E6E6E] font-medium'></p>
+                                            </div>
+                                            <div className={` flex justify-between items-center border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm`}>
+                                                <p className='text-[#6E6E6E] font-medium'>ENDOCRINOLOGY</p>
+                                                <p className='font-semibold'> SPECIMEN: SERUM</p>
+                                            </div>
+
+                                            <div className="flex justify-center items-center">
+                                                <div className="w-full bg-white rounded-lg border mt-4">
+                                                    <p className='text-sm font-medium p-4 border-b  text-[#6E6E6E]'>THROID FUNCTION ASSAYS</p>
+                                                    <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
+                                                        <thead className=" border-b">
+                                                            <tr>
+                                                                <th className="p-4 text-left font-medium">No</th>
+                                                                <th className="p-4 text-left font-medium">Analytes</th>
+                                                                <th className="p-4 text-left font-medium">Result</th>
+                                                                <th className="p-4 text-left font-medium">Unit</th>
+                                                                <th className="p-4 text-left font-medium">Ref. Ranges</th>
+                                                            </tr>
+                                                        </thead>
+
+                                                        {/* Table Body */}
+                                                        <tbody>
+                                                            <tr className="border-b bg-[#f5f7fa]">
+                                                                <td className="p-4">1</td>
+                                                                <td className="p-4">Free Thyroxine (FT4)</td>
+                                                                <td className="p-4">16.7</td>
+                                                                <td className="p-4">µmol/L</td>
+                                                                <td className="p-4">(9.0 - 25.0)</td>
+                                                            </tr>
+                                                            <tr className="border-b ">
+                                                                <td className="p-4">2</td>
+                                                                <td className="p-4">Thyroid Stimulating Hormone</td>
+                                                                <td className="p-4">0.375</td>
+                                                                <td className="p-4">mIU/L</td>
+                                                                <td className="p-4">(0.400 - 4.700)</td>
+                                                            </tr>
+                                                            <tr className="border-b bg-[#f5f7fa]">
+                                                                <td className="p-4">3</td>
+                                                                <td className="p-4">Free Tri-iodothyronine (FT3)</td>
+                                                                <td className="p-4">5.8</td>
+                                                                <td className="p-4">µmol/L</td>
+                                                                <td className="p-4">(3.5 - 6.5)</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    )
+                                }
+                                {
+                                    activeTabLeft == "Special Chemistry" && (
+
+                                        <div className="">
+
+                                            <div className={` bg-[#f7f8fa] ${previewDocument ? " grid-cols-2" : "grid-cols-3"} border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm grid gap-4`}>
+                                                <div className=" space-y-1">
+                                                    <p className='font-semibold pb-3'>Patient Details</p>
+                                                    <p className=''> Name</p>
+                                                    <p className=''>UR</p>
+                                                    <p className=''>Address</p>
+                                                </div>
+                                                <div className=" space-y-1">
+                                                    <p className='font-semibold pb-3'>&nbsp;</p>
+                                                    <p className='font-semibold'>Norartin Binti Sulong (Mokhtar)</p>
+                                                    <p className='font-semibold'>: 03/07/1985 </p>
+                                                    <p className='font-semibold'>: 850703115180 </p>
+                                                </div>
+                                                <div className=" space-y-1">
+                                                    <p className='font-semibold pb-3'>Doctor Details</p>
+                                                    <p className=''>DR KAMINI VETHAGURU
+                                                        <br /> POLIKLINIK JOHAN
+                                                        <br /> 48-G.BLOK 3 JLN PAHAT G 15/G
+                                                        <br /> DATARAN OTOMOBIL
+                                                        <br /> SHAH ALAM SEL 40200
+                                                    </p>
+                                                </div>
+
+                                                <div className={` ${previewDocument ? " grid-cols-2 col-span-2" : "grid-cols-3 col-span-3 "}  gap-5 grid mt-3`}>
+                                                    <div className=" space-y-1 grid grid-cols-2">
+                                                        <p className=''>DOB</p>
+                                                        <p className='font-semibold'>: 03/07/85</p>
+                                                        <p className=''>IC No.</p>
+                                                        <p className='font-semibold'>: 850703115180 </p>
+                                                        <p className=''>Collected</p>
+                                                        <p className='font-semibold'>: 31/01/24 09:10 </p>
+                                                        <p className=''>Referred</p>
+                                                        <p className='font-semibold'>: 31/01/24 </p>
+                                                    </div>
+                                                    <div className=" space-y-1 grid grid-cols-2">
+                                                        <p className=''>Sex</p>
+                                                        <p className='font-semibold'>: Female</p>
+                                                        <p className=''>Age</p>
+                                                        <p className='font-semibold'>: 38 Years </p>
+                                                        <p className=''>Ward</p>
+                                                        <p className='font-semibold'>: - </p>
+                                                        <p className=''>Yr Ref.</p>
+                                                        <p className='font-semibold'>: - </p>
+                                                    </div>
+                                                    <div className=" space-y-1 grid grid-cols-2">
+                                                        <p className=''>Lab No.</p>
+                                                        <p className='font-semibold'>: 24-7403676</p>
+                                                        <p className=''>Courier Run</p>
+                                                        <p className='font-semibold'>: SA1 </p>
+                                                        <p className=''>Report Printed</p>
+                                                        <p className='font-semibold'>: 01/02/24 06:15</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div className={` flex gap-3 items-center border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm`}>
+                                                <p className='text-[#6E6E6E] font-medium'>Analytes:</p>
+                                                <p className='font-semibold'> Special Chemistry</p>
+                                            </div>
+
+                                            <div className="py-3 mt-3 rounded-lg border border-[#cfd1d4]">
+                                                <div className="flex text-lg border-b pb-2 border-[#cfd1d4] text-[#6E6E6E] items-center gap-3 px-3">
+                                                    <p onClick={() => setActiveTab("Special Chemistry")} className={`cursor-pointer ${activeTab == "Special Chemistry" && "text-secondary"}`}>Special Chemistry</p>
+                                                    <div className="h-5 border border-[#cfd1d4]"></div>
+                                                    <p onClick={() => setActiveTab("Endocrinology")} className={`cursor-pointer ${activeTab == "Endocrinology" && "text-secondary"}`}>Endocrinology</p>
+                                                </div>
+                                                {
+                                                    activeTab == "Special Chemistry" && (
+                                                        <div className="">
+                                                            <div className="flex justify-center items-center">
+                                                                <div className="w-full bg-white rounded-lg">
+                                                                    <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
+                                                                        {/* Table Header */}
+                                                                        <thead className=" border-b">
+                                                                            <tr>
+                                                                                <th className="p-4 text-left font-medium">No</th>
+                                                                                <th className="p-4 text-left font-medium">Analytes</th>
+                                                                                <th className="p-4 text-left font-medium">Result</th>
+                                                                                <th className="p-4 text-left font-medium">Unit</th>
+                                                                                <th className="p-4 text-left font-medium">Ref. Ranges</th>
+                                                                            </tr>
+                                                                        </thead>
+
+                                                                        {/* Table Body */}
+                                                                        <tbody>
+                                                                            <tr className="border-b bg-[#f5f7fa]">
+                                                                                <td className="p-4">1</td>
+                                                                                <td className="p-4">Haemoglobin</td>
+                                                                                <td className="p-4">38</td>
+                                                                                <td className="p-4">mmol/mo</td>
+                                                                                <td className="p-4">5.7%</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                }
+
+                                                {
+                                                    activeTab == "Endocrinology" && (
+                                                        <div className="flex justify-center items-center">
+                                                            <div className="w-full bg-white rounded-lg">
+                                                                <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
+                                                                    {/* Table Header */}
+                                                                    <thead className=" border-b">
+                                                                        <tr>
+                                                                            <th className="p-4 text-left font-medium">No</th>
+                                                                            <th className="p-4 text-left font-medium">Analytes</th>
+                                                                            <th className="p-4 text-left font-medium">Result</th>
+                                                                            <th className="p-4 text-left font-medium">Unit</th>
+                                                                            <th className="p-4 text-left font-medium">Ref. Ranges</th>
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                    {/* Table Body */}
+                                                                    <tbody>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">1</td>
+                                                                            <td className="p-4">Free Thyroxine (FT4)</td>
+                                                                            <td className="p-4">16.0</td>
+                                                                            <td className="p-4">pmol/L</td>
+                                                                            <td className="p-4">(64 - 85)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b">
+                                                                            <td className="p-4">2</td>
+                                                                            <td className="p-4">Thyroid Stimulating Hormone</td>
+                                                                            <td className="p-4">0.383</td>
+                                                                            <td className="p-4">pmol/L</td>
+                                                                            <td className="p-4">(0.400 - 4.700)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">3</td>
+                                                                            <td className="p-4">Free Tri-lodothyronine (FT3):</td>
+                                                                            <td className="p-4">6.0</td>
+                                                                            <td className="p-4">pmol/L</td>
+                                                                            <td className="p-4">(3.5 - 6.5)</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                }
+
+                                            </div>
+                                            {
+                                                activeTab == "Special Chemistry" && (
+                                                    <p className='border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm bg-[#f7f8fa]'>Diagnostic Values of HbA1c in Malaysian Adults
+                                                    </p>
+                                                )
+                                            }
+                                        </div>
 
                                     )
                                 }
