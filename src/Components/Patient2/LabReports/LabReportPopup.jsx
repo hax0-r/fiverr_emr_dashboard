@@ -1,19 +1,18 @@
 import React, { useRef, useState } from 'react'
-import { PiArrowsOutSimpleBold, PiBuildings, PiPackageBold, PiPrinterBold } from 'react-icons/pi'
+import { PiArrowsOutSimpleBold, PiPackageBold, PiPrinterBold } from 'react-icons/pi'
 import receipt from "../../../assets/receipt24.png"
 import LabReport from "../../../assets/LabReport.svg"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
 import { MdClose } from 'react-icons/md'
 import Print from '../Print'
-import { IoLocationOutline } from 'react-icons/io5'
-import { SlLocationPin } from 'react-icons/sl'
 
 const LabReportPopup = ({ setPopup1 }) => {
     const [previewDocument, setPreviewDocument] = useState(false)
     const [activeTab, setActiveTab] = useState("Special Chemistry")
     const [activeTab2, setActiveTab2] = useState("Haematology")
     const [activeTab3, setActiveTab3] = useState("Urine Appearance")
+    const [activeTab4, setActiveTab4] = useState("Lipids")
     const [activeTabLeft, setActiveTabLeft] = useState("Thyroid Function Tests")
 
     const popUp = useRef()
@@ -772,88 +771,314 @@ const LabReportPopup = ({ setPopup1 }) => {
                                 }
                                 {
                                     activeTabLeft == "General Biochemistry" && (
-
-
                                         <div className="">
+
                                             <div className={` bg-[#f7f8fa] ${previewDocument ? " grid-cols-2" : "grid-cols-3"} border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm grid gap-4`}>
                                                 <div className=" space-y-1">
-                                                    <p className='font-semibold pb-4'>Patient Details</p>
+                                                    <p className='font-semibold pb-3'>Patient Details</p>
                                                     <p className=''> Name</p>
-                                                    <p className=''>DOB</p>
-                                                    <p className=''>IC No.</p>
-                                                    <p className=''>Date of Test</p>
-                                                    <p className=''>Generated</p>
+                                                    <p className=''>UR</p>
+                                                    <p className=''>Address</p>
                                                 </div>
                                                 <div className=" space-y-1">
-                                                    <p className='font-semibold pb-3'></p>
-                                                    <p className='font-semibold'>Norartin Binti Sulong (Mokhtar) (39y Female)</p>
+                                                    <p className='font-semibold pb-3'>&nbsp;</p>
+                                                    <p className='font-semibold'>Norartin Binti Sulong (Mokhtar)</p>
                                                     <p className='font-semibold'>: 03/07/1985 </p>
                                                     <p className='font-semibold'>: 850703115180 </p>
-                                                    <p className='font-semibold'>: 11/05/2024 </p>
-                                                    <p className='font-semibold'>: 14/05/2024 </p>
                                                 </div>
                                                 <div className=" space-y-1">
-                                                    <p className='font-semibold pb-4'>Clinic Details</p>
-                                                    <p className=''>POLIKLINIK JOHAN
-                                                        <br /> POLIKLINIK JOHAN (JOMEZBM)
-                                                        <br /> Lab No.: 24-8766231</p>
+                                                    <p className='font-semibold pb-3'>Doctor Details</p>
+                                                    <p className=''>DR KAMINI VETHAGURU
+                                                        <br /> POLIKLINIK JOHAN
+                                                        <br /> 48-G.BLOK 3 JLN PAHAT G 15/G
+                                                        <br /> DATARAN OTOMOBIL
+                                                        <br /> SHAH ALAM SEL 40200
+                                                    </p>
                                                 </div>
-                                            </div>
-                                            <div className={` flex justify-between items-center border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm`}>
-                                                <p className='font-semibold'> THYROID FUNCTION TESTS</p>
-                                                <p className='text-[#6E6E6E] font-medium'></p>
-                                            </div>
-                                            <div className={` flex justify-between items-center border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm`}>
-                                                <p className='text-[#6E6E6E] font-medium'>ENDOCRINOLOGY</p>
-                                                <p className='font-semibold'> SPECIMEN: SERUM</p>
-                                            </div>
 
-                                            <div className="flex justify-center items-center">
-                                                <div className="w-full bg-white rounded-lg border mt-4">
-                                                    <p className='text-sm font-medium p-4 border-b  text-[#6E6E6E]'>THROID FUNCTION ASSAYS</p>
-                                                    <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
-                                                        <thead className=" border-b">
-                                                            <tr>
-                                                                <th className="p-4 text-left font-medium">No</th>
-                                                                <th className="p-4 text-left font-medium">Analytes</th>
-                                                                <th className="p-4 text-left font-medium">Result</th>
-                                                                <th className="p-4 text-left font-medium">Unit</th>
-                                                                <th className="p-4 text-left font-medium">Ref. Ranges</th>
-                                                            </tr>
-                                                        </thead>
-
-                                                        {/* Table Body */}
-                                                        <tbody>
-                                                            <tr className="border-b bg-[#f5f7fa]">
-                                                                <td className="p-4">1</td>
-                                                                <td className="p-4">Free Thyroxine (FT4)</td>
-                                                                <td className="p-4">16.7</td>
-                                                                <td className="p-4">µmol/L</td>
-                                                                <td className="p-4">(9.0 - 25.0)</td>
-                                                            </tr>
-                                                            <tr className="border-b ">
-                                                                <td className="p-4">2</td>
-                                                                <td className="p-4">Thyroid Stimulating Hormone</td>
-                                                                <td className="p-4">0.375</td>
-                                                                <td className="p-4">mIU/L</td>
-                                                                <td className="p-4">(0.400 - 4.700)</td>
-                                                            </tr>
-                                                            <tr className="border-b bg-[#f5f7fa]">
-                                                                <td className="p-4">3</td>
-                                                                <td className="p-4">Free Tri-iodothyronine (FT3)</td>
-                                                                <td className="p-4">5.8</td>
-                                                                <td className="p-4">µmol/L</td>
-                                                                <td className="p-4">(3.5 - 6.5)</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                <div className={` ${previewDocument ? " grid-cols-2 col-span-2" : "grid-cols-3 col-span-3 "}  gap-5 grid mt-3`}>
+                                                    <div className=" space-y-1 grid grid-cols-2">
+                                                        <p className=''>DOB</p>
+                                                        <p className='font-semibold'>: 03/07/85</p>
+                                                        <p className=''>IC No.</p>
+                                                        <p className='font-semibold'>: 850703115180 </p>
+                                                        <p className=''>Collected</p>
+                                                        <p className='font-semibold'>: 31/01/24 09:10 </p>
+                                                        <p className=''>Referred</p>
+                                                        <p className='font-semibold'>: 31/01/24 </p>
+                                                    </div>
+                                                    <div className=" space-y-1 grid grid-cols-2">
+                                                        <p className=''>Sex</p>
+                                                        <p className='font-semibold'>: Female</p>
+                                                        <p className=''>Age</p>
+                                                        <p className='font-semibold'>: 38 Years </p>
+                                                        <p className=''>Ward</p>
+                                                        <p className='font-semibold'>: - </p>
+                                                        <p className=''>Yr Ref.</p>
+                                                        <p className='font-semibold'>: - </p>
+                                                    </div>
+                                                    <div className=" space-y-1 grid grid-cols-2">
+                                                        <p className=''>Lab No.</p>
+                                                        <p className='font-semibold'>: 24-7403676</p>
+                                                        <p className=''>Courier Run</p>
+                                                        <p className='font-semibold'>: SA1 </p>
+                                                        <p className=''>Report Printed</p>
+                                                        <p className='font-semibold'>: 01/02/24 06:15</p>
+                                                    </div>
                                                 </div>
                                             </div>
 
+                                            <div className={` flex gap-3 items-center border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm`}>
+                                                <p className='text-[#6E6E6E] font-medium'>Analytes:</p>
+                                                <p className='font-semibold'> General Biochemistry</p>
+                                            </div>
+
+                                            <div className="py-3 mt-3 rounded-lg border border-[#cfd1d4]">
+                                                <div className="flex text-lg border-b pb-2 border-[#cfd1d4] text-[#6E6E6E] items-center gap-3 px-3">
+                                                    <p onClick={() => setActiveTab("Lipids")} className={`cursor-pointer ${activeTab == "Lipids" && "text-secondary"}`}>Lipids</p>
+                                                    <div className="h-5 border border-[#cfd1d4]"></div>
+                                                    <p onClick={() => setActiveTab("Electrolytes")} className={`cursor-pointer ${activeTab == "Electrolytes" && "text-secondary"}`}>Electrolytes</p>
+                                                    <div className="h-5 border border-[#cfd1d4]"></div>
+                                                    <p onClick={() => setActiveTab("Renal Function")} className={`cursor-pointer ${activeTab == "Renal Function" && "text-secondary"}`}>Renal Function</p>
+                                                    <div className="h-5 border border-[#cfd1d4]"></div>
+                                                    <p onClick={() => setActiveTab("Liver Function")} className={`cursor-pointer ${activeTab == "Liver Function" && "text-secondary"}`}>Liver Function</p>
+                                                </div>
+                                                {
+                                                    activeTab == "Lipids" && (
+                                                        <div className="">
+                                                            <div className="flex justify-center items-center">
+                                                                <div className="w-full bg-white rounded-lg">
+                                                                    <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
+                                                                        {/* Table Header */}
+                                                                        <thead className=" border-b">
+                                                                            <tr>
+                                                                                <th className="p-4 text-left font-medium">No</th>
+                                                                                <th className="p-4 text-left font-medium">Analytes</th>
+                                                                                <th className="p-4 text-left font-medium">Result</th>
+                                                                                <th className="p-4 text-left font-medium">Unit</th>
+                                                                                <th className="p-4 text-left font-medium">Ref. Ranges</th>
+                                                                            </tr>
+                                                                        </thead>
+
+                                                                        {/* Table Body */}
+                                                                        <tbody>
+                                                                            <tr className="border-b bg-[#f5f7fa]">
+                                                                                <td className="p-4">1</td>
+                                                                                <td className="p-4">Total Cholesterol</td>
+                                                                                <td className="p-4">1.22</td>
+                                                                                <td className="p-4">mmol/L</td>
+                                                                                <td className="p-4">(&#60;5.2)</td>
+                                                                            </tr>
+                                                                            <tr className="border-b">
+                                                                                <td className="p-4">2</td>
+                                                                                <td className="p-4">Triglyceride</td>
+                                                                                <td className="p-4">1.22</td>
+                                                                                <td className="p-4">mmol/L</td>
+                                                                                <td className="p-4">(&#60;1.70)</td>
+                                                                            </tr>
+                                                                            <tr className="border-b bg-[#f5f7fa]">
+                                                                                <td className="p-4">3</td>
+                                                                                <td className="p-4">HDL Cholesterol</td>
+                                                                                <td className="p-4">1.25</td>
+                                                                                <td className="p-4">mmol/L</td>
+                                                                                <td className="p-4">(1.20)</td>
+                                                                            </tr>
+                                                                            <tr className="border-b ">
+                                                                                <td className="p-4">4</td>
+                                                                                <td className="p-4">LDL Cholesterol</td>
+                                                                                <td className="p-4">4.39</td>
+                                                                                <td className="p-4">mmol/L</td>
+                                                                                <td className="p-4">(&#60;2.60)</td>
+                                                                            </tr>
+                                                                            <tr className="border-b bg-[#f5f7fa]">
+                                                                                <td className="p-4">5</td>
+                                                                                <td className="p-4">Non-HDL Cholesterol</td>
+                                                                                <td className="p-4">4.95</td>
+                                                                                <td className="p-4">mmol/L</td>
+                                                                                <td className="p-4">(&#60;3.40)</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                }
+
+                                                {
+                                                    activeTab == "Electrolytes" && (
+                                                        <div className="flex justify-center items-center">
+                                                            <div className="w-full bg-white rounded-lg">
+                                                                <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
+                                                                    {/* Table Header */}
+                                                                    <thead className=" border-b">
+                                                                        <tr>
+                                                                            <th className="p-4 text-left font-medium">No</th>
+                                                                            <th className="p-4 text-left font-medium">Analytes</th>
+                                                                            <th className="p-4 text-left font-medium">Result</th>
+                                                                            <th className="p-4 text-left font-medium">Unit</th>
+                                                                            <th className="p-4 text-left font-medium">Ref. Ranges</th>
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                    {/* Table Body */}
+                                                                    <tbody>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">1</td>
+                                                                            <td className="p-4">Sodium</td>
+                                                                            <td className="p-4">139</td>
+                                                                            <td className="p-4">mmol/L</td>
+                                                                            <td className="p-4">(135-145)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b">
+                                                                            <td className="p-4">2</td>
+                                                                            <td className="p-4">Potassium </td>
+                                                                            <td className="p-4">4.3</td>
+                                                                            <td className="p-4">mmol/L</td>
+                                                                            <td className="p-4">(3.5-5.1)
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">3</td>
+                                                                            <td className="p-4">Chloride</td>
+                                                                            <td className="p-4">96</td>
+                                                                            <td className="p-4">mmol/L</td>
+                                                                            <td className="p-4">(95-110)</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                }
+
+                                                {
+                                                    activeTab == "Renal Function" && (
+                                                        <div className="flex justify-center items-center">
+                                                            <div className="w-full bg-white rounded-lg">
+                                                                <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
+                                                                    {/* Table Header */}
+                                                                    <thead className=" border-b">
+                                                                        <tr>
+                                                                            <th className="p-4 text-left font-medium">No</th>
+                                                                            <th className="p-4 text-left font-medium">Analytes</th>
+                                                                            <th className="p-4 text-left font-medium">Result</th>
+                                                                            <th className="p-4 text-left font-medium">Unit</th>
+                                                                            <th className="p-4 text-left font-medium">Ref. Ranges</th>
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                    {/* Table Body */}
+                                                                    <tbody>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">1</td>
+                                                                            <td className="p-4">Urea</td>
+                                                                            <td className="p-4">4.1</td>
+                                                                            <td className="p-4">mmol/L</td>
+                                                                            <td className="p-4"> (2.5-8.0)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b">
+                                                                            <td className="p-4">2</td>
+                                                                            <td className="p-4">Creatinine</td>
+                                                                            <td className="p-4">49</td>
+                                                                            <td className="p-4">mmol/L</td>
+                                                                            <td className="p-4">(40-60)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">3</td>
+                                                                            <td className="p-4">eGFR</td>
+                                                                            <td className="p-4">120</td>
+                                                                            <td className="p-4">mL/min/1.73m²</td>
+                                                                            <td className="p-4">(40-80)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b">
+                                                                            <td className="p-4">4</td>
+                                                                            <td className="p-4">Uric Acid </td>
+                                                                            <td className="p-4">0.23</td>
+                                                                            <td className="p-4">mmol/L</td>
+                                                                            <td className="p-4">(0.15-0.45)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">5</td>
+                                                                            <td className="p-4">Calcium</td>
+                                                                            <td className="p-4">2.20</td>
+                                                                            <td className="p-4">mmol/L</td>
+                                                                            <td className="p-4">(2.10-2.55)</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                }
+                                                {
+                                                    activeTab == "Liver Function" && (
+                                                        <div className="flex justify-center items-center">
+                                                            <div className="w-full bg-white rounded-lg">
+                                                                <table className="w-full table-auto border-collapse text-sm text-[#1D1D1D]">
+                                                                    {/* Table Header */}
+                                                                    <thead className=" border-b">
+                                                                        <tr>
+                                                                            <th className="p-4 text-left font-medium">No</th>
+                                                                            <th className="p-4 text-left font-medium">Analytes</th>
+                                                                            <th className="p-4 text-left font-medium">Result</th>
+                                                                            <th className="p-4 text-left font-medium">Unit</th>
+                                                                            <th className="p-4 text-left font-medium">Ref. Ranges</th>
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                    {/* Table Body */}
+                                                                    <tbody>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">1</td>
+                                                                            <td className="p-4">Total Protein</td>
+                                                                            <td className="p-4">73</td>
+                                                                            <td className="p-4">g/L</td>
+                                                                            <td className="p-4">(60-82)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b">
+                                                                            <td className="p-4">2</td>
+                                                                            <td className="p-4">Albumin </td>
+                                                                            <td className="p-4">42</td>
+                                                                            <td className="p-4">g/L</td>
+                                                                            <td className="p-4">(35-50)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">3</td>
+                                                                            <td className="p-4">Globulin </td>
+                                                                            <td className="p-4">31</td>
+                                                                            <td className="p-4">g/L</td>
+                                                                            <td className="p-4">(20-39)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b">
+                                                                            <td className="p-4">4</td>
+                                                                            <td className="p-4">Albumin/Globulin ratio  </td>
+                                                                            <td className="p-4">1.4</td>
+                                                                            <td className="p-4">mmol/L</td>
+                                                                            <td className="p-4">(1.0-2.5)</td>
+                                                                        </tr>
+                                                                        <tr className="border-b bg-[#f5f7fa]">
+                                                                            <td className="p-4">5</td>
+                                                                            <td className="p-4">Alkaline Phosphatase </td>
+                                                                            <td className="p-4">84</td>
+                                                                            <td className="p-4">g/L</td>
+                                                                            <td className="p-4">(30-120)</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                }
+
+                                            </div>
+                                            {
+                                                activeTab == "Special Chemistry" && (
+                                                    <p className='border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm bg-[#f7f8fa]'>Diagnostic Values of HbA1c in Malaysian Adults
+                                                    </p>
+                                                )
+                                            }
                                         </div>
-
-
-
                                     )
                                 }
                                 {

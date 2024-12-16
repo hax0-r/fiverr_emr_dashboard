@@ -39,184 +39,20 @@ const LabReports = () => {
           <div className="border-b border-[#cfd1d4]"></div>
           <div className="p-4 flex flex-col gap-3">
             <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Full Blood Count</h3>
+              <h3 className='font-medium text-[#1D1D1D]'>Thyroid Function Tests</h3>
               <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
-                  <PiPackageBold />
-                  <p className='text-sm'>Histopathology</p>
-                </div>
                   <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
               </div>
             </div>
             <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Endocrine Test </h3>
+              <h3 className='font-medium text-[#1D1D1D]'>General Screening DPS3C Profile </h3>
               <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
-                  <PiPackageBold />
-                  <p className='text-sm'>Histopathology</p>
-                </div>
                   <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
               </div>
             </div>
             <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Liver</h3>
+              <h3 className='font-medium text-[#1D1D1D]'>Serum/Plasma Glucose</h3>
               <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
-                  <PiPackageBold />
-                  <p className='text-sm'>Histopathology</p>
-                </div>
-                  <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="border border-[#cfd1d4] rounded-lg bg-white">
-          <div className="flex items-center justify-between p-4 ">
-            <div className="flex items-center justify-between gap-3">
-              <img src={LabRequest} alt="" />
-              <h2 className='text-lg font-semibold'>Lab Request</h2>
-            </div>
-            <PiArrowsOutSimpleBold className='text-[#9F9FA1] cursor-pointer text-2xl' onClick={() => setPopup2(true)} />
-          </div>
-          <div className="border-b border-[#cfd1d4]"></div>
-          <div className="p-4 flex flex-col gap-3">
-            <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Endocrine Test</h3>
-              <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
-                  <PiPackageBold />
-                  <p className='text-sm'>Histopathology</p>
-                </div>
-                  <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
-              </div>
-            </div>
-            <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Endocrine Test</h3>
-              <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
-                  <PiPackageBold />
-                  <p className='text-sm'>Histopathology</p>
-                </div>
-                  <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
-              </div>
-            </div>
-            <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Endocrine Test</h3>
-              <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
-                  <PiPackageBold />
-                  <p className='text-sm'>Histopathology</p>
-                </div>
-                  <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="border border-[#cfd1d4] rounded-lg bg-white">
-          <div className="flex items-center justify-between p-4 ">
-            <div className="flex items-center justify-between gap-3">
-              <img src={MicrobiologyReport} alt="" />
-              <h2 className='text-lg font-semibold'>Microbiology Report</h2>
-            </div>
-            <PiArrowsOutSimpleBold className='text-[#9F9FA1] cursor-pointer text-2xl' onClick={() => setPopup3(true)} />
-          </div>
-          <div className="border-b border-[#cfd1d4]"></div>
-          <div className="p-4 flex flex-col gap-3">
-            <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Urine Culture & Sensitivity</h3>
-              <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
-                  <PiPackageBold />
-                  <p className='text-sm'>Histopathology</p>
-                </div>
-                  <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
-              </div>
-            </div>
-            <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Urine Culture & Sensitivity</h3>
-              <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
-                  <PiPackageBold />
-                  <p className='text-sm'>Histopathology</p>
-                </div>
-                  <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
-              </div>
-            </div>
-            <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Urine Culture & Sensitivity</h3>
-              <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
-                  <PiPackageBold />
-                  <p className='text-sm'>Histopathology</p>
-                </div>
-                  <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="border border-[#cfd1d4] rounded-lg bg-white">
-          <div className="flex items-center justify-between p-4 ">
-            <div className="flex items-center justify-between gap-3">
-              <img src={PathologyReport} alt="" />
-              <h2 className='text-lg font-semibold'>Pathology Report</h2>
-            </div>
-            <PiArrowsOutSimpleBold className='text-[#9F9FA1] cursor-pointer text-2xl' onClick={() => setPopup4(true)} />
-          </div>
-          <div className="border-b border-[#cfd1d4]"></div>
-          <div className="p-4 flex flex-col gap-3">
-            <div className="border grid grid-cols-2 rounded-lg border-[#cfd1d4] w-full">
-              <p className='font-semibold  px-3 py-[18px] border-b'>Test</p>
-              <p className='font-semibold  px-3 py-[18px] border-b'>Result</p>
-              <p className='  px-3 py-5 border-b'>MPV</p>
-              <p className='  px-3 py-5 border-b'>10.3</p>
-              <p className='  px-3 py-5 bg-[#f5f7fa] border-b'>MPV</p>
-              <p className='  px-3 py-5 bg-[#f5f7fa] border-b'>10.3</p>
-              <p className='  px-3 py-5'>MPV</p>
-              <p className='  px-3 py-5'>10.3</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="border border-[#cfd1d4] rounded-lg bg-white">
-          <div className="flex items-center justify-between p-4 ">
-            <div className="flex items-center justify-between gap-3">
-              <img src={Histo} alt="" />
-              <h2 className='text-lg font-semibold'>Histo & Patho Req</h2>
-            </div>
-            <PiArrowsOutSimpleBold className='text-[#9F9FA1] cursor-pointer text-2xl' onClick={() => setPopup5(true)} />
-          </div>
-          <div className="border-b border-[#cfd1d4]"></div>
-          <div className="p-4 flex flex-col gap-3">
-            <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Histopathology Request</h3>
-              <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
-                  <PiPackageBold />
-                  <p className='text-sm'>Request Form</p>
-                </div>
-                  <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
-              </div>
-            </div>
-            <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Cytopathology</h3>
-              <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
-                  <PiPackageBold />
-                  <p className='text-sm'>Request Form</p>
-                </div>
-                  <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
-              </div>
-            </div>
-            <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Haematology</h3>
-              <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
-                  <PiPackageBold />
-                  <p className='text-sm'>Request Form</p>
-                </div>
                   <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
               </div>
             </div>
@@ -277,32 +113,8 @@ const LabReports = () => {
           <div className="border-b border-[#cfd1d4]"></div>
           <div className="p-4 flex flex-col gap-3">
             <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Haematologi Rutin</h3>
+              <h3 className='font-medium text-[#1D1D1D]'>Cytopathology</h3>
               <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
-                  <PiPackageBold />
-                  <p className='text-sm'>Request Form</p>
-                </div>
-                  <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
-              </div>
-            </div>
-            <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Unit Patologi</h3>
-              <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
-                  <PiPackageBold />
-                  <p className='text-sm'>Histopathology</p>
-                </div>
-                  <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
-              </div>
-            </div>
-            <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-              <h3 className='font-medium text-[#1D1D1D]'>Haematologi</h3>
-              <div className="flex items-center justify-between mt-2">
-                <div className="flex items-center gap-2">
-                  <PiPackageBold />
-                  <p className='text-sm'>Histopathology</p>
-                </div>
                   <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
               </div>
             </div>
