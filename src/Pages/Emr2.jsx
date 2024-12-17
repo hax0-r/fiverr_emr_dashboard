@@ -27,20 +27,20 @@ const Emr2 = () => {
         switch (activeTab) {
             case 'Medical Notes':
                 return <MedicalNotes />;
-            case 'Nursing Records':
-                return <NursingRecords />;
+            // case 'Nursing Records':
+                // return <NursingRecords />;
             case 'Lab Reports':
                 return <LabReports />;
-            case 'Radiology':
-                return <Radiology />;
-            case 'Surgical Records':
-                return <SurgicalRecords />;
-            case 'Discharge Records':
-                return <DischargeRecords />;
+            // case 'Radiology':
+            //     return <Radiology />;
+            // case 'Surgical Records':
+            //     return <SurgicalRecords />;
+            // case 'Discharge Records':
+            //     return <DischargeRecords />;
             case 'Admission':
                 return <Admission />;
-            case 'Consent':
-                return <Consent />;
+            // case 'Consent':
+            //     return <Consent />;
             case 'Admin Records':
                 return <AdminRecords />;
             default:
@@ -106,13 +106,8 @@ const Emr2 = () => {
                 <div className="bg-white flex items-center rounded-lg overflow-hidden border-[#CFD1D4] border">
                     {[
                         'Medical Notes',
-                        'Nursing Records',
                         'Lab Reports',
-                        'Radiology',
-                        'Surgical Records',
-                        'Discharge Records',
                         'Admission',
-                        'Consent',
                         'Admin Records',
                     ].map((tab, idx) => (
                         <div key={tab} className="flex items-center">
