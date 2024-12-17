@@ -5,7 +5,7 @@ import { PiSquaresFourBold } from 'react-icons/pi'
 import { Link } from 'react-router'
 import Profile_Picture from "../assets/lady1.png"
 import calender from "../assets/calender.svg"
-import { IoMaleSharp } from 'react-icons/io5'
+import { IoFemale, IoMaleSharp } from 'react-icons/io5'
 import { RiBarcodeLine } from 'react-icons/ri'
 import { FaPhoneAlt } from 'react-icons/fa'
 import MedicalNotes from '../Components/Patient2/MedicalNotes/MedicalNotes'
@@ -79,24 +79,24 @@ const Emr2 = () => {
             <div className="w-full  flex items-center gap-8 flex-wrap rounded-xl mt-4 border-[#CFD1D4] border bg-white p-5">
                 <div className=" group flex items-center gap-3">
                     <img src={Profile_Picture} className='w-[60px] group-hover:border-blue-600 border-white transition-all duration-500 border-2 h-[60px] rounded-full overflow-hidden' alt="pic" />
-                    <h3 className='text-lg text-[#1D1D1D] group-hover:text-blue-600 duration-500 transition-all cursor-default font-semibold'>Ahmad Zulkifli bin Mohd Zain</h3>
+                    <h3 className='text-lg text-[#1D1D1D] group-hover:text-blue-600 duration-500 transition-all cursor-default font-semibold'>Norartini, Sulong @Mokhtar</h3>
                     <h2 className='text-sm font-medium text-[#362702] bg-[#F9D67B] border-[#F5B920] border rounded-full py-1 px-3'>VIP</h2>
                 </div>
                 <div className="flex items-center justify-center gap-2">
-                    <IoMaleSharp className="text-[#2275F2] text-xl" />
-                    <h3 className='text-[#1D1D1D] font-medium text-lg'>Male</h3>
+                    <IoFemale className="text-[#E02D2D] text-xl" />
+                    <h3 className='text-[#1D1D1D] font-medium text-lg'>Female </h3>
                 </div>
                 <div className="flex items-center justify-center gap-2">
                     <RiBarcodeLine className=" text-2xl" />
-                    <h3 className='text-[#1D1D1D] font-medium text-lg'>292206548</h3>
+                    <h3 className='text-[#1D1D1D] font-medium text-lg'>N880842</h3>
                 </div>
                 <div className="flex items-center justify-center gap-2 text-[#E02D2D]">
                     <FaPhoneAlt className=" text-xl" />
-                    <h3 className='font-medium text-lg underline'>0897876721431</h3>
+                    <h3 className='font-medium text-lg underline'>0179369871</h3>
                 </div>
                 <div className="flex items-center justify-center gap-3">
                     <img src={calender} alt="" />
-                    <h3 className='text-[#1D1D1D] font-medium text-lg'>04/09/1990 (34Y 5M)</h3>
+                    <h3 className='text-[#1D1D1D] font-medium text-lg'>03/07/1985 (37 yr 4 mth)</h3>
                 </div>
             </div>
 
