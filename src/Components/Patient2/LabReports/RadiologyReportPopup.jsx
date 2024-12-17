@@ -2,7 +2,7 @@
 import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPackageBold, PiPrinterBold } from 'react-icons/pi'
 import RadiologyReport from "../../../assets/RadiologyReport2.svg"
-import receipt from "../../../assets/receipt28.png"
+import receipt from "../../../assets/receipt42.png"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
 import { MdClose } from 'react-icons/md'
@@ -10,6 +10,7 @@ import Print from '../Print'
 
 const RadiologyReportPopup = ({ setPopup6 }) => {
     const [previewDocument, setPreviewDocument] = useState(false)
+    const [activeTab, setActiveTab] = useState("USG GUIDED FNAC OF LEFT THYROID NODULE")
 
     const popUp = useRef()
 
@@ -59,34 +60,24 @@ const RadiologyReportPopup = ({ setPopup6 }) => {
                             !previewDocument && (
                                 <div className="max-w-[30%]   w-full">
                                     <div className=" flex flex-col gap-3">
-                                        <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
+                                        <div onClick={() => setActiveTab("USG GUIDED FNAC OF LEFT THYROID NODULE")} className={`cursor-pointer ${activeTab == "USG GUIDED FNAC OF LEFT THYROID NODULE" && "bg-zinc-50"} border p-3 rounded-lg border-[#cfd1d4] w-full`}>
+                                            <h3 className='font-medium text-[#1D1D1D]'>USG GUIDED FNAC OF LEFT THYROID NODULE</h3>
                                             <div className="flex items-center justify-between mt-2">
                                                 <div className="flex items-center gap-2">
                                                     <PiPackageBold />
-                                                    <p className='text-sm'>CT ABDOMEN</p>
+                                                    <p className='text-sm'>Ultrasound</p>
                                                 </div>
-                                                <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
+                                                <p className='text-sm text-[#6E6E6E]'>05 Mar 2024</p>
                                             </div>
                                         </div>
-                                        <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
+                                        <div onClick={() => setActiveTab("US THYROID")} className={` cursor-pointer ${activeTab == "US THYROID" && "bg-zinc-50"} border p-3 rounded-lg border-[#cfd1d4] w-full`}>
+                                            <h3 className='font-medium text-[#1D1D1D]'>US THYROID</h3>
                                             <div className="flex items-center justify-between mt-2">
                                                 <div className="flex items-center gap-2">
                                                     <PiPackageBold />
-                                                    <p className='text-sm'>CT ABDOMEN</p>
+                                                    <p className='text-sm'>Ultrasound</p>
                                                 </div>
-                                                <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
-                                            </div>
-                                        </div>
-                                        <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                                            <div className="flex items-center justify-between mt-2">
-                                                <div className="flex items-center gap-2">
-                                                    <PiPackageBold />
-                                                    <p className='text-sm'>CT ABDOMEN</p>
-                                                </div>
-                                                <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
+                                                <p className='text-sm text-[#6E6E6E]'>06 Feb 2024</p>
                                             </div>
                                         </div>
                                     </div>
@@ -94,42 +85,93 @@ const RadiologyReportPopup = ({ setPopup6 }) => {
                             )
                         }
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
-                            <div className="border p-3 max-h-[65vh] overflow-y-auto rounded-t-lg border-[#cfd1d4]">
+                            <div className="border p-3 max-h-[65vh] text-[#1D1D1D] overflow-y-auto rounded-t-lg border-[#cfd1d4]">
 
-                                <h3 className='font-semibold text-[#1D1D1D] text-xl text-center'>RADIOLOGIST REPORT</h3>
+                                <h3 className='font-semibold  text-xl'>RADIOLOGIST REPORT</h3>
 
-                                <div className="p-3 mt-5 grid grid-cols-2 gap-6 rounded-lg  border pb-3">
-                                    <div>
-                                        <p className='pt-0.5'>
-                                            Policy No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 1111222233334</span>
-                                        </p>
-                                        <p className='pt-0.5'>
-                                            Policy No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 1111222233334</span>
-                                        </p>
-                                        <p className='pt-0.5'>
-                                            Policy No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 1111222233334</span>
-                                        </p>
+                                <div className="">
+                                    <div className="p-3 mt-5 grid grid-cols-4 gap-1 rounded-t-lg text-sm border-[#CFD1D4] border pb-3">
+                                        <p className=' font-medium text-[#6E6E6E] col-span-4'>Patient Information</p>
+                                        <p className='py-2'>Name</p>
+                                        <p className='font-semibold col-span-3 py-2'>: NORARTINI, SULONG @ MOKHTAR</p>
+                                        <p>MRN</p>
+                                        <p className='font-semibold'>: N880842</p>
+                                        <p>IC/No.</p>
+                                        <p className='font-semibold'>: 850703115180</p>
+                                        <p>Age</p>
+                                        <p className='font-semibold'>: 39</p>
+                                        <p>DOB</p>
+                                        <p className='font-semibold'>: 03 /07/1985</p>
+                                        <p>Gender</p>
+                                        <p className='font-semibold'>: Female</p>
+                                        <p>Race</p>
+                                        <p className='font-semibold'>: MELAYU</p>
                                     </div>
-                                    <div>
-                                        <p className='pt-0.5'>
-                                            New NRIC No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 1111222233334</span>
-                                        </p>
-                                        <p className='pt-0.5'>
-                                            Old NRIC : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 1111222233334</span>
-                                        </p>
-                                        <p className='pt-0.5'>
-                                            Patient Name : &nbsp; &nbsp;&nbsp; &nbsp; <span className='font-medium'> Lorem Ipsum</span>
-                                        </p>
+                                    <div className="p-3 grid grid-cols-4 gap-1 rounded-b-lg border-t-0 text-sm border-[#CFD1D4] border pb-3">
+                                        <p className=' font-medium text-[#6E6E6E] col-span-4 pb-2'>Examination Information</p>
+                                        <p className=''>Request id</p>
+                                        <p className='font-semibold '>: 2024US9B357</p>
+                                        <p>Examination Date</p>
+                                        <p className='font-semibold'>: 05/03/2024 14:47:59</p>
+                                        <p>In Charge Radiologist</p>
+                                        <p className='font-semibold'>: SURAYA BINTI AZIZ</p>
+                                        <p>Radiographer</p>
+                                        <p className='font-semibold'>: NURUL IZZAH BINTI ZENIAN</p>
+                                        <p>Examination</p>
+                                        <p className='font-semibold'>: ULTRASOUND</p>
+                                        <p>Consultant Incharge</p>
+                                        <p className='font-semibold'>: DR. NORLELA BINTI SUKOR</p>
+                                        <p></p>
+                                        <p className='font-medium col-span-3 pt-5 pb-3'>1) USX054 - PROCEDURE : FNAC SPECIFY thyroid right lower pole nodule 4,9 cm, TIRADS 3 and left midpole 1.7am, TIRADS 4</p>
+                                        <p>Status</p>
+                                        <p className='font-semibold'>: FINAL REPORT</p>
                                     </div>
+
+                                    <p className='text-sm py-3 text-[#6E6E6E] font-medium'>FINAL REPORT</p>
+                                    {
+                                        activeTab === "USG GUIDED FNAC OF LEFT THYROID NODULE" && (
+                                            <div className="text-sm border-[#CFD1D4] border p-3 gap-4 rounded-lg flex justify-between w-full bg-[#f7f8fa]">
+
+                                                <div className="">
+                                                    <p className='font-semibold pb-2 text-[#F26522] text-[16px]'>USG GUIDED FNAC OF LEFT THYROID NODULE</p>
+                                                    <p className='pb-1'>Performed by: <span className='font-medium'> Prof Suraya (Radiologist)</span></p>
+                                                    <p className='pb-1'>Assistant: <span className='font-medium'> Dr Izzah (MO)</span></p>
+                                                    <p> Runner: <span className='font-medium'>SN Wan</span></p>
+                                                    <p className='pt-4 font-semibold'> Technique: </p>
+                                                    <p className='pt-1'>Left neck region was cleaned and draped under sterille technique.</p>
+                                                </div>
+
+                                                <div className="">
+                                                    <p className='text-[#6E6E6E] text-[16px]'>Test Date</p>
+                                                    <p className='font-medium pt-1'>05.03.2024</p>
+                                                </div>
+
+                                            </div>
+                                        )
+                                    }
+                                    {
+                                        activeTab === "US THYROID" && (
+                                            <div className="text-sm border-[#CFD1D4] border p-3 gap-4 rounded-lg flex justify-between w-full bg-[#f7f8fa]">
+
+                                                <div className="">
+                                                    <p className='font-semibold pb-2 text-[#F26522] text-[16px]'>USG GUIDED FNAC OF LEFT THYROID NODULE</p>
+                                                    <p className='pb-1'>Performed by: <span className='font-medium'> Prof Suraya (Radiologist)</span></p>
+                                                    <p className='pb-1'>Assistant: <span className='font-medium'> Dr Izzah (MO)</span></p>
+                                                    <p> Runner: <span className='font-medium'>SN Wan</span></p>
+                                                    <p className='pt-4 font-semibold'> Findings:: </p>
+                                                    <p className='pt-1'>Both thyroid appear heterogenous.</p>
+                                                </div>
+
+                                                <div className="">
+                                                    <p className='text-[#6E6E6E] text-[16px]'>Test Date</p>
+                                                    <p className='font-medium pt-1'>05.03.2024</p>
+                                                </div>
+
+                                            </div>
+                                        )
+                                    }
                                 </div>
 
-                                <div className="rounded-lg border bg-[#f7f8fa] p-3 mt-3 border-[#cfd1d4]">
-                                    <p className='text-[#1D1D1D] pb-3'>Both lung bases are normal.
-                                        <br /><br />
-                                        The liver is of normal size. No focal lesion is seen. The margins are smooth.
-                                        <br /><br />
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
 
                             </div>
                             {

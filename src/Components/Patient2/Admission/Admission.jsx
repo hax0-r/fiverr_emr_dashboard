@@ -25,103 +25,21 @@ const Admission = () => {
         <div className="">
             <div className="grid grid-cols-4 gap-3 mt-4">
 
-                <div className="border border-[#cfd1d4] rounded-lg bg-white">
-                    <div className="flex items-center justify-between p-4 ">
-                        <div className="flex items-center justify-between gap-3">
-                            <img src={AdmissionChecklist} alt="" />
-                            <h2 className='text-lg font-semibold'>Admission Checklist</h2>
-                        </div>
-                        <PiArrowsOutSimpleBold className='text-[#9F9FA1] cursor-pointer text-2xl' onClick={() => setPopup1(true)} />
-                    </div>
-                    <div className="border-b border-[#cfd1d4]"></div>
-                    <div className="p-4 flex flex-col gap-3 font-medium">
-                        <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Admission Checklist</h3>
-                            <div className="flex items-center justify-between">
-                                <p className='text-sm pt-1'>Lorem Ipsum</p>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
-                            </div>
-                        </div>
-                        <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Admission Checklist</h3>
-                            <div className="flex items-center justify-between">
-                                <p className='text-sm pt-1'>Lorem Ipsum</p>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
-                            </div>
-                        </div>
-                        <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Admission Checklist</h3>
-                            <div className="flex items-center justify-between">
-                                <p className='text-sm pt-1'>Lorem Ipsum</p>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <div className="border border-[#cfd1d4] rounded-lg bg-white">
                     <div className="flex items-center justify-between p-4 ">
                         <div className="flex items-center justify-between gap-3">
                             <img src={AdmissionLetter} alt="" />
-                            <h2 className='text-lg font-semibold'>Admission Letter</h2>
-                        </div>
-                        <PiArrowsOutSimpleBold className='text-[#9F9FA1] cursor-pointer text-2xl' onClick={() => setPopup5(true)} />
-                    </div>
-                    <div className="border-b border-[#cfd1d4]"></div>
-                    <div className="p-4 flex flex-col gap-3 font-medium">
-                        <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Admission Letter</h3>
-                            <div className="flex items-center justify-between">
-                                <p className='text-sm pt-1'>Lorem Ipsum</p>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
-                            </div>
-                        </div>
-                        <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Admission Letter</h3>
-                            <div className="flex items-center justify-between">
-                                <p className='text-sm pt-1'>Lorem Ipsum</p>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
-                            </div>
-                        </div>
-                        <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Admission Letter</h3>
-                            <div className="flex items-center justify-between">
-                                <p className='text-sm pt-1'>Lorem Ipsum</p>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="border border-[#cfd1d4] rounded-lg bg-white">
-                    <div className="flex items-center justify-between p-4 ">
-                        <div className="flex items-center justify-between gap-3">
-                            <img src={AdmissionLetter} alt="" />
-                            <h2 className='text-lg font-semibold'>Inpatient Registration</h2>
+                            <h2 className='text-lg font-semibold'>Patient Registration...</h2>
                         </div>
                         <PiArrowsOutSimpleBold className='text-[#9F9FA1] cursor-pointer text-2xl' onClick={() => setPopup3(true)} />
                     </div>
                     <div className="border-b border-[#cfd1d4]"></div>
                     <div className="p-4 flex flex-col gap-3 font-medium">
                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Inpatient Registration</h3>
+                            <h3 className='font-medium '>Patient Registration Form</h3>
                             <div className="flex items-center justify-between">
-                                <p className='text-sm pt-1'>Lorem Ipsum</p>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
-                            </div>
-                        </div>
-                        <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Inpatient Registration</h3>
-                            <div className="flex items-center justify-between">
-                                <p className='text-sm pt-1'>Lorem Ipsum</p>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
-                            </div>
-                        </div>
-                        <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Inpatient Registration</h3>
-                            <div className="flex items-center justify-between">
-                                <p className='text-sm pt-1'>Lorem Ipsum</p>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                <p className='text-sm pt-1'>Nurartini Sulong @ Mokhtar</p>
                             </div>
                         </div>
                     </div>
@@ -138,101 +56,21 @@ const Admission = () => {
                     <div className="border-b border-[#cfd1d4]"></div>
                     <div className="p-4 flex flex-col gap-3 font-medium">
                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Lorem Ipsum</h3>
+                            <h3 className='font-medium '>Norartini, Sulong @Mokhtar</h3>
                             <div className="flex items-center justify-between">
-                                <p className='text-sm pt-1'>N739168</p>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                <p className='text-sm pt-1'>N880842</p>
                             </div>
                         </div>
-                        <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Lorem Ipsum</h3>
+                        <div className=" p-3 rounded-lg text-[#1D1D1D] -[#cfd1d4] w-full">
+                            <h3 className='font-medium '>&nbsp;</h3>
                             <div className="flex items-center justify-between">
-                                <p className='text-sm pt-1'>N739168</p>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                <p className='text-sm pt-1'>&nbsp;</p>
                             </div>
                         </div>
-                        <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Lorem Ipsum</h3>
+                        <div className=" p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
+                            <h3 className='font-medium '>&nbsp;</h3>
                             <div className="flex items-center justify-between">
-                                <p className='text-sm pt-1'>N739168</p>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="border border-[#cfd1d4] rounded-lg bg-white">
-                    <div className="flex items-center justify-between p-4 ">
-                        <div className="flex items-center justify-between gap-3">
-                            <img src={AdmissionLetter} alt="" />
-                            <h2 className='text-lg font-semibold'>Discharge Chit</h2>
-                        </div>
-                        <PiArrowsOutSimpleBold className='text-[#9F9FA1] cursor-pointer text-2xl' onClick={() => setPopup2(true)} />
-                    </div>
-                    <div className="border-b border-[#cfd1d4]"></div>
-                    <div className="p-4 flex flex-col gap-3 font-medium">
-                        <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Discharge Chit</h3>
-                            <div className="flex items-center justify-between">
-                                <p className='text-sm pt-1'>Lorem Ipsum</p>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
-                            </div>
-                        </div>
-                        <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Discharge Chit</h3>
-                            <div className="flex items-center justify-between">
-                                <p className='text-sm pt-1'>Lorem Ipsum</p>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
-                            </div>
-                        </div>
-                        <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                            <h3 className='font-medium '>Discharge Chit</h3>
-                            <div className="flex items-center justify-between">
-                                <p className='text-sm pt-1'>Lorem Ipsum</p>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="border border-[#cfd1d4] rounded-lg bg-white">
-                    <div className="flex items-center justify-between p-4 ">
-                        <div className="flex items-center justify-between gap-3">
-                            <img src={pdf} alt="" />
-                            <h2 className='text-lg font-semibold'>Admission Ward Proc...</h2>
-                        </div>
-                        <PiArrowsOutSimpleBold className='text-[#9F9FA1] text-2xl cursor-pointer' onClick={() => setPopup6(true)} />
-                    </div>
-                    <div className="border-b border-[#cfd1d4]"></div>
-                    <div className="p-4 flex flex-col gap-3">
-                        <div className="border bg-zinc-100 p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
-                            <img src={pdfFile} alt="" />
-                            <div className="">
-                                <h3 className='font-medium text-[#1D1D1D]'>Admission Ward Procedures</h3>
-                                <div className="flex items-center justify-between">
-                                    <p className='text-sm pt-1 text-[#1d1d1d]'>Lorem Ipsum</p>
-                                    <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="border p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
-                            <img src={pdfFile} alt="" />
-                            <div className="">
-                                <h3 className='font-medium text-[#1D1D1D]'>Admission Ward Procedures</h3>
-                                <div className="flex items-center justify-between">
-                                    <p className='text-sm pt-1 text-[#1d1d1d]'>Lorem Ipsum</p>
-                                    <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="border p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
-                            <img src={pdfFile} alt="" />
-                            <div className="">
-                                <h3 className='font-medium text-[#1D1D1D]'>Admission Ward Procedures</h3>
-                                <div className="flex items-center justify-between">
-                                    <p className='text-sm pt-1 text-[#1d1d1d]'>Lorem Ipsum</p>
-                                    <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
-                                </div>
+                                <p className='text-sm pt-1'>&nbsp;</p>
                             </div>
                         </div>
                     </div>

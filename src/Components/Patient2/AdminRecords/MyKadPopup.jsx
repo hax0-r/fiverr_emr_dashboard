@@ -7,7 +7,7 @@ import { IoIosArrowForward } from 'react-icons/io'
 import { MdClose } from 'react-icons/md'
 import Print from '../Print'
 
-const MyKadPopup = ({ setPopup5 }) => {
+const MyKadPopup = ({ setPopup3 }) => {
     const [previewDocument, setPreviewDocument] = useState(false)
 
     const popUp = useRef()
@@ -18,7 +18,7 @@ const MyKadPopup = ({ setPopup5 }) => {
         popUp.current.style.opacity = "0"
 
         setTimeout(() => {
-            setPopup5(false)
+            setPopup3(false)
         }, 500)
     }
 
