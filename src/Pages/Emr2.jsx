@@ -3,7 +3,7 @@ import { GoHomeFill } from 'react-icons/go'
 import { IoIosArrowForward } from 'react-icons/io'
 import { PiSquaresFourBold } from 'react-icons/pi'
 import { Link } from 'react-router'
-import Profile_Picture from "../assets/Profile_Picture.png"
+import Profile_Picture from "../assets/lady1.png"
 import calender from "../assets/calender.svg"
 import { IoMaleSharp } from 'react-icons/io5'
 import { RiBarcodeLine } from 'react-icons/ri'

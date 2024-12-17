@@ -7,6 +7,7 @@ import { IoArrowForward } from 'react-icons/io5';
 import { BsThreeDots } from 'react-icons/bs';
 import { TABLE_DATA } from '../Data/Data';
 import { Link } from 'react-router';
+import { PiStethoscopeBold } from 'react-icons/pi';
 
 const Patient = () => {
     const itemsPerPage = 10;
@@ -126,8 +127,13 @@ const Patient = () => {
                                         <td className="border-t border-[#CFD1D4] px-2 py-4 text-sm">{row.totalDocuments}</td>
                                         <td className="border-t border-[#CFD1D4] px-2 py-4 text-sm">{row.scanDateTime}</td>
                                         <td className="border-t border-[#CFD1D4] px-2 py-4  flex ">
-                                            <Link to={`/${row.linked}`} className="flex items-center transition-all duration-500 justify-center w-8 h-8 bg-primary text-white rounded-full hover:opacity-95">
-                                                <IoArrowForward />
+                                            <Link className='flex items-center gap-2' to={`/${row.linked}`}>
+                                                <button className="flex items-center transition-all duration-500 justify-center w-8 h-8 bg-secondary text-white rounded-full hover:opacity-95">
+                                                    <PiStethoscopeBold />
+                                                </button>
+                                                <button className="flex items-center transition-all duration-500 justify-center w-8 h-8 bg-primary text-white rounded-full hover:opacity-95">
+                                                    <IoArrowForward />
+                                                </button>
                                             </Link>
                                         </td>
                                     </tr>
