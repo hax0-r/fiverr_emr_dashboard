@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
-import receipt from "../../../assets/receipt20.png"
-import sign from "../../../assets/sign3.png"
+import receipt from "../../../assets/receipt39.png"
+import sign from "../../../assets/sign6.png"
 import Referral from "../../../assets/Referral.svg"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
@@ -63,65 +63,41 @@ const ReferralPopup = ({ setPopup4 }) => {
                                             <h3 className='font-medium text-[#1D1D1D]'>Referral Letter</h3>
                                             <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
                                         </div>
-                                        <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Referral Letter</h3>
-                                            <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
-                                        </div>
-                                        <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Referral Letter</h3>
-                                            <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
-                                        </div>
                                     </div>
                                 </div>
                             )
                         }
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
-                            <div className="border max-h-[70vh] overflow-auto p-3 rounded-lg border-[#cfd1d4]">
-                                <h3 className='font-semibold text-[#1D1D1D] text-xl'>Referral Letter</h3>
-                                <div className="">
-                                    <div className="mx-auto bg-white rounded-lg">
-                                        <div className="p-3 rounded-lg mt-3  border pb-3">
-                                            <div>
-                                                <p className='pt-0.5'>
-                                                    Nama Pesakit : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-semibold'> Lorem Ipsum</span>
-                                                </p>
-                                                <p className='pt-0.5'>
-                                                    NRP : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;  <span className='font-semibold'> 123456789</span>
-                                                </p>
-                                                <p className='pt-0.5'>
-                                                    Kepada : &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<span className='font-semibold'> Prof. Dr. Nolan</span>
-                                                </p>
-                                                <p className='pt-0.5'>
-                                                    Jabatan :&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span className='font-semibold'> Lorem Ipsum</span>
-                                                </p>
-                                                <p className='pt-0.5'>
-                                                    Tarik : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span className='font-semibold'> 11/11/2024</span>
-                                                </p>
-                                            </div>
-                                        </div>
+                            <div className="border max-h-[70vh] text-[#1D1D1D]  overflow-auto p-3 text-sm rounded-lg border-[#cfd1d4]">
+                                <h3 className='font-semibold pb-1 text-xl'>Poliklinik Johan</h3>
+                                <p>Trusted and Advanced Medical Service</p>
+                                <p>Norartini Bt Sulong @ Mokhtar
+                                    <br /> 850703115180
+                                    <br /><br />
+                                    Dear Dr
+                                    Consultant Endocrinologist
+                                    <br /><br />
 
-                                        <p className='text-sm text-[#6E6E6E] py-3 font-medium'>Masalah dan Tujuan Rujukan :</p>
+                                    Thank you for seeing this G3P2 @ 38 who POA. She had previous episodes of hyperthyroidism in her 2 previous pregnancies. However, not on medication. She has been euthyroid till the current pregnancy. Currently she is asymptomatic.
+                                    <br /><br />
 
-                                        <p className=" p-3 bg-[#F5F7FA] border border-[#cfd1d4] rounded-xl">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </p>
-                                        <p className='text-sm text-[#6E6E6E] py-3 font-medium'>Daripada Pensyarah / Prof. Madya / Prof.</p>
+                                    G3P2, hyperthyroid
+                                    <br /> BP: 127/80 mmHg
+                                    <br /> P: 80bpm
+                                    <br /><br />
+                                    Latest 1x: TSH 0,029, T4 13.16
+                                    <br />lmp:
+                                </p>
+                                <ul className='pl-5 list-disc space-y-1'>
+                                    <li>                                    Multinodular goitre</li>
+                                    <li>                                    Hyperthyroidism in pregnancy</li>
+                                </ul>
 
-                                        <div className=" p-3 border border-[#cfd1d4] rounded-xl">
-                                            <p className='pt-1'>
-                                                Nama Pesakit : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-semibold'> Lorem Ipsum</span>
-                                            </p>
-                                            <p className='pt-1'>
-                                                NRP : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;  <span className='font-semibold'> Lorem Ipsum</span>
-                                            </p>
-                                            <p className='pt-1 flex'>
-                                            Tandatangan :  &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;  <span className='font-semibold'> <img src={sign} className='h-28' alt="" /></span>
-                                            </p>
-                                        </div>
+                                <p>Kindly see her for her above prob
+                                    <br /><br />
+                                    th</p>
 
-                                    </div>
-                                </div>
-
+                                    <img src={sign} className='h-28 mt-3' alt="" />
                             </div>
                             {
                                 !previewDocument && (

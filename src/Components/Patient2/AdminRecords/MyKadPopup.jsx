@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
-import receipt from "../../../assets/receipt21.png"
+import receipt from "../../../assets/receipt38.png"
 import myKad from "../../../assets/myKad.svg"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
@@ -23,23 +23,21 @@ const MyKadPopup = ({ setPopup5 }) => {
     }
 
     const userInfo = [
-        { label: "Name", value: "Ahmad Bin Ismail" },
-        { label: "IC Number", value: "860101-14-1234" },
-        { label: "Gender", value: "Male" },
+        { label: "Name", value: "Norartini binti sulong @ mokhtar" },
+        { label: "IC Number", value: "850703-11-5180" },
+        { label: "Gender", value: "Perempuan" },
         { label: "Citizenship", value: "Malaysian" },
-        { label: "Address", value: "No. 0, Jalan Mawar, Taman Melati, 53100 Kuala Lumpur, Malaysia" },
-        { label: "Date of Birth", value: "01/01/1980" },
+        { label: "Address", value: "Kampung Tok Jembal, 21200, Kuala Terengganu, Terengganu" },
         { label: "Religion", value: "Islam" },
-        { label: "Blood Type", value: "O+" },
-        { label: "Race", value: "Malay" },
     ];
 
 
     return (
+
         <div className="fixed flex items-center justify-center transition-all duration-500 inset-0" ref={popUp}>
             <div className="fixed top-0 left-0 w-screen h-screen bg-[#0000006e]" onClick={handleClose}></div>
             <div className="max-w-[90%] w-full bg-white border border-[#CFD1D4] z-10 rounded-lg ">
-                <div className="flex items-center border-b justify-between p-4 ">
+                <div className="flex items-center justify-between p-4 ">
                     <div className="flex items-center justify-between gap-3">
                         <img src={myKad} alt="" />
                         <h2 className='text-lg font-semibold'>MyKad</h2>
@@ -65,30 +63,31 @@ const MyKadPopup = ({ setPopup5 }) => {
                 }
 
                 <div className="p-4">
-                    <div className=" max-h-[80vh] overflow-auto">
+                    <div className=" flex gap-4 ">
+                        <div className={` ${!previewDocument ? " max-w-[100%]" : " max-w-[50%]"} w-full`}>
+                            <div className="border max-h-[70vh] overflow-auto  rounded-lg border-[#cfd1d4]">
+                                <h3 className='font-semibold text-[#1D1D1D] p-3 text-xl border-b  border-[#cfd1d4]' >MyKad</h3>
+                                <div className="p-3 pt-5">
+                                    <div className=" bg-white rounded-lg border border-gray-300">
+                                        <table className="w-full border-collapse">
+                                            <tbody>
+                                                {userInfo.map((info, index) => (
+                                                    <tr
+                                                        key={index}
+                                                        className={`border-b ${index === userInfo.length - 1 ? "" : "border-gray-300"} text-gray-700`}
+                                                    >
+                                                        <td className="p-4 font-medium bg-zinc-100 border-r w-1/4">{info.label}</td>
+                                                        <td className="p-4">{info.value}</td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
 
-                        <img src={receipt} className='mx-auto h-[300px]' alt="" />
-
-                        <div className="mt-10 bg-white rounded-lg shadow border border-gray-300">
-                            <table className="w-full border-collapse">
-                                <tbody>
-                                    {userInfo.map((info, index) => (
-                                        <tr
-                                            key={index}
-                                            className={`border-b ${index === userInfo.length - 1 ? "" : "border-gray-300"} text-gray-700`}
-                                        >
-                                            <td className="p-4 font-medium bg-zinc-100 border-r w-1/4">{info.label}</td>
-                                            <td className="p-4">{info.value}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        </div>
-
-
-                        <div className={` w-full`}>
+                            </div>
                             {
-                                previewDocument && (
+                                !previewDocument && (
                                     <div className="flex gap-2 items-center mt-4 justify-end">
                                         <button onClick={() => setPreviewDocument(true)} className='pl-4 border-[#cfd1d4] border-2 pr-5 py-2.5 flex items-center gap-2 rounded-lg text-[#1D1D1D] font-medium'><AiOutlineSearch className='text-xl' />
                                             Preview Document</button>
@@ -108,7 +107,7 @@ const MyKadPopup = ({ setPopup5 }) => {
                 </div>
 
             </div>
-        </div>
+        </div >
     )
 }
 
