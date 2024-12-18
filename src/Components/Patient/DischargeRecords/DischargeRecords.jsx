@@ -48,15 +48,15 @@ const DischargeRecords = () => {
           <div className="border-b border-[#cfd1d4]"></div>
           <div className="p-4 flex flex-col gap-3">
             <div className="border p-3 rounded-lg border-[#cfd1d4]">
-              <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
+              <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
               <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
             </div>
             <div className="border p-3 rounded-lg border-[#cfd1d4]">
-              <h3 className='font-medium text-[#1D1D1D]'>Aminah Rahman</h3>
+              <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
               <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
             </div>
             <div className="border p-3 rounded-lg border-[#cfd1d4]">
-              <h3 className='font-medium text-[#1D1D1D]'>Zainal Abidin</h3>
+              <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
               <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
             </div>
           </div>

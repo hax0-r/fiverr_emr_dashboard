@@ -79,7 +79,7 @@ const Emr = () => {
             <div className="w-full  flex items-center gap-8 flex-wrap rounded-xl mt-4 border-[#CFD1D4] border bg-white p-5">
                 <div className=" group flex items-center gap-3">
                     <img src={Profile_Picture} className='w-[60px] group-hover:border-blue-600 border-white transition-all duration-500 border-2 h-[60px] rounded-full overflow-hidden' alt="pic" />
-                    <h3 className='text-lg text-[#1D1D1D] group-hover:text-blue-600 duration-500 transition-all cursor-default font-semibold'>Ahmad Zulkifli bin Mohd Zain</h3>
+                    <h3 className='text-lg text-[#1D1D1D] group-hover:text-blue-600 duration-500 transition-all cursor-default font-semibold'>Chia Suwe Kiea</h3>
                     <h2 className='text-sm font-medium text-[#362702] bg-[#F9D67B] border-[#F5B920] border rounded-full py-1 px-3'>VIP</h2>
                 </div>
                 <div className="flex items-center justify-center gap-2">

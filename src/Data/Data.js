@@ -7,16 +7,16 @@ export const TABLE_DATA = [
       linked:"emr"
     },
     {
-      patientName: "Muamar Adib Hakimi",
-      doctorName: "	Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "6 file(s)",
+      patientName: "Norartini Solong",
+      doctorName: "Prof. Dr Norlela Sukor",
+      totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr2"
     },
     {
-      patientName: "Norartini Solong",
-      doctorName: "Prof. Dr Norlela Sukor",
-      totalDocuments: "4 file(s)",
+      patientName: "Muamar Adib Hakimi",
+      doctorName: "	Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "6 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
