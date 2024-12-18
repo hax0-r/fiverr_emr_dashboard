@@ -1,739 +1,427 @@
 export const TABLE_DATA = [
     {
-      id: 1,
-      patientName: "Ahmad Zulkifli bin Mohd Zain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "Chia Suwe Kiea",
+      doctorName: "Prof. Dr Fam Xeng Inn",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 2,
-      patientName: "Nur Aisyah binti Abdul Rahman",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "Muamar Adib Hakimi",
+      doctorName: "	Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "6 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr2"
     },
     {
-      id: 3,
-      patientName: "Muhammad Faiz bin Iskandar Shah",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "Norartini Solong",
+      doctorName: "Prof. Dr Norlela Sukor",
       totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 4,
-      patientName: "Siti Khadijah binti Mohd Hafiz",
-      doctorName: "Dr. Amirul Hakim bin Hamzah",
+      patientName: "Siti Rosni",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
       totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 5,
-      patientName: "Lim Wei Ling binti Lim",
-      doctorName: "Dr. Amirul Hakim bin Hamzah",
+      patientName: "Nithiyarajan Masilamany",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 6,
-      patientName: "Ariffin bin Mohd Roslan",
-      doctorName: "Dr. Amirul Hakim bin Hamzah",
+      patientName: "Mohamad Faqih",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
       totalDocuments: "7 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 7,
-      patientName: "Amirul Hakim bin Abdul Razak",
-      doctorName: "Dr. Amirul Hakim bin Hamzah",
+      patientName: "Rohana Binti Ibrahim",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
       totalDocuments: "3 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 8,
-      patientName: "Roslan bin Hamzah",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "Mazrina Naziran Omar",
+      doctorName: "	Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 9,
-      patientName: "Ainul Mardhiah binti Mohd Khairul",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "Nur Yuhanis",
+      doctorName: "	Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "3 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "Sulaiman Omar",
+      doctorName: "	Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "Liew Koy Ming",
+      doctorName: "	Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
-      scanDateTime: "11/11/2024 10:00 AM",
-      linked:"emr"
-    },
-    {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Ishak Ismail",
+      doctorName: "	Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "6 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Hisyam Bin Yunos",
+      doctorName: "	Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "6 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Mohamad Roli",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
+      totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Abdul Khalid",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
+      totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "Jerusha Crishantini",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Bernadette Syonnia",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
+      totalDocuments: "7 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Mazni Mohamed",
+      doctorName: "	Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "3 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Lim Chuen Yen",
+      doctorName: "			Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Rosli Hussain",
+      doctorName: "		Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "3 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "Kalthom Abdul Majid",
+      doctorName: "		Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Tan Peck Suan",
+      doctorName: "		Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "6 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Sew Yow Lin",
+      doctorName: "	Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "6 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Zuraidah Jamian",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
+      totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Nuraliza Mohamad Zuri",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
+      totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "Jerusha Crishantini",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Rubiah Ibrahim",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
+      totalDocuments: "3 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Tharmaraja Arumugam",
+      doctorName: "			Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Yaw Keng Hwa",
+      doctorName: "		Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "3 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "Tan Yoke Kiang",
+      doctorName: "		Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
+   
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "Nor Hasriza Hani",
+      doctorName: "		Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Muhammad Al Khaf",
+      doctorName: "		Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "6 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Auni Maisarah Mazlan",
+      doctorName: "	Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "6 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Rizalwati Ismail",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
+      totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Latifah Satari",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
+      totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "Noorasiah Ab Rah",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Murshidah Ismail",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
+      totalDocuments: "3 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Kasmawati Baharuddin",
+      doctorName: "			Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Normah MD Yusof",
+      doctorName: "		Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "3 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "Wan Nur Ain Mat Nasir",
+      doctorName: "		Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
+   
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "Chin Yew Moy",
+      doctorName: "		Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Nor Hayati Awang",
+      doctorName: "		Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "6 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Ainul Farhanah Razali",
+      doctorName: "	Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "6 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Siti Zaleha Haron",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
+      totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Sukhdev singh",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
+      totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "Saed Hashim Saeed Akil",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Syahrul Liza Mat Yaabit",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
+      totalDocuments: "3 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Renganathan Ratnam",
+      doctorName: "			Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Sherifah Azalia Aljunied",
+      doctorName: "		Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "3 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "Latifah Aluwi",
+      doctorName: "		Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
+   
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "Alyn Nadhirah",
+      doctorName: "		Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Nur Amani",
+      doctorName: "		Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "6 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Dayana Batrisyia Binti Rezar",
+      doctorName: "	Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "6 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Siti Khadijah binti Mohd Hafiz",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
+      totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "	Ariffin bin Mohd Roslan",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
+      totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "	Amirul Hakim bin Abdul Razak",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "	Roslan bin Hamzah",
+      doctorName: "	Dr. Amirul Hakim bin Hamzah",
+      totalDocuments: "3 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "Ainul Mardhiah binti Mohd Khairul",
+      doctorName: "			Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "4 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
-      totalDocuments: "5 file(s)",
+      patientName: "	Zulfan bin Zulkarnain",
+      doctorName: "		Dr. Zulkifli bin Iskandar Shah",
+      totalDocuments: "3 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
     {
-      id: 10,
-      patientName: "Zulfan bin Zulkarnain",
-      doctorName: "Dr. Zulkifli bin Iskandar Shah",
+      patientName: "	Muhammad Faiz bin Iskandar Shah",
+      doctorName: "		Dr. Zulkifli bin Iskandar Shah",
       totalDocuments: "5 file(s)",
       scanDateTime: "11/11/2024 10:00 AM",
       linked:"emr"
     },
+    
   ];
   

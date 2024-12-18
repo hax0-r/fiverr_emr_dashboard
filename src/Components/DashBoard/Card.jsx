@@ -7,21 +7,21 @@ const Scanned_data = [
     {
         id: 1,
         name: "Total File Scanned",
-        value: 34.429,
+        value: "34,429",
         total: "+1.281",
         image: scanned
     },
     {
         id: 2,
         name: "Total File Uploaded",
-        value: 5.179,
+        value: "5,179",
         total: "+282",
         image: uploaded
     },
     {
         id: 3,
         name: "Total File Sent",
-        value: 17.021,
+        value: "17,021",
         total: "-272",
         image: sent
     },

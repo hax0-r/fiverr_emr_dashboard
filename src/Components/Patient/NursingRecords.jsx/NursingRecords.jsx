@@ -5,7 +5,7 @@ import Senarai from "../../../assets/Senarai.svg"
 import pdfFile from "../../../assets/pdfFile.svg"
 import pdf from "../../../assets/pdf.svg"
 import KertasAnestesia from "../../../assets/KertasAnestesia.svg"
-import { PiArrowsOutSimpleBold, PiBedBold } from 'react-icons/pi'
+import { PiArrowsOutSimpleBold, PiBedBold, PiPackageBold } from 'react-icons/pi'
 import PadPopup from './PadPopup'
 import RekodPopup from './RekodPopup'
 import SenaraiSemak from './SenaraiSemak'
@@ -34,16 +34,34 @@ const NursingRecords = () => {
                     <div className="border-b border-[#cfd1d4]"></div>
                     <div className="p-4 flex flex-col gap-3">
                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>SUNGKE922</p>
+                            <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                            <div className="flex items-center justify-between mt-2">
+                                <div className="flex items-center gap-2">
+                                    <PiBedBold />
+                                    <p className='text-sm'>SUNGKE922</p>
+                                </div>
+                                <p className='text-sm text-[#6E6E6E]'>N867921</p>
+                            </div>
                         </div>
                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>SUNGKE922</p>
+                            <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                            <div className="flex items-center justify-between mt-2">
+                                <div className="flex items-center gap-2">
+                                    <PiBedBold />
+                                    <p className='text-sm'>FROSTY728</p>
+                                </div>
+                                <p className='text-sm text-[#6E6E6E]'>X452378</p>
+                            </div>
                         </div>
                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>SUNGKE922</p>
+                            <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                            <div className="flex items-center justify-between mt-2">
+                                <div className="flex items-center gap-2">
+                                    <PiBedBold />
+                                    <p className='text-sm'>BREEZY314</p>
+                                </div>
+                                <p className='text-sm text-[#6E6E6E]'>Q839104</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -59,16 +77,34 @@ const NursingRecords = () => {
                     <div className="border-b border-[#cfd1d4]"></div>
                     <div className="p-4 flex flex-col gap-3">
                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>SUNGKE922</p>
+                            <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                            <div className="flex items-center justify-between mt-2">
+                                <div className="flex items-center gap-2">
+                                    <PiBedBold />
+                                    <p className='text-sm'>BREEZY314</p>
+                                </div>
+                                <p className='text-sm text-[#6E6E6E]'>Q839104</p>
+                            </div>
                         </div>
                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>SUNGKE922</p>
+                            <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                            <div className="flex items-center justify-between mt-2">
+                                <div className="flex items-center gap-2">
+                                    <PiBedBold />
+                                    <p className='text-sm'>BREEZY314</p>
+                                </div>
+                                <p className='text-sm text-[#6E6E6E]'>Q839104</p>
+                            </div>
                         </div>
                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>SUNGKE922</p>
+                            <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                            <div className="flex items-center justify-between mt-2">
+                                <div className="flex items-center gap-2">
+                                    <PiBedBold />
+                                    <p className='text-sm'>BREEZY314</p>
+                                </div>
+                                <p className='text-sm text-[#6E6E6E]'>Q839104</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -85,15 +121,33 @@ const NursingRecords = () => {
                     <div className="p-4 flex flex-col gap-3">
                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
                             <h3 className='font-medium text-[#1D1D1D]'>Full Blood Count</h3>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>Histopathology</p>
+                            <div className="flex items-center justify-between mt-2">
+                                <div className="flex items-center gap-2">
+                                    <PiPackageBold />
+                                    <p className='text-sm'>Histopathology</p>
+                                </div>
+                                <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
+                            </div>
                         </div>
                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
                             <h3 className='font-medium text-[#1D1D1D]'>Urine Test</h3>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>Histopathology</p>
+                            <div className="flex items-center justify-between mt-2">
+                                <div className="flex items-center gap-2">
+                                    <PiPackageBold />
+                                    <p className='text-sm'>Histopathology</p>
+                                </div>
+                                <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
+                            </div>
                         </div>
                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
                             <h3 className='font-medium text-[#1D1D1D]'>Endocrine</h3>
-                            <p className='text-sm pt-1 text-[#6E6E6E]'>Histopathology</p>
+                            <div className="flex items-center justify-between mt-2">
+                                <div className="flex items-center gap-2">
+                                    <PiPackageBold />
+                                    <p className='text-sm'>Histopathology</p>
+                                </div>
+                                <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -109,33 +163,33 @@ const NursingRecords = () => {
                     <div className="border-b border-[#cfd1d4]"></div>
                     <div className="p-4 flex flex-col gap-3">
                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                            <div className="flex items-center font-medium justify-between">
-                                <div className="flex items-center gap-1">
+                            <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                            <div className="flex items-center justify-between mt-2">
+                                <div className="flex items-center gap-2">
                                     <PiBedBold />
-                                    <p className='text-sm pt-1 '>SUNGKE922</p>
+                                    <p className='text-sm'>BREEZY314</p>
                                 </div>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>N867921</p>
+                                <p className='text-sm text-[#6E6E6E]'>Q839104</p>
                             </div>
                         </div>
                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                            <div className="flex items-center font-medium justify-between">
-                                <div className="flex items-center gap-1">
+                            <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                            <div className="flex items-center justify-between mt-2">
+                                <div className="flex items-center gap-2">
                                     <PiBedBold />
-                                    <p className='text-sm pt-1 '>FROSTY728</p>
+                                    <p className='text-sm'>BREEZY314</p>
                                 </div>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>N867921</p>
+                                <p className='text-sm text-[#6E6E6E]'>Q839104</p>
                             </div>
                         </div>
                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                            <div className="flex items-center font-medium justify-between">
-                                <div className="flex items-center gap-1">
+                            <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                            <div className="flex items-center justify-between mt-2">
+                                <div className="flex items-center gap-2">
                                     <PiBedBold />
-                                    <p className='text-sm pt-1 '>BREEZY314</p>
+                                    <p className='text-sm'>BREEZY314</p>
                                 </div>
-                                <p className='text-sm pt-1 text-[#6E6E6E]'>N867921</p>
+                                <p className='text-sm text-[#6E6E6E]'>Q839104</p>
                             </div>
                         </div>
                     </div>
@@ -154,21 +208,21 @@ const NursingRecords = () => {
                         <div className="border bg-zinc-100 p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
                             <img src={pdfFile} alt="" />
                             <div className="">
-                                <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
+                                <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
                                 <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
                             </div>
                         </div>
                         <div className="border p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
                             <img src={pdfFile} alt="" />
                             <div className="">
-                                <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
+                                <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
                                 <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
                             </div>
                         </div>
                         <div className="border p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
                             <img src={pdfFile} alt="" />
                             <div className="">
-                                <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
+                                <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
                                 <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
                             </div>
                         </div>
