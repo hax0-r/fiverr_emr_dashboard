@@ -26,10 +26,12 @@ const ButirPopup = ({ setPopup3 }) => {
 
     // Example data for table
     const data = [
-        { id: 1, recovery: "Implant Name", comment: "", Catitan: "" },
-        { id: 2, recovery: "Implant Name", comment: "", Catitan: "" },
-        { id: 3, recovery: "Implant Name", comment: "", Catitan: "" },
-        // Add more rows as needed
+        { id: 1, recovery: "Doc No : CODD22003132", recovery2 :"Item Code : CTF12", recovery3:"Batch No : 1443212", recovery4:"Expiry Date : 07/04/25  QTY : 1 pc", comment: "", Catitan: "" },
+        { id: 2, recovery: "Doc No : CODD22003132", recovery2 :"Item Code : CTF12", recovery3:"Batch No : 1443212", recovery4:"Expiry Date : 10/02/25  QTY : 1 pc", comment: "", Catitan: "" },
+        { id: 3, recovery: "Double J-Stamp", recovery2 :"Bfr. 24cm ", recovery3:"8903209043170", recovery4:"", comment: "", Catitan: "" },
+        { id: 4, recovery: "Doc No : CODD22003132", recovery2 :"Item Code : CTF12", recovery3:"Batch No : 1443212", recovery4:"Expiry Date : 10/02/25  QTY : 1 pc", comment: "", Catitan: "" },
+        { id: 5, recovery: "Hardh 36", comment: "", Catitan: "" },
+        { id: 6, recovery: "Doc No : CODD22003132", recovery2 :"Item Code : CTF12", recovery3:"Batch No : 1443212", recovery4:"Expiry Date : 01/06/25  QTY : 1 pc", comment: "", Catitan: "" },
     ];
 
     const indexOfLastRow = currentPage * rowsPerPage;
@@ -44,7 +46,7 @@ const ButirPopup = ({ setPopup3 }) => {
             <div className="fixed top-0 left-0 w-screen h-screen bg-[#0000006e]" onClick={handleClose}></div>
             <div className="max-w-[90%] w-full bg-white border border-[#CFD1D4] z-10 rounded-lg ">
                 <div className="flex items-center justify-between p-4 ">
-                    <div className="flex items-center justify-between gap-3">
+                    <div className="flex items-center justify-between gap-3"> 
                         <img src={Consent} alt="" />
                         <h2 className='text-lg font-semibold'>Butir Implant Pesakit Dewan Bedah</h2>
                     </div>
@@ -75,15 +77,15 @@ const ButirPopup = ({ setPopup3 }) => {
                                 <div className="max-w-[30%]   w-full">
                                     <div className="flex flex-col gap-3 rounded-lg border border-[#CFD1D4] p-3">
                                         <div className="border p-3 rounded-lg bg-[#f7f8fa] border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Butir Implant Pesakit Dewan...</h3>
                                             <p className='text-sm pt-1 text-[#6E6E6E]'>BREEZY314</p>
                                         </div>
                                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Butir Implant Pesakit Dewan...</h3>
                                             <p className='text-sm pt-1 text-[#6E6E6E]'>BREEZY314</p>
                                         </div>
                                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Butir Implant Pesakit Dewan...</h3>
                                             <p className='text-sm pt-1 text-[#6E6E6E]'>BREEZY314</p>
                                         </div>
                                     </div>
@@ -96,29 +98,24 @@ const ButirPopup = ({ setPopup3 }) => {
 
 
                                 <div className="">
-                                    <div className="flex justify-center items-center mb-4">
+                                    <div className=" mb-4">
                                         <div className="bg-white border rounded-lg  p-4 w-full ">
-                                            <div className="grid grid-cols-2 gap-4 text-sm text-gray-800">
-                                                {/* Left Column */}
-                                                <div className='space-y-1'>
-                                                    <p>
-                                                        <span className="font-semibold">Name</span>: Lorem Ipsum
-                                                    </p>
-                                                    <p>
-                                                        <span className="font-semibold">RN</span>: 111122233334
-                                                    </p>
-                                                    <p>
-                                                        <span className="font-semibold">Kad Pengenal</span>: 111122233334
-                                                    </p>
-                                                    <p>
-                                                        <span className="font-semibold">Alamat</span>:{" "}
-                                                        <span className="font-bold">Jalan Jalan Besar</span>
-                                                    </p>
-                                                    <p>
-                                                        <span className="font-semibold">Bilik Bedah</span>: 47
-                                                    </p>
-                                                    <p className="flex items-center gap-2">
-                                                        <span className="font-semibold">Kas Pembedahan</span>:
+                                            <div className="grid grid-cols-2 items-start gap-4 text-sm text-[#1D1D1D]">
+                                                <div className='gap-y-2 grid grid-cols-2'>
+                                                    <p>Name</p>
+                                                    <p className='font-semibold'>Chia Suwe Kiea</p>
+                                                    <p>RN</p>
+                                                    <p className='font-semibold'>N867921</p>
+                                                    <p>Kad Pengenal</p>
+                                                    <p className='font-semibold'>560915-10-5691</p>
+                                                    <p>Alamat</p>
+                                                    <p className='font-semibold'>Lot 112 Taman Mutiara, Sabak Bernam, Ampang 45200 Selangor</p>
+                                                    <p>Bilik Bedah</p>
+                                                    <p className='font-semibold'>073</p>
+                                                    <p>Prosedur Pembedahan</p>
+                                                    <p className='font-semibold'>Lap @ partial nephrectomy & ureteric stenting</p>
+                                                    <p>Kas Pembedahan</p>
+                                                    <div className="">
                                                         <label className="flex items-center gap-1">
                                                             <input
                                                                 type="checkbox"
@@ -136,122 +133,56 @@ const ButirPopup = ({ setPopup3 }) => {
                                                             />
                                                             Kecemasan
                                                         </label>
-                                                    </p>
-                                                    <p>
-                                                        <span className="font-semibold">Prosedur Pembedahan</span>:{" "}
-                                                        <span className="font-bold">
-                                                            Lap @ partial nephrectomy & ureteric stenting
-                                                        </span>
-                                                    </p>
-                                                    <p>
-                                                        <span className="font-semibold">Pakar Bedah</span>: Prof Abdul
-                                                    </p>
+                                                    </div>
+                                                    <p>Pakar Bedah</p>
+                                                    <p className='font-semibold'>Prof Fam</p>
+                                                    <p>1st Assistant</p>
+                                                    <p className='font-semibold'> : -</p>
+                                                    <p>2nd Assitant</p>
                                                 </div>
 
-                                                {/* Right Column */}
-                                                <div className='space-y-1'>
-                                                    <p>
-                                                        <span className="font-semibold">Tarik</span>:{" "}
-                                                        <span className="font-bold">12/11/2024</span>
-                                                    </p>
-                                                    <p>
-                                                        <span className="font-semibold">Ward</span>: Songket
-                                                    </p>
-                                                    <p>
-                                                        <span className="font-semibold">No Telefon</span>:{" "}
-                                                        <span className="font-bold">0213456789</span>
-                                                    </p>
-                                                    <p>
-                                                        <span className="font-semibold">1st Scrub Nurse</span>: -
-                                                    </p>
-                                                    <p>
-                                                        <span className="font-semibold">2nd Scrub Nurse</span>: -
-                                                    </p>
-                                                    <p>
-                                                        <span className="font-semibold">1st Assistant</span>: -
-                                                    </p>
-                                                    <p>
-                                                        <span className="font-semibold">2nd Assistant</span>: -
-                                                    </p>
-                                                    <p>
-                                                        <span className="font-semibold">Circulating</span>: -
-                                                    </p>
+                                                <div className='gap-y-2 grid grid-cols-2'>
+                                                    <p>Tarik</p>
+                                                    <p className='font-semibold'> : 12/11/2024</p>
+                                                    <p>Ward</p>
+                                                    <p className='font-semibold'> : Songket</p>
+                                                    <p>No Telefon</p>
+                                                    <p className='font-semibold'> : </p>
+                                                    <p>1st Scrub Nurse</p>
+                                                    <p className='font-semibold'> : Noorazila</p>
+                                                    <p>2nd Scrub Nurse</p>
+                                                    <p className='font-semibold'> : -</p>
+                                                    <p>Circulating</p>
+                                                    <p className='font-semibold'> : Fatimah</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
                                     {/* Assessment Table */}
-                                    <div className="bg-white border rounded-lg overflow-hidden p-4">
-                                        {/* <h2 className="font-semibold text-center text-lg mb-4">ASSESSMENT</h2> */}
+                                    <div className="bg-white border rounded-lg overflow-hidden text-[#1d1d1d]">
                                         <table className="table-auto w-full border-collapse rounded-lg overflow-hidden">
                                             <thead>
-                                                <tr className="bg-gray-100 text-left text-gray-600">
-                                                    <th className="p-2.5 border font-medium">Bill</th>
-                                                    <th className="p-2.5 border font-medium">Jenis Implant</th>
-                                                    <th className="p-2.5 border font-medium">Kuantiti</th>
-                                                    <th className="p-2.5 border font-medium">Sistem</th>
-                                                    <th className="p-2.5 border font-medium">Catitan</th>
+                                                <tr className=" text-left ">
+                                                    <th className="p-4 font-medium">Bill</th>
+                                                    <th className="p-4 font-medium">Jenis Implant</th>
+                                                    <th className="p-4 font-medium">Kuantiti</th>
+                                                    <th className="p-4 font-medium">Sistem</th>
+                                                    <th className="p-4 font-medium">Catitan</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 {currentRows.map((row, index) => (
-                                                    <tr key={index} className="text-gray-700">
-                                                        <td className="p-2.5 border">{row.id}</td>
-                                                        <td className="p-2.5 border">{row.recovery}</td>
-                                                        <td className="p-2.5 border">{row.comment}</td>
-                                                        <td className="p-2.5 border">{row.comment}</td>
-                                                        <td className="p-2.5 border">{row.comment}</td>
+                                                    <tr key={index} className={`text-sm ${index % 2 == 0 ? 'bg-gray-100' : ''} `}>
+                                                        <td className="p-4 border-y">{row.id}</td>
+                                                        <td className="p-4 border-y text-xs">{row.recovery} <br /> {row.recovery2} <br /> {row.recovery3} <br /> {row.recovery4}</td>
+                                                        <td className="p-4 border-y">{row.comment}</td>
+                                                        <td className="p-4 border-y">{row.comment}</td>
+                                                        <td className="p-4">{row.comment}</td>
                                                     </tr>
                                                 ))}
                                             </tbody>
                                         </table>
-                                        {/* Pagination */}
-                                        <div className="flex items-center justify-between mt-4">
-                                            <div className="flex items-center gap-4">
-
-                                                <select
-                                                    className="border rounded p-2 text-sm"
-                                                    value={rowsPerPage}
-                                                    readOnly
-                                                >
-                                                    <option>10</option>
-                                                </select>
-                                                <span className="text-sm text-gray-600">
-                                                    Show {indexOfFirstRow + 1} to {Math.min(indexOfLastRow, data.length)} of {data.length} data
-                                                </span>
-                                            </div>
-                                            <div className="flex items-center space-x-2">
-                                                <button
-                                                    className="px-3 py-1 bg-white border-2 rounded-lg"
-                                                    onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-                                                    disabled={currentPage === 1}
-                                                >
-                                                    &lt;
-                                                </button>
-                                                {Array.from({ length: totalPages }, (_, i) => (
-                                                    <button
-                                                        key={i}
-                                                        className={`px-3 py-1 ${currentPage === i + 1
-                                                            ? "bg-primary text-white"
-                                                            : "bg-gray-300 text-gray-800"
-                                                            } rounded`}
-                                                        onClick={() => setCurrentPage(i + 1)}
-                                                    >
-                                                        {i + 1}
-                                                    </button>
-                                                ))}
-                                                <button
-                                                    className="px-3 py-1 bg-white border-2 rounded-lg"
-                                                    onClick={() =>
-                                                        setCurrentPage((prev) => Math.min(prev + 1, totalPages))
-                                                    }
-                                                    disabled={currentPage === totalPages}
-                                                >
-                                                    &gt;
-                                                </button>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
 

@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
 import ConsentforAnaesthesia from "../../../assets/ConsentforAnaesthesia.svg"
 import receipt from "../../../assets/receipt12.png"
+import sign from "../../../assets/sign9.png"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
 import { MdClose } from 'react-icons/md'
@@ -73,23 +74,31 @@ const Perkhidmatan = ({ setPopup2 }) => {
                             )
                         }
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
-                            <div className="border p-3 rounded-lg border-[#cfd1d4]">
+                            <div className="border p-3 rounded-lg border-[#cfd1d4] max-h-[65vh] overflow-auto">
                                 <h3 className='font-semibold text-[#1D1D1D] text-xl'>Perkhidmatan Dewan Bedah</h3>
 
-                                <div className="border text-[#1D1D1D] text-sm grid-cols-2 grid  p-3 mt-2 rounded-lg border-[#cfd1d4]">
-                                    <ul className='space-y-1'>
-                                        <p className='font-medium text-[#6E6E6E] pb-2'>Patient Information</p>
-                                        <li>Booking Id : <span className='font-semibold'>1111222233334</span></li>
-                                        <li>Operation Date : <span className='font-semibold'>07/10/2024</span></li>
-                                        <li>Type of Operation : <span className='font-semibold'>Minor</span></li>
-                                        <li>Booked by : <span className='font-semibold'>Lorem Ipsum</span></li>
-                                    </ul>
-                                    <ul className='space-y-1'>
-                                        <li>Operation List : <span className='font-semibold'>UKMSC Emergency</span></li>
-                                        <li>Method of Admission : <span className='font-semibold'>In-patient</span></li>
-                                    </ul>
+                                <div className="border items-start text-[#1D1D1D] text-sm grid-cols-2 grid  p-3 mt-2 rounded-lg border-[#cfd1d4]">
+                                    <p className='col-span-2 pb-3 text-[#6E6E6E]'>Patient Information</p>
+                                    <div className="grid grid-cols-2 gap-y-1">
+                                        <p>Name</p>
+                                        <p className='font-semibold'>: Chia Suwe Kiea</p>
+                                        <p>IC</p>
+                                        <p className='font-semibold'>: 560015-10-5691</p>
+                                        <p>Date</p>
+                                        <p className='font-semibold'>: 15/08/2023</p>
+                                        <p>Procedure</p>
+                                        <p className='font-semibold'>: TURBT</p>
+                                    </div>
+                                    <div className="grid  grid-cols-2 gap-y-1">
+                                        <p>RN</p>
+                                        <p className='font-semibold'>: N867921</p>
+                                        <p>Ward</p>
+                                        <p className='font-semibold'>: Songket</p>
+                                        <p>Unit</p>
+                                        <p className='font-semibold'>: Uro</p>
+                                    </div>
                                 </div>
-                                <p className='text-[#6E6E6E] pt-3'>To be completed by Operation Theatre Staff (circulating nurse) and involved the entire operation / procedure team using active communication. The Checklist below to be confirmed.</p>
+                                <p className='text-[#1d1d1d] text-sm pt-3'>To be completed by Operation Theatre Staff (circulating nurse) and involved the entire operation / procedure team using active communication. The Checklist below to be confirmed.</p>
 
                                 <div className="border mt-3  rounded-lg border-[#cfd1d4]">
                                     <div className="flex text-lg p-3 font-medium items-center border-[#cfd1d4] border-b pb-2 gap-2 text-[#6E6E6E]">
@@ -105,37 +114,37 @@ const Perkhidmatan = ({ setPopup2 }) => {
                                             <div className=" fastFadeIn p-3 text-[#1D1D1D] grid grid-cols-2">
                                                 <div className="flex flex-col gap-2">
                                                     <div className="flex items-center gap-2">
-                                                        <input type="checkbox" />
+                                                        <input type="checkbox" checked disabled />
                                                         <p>Correct patient identity checked</p>
                                                     </div>
                                                     <div className="flex items-center gap-2">
-                                                        <input type="checkbox" />
+                                                        <input type="checkbox" checked disabled />
                                                         <p>Correct procedure (as consented)</p>
                                                     </div>
                                                     <div className="flex items-center gap-2">
-                                                        <input type="checkbox" />
+                                                        <input type="checkbox" checked disabled />
                                                         <p>Correct site and side checked</p>
                                                     </div>
                                                     <div className="flex items-center gap-2">
-                                                        <input type="checkbox" />
+                                                        <input type="checkbox" checked disabled />
                                                         <p>Correct equipment</p>
                                                     </div>
                                                 </div>
                                                 <div className="flex flex-col gap-2">
                                                     <div className="flex items-center gap-2">
-                                                        <input type="checkbox" />
+                                                        <input type="checkbox" checked disabled />
                                                         <p>Anaesthesia safety check confirmed</p>
                                                     </div>
                                                     <div className="flex items-center gap-2">
-                                                        <input type="checkbox" />
+                                                        <input type="checkbox" checked disabled />
                                                         <p>Allergy check performed</p>
                                                     </div>
                                                     <div className="flex items-center gap-2">
-                                                        <input type="checkbox" />
+                                                        <input type="checkbox" checked disabled />
                                                         <p>Difficult airway/ aspiration risk assessed</p>
                                                     </div>
                                                     <div className="flex items-center gap-2">
-                                                        <input type="checkbox" />
+                                                        <input type="checkbox" checked disabled />
                                                         <p>Excessive blood loss risk assessed</p>
                                                     </div>
                                                 </div>
@@ -145,15 +154,23 @@ const Perkhidmatan = ({ setPopup2 }) => {
 
                                     {
                                         activeTab == "Time Out" && (
-                                            <div className=" fastFadeIn p-3 text-[#1D1D1D] grid grid-cols-2">
+                                            <div className=" fastFadeIn p-3 text-[#1D1D1D]">
                                                 <div className="flex flex-col gap-2">
                                                     <div className="flex items-center gap-2">
-                                                        <input type="checkbox" />
+                                                        <input type="checkbox" disabled checked />
                                                         <p>Anticipated critical events reviewed by all team members</p>
                                                     </div>
                                                     <div className="flex items-center gap-2">
+                                                        <input type="checkbox" disabled checked />
+                                                        <p>Essential imaging displayed </p>
+                                                        <input type="checkbox" disabled checked />
+                                                        <p>None</p>
+                                                        <input type="checkbox"  />
+                                                        <p>XR</p>
                                                         <input type="checkbox" />
-                                                        <p>Essential imaging displayed</p>
+                                                        <p>CT</p>
+                                                        <input type="checkbox" />
+                                                        <p>MRI</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -161,14 +178,14 @@ const Perkhidmatan = ({ setPopup2 }) => {
                                     }
                                     {
                                         activeTab == "Sign Out" && (
-                                            <div className=" fastFadeIn p-3 text-[#1D1D1D] grid grid-cols-2">
+                                            <div className=" fastFadeIn p-3 text-[#1D1D1D] ">
                                                 <div className="flex flex-col gap-2">
-                                                    <div className="flex items-center gap-2">
-                                                        <input type="checkbox" />
+                                                    <div className="flex  gap-2">
+                                                        <input checked disabled type="checkbox" />
                                                         <p>Correct procedure, implant, site and side as conserted</p>
                                                     </div>
-                                                    <div className="flex items-center gap-2">
-                                                        <input type="checkbox" />
+                                                    <div className="flex  gap-2">
+                                                        <input checked disabled type="checkbox" />
                                                         <p>Correct swab and instrument count</p>
                                                     </div>
                                                 </div>
@@ -184,21 +201,31 @@ const Perkhidmatan = ({ setPopup2 }) => {
 
                                 <div className="border text-sm  p-3 mt-2 rounded-lg border-[#cfd1d4]">
                                     <p className='text-[#6E6E6E] '>Verified by :</p>
-                                    <div className="max-w-[30rem] w-full grid-cols-3 grid">
+                                    <div className="max-w-[40rem] w-full grid-cols-4 grid">
                                         <div className="text-sm text-[#1D1D1D]">
                                             <p className='py-1 mt-1'>Surgeon</p>
                                             <p className='py-1 mt-1'>Anaesthesist</p>
                                             <p className='py-1 mt-1'>Circulating Nurse</p>
                                         </div>
                                         <div className="text-sm text-[#1D1D1D] font-semibold">
-                                            <p className='py-1 mt-1'>: Lorem Ipsum</p>
-                                            <p className='py-1 mt-1'>: Lorem Ipsum</p>
-                                            <p className='py-1 mt-1'>: Lorem Ipsum</p>
+                                            <p className='py-1 mt-1'>: Prof Fam</p>
+                                            <img src={sign} className='h-6 -rotate-90 py-1 mt-1' alt="" />
+                                            <p className='py-1 mt-1'>: Sal Zulkah</p>
                                         </div>
-                                        <div className="text-sm text-[#115934] font-medium inline-flex flex-col">
-                                            <p className='bg-[#DDF7EA] px-3 py-1 w-20 text-center rounded-full mt-1'>Signed</p>
-                                            <p className='bg-[#DDF7EA] px-3 py-1 w-20 text-center rounded-full mt-1'>Signed</p>
-                                            <p className='bg-[#DDF7EA] px-3 py-1 w-20 text-center rounded-full mt-1'>Signed</p>
+                                        <div className="text-sm font-medium inline-flex flex-col">
+                                            <p className='py-1 mt-1'>Signature</p>
+                                            <p className='py-1 mt-1'>Signature</p>
+                                            <p className='py-1 mt-1'>Signature</p>
+                                        </div>
+                                        <div className="text-sm font-medium inline-flex flex-col">
+                                            <div className="">
+                                            <img src={sign} className='h-6 rotate-180' alt="" />
+                                            </div>
+                                            <p className='py-1 font-semibold mt-3'>Dr. Iskandar</p>
+                                            <div className="">
+
+                                            <img src={sign} className='h-6  mt-2' alt="" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
 import Senarai from "../../../assets/Senarai.svg"
-import receipt from "../../../assets/receipt11.png"
+import receipt from "../../../assets/receipt43.png"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
 import { MdClose } from 'react-icons/md'
