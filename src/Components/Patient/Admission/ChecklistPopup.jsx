@@ -63,21 +63,21 @@ const ChecklistPopup = ({ setPopup1 }) => {
                                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
                                             <h3 className='font-medium '>Admission Checklist</h3>
                                             <div className="flex items-center justify-between">
-                                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                                <p className='text-sm pt-1'>Chia Suwe Kiea</p>
                                                 <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                                             </div>
                                         </div>
                                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
                                             <h3 className='font-medium '>Admission Checklist</h3>
                                             <div className="flex items-center justify-between">
-                                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                                <p className='text-sm pt-1'>Chia Suwe Kiea</p>
                                                 <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                                             </div>
                                         </div>
                                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
                                             <h3 className='font-medium '>Admission Checklist</h3>
                                             <div className="flex items-center justify-between">
-                                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                                <p className='text-sm pt-1'>Chia Suwe Kiea</p>
                                                 <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                                             </div>
                                         </div>
@@ -89,7 +89,7 @@ const ChecklistPopup = ({ setPopup1 }) => {
                             <div className="border p-3 rounded-lg border-[#cfd1d4] text-sm max-h-[70vh] overflow-auto">
                                 <div className="flex items-center gap-4 ">
                                     <h3 className={`font-semibold text-[#1D1D1D] text-xl`}>Admission Checklist</h3>
-                                    <p className='text-[#1d1d1d] bg-[#F5F7FA] px-2 py-1 rounded-md font-medium'>Lorem Ipsum <span className='text-[#6E6E6E]'>08 Aug 2023</span></p>
+                                    <p className='text-[#1d1d1d] bg-[#F5F7FA] px-2 py-1 rounded-md font-medium'>Chia Suwe Kiea <span className='text-[#6E6E6E]'>08 Aug 2023</span></p>
                                 </div>
 
 
@@ -110,7 +110,7 @@ const ChecklistPopup = ({ setPopup1 }) => {
                                                     <input type="checkbox" />
                                                 </div>
                                                 <div className="flex items-center border-y p-3 justify-between ">
-                                                    <p>Nurses Counter</p>
+                                                    <p>Bed Functions</p>
                                                     <input type="checkbox" />
                                                 </div>
                                                 <div className="flex bg-[#f5f7fa] items-center border-y p-3 justify-between ">
@@ -118,40 +118,48 @@ const ChecklistPopup = ({ setPopup1 }) => {
                                                     <input type="checkbox" />
                                                 </div>
                                                 <div className="flex bg-[#f5f7fa] items-center border-y p-3 justify-between ">
-                                                    <p>Pantry</p>
+                                                    <p>Nurses Call Bell</p>
                                                     <input type="checkbox" />
                                                 </div>
                                                 <div className="flex items-center border-y p-3 justify-between ">
-                                                    <p>Nurses Counter</p>
+                                                    <p>Surau (Male / Female)</p>
                                                     <input type="checkbox" />
                                                 </div>
                                                 <div className="flex items-center border-y p-3 justify-between ">
-                                                    <p>Nurses Counter</p>
+                                                    <p>Telephone</p>
                                                     <input type="checkbox" />
                                                 </div>
                                                 <div className="flex bg-[#f5f7fa] items-center border-y p-3 justify-between ">
-                                                    <p>Pantry</p>
+                                                    <p>Waiting Area</p>
                                                     <input type="checkbox" />
                                                 </div>
                                                 <div className="flex bg-[#f5f7fa] items-center border-y p-3 justify-between ">
-                                                    <p>Pantry</p>
+                                                    <p>Kiblat Arrow</p>
                                                     <input type="checkbox" />
                                                 </div>
                                                 <div className="flex items-center border-y p-3 justify-between ">
-                                                    <p>Nurses Counter</p>
+                                                    <p>Nursery</p>
                                                     <input type="checkbox" />
                                                 </div>
                                                 <div className="flex items-center border-y p-3 justify-between ">
-                                                    <p>Nurses Counter</p>
+                                                    <p>Air Condition Remote Control</p>
                                                     <input type="checkbox" />
                                                 </div>
                                                 <div className="flex bg-[#f5f7fa] items-center border-y p-3 justify-between ">
-                                                    <p>Pantry</p>
-                                                    <input type="checkbox" />
+                                                    <p>Cashier’s Counter</p>
+                                                    <input checked type="checkbox" />
                                                 </div>
                                                 <div className="flex bg-[#f5f7fa] items-center border-y p-3 justify-between ">
-                                                    <p>Pantry</p>
-                                                    <input type="checkbox" />
+                                                    <p>Toilet / Slippers / Toilet Safety</p>
+                                                    <input checked type="checkbox" />
+                                                </div>
+                                                <div className="flex bg-[#f5f7fa] items-center border-y p-3 justify-between ">
+                                                    <p>Pharmacy</p>
+                                                    <input checked type="checkbox" />
+                                                </div>
+                                                <div className="flex bg-[#f5f7fa] items-center border-y p-3 justify-between ">
+                                                    <p>Safety Box (if any)</p>
+                                                    <input checked type="checkbox" />
                                                 </div>
                                             </div>
                                         )
@@ -164,45 +172,52 @@ const ChecklistPopup = ({ setPopup1 }) => {
                                                 <p className=' text-center p-3'>Ward</p>
                                                 <p className=' text-center p-3'></p>
                                                 <div className="flex items-center border-y p-3 justify-between ">
-                                                    <p>Nurses Counter</p>
-                                                    <input type="checkbox" />
+                                                    <p>Appointment / Vaccination Card</p>
+                                                    <input checked type="checkbox" />
                                                 </div>
                                                 <div className="flex items-center border-y p-3 justify-between ">
 
                                                 </div>
                                                 <div className="flex bg-[#f5f7fa] items-center border-y p-3 justify-between ">
-                                                    <p>Pantry</p>
-                                                    <input type="checkbox" />
+                                                    <p>Medical Certificate (MC)</p>
+                                                    <input checked type="checkbox" />
                                                 </div>
                                                 <div className="flex bg-[#f5f7fa] items-center border-y p-3 justify-between ">
 
                                                 </div>
                                                 <div className="flex items-center border-y p-3 justify-between ">
-                                                    <p>Nurses Counter</p>
+                                                    <p>Birth Registration Form</p>
                                                     <input type="checkbox" />
                                                 </div>
-                                                <div className="flex items-center border-y p-3 justify-between ">
+                                                <div className="flex bg-[#fff] items-center border-y p-3 justify-between ">
 
                                                 </div>
                                                 <div className="flex bg-[#f5f7fa] items-center border-y p-3 justify-between ">
-                                                    <p>Pantry</p>
+                                                    <p>Return of Imaging Reports & Films</p>
                                                     <input type="checkbox" />
                                                 </div>
                                                 <div className="flex bg-[#f5f7fa] items-center border-y p-3 justify-between ">
 
                                                 </div>
-                                                <div className="flex items-center border-y p-3 justify-between ">
-                                                    <p>Nurses Counter</p>
+                                                <div className="flex bg-[#fff] items-center border-y p-3 justify-between ">
+                                                    <p>Removal of IV Cannula</p>
                                                     <input type="checkbox" />
                                                 </div>
-                                                <div className="flex items-center border-y p-3 justify-between ">
+                                                <div className="flex bg-[#fff] items-center border-y p-3 justify-between ">
 
                                                 </div>
                                                 <div className="flex bg-[#f5f7fa] items-center border-y p-3 justify-between ">
-                                                    <p>Pantry</p>
-                                                    <input type="checkbox" />
+                                                    <p>Any Medication to be returned</p>
+                                                    <input checked type="checkbox" />
                                                 </div>
-                                                <div className="flex bg-[#f5f7fa] items-center border-y p-3 justify-between ">
+                                                <div className="flex items-center bg-[#f5f7fa] border-y p-3 justify-between ">
+
+                                                </div>
+                                                <div className="flex bg-[#fff] items-center border-y p-3 justify-between ">
+                                                    <p>Offer Wheelchair</p>
+                                                    <input checked type="checkbox" />
+                                                </div>
+                                                <div className="flex bg-[#fff] items-center border-y p-3 justify-between ">
 
                                                 </div>
                                             </div>
@@ -212,55 +227,51 @@ const ChecklistPopup = ({ setPopup1 }) => {
                                 </div>
 
 
+
+
+                             
+
                                 {
                                     activeTab == "Admission Check List" && (
                                         <div className="mx-auto bg-white rounded-lg">
                                             {/* Patient Info Section */}
-                                            <div className="p-3 rounded-lg mt-3   border pb-3 mb-3">
+                                            <div className="p-3 rounded-lg mt-3  text-sm border pb-3 mb-3">
                                                 <h2 className='text-[#6E6E6E] pb-3'>Food Serving Time (daily)</h2>
-                                                <div className='flex items-center justify-between'>
-                                                    <div className="">
+                                                <div className='grid grid-cols-4 gap-y-2'>
+                                                    <p>Breakfast</p>
+                                                    <p className='font-semibold'>7.00am — 8.00am</p>
 
-                                                        <p className='pt-0.5'>
-                                                            Breakfast : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span className='font-semibold'> 7.00am — 8.00am</span>
-                                                        </p>
-                                                        <p className='pt-0.5'>
-                                                            Lunch : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span className='font-semibold'> 12.00pm — 1.00pm</span>
-                                                        </p>
-                                                    </div>
-                                                    <div className="">
-                                                        <p className='pt-0.5'>
-                                                            Breakfast : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span className='font-semibold'> 7.00am — 8.00am</span>
-                                                        </p>
-                                                        <p className='pt-0.5'>
-                                                            Lunch : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span className='font-semibold'> 12.00pm — 1.00pm</span>
-                                                        </p>
-                                                    </div>
+                                                    <p>Afternoon Tea</p>
+                                                    <p className='font-semibold'> 4.00pm — 5.00pm</p>
+
+                                                    <p>Lunch</p>
+                                                    <p className='font-semibold'> 12.00pm — 1.00pm</p>
+
+                                                    <p>Dinner</p>
+                                                    <p className='font-semibold'>5.30pm — 6.30pm</p>
+                                                    <p className='font-semibold col-span-4'>*Hot Water Serving at 7.00 am & 8.30 pm</p>
                                                 </div>
-                                                <p className='italic pt-3'>*Hot Water Serving at 7.00 am & 8.30 pm</p>
                                             </div>
 
                                         </div>
                                     )}
-
-
-                                <div className="mx-auto bg-white rounded-lg">
+                                       <div className="mx-auto bg-white rounded-lg">
                                     {/* Patient Info Section */}
                                     <div className="p-3 rounded-lg mt-3   border pb-3 mb-3">
                                         <h2 className='text-[#6E6E6E] pb-3'>Verified by :</h2>
                                         <div className='flex max-w-2xl items-center justify-between'>
                                             <div className="">
                                                 <p className='pt-0.5'>
-                                                    Date : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span className='font-semibold'> 18/8/23 </span>
+                                                    Date :
                                                 </p>
                                                 <p className='pt-0.5'>
-                                                    Anaesthesist : &nbsp; &nbsp; &nbsp; &nbsp;   <span className='font-semibold'> Lorem Ipsum</span>
+                                                    Anaesthesist :
                                                 </p>
                                             </div>
                                             <div className="">
                                                 <p className='pt-0.5 flex items-center gap-2'>
-                                                Patient name & Signature : 
-                                                <img src={sign5} className='h-10' alt="" />
+                                                    Patient name & Signature :
+                                                    <img src={sign5} className='h-10' alt="" />
                                                 </p>
                                             </div>
                                         </div>

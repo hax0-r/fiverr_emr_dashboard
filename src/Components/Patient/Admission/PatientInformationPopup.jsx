@@ -59,24 +59,24 @@ const PatientInformationPopup = ({ setPopup4 }) => {
                                 <div className="max-w-[30%]   w-full">
                                     <div className=" flex flex-col gap-3 font-medium">
                                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                                            <h3 className='font-medium '>Patient Demographic</h3>
+                                            <h3 className='font-medium '>Chia Suwe Kiea</h3>
                                             <div className="flex items-center justify-between">
                                                 <p className='text-sm pt-1'>N739168</p>
                                                 <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                                             </div>
                                         </div>
                                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                                            <h3 className='font-medium '>Patient Demographic</h3>
+                                            <h3 className='font-medium '>Chia Suwe Kiea</h3>
                                             <div className="flex items-center justify-between">
                                                 <p className='text-sm pt-1'>N739168</p>
-                                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                                <p className='text-sm pt-1 text-[#6E6E6E]'>05 Jun 2023</p>
                                             </div>
                                         </div>
                                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
-                                            <h3 className='font-medium '>Patient Demographic</h3>
+                                            <h3 className='font-medium '>Chia Suwe Kiea</h3>
                                             <div className="flex items-center justify-between">
                                                 <p className='text-sm pt-1'>N739168</p>
-                                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                                <p className='text-sm pt-1 text-[#6E6E6E]'>01 Jan 2023</p>
                                             </div>
                                         </div>
                                     </div>
@@ -94,9 +94,9 @@ const PatientInformationPopup = ({ setPopup4 }) => {
                                 <div className={` ${previewDocument ? " grid-cols-1" : "grid-cols-2"} border p-3 rounded-lg border-[#cfd1d4] mt-1 text-sm grid gap4`}>
                                     <div className="grid-cols-2 grid space-y-1">
                                         <p className=''>Name</p>
-                                        <p className='font-semibold'>: Lorem Ipsum</p>
+                                        <p className='font-semibold'>: SHERI MEKAR</p>
                                         <p className=''>Address 1</p>
-                                        <p className='font-semibold'>: KELUARGA CEMARA </p>
+                                        <p className='font-semibold'>:  KRLUARGA CEMARA APARTMENT </p>
                                         <p className=''>Address 2</p>
                                         <p className='font-semibold'>: JLN SRI PERMAISURI 99</p>
                                         <p className=''>Address 3</p>
@@ -120,9 +120,9 @@ const PatientInformationPopup = ({ setPopup4 }) => {
                                     </div>
                                     <div className="grid-cols-2 grid space-y-1">
                                         <p className=''>MRN</p>
-                                        <p className='font-semibold'>: N111112222</p>
+                                        <p className='font-semibold'>: N89739168</p>
                                         <p className=''>NRIC</p>
-                                        <p className='font-semibold'>: 12344565765</p>
+                                        <p className='font-semibold'>: 679877987812</p>
                                         <p className=''>Old IC</p>
                                         <p className='font-semibold'>: - </p>
                                         <p className=''>Other ID Type</p>
@@ -134,7 +134,7 @@ const PatientInformationPopup = ({ setPopup4 }) => {
                                         <p className=''>Age</p>
                                         <p className='font-semibold'>: 51 yr 8 mth</p>
                                         <p className=''>Telephone (H)</p>
-                                        <p className='font-semibold'>: KELUARGA CEMARA </p>
+                                        <p className='font-semibold'>: - </p>
                                         <p className=''>Telephone (O)</p>
                                         <p className='font-semibold'>: -</p>
                                         <p className=''>Race</p>

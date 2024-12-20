@@ -7,7 +7,7 @@ import { IoIosArrowForward } from 'react-icons/io'
 import { MdClose } from 'react-icons/md'
 import Print from '../Print'
 
-const BorangPopup = ({setPopup2}) => {
+const BorangPopup = ({ setPopup2 }) => {
     const [previewDocument, setPreviewDocument] = useState(false)
 
     const popUp = useRef()
@@ -83,24 +83,24 @@ const BorangPopup = ({setPopup2}) => {
                                         <div className="p-3 grid grid-cols-2 gap-6 rounded-lg mt-1  border pb-3">
                                             <div>
                                                 <p className='pt-0.5'>
-                                                    Policy No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 1111222233334</span>
+                                                    Policy No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 561007085677</span>
                                                 </p>
                                                 <p className='pt-0.5'>
-                                                    Policy No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 1111222233334</span>
+                                                    Policy No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 561007085677</span>
                                                 </p>
                                                 <p className='pt-0.5'>
-                                                    Policy No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 1111222233334</span>
+                                                    Policy No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 561007085677</span>
                                                 </p>
                                             </div>
                                             <div>
                                                 <p className='pt-0.5'>
-                                                    New NRIC No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 1111222233334</span>
+                                                    New NRIC No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 561007085677</span>
                                                 </p>
                                                 <p className='pt-0.5'>
-                                                    Old NRIC : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 1111222233334</span>
+                                                    Old NRIC : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 561007085677</span>
                                                 </p>
                                                 <p className='pt-0.5'>
-                                                    Patient Name : &nbsp; &nbsp;&nbsp; &nbsp; <span className='font-medium'> Lorem Ipsum</span>
+                                                    Patient Name : &nbsp; &nbsp;&nbsp; &nbsp; <span className='font-medium'> Chia Suwe Kiea</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -127,9 +127,13 @@ const BorangPopup = ({setPopup2}) => {
                                                 <div className="border p-3 h-full">
                                                     <p className='font-medium'>12/11/2024</p>
                                                 </div>
-                                                <p className='bg-[#F5F7FA] h-full p-3 border '>5. According to patient, how long had the patient been having these symptons prior to the initial consultation with you?</p>
+
+                                                <p className='bg-[#F5F7FA] h-full p-3 border '>5. a. According to patient, how long had the patient been having these symptons prior to the initial consultation with you
+                                                    <br />
+                                                    b. Based on your professional opinio, how long had the patient been having these symptons prior to the initial consultation with you?
+                                                    ?</p>
                                                 <div className="border p-3 h-full">
-                                                    <p className='font-medium'>2 months</p>
+                                                    <p className='font-medium'>2 months <br /> <br /> <br /> 2 months</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -139,37 +143,37 @@ const BorangPopup = ({setPopup2}) => {
 
 
                             </div>
-                                <div className="flex items-center justify-between mt-4">
-                                    <div className="flex items-center gap-4">
+                            <div className="flex items-center justify-between mt-4">
+                                <div className="flex items-center gap-4">
 
-                                        <select
-                                            className="border rounded p-2 text-sm"
-                                            readOnly
-                                        >
-                                            <option>10</option>
-                                        </select>
-                                        <span className="text-sm text-gray-600">
-                                            Show 1 of 10 data
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center space-x-2">
-                                        <button
-                                            className="px-3 py-1 bg-white border-2 rounded-lg"
-                                        >
-                                            &lt;
-                                        </button>
-                                        <button
-                                            className={`px-3.5 py-1 bg-primary text-white rounded`}
-                                        >
-                                            1
-                                        </button>
-                                        <button
-                                            className="px-3 py-1 bg-white border-2 rounded-lg"
-                                        >
-                                            &gt;
-                                        </button>
-                                    </div>
+                                    <select
+                                        className="border rounded p-2 text-sm"
+                                        readOnly
+                                    >
+                                        <option>10</option>
+                                    </select>
+                                    <span className="text-sm text-gray-600">
+                                        Show 1 of 10 data
+                                    </span>
                                 </div>
+                                <div className="flex items-center space-x-2">
+                                    <button
+                                        className="px-3 py-1 bg-white border-2 rounded-lg"
+                                    >
+                                        &lt;
+                                    </button>
+                                    <button
+                                        className={`px-3.5 py-1 bg-primary text-white rounded`}
+                                    >
+                                        1
+                                    </button>
+                                    <button
+                                        className="px-3 py-1 bg-white border-2 rounded-lg"
+                                    >
+                                        &gt;
+                                    </button>
+                                </div>
+                            </div>
                             {
                                 !previewDocument && (
                                     <div className="flex gap-2 items-center mt-4 justify-end">

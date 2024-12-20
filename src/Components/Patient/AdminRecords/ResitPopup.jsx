@@ -81,13 +81,13 @@ const ResitPopup = ({ setPopup3 }) => {
                                 <div className="">
                                     <div className="mx-auto bg-white rounded-lg">
                                         {/* Patient Info Section */}
-                                        <div className="p-3 rounded-lg mt-3  bg-[#f7f8fa] border pb-3 mb-3">
+                                        <div className="p-3 rounded-lg text-sm mt-3  bg-[#f7f8fa] border pb-3 mb-3">
                                             <div>
                                                 <p className='pt-0.5'>
                                                     Tarik : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span className='font-semibold'> 11/11/2024</span>
                                                 </p>
                                                 <p className='pt-0.5'>
-                                                    Diterima Dari : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span className='font-semibold'> Lorem Ipsum</span>
+                                                    Diterima Dari : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span className='font-semibold'> Chia Suwe Kiea</span>
                                                 </p>
                                                 <p className='pt-0.5'>
                                                     Wang Sebanyak (RM) : <span className='font-semibold'> Lima Puluh Sahaja</span>

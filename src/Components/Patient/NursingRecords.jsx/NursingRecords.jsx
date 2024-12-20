@@ -81,7 +81,7 @@ const NursingRecords = () => {
                             <div className="flex items-center justify-between mt-2">
                                 <div className="flex items-center gap-2">
                                     <PiBedBold />
-                                    <p className='text-sm'>BREEZY314</p>
+                                    <p className='text-sm'>SUNGKE922</p>
                                 </div>
                                 <p className='text-sm text-[#6E6E6E]'>Q839104</p>
                             </div>
@@ -91,7 +91,7 @@ const NursingRecords = () => {
                             <div className="flex items-center justify-between mt-2">
                                 <div className="flex items-center gap-2">
                                     <PiBedBold />
-                                    <p className='text-sm'>BREEZY314</p>
+                                    <p className='text-sm'>FROSTY728</p>
                                 </div>
                                 <p className='text-sm text-[#6E6E6E]'>Q839104</p>
                             </div>
@@ -167,7 +167,7 @@ const NursingRecords = () => {
                             <div className="flex items-center justify-between mt-2">
                                 <div className="flex items-center gap-2">
                                     <PiBedBold />
-                                    <p className='text-sm'>BREEZY314</p>
+                                    <p className='text-sm'>SUNGKE922</p>
                                 </div>
                                 <p className='text-sm text-[#6E6E6E]'>Q839104</p>
                             </div>
@@ -177,7 +177,7 @@ const NursingRecords = () => {
                             <div className="flex items-center justify-between mt-2">
                                 <div className="flex items-center gap-2">
                                     <PiBedBold />
-                                    <p className='text-sm'>BREEZY314</p>
+                                    <p className='text-sm'>FROSTY728</p>
                                 </div>
                                 <p className='text-sm text-[#6E6E6E]'>Q839104</p>
                             </div>

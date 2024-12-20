@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
 import receipt from "../../../assets/receipt33.png"
+import sign from "../../../assets/sign8.png"
 import pdf from "../../../assets/pdf.svg"
 import pdfFile from "../../../assets/pdfFile.svg"
 import { AiOutlineSearch } from 'react-icons/ai'
@@ -88,14 +89,14 @@ const WardProceduresPopup = ({ setPopup6 }) => {
                             <div className="border p-3 text-[#1D1D1D] rounded-lg border-[#cfd1d4] text-sm max-h-[70vh] overflow-auto">
                             <div className="flex items-center gap-4 ">
                                     <h3 className={`font-semibold text-[#1D1D1D] text-xl`}>Admission Ward Procedures</h3>
-                                    <p className='text-[#1d1d1d] bg-[#F5F7FA] px-2 py-1 rounded-md font-medium'>Lorem Ipsum <span className='text-[#6E6E6E]'>08 Aug 2023</span></p>
+                                    <p className='text-[#1d1d1d] bg-[#F5F7FA] px-2 py-1 rounded-md font-medium'>Chia Suwe Kiea <span className='text-[#6E6E6E]'>08 Aug 2023</span></p>
                                 </div>
                                 <p className='pt-3 text-[#6E6E6E] font-medium'>Vitals</p>
 
                                 <div className={` ${previewDocument ? " grid-cols-1" : "grid-cols-2"} border p-3 rounded-lg border-[#cfd1d4] mt-1 text-sm grid gap4`}>
                                     <div className="grid-cols-2 grid space-y-1">
                                         <p className=''>Temp</p>
-                                        <p className='font-semibold'>: Lorem Ipsum</p>
+                                        <p className='font-semibold'>: 36 <sup>c</sup></p>
                                         <p className=''>Blood Pressure</p>
                                         <p className='font-semibold'>: - </p>
                                         <p className=''>Pulse Rate</p>
@@ -104,13 +105,17 @@ const WardProceduresPopup = ({ setPopup6 }) => {
                                         <p className='font-semibold'>: -</p>
                                         <p className=''>NBM</p>
                                         <p className='font-semibold'>: 7:30 pagi</p>
+                                        <p className=''>SSA</p>
+                                        <p className='font-semibold'>: 9:15 pagi</p>
                                     </div>
                                     <div className="grid-cols-2 grid space-y-1">
                                         <p className=''>Alergi</p>
                                         <p className='font-semibold'>: -</p>
                                         <p className=''>Medical History</p>
                                         <p className='font-semibold'>: -</p>
-                                        <p className=''>Medical History</p>
+                                        <p className=''>Surgical History</p>
+                                        <p className='font-semibold'>: Pembuangan batu pada tahun 2022 di Hospital Gleneagles </p>
+                                        <p className=''>Medications</p>
                                         <p className='font-semibold'>: - </p>
                                     </div>
                                 </div>
@@ -127,7 +132,7 @@ const WardProceduresPopup = ({ setPopup6 }) => {
                                     </div>
                                     <div className="grid-cols-2 grid space-y-1">
                                         <p className=''>Tandatangan / Signature</p>
-                                        <p className='font-semibold'>: -</p>
+                                        <img src={sign} alt="" />
                                        </div>
                                 </div>
 

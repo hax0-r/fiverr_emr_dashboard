@@ -61,21 +61,21 @@ const DischargeChitPopup = ({ setPopup5 }) => {
                                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
                                             <h3 className='font-medium '>Admission Letter </h3>
                                             <div className="flex items-center justify-between">
-                                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                                <p className='text-sm pt-1'>Chia Suwe Kiea</p>
                                                 <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                                             </div>
                                         </div>
                                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
                                             <h3 className='font-medium '>Admission Letter </h3>
                                             <div className="flex items-center justify-between">
-                                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                                <p className='text-sm pt-1'>Chia Suwe Kiea</p>
                                                 <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                                             </div>
                                         </div>
                                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
                                             <h3 className='font-medium '>Admission Letter </h3>
                                             <div className="flex items-center justify-between">
-                                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                                <p className='text-sm pt-1'>Chia Suwe Kiea</p>
                                                 <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                                             </div>
                                         </div>
@@ -87,14 +87,14 @@ const DischargeChitPopup = ({ setPopup5 }) => {
                             <div className="border p-3 text-[#1D1D1D] rounded-lg border-[#cfd1d4] text-sm max-h-[70vh] overflow-auto">
                                 <div className="flex items-center gap-4 ">
                                     <h3 className={`font-semibold text-[#1D1D1D] text-xl`}>Admission Checklist </h3>
-                                    <p className='text-[#1d1d1d] bg-[#F5F7FA] px-2 py-1 rounded-md font-medium'>Lorem Ipsum <span className='text-[#6E6E6E]'>08 Aug 2023</span></p>
+                                    <p className='text-[#1d1d1d] bg-[#F5F7FA] px-2 py-1 rounded-md font-medium'>Chia Suwe Kiea <span className='text-[#6E6E6E]'>08 Aug 2023</span></p>
                                 </div>
                                 <p className='pt-3 text-[#6E6E6E] font-medium'>Admission Letter</p>
 
                                 <div className={` ${previewDocument ? " grid-cols-1" : "grid-cols-2"} border p-3 rounded-lg border-[#cfd1d4] mt-1 text-sm grid gap4`}>
                                     <div className="grid-cols-2 grid space-y-1">
                                         <p className=''>Patient’s Name</p>
-                                        <p className='font-semibold'>: Lorem Ipsum</p>
+                                        <p className='font-semibold'>: Chia Suwe Kiea</p>
                                         <p className=''>Sex</p>
                                         <p className='font-semibold'>: - </p>
                                         <p className=''>Age</p>
@@ -102,7 +102,7 @@ const DischargeChitPopup = ({ setPopup5 }) => {
                                         <p className=''>NRIC/Birth Cert/Passport/Others</p>
                                         <p className='font-semibold'>: - </p>
                                         <p className=''>Type of Accommodation</p>
-                                        <div className=""><input type="checkbox" className='mr-1' /> <label htmlFor="">Vip Suite</label><input type="checkbox" className='mr-1 ml-3' /> <label htmlFor="">Exec. Deluxe</label><input type="checkbox" className='mr-1 ml-3' /> <label htmlFor=""> Deluxe</label><input type="checkbox" className='mr-1 ml-3' /> <label htmlFor=""> Single</label><input type="checkbox" className='mr-1 ml-3' /> <label htmlFor="">Two Bedded</label>    </div>
+                                        <div className=""><input checked type="checkbox" className='mr-1' /> <label htmlFor="">Vip Suite</label><input type="checkbox" className='mr-1 ml-3' /> <label htmlFor="">Exec. Deluxe</label><input type="checkbox" className='mr-1 ml-3' /> <label htmlFor=""> Deluxe</label><input type="checkbox" className='mr-1 ml-3' /> <label htmlFor=""> Single</label><input type="checkbox" className='mr-1 ml-3' /> <label htmlFor="">Two Bedded</label>    </div>
                                     </div>
                                     <div className="grid-cols-2 grid space-y-1">
                                         <p className=''>Admission Date</p>

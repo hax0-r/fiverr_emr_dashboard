@@ -23,15 +23,12 @@ const MyKadPopup = ({ setPopup5 }) => {
     }
 
     const userInfo = [
-        { label: "Name", value: "Ahmad Bin Ismail" },
-        { label: "IC Number", value: "860101-14-1234" },
-        { label: "Gender", value: "Male" },
+        { label: "Name", value: "Chia Suwe Kiea" },
+        { label: "IC Number", value: "123456-00-1234" },
+        { label: "Gender", value: "LELAKI" },
         { label: "Citizenship", value: "Malaysian" },
-        { label: "Address", value: "No. 0, Jalan Mawar, Taman Melati, 53100 Kuala Lumpur, Malaysia" },
-        { label: "Date of Birth", value: "01/01/1980" },
+        { label: "Address", value: "No. 12, Jalan Mawar, Taman Melati, 53100 Kuala Lumpur, Malaysia" },
         { label: "Religion", value: "Islam" },
-        { label: "Blood Type", value: "O+" },
-        { label: "Race", value: "Malay" },
     ];
 
 
@@ -88,7 +85,7 @@ const MyKadPopup = ({ setPopup5 }) => {
 
                         <div className={` w-full`}>
                             {
-                                previewDocument && (
+                                !previewDocument && (
                                     <div className="flex gap-2 items-center mt-4 justify-end">
                                         <button onClick={() => setPreviewDocument(true)} className='pl-4 border-[#cfd1d4] border-2 pr-5 py-2.5 flex items-center gap-2 rounded-lg text-[#1D1D1D] font-medium'><AiOutlineSearch className='text-xl' />
                                             Preview Document</button>

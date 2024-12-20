@@ -61,22 +61,22 @@ const AdmissionLetterPopup = ({ setPopup2 }) => {
                                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
                                             <h3 className='font-medium '>Discharge Chit </h3>
                                             <div className="flex items-center justify-between">
-                                                <p className='text-sm pt-1'>Lorem Ipsum</p>
+                                                <p className='text-sm pt-1'>Chia Suwe Kiea</p>
                                                 <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
                                             </div>
                                         </div>
                                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
                                             <h3 className='font-medium '>Discharge Chit </h3>
                                             <div className="flex items-center justify-between">
-                                                <p className='text-sm pt-1'>Lorem Ipsum</p>
-                                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                                <p className='text-sm pt-1'>Chia Suwe Kiea</p>
+                                                <p className='text-sm pt-1 text-[#6E6E6E]'>07 Aug 2023</p>
                                             </div>
                                         </div>
                                         <div className="border p-3 rounded-lg text-[#1D1D1D] border-[#cfd1d4] w-full">
                                             <h3 className='font-medium '>Discharge Chit </h3>
                                             <div className="flex items-center justify-between">
-                                                <p className='text-sm pt-1'>Lorem Ipsum</p>
-                                                <p className='text-sm pt-1 text-[#6E6E6E]'>08 Aug 2023</p>
+                                                <p className='text-sm pt-1'>Chia Suwe Kiea</p>
+                                                <p className='text-sm pt-1 text-[#6E6E6E]'>05 Aug 2023</p>
                                             </div>
                                         </div>
                                     </div>
@@ -87,22 +87,22 @@ const AdmissionLetterPopup = ({ setPopup2 }) => {
                             <div className="border p-3 text-[#1D1D1D] rounded-lg border-[#cfd1d4] text-sm max-h-[70vh] overflow-auto">
                                 <div className="flex items-center gap-4 ">
                                     <h3 className={`font-semibold text-[#1D1D1D] text-xl`}>Discharge Chit </h3>
-                                    <p className='text-[#1d1d1d] bg-[#F5F7FA] px-2 py-1 rounded-md font-medium'>Lorem Ipsum <span className='text-[#6E6E6E]'>08 Aug 2023</span></p>
+                                    <p className='text-[#1d1d1d] bg-[#F5F7FA] px-2 py-1 rounded-md font-medium'>Chia Suwe Kiea <span className='text-[#6E6E6E]'>08 Aug 2023</span></p>
                                 </div>
                                 <p className='pt-3 text-[#6E6E6E] font-medium'>Verifications</p>
 
                                 <div className={` ${previewDocument ? " grid-cols-1" : "grid-cols-2"} border p-3 rounded-lg border-[#cfd1d4] mt-1 text-sm grid gap4`}>
                                     <div className="grid-cols-2 grid space-y-1">
                                         <p className=''>Patient’s Name</p>
-                                        <p className='font-semibold'>: Lorem Ipsum</p>
+                                        <p className='font-semibold'>: Chia Suwe Kiea</p>
                                         <p className=''>MRN</p>
                                         <p className='font-semibold'>: N1128788 </p>
                                         <div className="">
-                                            <input type="checkbox" className='mr-1' />
+                                            <input checked type="checkbox" className='mr-1' />
                                             <label htmlFor="">Payment Counter</label>
                                         </div>
                                         <div className="">
-                                            <input type="checkbox" className='mr-1' />
+                                            <input checked type="checkbox" className='mr-1' />
                                             <label htmlFor="">Pharmacy</label>
                                         </div>
                                         <p className=''>Verified by</p>
@@ -112,14 +112,14 @@ const AdmissionLetterPopup = ({ setPopup2 }) => {
                                         <p className=''>NRIC</p>
                                         <p className='font-semibold'>: -</p>
                                         <p className=''>Race</p>
-                                        <p className='font-semibold'>: Lorem Ipsum</p>
+                                        <p className='font-semibold'>: China</p>
                                         <div className="">
-                                            <input type="checkbox" className='mr-1' />
+                                            <input checked type="checkbox" className='mr-1' />
                                             <label htmlFor="">Ward Verification</label>
                                         </div>
                                         <p className=''></p>
                                         <p className=''>Verified by</p>
-                                        <p className='font-semibold'>: Noor Atikah </p>
+                                        <p className='font-semibold'>: Noor Atikah <span className='bg-zinc-50 p-1 font-normal'>Staff Nurse</span> </p>
                                     </div>
                                 </div>
                                 <p className='pt-3 text-[#6E6E6E] font-medium'>Procedure Information</p>
@@ -129,13 +129,13 @@ const AdmissionLetterPopup = ({ setPopup2 }) => {
                                         <p className=''>Discipline</p>
                                         <p className='font-semibold'>: Urologi</p>
                                         <p className=''>Consultant</p>
-                                        <p className='font-semibold'>: - </p>
+                                        <p className='font-semibold'>: Prof Fam Xeng In</p>
                                         <p className=''>Diagnosis</p>
-                                        <p className='font-semibold'>: - </p>
+                                        <p className='font-semibold'>: Bladder Tumour</p>
                                         <p className=''>Type & date of operation/Procedure </p>
-                                        <p className='font-semibold'>: - </p>
+                                        <p className='font-semibold'>: TURBT performed on 5/9/24 </p>
                                         <p className=''>Diagnostic Procedure</p>
-                                        <p className='font-semibold'>: - </p>
+                                        <p className='font-semibold'>: Removal of stone in 2022 at Gleneagles Hospital</p>
                                         <p className=''>Referral</p>
                                         <p className='font-semibold'>: - </p>
                                     </div>
@@ -144,13 +144,13 @@ const AdmissionLetterPopup = ({ setPopup2 }) => {
                                         <p className='font-semibold'>Patient Detail</p>
                                         <p className=''></p>
                                         <p className=''>Name</p>
-                                        <p className='font-semibold'>: - </p>
+                                        <p className='font-semibold'>: Chia Suwe Kiea</p>
                                         <p className=''>MRN</p>
-                                        <p className='font-semibold'>: - </p>
+                                        <p className='font-semibold'>: N9878788</p>
                                         <p className=''>NIRC</p>
-                                        <p className='font-semibold'>: - </p>
+                                        <p className='font-semibold'>: 98788719 </p>
                                         <p className=''>Race</p>
-                                        <p className='font-semibold'>: - </p>
+                                        <p className='font-semibold'>: Chinese</p>
                                     </div>
                                 </div>
 
@@ -160,7 +160,7 @@ const AdmissionLetterPopup = ({ setPopup2 }) => {
                                     <p className='text-center p-3 font-medium border-b border-r bg-[#f5f7fa]'>Diet</p>
                                     <p className='text-center p-3 font-medium border-b '>Vegetarian, Tiada bawang</p>
                                     <p className='bg-[#f5f7fa] p-3'>5/8 Activity</p>
-                                    <ul className='space-y-1 pl-8 list-disc p-3'>
+                                    <ul className='space-y-1 pl-8 list-disc font-medium p-3'>
                                        <li> G @ 08:00</li>
                                        <li> Catheter & cleaning done</li>
                                        <li> AMEAL on gastric aspirate</li>

@@ -62,11 +62,11 @@ const LivingPopup = ({ setPopup1 }) => {
                                             <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
                                         </div>
                                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Great Eastern</h3>
+                                            <h3 className='font-medium text-[#1D1D1D]'>AIA</h3>
                                             <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
                                         </div>
                                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Great Eastern</h3>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Prudential</h3>
                                             <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
                                         </div>
                                     </div>
@@ -82,30 +82,31 @@ const LivingPopup = ({ setPopup1 }) => {
                                         <div className="p-3 grid grid-cols-2 gap-6 rounded-lg mt-1  border pb-3">
                                             <div>
                                                 <p className='pt-0.5'>
-                                                    Policy No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 1111222233334</span>
+                                                    Policy No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 561007085677</span>
                                                 </p>
                                                 <p className='pt-0.5'>
-                                                    Policy No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 1111222233334</span>
+                                                    Policy No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 561007085677</span>
                                                 </p>
                                                 <p className='pt-0.5'>
-                                                    Policy No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 1111222233334</span>
+                                                    Policy No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 561007085677</span>
                                                 </p>
                                             </div>
                                             <div>
                                                 <p className='pt-0.5'>
-                                                    New NRIC No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 1111222233334</span>
+                                                    New NRIC No : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 561007085677</span>
                                                 </p>
                                                 <p className='pt-0.5'>
-                                                    Old NRIC : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 1111222233334</span>
+                                                    Old NRIC : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-medium'> 561007085677</span>
                                                 </p>
                                                 <p className='pt-0.5'>
-                                                    Patient Name : &nbsp; &nbsp;&nbsp; &nbsp; <span className='font-medium'> Lorem Ipsum</span>
+                                                    Patient Name : &nbsp; &nbsp;&nbsp; &nbsp; <span className='font-medium'> Chia Suwe Kiea</span>
                                                 </p>
                                             </div>
                                         </div>
 
                                         <p className=" p-3 mt-3 bg-[#F5F7FA] border border-[#cfd1d4] rounded-xl">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        The above name is insured with Great Eastern Life Assurance (Malaysia) Berhad against th happening of certain contigent events associated with his her health. A claim has been submitted in connection with Cancer and to enable us to assess the claim, kindly compete this confidential report. <br />
+                                        (For any medical report fee incured in completing this form, it will be bone by claimed)
                                         </p>
 
                                         <div className="text-[#1D1D1D] overflow-hidden text-sm mt-3 border border-[#cfd1d4] rounded-xl">

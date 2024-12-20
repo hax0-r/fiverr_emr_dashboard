@@ -76,47 +76,61 @@ const ReferralPopup = ({ setPopup4 }) => {
                             )
                         }
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
-                            <div className="border max-h-[70vh] overflow-auto p-3 rounded-lg border-[#cfd1d4]">
-                                <h3 className='font-semibold text-[#1D1D1D] text-xl'>Referral Letter</h3>
+                            <div className="border max-h-[70vh] text-[#1D1D1D] overflow-auto p-3 rounded-lg border-[#cfd1d4]">
+                                <h3 className='font-semibold  text-xl'>Referral Letter</h3>
                                 <div className="">
                                     <div className="mx-auto bg-white rounded-lg">
-                                        <div className="p-3 rounded-lg mt-3  border pb-3">
-                                            <div>
-                                                <p className='pt-0.5'>
-                                                    Nama Pesakit : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-semibold'> Lorem Ipsum</span>
-                                                </p>
-                                                <p className='pt-0.5'>
-                                                    NRP : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;  <span className='font-semibold'> 123456789</span>
-                                                </p>
-                                                <p className='pt-0.5'>
-                                                    Kepada : &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<span className='font-semibold'> Prof. Dr. Nolan</span>
-                                                </p>
-                                                <p className='pt-0.5'>
-                                                    Jabatan :&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span className='font-semibold'> Lorem Ipsum</span>
-                                                </p>
-                                                <p className='pt-0.5'>
-                                                    Tarik : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span className='font-semibold'> 11/11/2024</span>
-                                                </p>
+                                        <div className="p-3 text-sm rounded-lg mt-3  border pb-3">
+                                            <div className='grid grid-cols-4 gap-x-4 gap-y-1'>
+                                                <p>       Nama Pesakit   </p>
+                                                <p className='font-semibold'> : -</p>
+                                                <p>&nbsp;</p>
+                                                <p>&nbsp;</p>
+                                                <p>     NRP </p>
+                                                <p className='font-semibold'> : -</p>
+                                                <p>No KJP</p>
+                                                <p className='font-semibold'> : -</p>
+                                                <p>     Kepada </p>
+                                                <p className='font-semibold'> : -</p>
+                                                <p>&nbsp;</p>
+                                                <p>&nbsp;</p>
+                                                <p>     Jabatan </p>
+                                                <p className='font-semibold'> : -</p>
+                                                <p>&nbsp;</p>
+                                                <p>&nbsp;</p>
+                                                <p>     Tarik </p>
+                                                <p className='font-semibold'> : -</p>
+                                                <p>     Masa</p>
+                                                <p className='font-semibold'> : Mengikuti Penetapan</p>
                                             </div>
                                         </div>
 
                                         <p className='text-sm text-[#6E6E6E] py-3 font-medium'>Masalah dan Tujuan Rujukan :</p>
 
-                                        <p className=" p-3 bg-[#F5F7FA] border border-[#cfd1d4] rounded-xl">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        <p className=" p-3 min-h-[10rem] bg-[#F5F7FA] border border-[#cfd1d4] rounded-xl">
+                                            Urgently review her abdominal pain.
+                                            <br /> She has received five units of blood over the past five years.
+                                            <br /> Please proceed with the necessary steps.
+
+
                                         </p>
                                         <p className='text-sm text-[#6E6E6E] py-3 font-medium'>Daripada Pensyarah / Prof. Madya / Prof.</p>
 
-                                        <div className=" p-3 border border-[#cfd1d4] rounded-xl">
-                                            <p className='pt-1'>
-                                                Nama Pesakit : &nbsp; &nbsp; &nbsp; &nbsp; <span className='font-semibold'> Lorem Ipsum</span>
-                                            </p>
-                                            <p className='pt-1'>
-                                                NRP : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;  <span className='font-semibold'> Lorem Ipsum</span>
-                                            </p>
-                                            <p className='pt-1 flex'>
-                                            Tandatangan :  &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;  <span className='font-semibold'> <img src={sign} className='h-28' alt="" /></span>
-                                            </p>
+                                        <div className=" p-3 border  w-full border-[#cfd1d4] rounded-xl">
+                                            <div className="grid gap-y-1 grid-cols-2 max-w-md">
+                                                <p >
+                                                    Nama :
+                                                </p>
+                                                <p className='font-semibold'> Chia Suwe Kiea</p>
+                                                <p >
+                                                    Jabatan :
+                                                </p>
+                                                <p className='font-semibold'> Consultant Breast & Endocrine Surgery</p>
+                                                <p>
+                                                    Tandatangan :
+                                                </p>
+                                                <img src={sign} className='h-28' alt="" />
+                                            </div>
                                         </div>
 
                                     </div>
