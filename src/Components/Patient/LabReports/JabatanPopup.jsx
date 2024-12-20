@@ -115,68 +115,68 @@ const JabatanPopup = ({ setPopup7 }) => {
                                                         {/* Table Header */}
                                                         <thead className=" border-b">
                                                             <tr>
-                                                                <th className="px-4 py-2.5 text-left font-medium">KOD</th>
-                                                                <th className="px-4 py-2.5 text-left font-medium">IMMUNOASSAY</th>
-                                                                <th className="px-4 py-2.5 text-left font-medium">KOD</th>
-                                                                <th className="px-4 py-2.5 text-left font-medium">UJIAN</th>
+                                                                <th className="px-4 py-3.5 text-left font-medium">KOD</th>
+                                                                <th className="px-4 py-3.5 text-left font-medium">IMMUNOASSAY</th>
+                                                                <th className="px-4 py-3.5 text-left font-medium">KOD</th>
+                                                                <th className="px-4 py-3.5 text-left font-medium">UJIAN</th>
                                                             </tr>
                                                         </thead>
 
                                                         {/* Table Body */}
                                                         <tbody>
                                                             <tr className="border-b bg-[#f5f7fa]">
-                                                                <td className="px-4 py-2.5">1</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
-                                                                <td className="px-4 py-2.5">4.4</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
+                                                                <td className="px-4 py-3.5">KOD</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input disabled type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
+                                                                <td className="px-4 py-3.5">H</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input disabled type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
 
 
                                                             </tr>
                                                             <tr className="border-b">
-                                                                <td className="px-4 py-2.5">2</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
-                                                                <td className="px-4 py-2.5">1.43</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
+                                                                <td className="px-4 py-3.5">DOM</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input disabled type="checkbox" className='mr-1' /> <label htmlFor="">D-ORNER</label> </td>
+                                                                <td className="px-4 py-3.5">HFDR</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input disabled type="checkbox" className='mr-1' /> <label htmlFor="">D-ORNER</label> </td>
                                                             </tr>
                                                             <tr className="border-b bg-[#f5f7fa]">
-                                                                <td className="px-4 py-2.5">3</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
-                                                                <td className="px-4 py-2.5">2.7</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
+                                                                <td className="px-4 py-3.5">DIVC</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input disabled type="checkbox" className='mr-1' /> <label htmlFor="">DIVC</label> </td>
+                                                                <td className="px-4 py-3.5"></td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input disabled type="checkbox" className='mr-1' /> <label htmlFor="">DIVC</label> </td>
 
 
                                                             </tr>
                                                             <tr className="border-b">
-                                                                <td className="px-4 py-2.5">4</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
-                                                                <td className="px-4 py-2.5">0.6</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
+                                                                <td className="px-4 py-3.5">FDP</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input disabled type="checkbox" className='mr-1' /> <label htmlFor="">FDP</label> </td>
+                                                                <td className="px-4 py-3.5">ACPH</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input disabled type="checkbox" className='mr-1' /> <label htmlFor="">FDP</label> </td>
                                                             </tr>
                                                             <tr className='bg-[#f5f7fa]'>
-                                                                <td className="px-4 py-2.5">5</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
-                                                                <td className="px-4 py-2.5">3.1</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
+                                                                <td className="px-4 py-3.5">FB</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input disabled type="checkbox" className='mr-1' /> <label htmlFor="">FIBRINOGEN</label> </td>
+                                                                <td className="px-4 py-3.5">BNS</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input disabled type="checkbox" className='mr-1' /> <label htmlFor="">FIBRINOGEN</label> </td>
                                                             </tr>
                                                             <tr className="border-b ">
-                                                                <td className="px-4 py-2.5">6</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
-                                                                <td className="px-4 py-2.5">2.7</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
+                                                                <td className="px-4 py-3.5">FBC</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input disabled type="checkbox" className='mr-1' /> <label htmlFor="">FULL BLOOD COUNT</label> </td>
+                                                                <td className="px-4 py-3.5">LOREM</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input disabled type="checkbox" className='mr-1' /> <label htmlFor="">FULL BLOOD COUNT</label> </td>
 
 
                                                             </tr>
                                                             <tr className="border-b bg-[#f5f7fa]">
-                                                                <td className="px-4 py-2.5">7</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
-                                                                <td className="px-4 py-2.5">0.6</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
+                                                                <td className="px-4 py-3.5">FBP</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input disabled type="checkbox" className='mr-1' /> <label htmlFor="">FULL BLOOD PICTURE</label> </td>
+                                                                <td className="px-4 py-3.5">ACPH</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input disabled type="checkbox" className='mr-1' /> <label htmlFor="">FULL BLOOD PICTURE</label> </td>
                                                             </tr>
                                                             <tr className=''>
-                                                                <td className="px-4 py-2.5">8</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
-                                                                <td className="px-4 py-2.5">3.1</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
+                                                                <td className="px-4 py-3.5">GG</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input disabled type="checkbox" className='mr-1' /> <label htmlFor="">GGPD</label> </td>
+                                                                <td className="px-4 py-3.5">BNS</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input disabled type="checkbox" className='mr-1' /> <label htmlFor="">GGPD</label> </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -194,28 +194,29 @@ const JabatanPopup = ({ setPopup7 }) => {
                                                     <p >NO MAKMAL</p>
                                                 </div>
                                                 <div className="border p-3 rounded-lg border-[#CFD1D4] pb-4">
-                                                    <p>Doctors Name Clinic stamp</p>
+                                                    <p>Gambaran Fiskal :</p>
                                                     <input type="checkbox" className='mt-3 mr-2' />
-                                                    <label htmlFor="">Lorem</label> <br />
+                                                    <label htmlFor="">Pallor / Oedema</label> <br />
                                                     <input type="checkbox" className='mt-1 mr-2' />
-                                                    <label htmlFor="">Lorem</label> <br />
+                                                    <label htmlFor="">Jaundice</label> <br />
                                                     <input type="checkbox" className='mt-1 mr-2' />
-                                                    <label htmlFor="">Lorem</label> <br />
+                                                    <label htmlFor="">Lymphadenopathy</label> <br />
                                                 </div>
                                                 <div className="border p-3 rounded-lg border-[#CFD1D4] pb-4">
+                                                    <p>Additional Findings :</p>
                                                     <input type="checkbox" className='mt-3 mr-2' />
-                                                    <label htmlFor="">Lorem</label> <br />
+                                                    <label htmlFor="">Spleen enlargement</label> <br />
                                                     <input type="checkbox" className='mt-1 mr-2' />
-                                                    <label htmlFor="">Lorem</label> <br />
+                                                    <label htmlFor="">Hepatomegaly</label> <br />
                                                     <input type="checkbox" className='mt-1 mr-2' />
-                                                    <label htmlFor="">Lorem</label> <br />
+                                                    <label htmlFor="">Bleeding Tendency / Purpura</label> <br />
                                                 </div>
                                             </div>
-                                            <div className="border mt-3 p-3 font-medium rounded-lg border-[#CFD1D4] pb-4">
-                                                <p>Other Relevan Information</p>
+                                            <div className="border mt-3 p-3 rounded-lg font-normal border-[#CFD1D4] pb-4">
+                                                <p className='font-semibold pb-2'>Other Relevan Information</p>
                                                 <p>Sembarang Suntikan Bionitics</p>
                                                 <p>(Fe, Vit B co Tab/Injection)</p>
-                                                <p>Lorem Ipsum</p>
+                                                <p>Pemindahan Darah</p>
                                             </div>
                                             <div className="border flex items-center gap-3 mt-3 p-3 font-medium rounded-lg border-[#CFD1D4] text-[#6E6E6E] pb-4">
                                                 <p className='text-secondary'>Haematologi Rutin</p>
@@ -231,68 +232,80 @@ const JabatanPopup = ({ setPopup7 }) => {
                                                         {/* Table Header */}
                                                         <thead className=" border-b">
                                                             <tr>
-                                                                <th className="px-4 py-2.5 text-left font-medium">KOD</th>
-                                                                <th className="px-4 py-2.5 text-left font-medium">IMMUNOASSAY</th>
-                                                                <th className="px-4 py-2.5 text-left font-medium">KOD</th>
-                                                                <th className="px-4 py-2.5 text-left font-medium">UJIAN</th>
+                                                                <th className="px-4 py-3.5 text-left font-medium">KOD</th>
+                                                                <th className="px-4 py-3.5 text-left font-medium">IMMUNOASSAY</th>
+                                                                <th className="px-4 py-3.5 text-left font-medium">KOD</th>
+                                                                <th className="px-4 py-3.5 text-left font-medium">UJIAN</th>
                                                             </tr>
                                                         </thead>
 
                                                         {/* Table Body */}
                                                         <tbody>
                                                             <tr className="border-b bg-[#f5f7fa]">
-                                                                <td className="px-4 py-2.5">1</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
-                                                                <td className="px-4 py-2.5">4.4</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
+                                                                <td className="px-4 py-3.5">KOD</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
+                                                                <td className="px-4 py-3.5">H</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
 
 
                                                             </tr>
                                                             <tr className="border-b">
-                                                                <td className="px-4 py-2.5">2</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
-                                                                <td className="px-4 py-2.5">1.43</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
+                                                                <td className="px-4 py-3.5">DOM</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">D-ORNER</label> </td>
+                                                                <td className="px-4 py-3.5">HFDR</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">D-ORNER</label> </td>
                                                             </tr>
                                                             <tr className="border-b bg-[#f5f7fa]">
-                                                                <td className="px-4 py-2.5">3</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
-                                                                <td className="px-4 py-2.5">2.7</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
+                                                                <td className="px-4 py-3.5">DIVC</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">DIVC</label> </td>
+                                                                <td className="px-4 py-3.5"></td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">DIVC</label> </td>
 
 
                                                             </tr>
                                                             <tr className="border-b">
-                                                                <td className="px-4 py-2.5">4</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
-                                                                <td className="px-4 py-2.5">0.6</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
+                                                                <td className="px-4 py-3.5">FDP</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">FDP</label> </td>
+                                                                <td className="px-4 py-3.5">ACPH</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">FDP</label> </td>
                                                             </tr>
                                                             <tr className='bg-[#f5f7fa]'>
-                                                                <td className="px-4 py-2.5">5</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
-                                                                <td className="px-4 py-2.5">3.1</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
+                                                                <td className="px-4 py-3.5">FB</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">FIBRINOGEN</label> </td>
+                                                                <td className="px-4 py-3.5">BNS</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">FIBRINOGEN</label> </td>
                                                             </tr>
                                                             <tr className="border-b ">
-                                                                <td className="px-4 py-2.5">6</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
-                                                                <td className="px-4 py-2.5">2.7</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
+                                                                <td className="px-4 py-3.5">FBC</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">FULL BLOOD COUNT</label> </td>
+                                                                <td className="px-4 py-3.5">LOREM</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">FULL BLOOD COUNT</label> </td>
 
 
                                                             </tr>
                                                             <tr className="border-b bg-[#f5f7fa]">
-                                                                <td className="px-4 py-2.5">7</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
-                                                                <td className="px-4 py-2.5">0.6</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
+                                                                <td className="px-4 py-3.5">FBP</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">FULL BLOOD PICTURE</label> </td>
+                                                                <td className="px-4 py-3.5">ACPH</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">FULL BLOOD PICTURE</label> </td>
                                                             </tr>
                                                             <tr className=''>
-                                                                <td className="px-4 py-2.5">8</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
-                                                                <td className="px-4 py-2.5">3.1</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">APTT</label> </td>
+                                                                <td className="px-4 py-3.5">GGPDO</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">GEPD Quantitason</label> </td>
+                                                                <td className="px-4 py-3.5">BNS</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">GGPD</label> </td>
+                                                            </tr>
+                                                            <tr className="border-b bg-[#f5f7fa]">
+                                                                <td className="px-4 py-3.5">GGPD</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">GGPD Screen</label> </td>
+                                                                <td className="px-4 py-3.5">LOREM</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">LUPUS</label> </td>
+                                                            </tr>
+                                                            <tr className=''>
+                                                                <td className="px-4 py-3.5">LUPUS</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">Lapis anticosutant corfam</label> </td>
+                                                                <td className="px-4 py-3.5">ACPH</td>
+                                                                <td className="px-4 py-3.5 text-[#BDBEBF]"><input type="checkbox" className='mr-1' /> <label htmlFor="">GGPD</label> </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -330,6 +343,14 @@ const JabatanPopup = ({ setPopup7 }) => {
                                                     </button>
                                                 </div>
                                             </div>
+
+                                            <div className="border grid grid-cols-3 mt-3 p-3 font-medium rounded-lg border-[#CFD1D4] ">
+                                                <p className='p-2.5 border border-[#CFD1D4] mr-2'>Nama : </p>
+                                                <p className='p-2.5 border border-[#CFD1D4]'>Tel / Pager :  </p>
+                                                <p className='p-2.5 border border-[#CFD1D4]'>TTD : </p>
+                                                <p className='p-2.5 border border-[#CFD1D4] mr-2'>Jenis Sample : </p>
+                                                <p className='p-2.5 border border-[#CFD1D4] col-span-2'>Tarikh & Masa sample diambil</p>
+                                            </div>
                                         </div>
                                     )
                                 }
@@ -340,37 +361,37 @@ const JabatanPopup = ({ setPopup7 }) => {
                                             <h2 className='text-center text-xl font-semibold'>JABATAN PERKHIDMATAN KEJURUWATAN HOSPITAL CANSELOR TUANKU MUHRIZ</h2>
                                             <h2 className='text-center pt-1 text-xl font-semibold'>BUTIR IMPLANT PESAKIT DEWAN BEDAH</h2>
 
-                                            <div className={` ${previewDocument ? " grid-cols-1" : "grid-cols-2"} border p-3 rounded-lg border-[#cfd1d4] mt-5 text-sm grid gap4`}>
+                                            <div className={` ${previewDocument ? " grid-cols-1" : "grid-cols-2"} border p-3 rounded-lg border-[#cfd1d4] items-start mt-5 text-sm grid gap4`}>
                                                 <div className="grid-cols-2 grid space-y-1">
                                                     <p className=''>Name</p>
-                                                    <p className='font-semibold'>: ..........................................</p>
-                                                    <p className=''>Address 1</p>
-                                                    <p className='font-semibold'>: .......................................... </p>
-                                                    <p className=''>Address 2</p>
-                                                    <p className='font-semibold'>: ..........................................</p>
-                                                    <p className=''>Name</p>
-                                                    <p className='font-semibold'>: ..........................................</p>
+                                                    <p className='font-semibold'>: Chia Suwe Kiea</p>
+                                                    <p className=''>RN</p>
+                                                    <p className='font-semibold'>: N867921</p>
+                                                    <p className=''>NO. KAD PENGENALAN</p>
+                                                    <p className='font-semibold'>: 560915105691</p>
+                                                    <p className=''>ALAMAT</p>
+                                                    <p className='font-semibold'>: Lot 112 Taman Mutiara, Sabak Bernam, Ampang 45200 Selangor</p>
                                                 </div>
                                                 <div className="grid-cols-2 grid space-y-1">
-                                                    <p className=''>Address 2</p>
-                                                    <p className='font-semibold'>: ..........................................</p>
-                                                    <p className=''>Name</p>
-                                                    <p className='font-semibold'>: ..........................................</p>
-                                                    <p className=''>Address 1</p>
+                                                    <p className=''>TARIKH</p>
+                                                    <p className='font-semibold'>: 18/8/2024</p>
+                                                    <p className=''>WAD</p>
+                                                    <p className='font-semibold'>: Songket</p>
+                                                    <p className=''>NO. TELEFON</p>
                                                     <p className='font-semibold'>: .......................................... </p>
                                                 </div>
                                             </div>
 
-                                            <div className={` ${previewDocument ? " grid-cols-1" : "grid-cols-2"} border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm grid gap4`}>
+                                            <div className={` ${previewDocument ? " grid-cols-1" : "grid-cols-2"} border p-3 rounded-lg items-end border-[#cfd1d4] mt-3 text-sm grid gap4`}>
                                                 <div className="grid-cols-2 grid space-y-1">
                                                     <p className=''>BILIK BEDAH</p>
-                                                    <p className='font-semibold'>: ..........................................</p>
+                                                    <p className='font-semibold'>: 071</p>
                                                     <p className=''>KES PEMBEDAHAN</p>
-                                                    <p className='font-semibold'>: .......................................... </p>
+                                                    <p className='font-semibold'>: <input type="checkbox" disabled className='mr-1 ' /> ELEKTIF <input type="checkbox" className='mr-1' disabled checked /> KECEMASAN </p>
                                                     <p className=''>PROSEDUR PEMBEDAHAN</p>
-                                                    <p className='font-semibold'>: ..........................................</p>
+                                                    <p className='font-semibold'>: Turbt</p>
                                                     <p className=''>PAKAR BEDAH</p>
-                                                    <p className='font-semibold'>: ..........................................</p>
+                                                    <p className='font-semibold'>: Prof F</p>
                                                     <p className=''>1st AISSISTANT</p>
                                                     <p className='font-semibold'>: ..........................................</p>
                                                     <p className=''>2nd ASSISTANT</p>
@@ -378,14 +399,22 @@ const JabatanPopup = ({ setPopup7 }) => {
                                                 </div>
                                                 <div className="grid-cols-2 grid space-y-1">
                                                     <p className=''>1st SCRUB NURSE</p>
-                                                    <p className='font-semibold'>: ..........................................</p>
+                                                    <p className='font-semibold'>: Noornlaila</p>
                                                     <p className=''>2nd SCRUB NURSE</p>
                                                     <p className='font-semibold'>: ..........................................</p>
                                                     <p className=''>CIRCULATING</p>
-                                                    <p className='font-semibold'>: .......................................... </p>
+                                                    <p className='font-semibold'>: Bedah </p>
                                                 </div>
                                             </div>
 
+                                            <div className="border p-3 gap-x-3 rounded-lg border-[#cfd1d4] mt-3 text-sm grid grid-cols-2">
+                                                <h2 className='col-span-2 pb-4 text-center font-medium'>Specimen Particulars</h2>
+                                                <p className='border p-1 w-full text-center font-medium border-[#cfd1d4] '>Type of Specimen</p>
+                                                <p className='border p-1 w-full text-center font-medium border-[#cfd1d4] '>Type of Specimen</p>
+                                                <p className='border p-1 w-full text-center text-xs border-[#cfd1d4] '>7th Floor, Clinic Blok UKMMC, Cheras, 65000</p>
+                                                <p className='border p-1 w-full text-center text-xs border-[#cfd1d4] '>7th Floor, Clinic Blok UKMMC, Cheras, 65000</p>
+
+                                            </div>
 
                                             <div className="flex justify-center items-center">
                                                 <div className="w-full bg-white rounded-lg border mt-4">
@@ -393,31 +422,24 @@ const JabatanPopup = ({ setPopup7 }) => {
                                                         {/* Table Header */}
                                                         <thead className=" border-b">
                                                             <tr>
-                                                                <th className="px-4 py-2.5 text-left font-medium">Bil</th>
-                                                                <th className="px-4 py-2.5 text-left font-medium">Jenis Implant</th>
-                                                                <th className="px-4 py-2.5 text-left font-medium">Kuantiti</th>
-                                                                <th className="px-4 py-2.5 text-left font-medium">Sistem</th>
-                                                                <th className="px-4 py-2.5 text-left font-medium">Catatan</th>
+                                                                <th className="p-4 text-left font-medium">Bil</th>
+                                                                <th className="p-4 text-left font-medium">Jenis Implant</th>
+                                                                <th className="p-4 text-left font-medium">Kuantiti</th>
+                                                                <th className="p-4 text-left font-medium">Sistem</th>
+                                                                <th className="p-4 text-left font-medium">Catatan</th>
                                                             </tr>
                                                         </thead>
 
                                                         {/* Table Body */}
                                                         <tbody>
                                                             <tr className="border-b bg-[#f5f7fa]">
-                                                                <td className="px-4 py-2.5">1</td>
-                                                                <td className="px-4 py-2.5 ">Loop Tump Small</td>
-                                                                <td className="px-4 py-2.5">Xl</td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"> </td>
-                                                                <td className="px-4 py-2.5">mIU/L</td>
+                                                                <td className="p-4">1</td>
+                                                                <td className="p-4 ">Loop Tump Small</td>
+                                                                <td className="p-4">Xl</td>
+                                                                <td className="p-4 text-[#BDBEBF]"> </td>
+                                                                <td className="p-4">mIU/L</td>
 
 
-                                                            </tr>
-                                                            <tr className="">
-                                                                <td className="px-4 py-2.5"></td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"> </td>
-                                                                <td className="px-4 py-2.5"></td>
-                                                                <td className="px-4 py-2.5"></td>
-                                                                <td className="px-4 py-2.5 text-[#BDBEBF]"> </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>

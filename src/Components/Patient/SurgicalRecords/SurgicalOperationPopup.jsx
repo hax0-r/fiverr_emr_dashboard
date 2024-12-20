@@ -78,45 +78,53 @@ const SurgicalOperationPopup = ({ setPopup1 }) => {
                                 <h3 className='font-semibold text-[#1D1D1D] text-xl'>Abdoment Urogenital : Surgery For Bladder Tumours</h3>
                                 <p className='font-medium text-[#6E6E6E] pt-2'>Booking Information</p>
 
-                                <div className="border text-[#1D1D1D] text-sm grid-cols-2 grid  p-3 mt-2 rounded-lg border-[#cfd1d4]">
-                                    <ul className='space-y-1'>
-                                        <li>Booking Id : <span className='font-semibold'>1111222233334</span></li>
-                                        <li>Operation Date : <span className='font-semibold'>07/10/2024</span></li>
-                                        <li>Type of Operation : <span className='font-semibold'>Minor</span></li>
-                                        <li>Booked by : <span className='font-semibold'>Lorem Ipsum</span></li>
-                                    </ul>
-                                    <ul className='space-y-1'>
-                                        <li>Operation List : <span className='font-semibold'>UKMSC Emergency</span></li>
-                                        <li>Method of Admission : <span className='font-semibold'>In-patient</span></li>
-                                    </ul>
+                                <div className="border  text-[#1D1D1D] gap-y-1 text-sm grid-cols-4 grid  p-3 mt-2 rounded-lg border-[#cfd1d4]">
+
+                                    <p>Booking Id</p>
+                                    <p className='font-semibold'> : 561007085677</p>
+                                    <p>Operation List</p>
+                                    <p className='font-semibold'> : UKMSC Emergency</p>
+                                    <p>Operation Date</p>
+                                    <p className='font-semibold'> : 07/10/2024</p>
+                                    <p>Method of Admission</p>
+                                    <p className='font-semibold'> : In-patient</p>
+                                    <p>Type of Operation</p>
+                                    <p className='font-semibold'> : Minor</p>
+                                    <div className=""></div>
+                                    <div className=""></div>
+                                    <p>Booked by</p>
+                                    <p className='font-semibold'> : FAM XIENG INN</p>
                                 </div>
                                 <p className='font-medium text-[#6E6E6E] pt-3'>Post-Operative Information</p>
 
-                                <div className="border text-sm grid-cols-2 grid  p-3 mt-2 rounded-lg border-[#cfd1d4]">
-                                    <ul className='space-y-1'>
-                                        <li>Operation Type : <span className='font-semibold'>Elective</span></li>
-                                        <li>Pre-op diagnosis : <span className='font-semibold'>D41.4: Neoplasm of uncertain or unknown behavior of bladder</span></li>
-                                    </ul>
-                                    <ul className='space-y-1'>
-                                        <li>Start Time : <span className='font-semibold'>16:00</span></li>
-                                        <li>End Time : <span className='font-semibold'>16:00</span></li>
-                                        <li>Duration : <span className='font-semibold'>30 min(s)</span></li>
-                                    </ul>
+                                <div className="border gap-y-1 text-sm grid-cols-4 grid  p-3 mt-2 rounded-lg border-[#cfd1d4]">
+                                    <p>Operation Type</p>
+                                    <p className='font-semibold'> : Elective</p>
+                                    <p>Start Time</p>
+                                    <p className='font-semibold'> : 16:00</p>
+                                    <p>Pre-op diagnosis</p>
+                                    <p className='font-semibold'> : D41.4: Neoplasm of uncertain or unknown behavior of bladder</p>
+                                    <p>End Time</p>
+                                    <p className='font-semibold'> : 16:30</p>
+                                    <div className=""></div>
+                                    <div className=""></div>
+                                    <p>Duration</p>
+                                    <p className='font-semibold'> : 30 min(s)</p>
                                 </div>
 
                                 <div className="border mt-3  rounded-lg border-[#cfd1d4]">
                                     <div className="flex text-lg p-3 font-medium items-center border-[#cfd1d4] border-b pb-2 gap-2 text-[#6E6E6E]">
                                         <p className={`p-1 cursor-pointer  ${activeTab == "Infection Surveillance" && "text-secondary"} `} onClick={() => setActiveTab("Infection Surveillance")}>Infection Surveillance</p>
                                         <div className="h-5  border-[#cfd1d4]  border-r"></div>
-                                        <p className={`p-1 cursor-pointer   `}>Personal Involved</p>
+                                        <p onClick={() => setActiveTab("Personal Involved")} className={`p-1 cursor-pointer  ${activeTab == "Personal Involved" && "text-secondary"} `}>Personal Involved</p>
                                         <div className="h-5  border-[#cfd1d4]  border-r"></div>
-                                        <p className={`p-1 cursor-pointer   `}>Finding</p>
+                                        <p onClick={() => setActiveTab("Finding")} className={`p-1 cursor-pointer   ${activeTab == "Finding" && "text-secondary"}`}>Finding</p>
                                         <div className="h-5  border-[#cfd1d4]  border-r"></div>
                                         <p className={`p-1 cursor-pointer  ${activeTab == "Procedure" && "text-secondary"} `} onClick={() => setActiveTab("Procedure")}>Procedure</p>
                                         <div className="h-5  border-[#cfd1d4]  border-r"></div>
-                                        <p className={`p-1 cursor-pointer   `}>Post-Op Order</p>
+                                        <p onClick={() => setActiveTab("Post-Op Order")} className={`p-1 cursor-pointer   ${activeTab == "Post-Op Order" && "text-secondary"}`}>Post-Op Order</p>
                                         <div className="h-5  border-[#cfd1d4]  border-r"></div>
-                                        <p className={`p-1 cursor-pointer   `}>Biospy Taken</p>
+                                        <p onClick={() => setActiveTab("Biospy Taken")} className={`p-1 cursor-pointer   ${activeTab == "Biospy Taken" && "text-secondary"}`}>Biospy Taken</p>
                                     </div>
 
                                     {/* Infection Surveillance */}
@@ -156,11 +164,55 @@ const SurgicalOperationPopup = ({ setPopup1 }) => {
                                             </div>
                                         )
                                     }
+                                    {
+                                        activeTab == "Personal Involved" && (
+                                            <div className="flex fastFadeIn justify-center p-3 items-center">
+                                                <div className="w-full bg-white border rounded-lg ">
+                                                    <table className="w-full border-collapse text-sm text-gray-800">
+                                                        <tbody>
+                                                            <tr className="border-b">
+                                                                <td className="px-4 py-2.5 bg-zinc-100">Surgeon / Phsycian 1</td>
+                                                                <td className="px-4 py-2.5 font-medium">Fam Xeng Inn</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        )
+                                    }
 
                                     {
                                         activeTab == "Procedure" && (
-                                            <p className="border fastFadeIn rounded-lg bg-[#f5f7fa] text-[#1D1D1D] p-3 m-3">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat tincidunt massa, sed convallis odio tincidunt nec. Nulla facilisi. Vestibulum luctus nibh vel libero dictum, a tristique mi iaculis. Integer sit amet semper nulla. Sed pulvinar dui id tincidunt fringilla. Curabitur vehicula elit eget dui facilisis, quis accumsan nulla tempus. Fusce ultricies tincidunt risus, ut dictum erat mollis et. Duis at ultricies turpis. Mauris eget varius neque. Integer convallis urna non justo venenatis, ut tincidunt ex gravida.
+                                            <p className="border fastFadeIn rounded-lg text-sm bg-[#f5f7fa] text-[#1D1D1D] p-3 m-3">
+                                                Spinal given. Lithotomy position. Cleaned and drapped.
+                                                Cystoscope inserted. Finding as noted. OTIS urethrotomy
+                                                done to enable insertion of resectoscope. Resectoscope inserted. Bladder tumour resected. Hemostasis secured.
+                                                CBD inserted.
+                                            </p>
+                                        )
+                                    }
+                                    {
+                                        activeTab == "Finding" && (
+                                            <p className="border text-sm fastFadeIn rounded-lg bg-[#f5f7fa] text-[#1D1D1D] p-3 m-3">
+                                                bladder tumour at posterior bladder wall
+                                            </p>
+                                        )
+                                    }
+                                    {
+                                        activeTab == "Post-Op Order" && (
+                                            <p className="border text-sm fastFadeIn rounded-lg bg-[#f5f7fa] text-[#1D1D1D] p-3 m-3">
+                                                Allow Only
+                                                <br />  Cont IV augmentin 1.2gm tds
+                                                <br />  cont bladder irrigation
+                                                <br />  T ultracet I/I PRN
+                                                <br />  Intravesical mitomycin 40mg cm
+                                            </p>
+                                        )
+                                    }
+                                    {
+                                        activeTab == "Biospy Taken" && (
+                                            <p className="border text-sm fastFadeIn rounded-lg bg-[#f5f7fa] text-[#1D1D1D] p-3 m-3">
+                                               bladder tumour
                                             </p>
                                         )
                                     }
