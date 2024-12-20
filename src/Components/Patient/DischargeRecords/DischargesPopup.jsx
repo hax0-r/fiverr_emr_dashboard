@@ -75,109 +75,119 @@ const DischargesPopup = ({ setPopup1 }) => {
                             )
                         }
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
-                            <div className="border p-3 rounded-lg border-[#cfd1d4]">
+                            <div className="border p-3 rounded-lg border-[#cfd1d4] max-h-[65vh] overflow-auto">
                                 <h3 className='font-semibold text-[#1D1D1D] text-xl mt-3'>Pusat Pakar UKM</h3>
-                                <div className="">
-                                    <div className="mx-auto bg-white rounded-lg">
-                                        {/* Patient Info Section */}
-                                        <div className="grid p-3 rounded-lg mt-4 grid-cols-2 gap-4 bg-[#f7f8fa] border pb-4 mb-4">
-                                            <div>
-                                                <p className='pt-0.5'>
-                                                    <span className="font-bold ">Patient Name:</span> Lorem Ipsum
-                                                </p>
-                                                <p className='pt-0.5'>
-                                                    <span className="font-bold ">No. KP:</span> 12345678910
-                                                </p>
-                                                <p className='pt-0.5'>
-                                                    <span className="font-bold ">Jantina:</span> 11122233334
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <p className='pt-0.5'>
-                                                    <span className="font-bold ">T/Lahir:</span> 18/11/1990
-                                                </p>
-                                                <p className='pt-0.5'>
-                                                    <span className="font-bold ">Alamat:</span> No. 0, Jalan Jalan Besar
-                                                </p>
-                                                <p className='pt-0.5'>
-                                                    <span className="font-bold ">No. Tel:</span> 0213456789
-                                                </p>
-                                            </div>
+                                <div className="mx-auto bg-white rounded-lg">
+                                    <div className={` ${previewDocument ? " grid-cols-1" : "grid-cols-3"} border p-3 rounded-lg border-[#cfd1d4] bg-[#f7f8fa] mt-3 text-sm grid gap-x-4`}>
+                                        <div className="grid-cols-2 grid space-y-1">
+                                            <p className=''>Patient Name</p>
+                                            <p className='font-semibold'>: Chia Suwe Kiea</p>
+                                            <p className=''>Jantina</p>
+                                            <p className='font-semibold'>:  Male </p>
+                                            <p className=''>Alamat</p>
+                                            <p className='font-semibold'>: Jalan Besar</p>
+                                            <p className=''>Poskod</p>
+                                            <p className='font-semibold'>: 50400</p>
                                         </div>
+                                        <div className="grid-cols-2 grid space-y-1">
+                                            <p className=''>Bangsa</p>
+                                            <p className='font-semibold'>: Melayu</p>
+                                            <p className=''>Bandar</p>
+                                            <p className='font-semibold'>: Kuala Lumpur</p>
+                                        </div>
+                                        <div className="grid-cols-2 grid space-y-1">
+                                            <p className=''>NO K/P  </p>
+                                            <p className='font-semibold'>: 12345678910</p>
+                                            <p className=''>T/LAHIR</p>
+                                            <p className='font-semibold'>: 18/11/1990</p>
+                                            <p className=''>NO. TEL</p>
+                                            <p className='font-semibold'>: 0213456789</p>
+                                            <p className=''>Negeri</p>
+                                            <p className='font-semibold'>: Kuala Lumpur</p>
+                                        </div>
+                                    </div>
 
-                                        {/* Table Section */}
-                                        <div className="overflow-x-auto rounded-l overflow-hidden">
-                                            <table className="table-auto w-full text-sm text-left border border-gray-300">
-                                                <thead className="bg-gray-100">
-                                                    <tr>
-                                                        <th className="px-4 py-2 border">Masuk Wad</th>
-                                                        <th className="px-4 py-2 border"></th>
-                                                        <th className="px-4 py-2 border">Discaj Wad</th>
-                                                        <th className="px-4 py-2 border"></th>
-                                                        <th className="px-4 py-2 border">Tarikh T/J</th>
-                                                        <th className="px-4 py-2 border"></th>
-                                                        <th className="px-4 py-2 border">NRP</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td className="px-4 py-2 border">Jenis</td>
-                                                        <td className="px-4 py-2 border"></td>
-                                                        <td className="px-4 py-2 border">Jenis</td>
-                                                        <td className="px-4 py-2 border"></td>
-                                                        <td className="px-4 py-2 border">Klinik</td>
-                                                        <td className="px-4 py-2 border"></td>
-                                                        <td className="px-4 py-2 border">Terima</td>
-                                                        <td className="px-4 py-2 border"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="px-4 py-2 border">Jenis</td>
-                                                        <td className="px-4 py-2 border"></td>
-                                                        <td className="px-4 py-2 border">Jenis</td>
-                                                        <td className="px-4 py-2 border"></td>
-                                                        <td className="px-4 py-2 border">Klinik</td>
-                                                        <td className="px-4 py-2 border"></td>
-                                                        <td className="px-4 py-2 border">Terima</td>
-                                                        <td className="px-4 py-2 border"></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                    {/* Table Section */}
+                                    <div className="overflow-x-auto rounded-l mt-4 overflow-hidden">
+                                        <table className="table-auto w-full text-sm text-left border border-gray-300">
+                                            <tbody>
+                                                <tr>
+                                                    <td className="p-4 border">MASUK WAD</td>
+                                                    <td className="p-4 text-xs text-blue-500 border">Kristal</td>
+                                                    <td className="p-4 border">DISCAJ WAD</td>
+                                                    <td className="p-4 border text-xs text-blue-500">Kristal</td>
+                                                    <td className="p-4 border">TARIK T/J</td>
+                                                    <td className="p-4 border"></td>
+                                                    <td className="p-4 border">NRP</td>
+                                                    <td className="p-4 border"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="p-4 border">JENIS</td>
+                                                    <td className="p-4 border text-xs text-blue-500">Urology</td>
+                                                    <td className="p-4 border">JENIS</td>
+                                                    <td className="p-4 border text-xs text-blue-500">Urology</td>
+                                                    <td className="p-4 border">KLINIK</td>
+                                                    <td className="p-4 border"></td>
+                                                    <td className="p-4 border">TERIMA</td>
+                                                    <td className="p-4 border"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="p-4 border">TARIKH</td>
+                                                    <td className="p-4 border text-xs text-blue-500">04/11/22</td>
+                                                    <td className="p-4 border">TARIKH</td>
+                                                    <td className="p-4 border text-xs text-blue-500">04/11/22</td>
+                                                    <td className="p-4 border">KHID/DOCTOR</td>
+                                                    <td className="p-4 border"></td>
+                                                    <td className="p-4 border">T.T</td>
+                                                    <td className="p-4 border"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
 
-                                        {/* Summary Section */}
-                                        <div className="mt-6">
-                                            <h3 className="text-lg font-semibold mb-2">Ringkasan Discaj</h3>
-                                            <table className="table-auto w-full text-sm text-left border border-gray-300">
-                                                <thead className="bg-gray-100">
-                                                    <tr>
-                                                        <th className="px-4 py-2 border">Provisional Diagnosis</th>
-                                                        <th className="px-4 py-2 border">Kegunaan Jabatan Maklumat Kesihatan</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td className="px-4 py-2 border">Lorem Ipsum</td>
-                                                        <td className="px-4 py-2 border">None</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="px-4 py-2 border">Principal Diagnosis</td>
-                                                        <td className="px-4 py-2 border">None</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="px-4 py-2 border">Additional Diagnosis</td>
-                                                        <td className="px-4 py-2 border">None</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="px-4 py-2 border">Operative Procedure</td>
-                                                        <td className="px-4 py-2 border">None</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td className="px-4 py-2 border">Brief history and physical findings</td>
-                                                        <td className="px-4 py-2 border">None</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                    {/* Summary Section */}
+                                    <div className="mt-4 rounded-lg overflow-hidden">
+                                        <table className="table-auto w-full text-left border border-gray-300">
+                                            <thead className="">
+                                                <tr>
+                                                    <th className="p-4 border bg-[#f5f7fa]"></th>
+                                                    <th className="p-4 border font-semibold">Ringkasan Discaj</th>
+                                                    <th className="p-4 border font-semibold">Kegunaan Jabatan Maklumat Kesihatan</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td className="p-4 border bg-[#f5f7fa]">Provisional Diagnosis</td>
+                                                    <td className="p-4 border font-medium">RT kidney tumor</td>
+                                                    <td className="p-4 border font-medium">None</td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="p-4 border bg-[#f5f7fa]">Provisional Diagnosis</td>
+                                                    <td className="p-4 border font-medium">Bladder cancer</td>
+                                                    <td className="p-4 border font-medium">None</td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="p-4 border bg-[#f5f7fa]">Additional Diagnosis</td>
+                                                    <td className="p-4 border font-medium ">LT kidney stone</td>
+                                                    <td className="p-4 border font-medium">None</td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="p-4 border bg-[#f5f7fa]">Operative Procedure</td>
+                                                    <td className="p-4 border font-medium">-</td>
+                                                    <td className="p-4 border font-medium">None</td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="p-4 border bg-[#f5f7fa]">&nbsp;</td>
+                                                    <td className="p-4 border font-medium"></td>
+                                                    <td className="p-4 border font-medium"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="p-4 border bg-[#f5f7fa]">Brief History and Essential Physical Findings</td>
+                                                    <td className="p-4 border font-medium">-</td>
+                                                    <td className="p-4 border font-medium">None</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
 

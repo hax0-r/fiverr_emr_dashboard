@@ -75,30 +75,49 @@ const FinalReportPopup = ({ setPopup2 }) => {
                             )
                         }
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
-                            <div className="border p-3 rounded-lg border-[#cfd1d4]">
+                            <div className="border p-3 rounded-lg border-[#cfd1d4] max-h-[65vh] overflow-auto">
                                 <h3 className='font-semibold text-[#1D1D1D] text-xl mt-3'>Final Report</h3>
                                 <div className="">
 
                                     <div className="p-3 mt-3 bg-white rounded-lg border border-gray-200">
-                                        {/* Header Section */}
-                                        <div className="flex justify-between items-start mb-4">
-                                            <div>
-                                                <h2 className="font-medium text-gray-700 mb-2">Patient</h2>
-                                                <p className="text-gray-600">MRN: <span className="font-medium">N12345</span></p>
-                                                <p className="text-gray-600">Nama: <span className="font-medium">Lorem Ipsum</span></p>
-                                                <p className="text-gray-600">Jantina: <span className="font-medium">Male</span></p>
-                                                <p className="text-gray-600">DOB: <span className="font-medium">15/9/1956</span></p>
-                                                <p className="text-gray-600">Age: <span className="font-medium">66 Years</span></p>
-                                                <p className="text-gray-600">NIC: <span className="font-medium">-</span></p>
+                                        <div className={` ${previewDocument ? " grid-cols-1" : "grid-cols-3"} border p-3 rounded-lg border-[#cfd1d4] mt-1 text-sm grid gap-x-4`}>
+                                            <p className={`text-[#6E6E6E] ${previewDocument ? " col-span-1" : "col-span-3"} pb-3`}>Patient</p>
+                                            <div className="grid-cols-2 grid space-y-1">
+                                                <p className=''>MRN</p>
+                                                <p className='font-semibold'>: N867921</p>
+                                                <p className=''>Nama</p>
+                                                <p className='font-semibold'>:  Chia Suwe Kiea </p>
+                                                <p className=''>Jantina</p>
+                                                <p className='font-semibold'>: MAle</p>
+                                                <p className=''>DOB</p>
+                                                <p className='font-semibold'>: 15/9/1956</p>
+                                                <p className=''>Age</p>
+                                                <p className='font-semibold'>: 66 Years </p>
+                                                <p className=''>NIC</p>
+                                                <p className='font-semibold'>: 560915105691</p>
                                             </div>
-                                            <div>
-                                                <p className="text-gray-600">Request by: <span className="font-medium">Pegawai Perubatan PPUKM</span></p>
-                                                <p className="text-gray-600">Department: <span className="font-medium">Chemical Pathology</span></p>
-                                                <p className="text-gray-600">Location: <span className="font-medium">UKMSC</span></p>
-                                                <p className="text-gray-600">Request No: <span className="font-medium">1230814961</span></p>
-                                                <p className="text-gray-600">Date: <span className="font-medium">18/08/2023</span></p>
-                                                <p className="text-gray-600">Arrived: <span className="font-medium">18/08/2023 09:22</span></p>
-                                                <p className="text-gray-600">Completed: <span className="font-medium">18/08/2023 10:02</span></p>
+                                            <div className="grid-cols-2 grid space-y-1">
+                                                <p className=''>Request by</p>
+                                                <p className='font-semibold'>: Pegawai Perubatan PPUKM</p>
+                                                <p className=''>Locatino</p>
+                                                <p className='font-semibold'>: UKMSC</p>
+                                                <p className=''>Tel</p>
+                                                <p className='font-semibold'>: - </p>
+                                                <p className=''>Email</p>
+                                                <p className='font-semibold'>: -</p>
+                                                <p className=''>Request No</p>
+                                                <p className='font-semibold'>: 1230814961</p>
+                                            </div>
+                                            <div className="grid-cols-2 grid space-y-1">
+                                                <p className=''>Department Details  </p>
+                                                <p className='font-semibold'>: Chemical Pathology</p>
+                                                <p className=''>Tel</p>
+                                                <p className='font-semibold'>: -</p>
+                                                <p className='text-[#6E6E6E] col-span-2'>Date</p>
+                                                <p className=''>Arrived</p>
+                                                <p className='font-semibold'>: 18/08/2023 09:22</p>
+                                                <p className=''>Completed</p>
+                                                <p className='font-semibold'>: 18/08/2023 10:02</p>
                                             </div>
                                         </div>
 
@@ -106,51 +125,58 @@ const FinalReportPopup = ({ setPopup2 }) => {
                                         <div className="mt-6 rounded-lg overflow-hidden border border-gray-300">
                                             <table className="w-full table-auto  ">
                                                 <thead>
-                                                    <tr className="bg-gray-100 text-left">
-                                                        <th className="border border-gray-300 px-4 py-2">Result</th>
-                                                        <th className="border border-gray-300 px-4 py-2">Units</th>
-                                                        <th className="border border-gray-300 px-4 py-2">Range</th>
+                                                    <tr className=" text-left">
+                                                        <th className="border border-gray-300 font-medium border-r-0 p-4"></th>
+                                                        <th className="border border-gray-300 font-medium border-x-0 p-4">Result</th>
+                                                        <th className="border border-gray-300 font-medium border-x-0 p-4">Units</th>
+                                                        <th className="border border-gray-300 font-medium border-l-0 p-4">Range</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     {/* Renal Profile Section */}
                                                     <tr>
-                                                        <td colSpan={3} className="bg-gray-50 px-4 py-2 font-semibold text-gray-700">Renal Profile</td>
+                                                        <td colSpan={4} className="p-4 font-semibold border-x">Renal Profile</td>
                                                     </tr>
                                                     <tr>
-                                                        <td className="border border-gray-300 px-4 py-2">Sodium (ISE ID)</td>
-                                                        <td className="border border-gray-300 px-4 py-2">138 mmol/L</td>
-                                                        <td className="border border-gray-300 px-4 py-2">(136-145)</td>
+                                                        <td className="border bg-[#f5f7fa] border-gray-300 p-4">Sodium (ISE ID)</td>
+                                                        <td className="border bg-[#f5f7fa] border-gray-300 p-4">138 </td>
+                                                        <td className="border bg-[#f5f7fa] border-gray-300 p-4">mmol/L </td>
+                                                        <td className="border bg-[#f5f7fa] border-gray-300 p-4">(136-145)</td>
                                                     </tr>
                                                     <tr>
-                                                        <td className="border border-gray-300 px-4 py-2">Potassium (ISE ID)</td>
-                                                        <td className="border border-gray-300 px-4 py-2">4.1 mmol/L</td>
-                                                        <td className="border border-gray-300 px-4 py-2">(3.5-5.1)</td>
+                                                        <td className="border border-gray-300 p-4">Potassium (ISE ID)</td>
+                                                        <td className="border border-gray-300 p-4">4.1 </td>
+                                                        <td className="border border-gray-300 p-4">mmol/L</td>
+                                                        <td className="border border-gray-300 p-4">(3.5-5.1)</td>
                                                     </tr>
                                                     <tr>
-                                                        <td className="border border-gray-300 px-4 py-2">Urea (Urease)</td>
-                                                        <td className="border border-gray-300 px-4 py-2">5.7 mmol/L</td>
-                                                        <td className="border border-gray-300 px-4 py-2">(3.2-7.2)</td>
+                                                        <td className="border bg-[#f5f7fa] border-gray-300 p-4">Urea (Urease)</td>
+                                                        <td className="border bg-[#f5f7fa] border-gray-300 p-4">5.7 </td>
+                                                        <td className="border bg-[#f5f7fa] border-gray-300 p-4">mmol/L</td>
+                                                        <td className="border bg-[#f5f7fa] border-gray-300 p-4">(3.2-7.2)</td>
                                                     </tr>
                                                     <tr>
-                                                        <td className="border border-gray-300 px-4 py-2">Creatinine (Enzymatic)</td>
-                                                        <td className="border border-gray-300 px-4 py-2">68.5 μmol/L</td>
-                                                        <td className="border border-gray-300 px-4 py-2">(64-104)</td>
+                                                        <td className="border border-gray-300 p-4">Creatinine (Enzymatic)</td>
+                                                        <td className="border border-gray-300 p-4">68.5 </td>
+                                                        <td className="border border-gray-300 p-4">μmol/L</td>
+                                                        <td className="border border-gray-300 p-4">(64-104)</td>
                                                     </tr>
 
                                                     {/* Liver Function Test Section */}
                                                     <tr>
-                                                        <td colSpan={3} className="bg-gray-50 px-4 py-2 font-semibold text-gray-700">Liver Function Test</td>
+                                                        <td colSpan={4} className="bg-[#f5f7fa] border p-4 font-semibold text-gray-700">Liver Function Test</td>
                                                     </tr>
                                                     <tr>
-                                                        <td className="border border-gray-300 px-4 py-2">Albumin (BCP dye)</td>
-                                                        <td className="border border-gray-300 px-4 py-2">41 g/L</td>
-                                                        <td className="border border-gray-300 px-4 py-2">(34-48)</td>
+                                                        <td className="border border-gray-300 p-4">Albumin (BCP dye)</td>
+                                                        <td className="border border-gray-300 p-4">41 </td>
+                                                        <td className="border border-gray-300 p-4">g/L</td>
+                                                        <td className="border border-gray-300 p-4">(34-48)</td>
                                                     </tr>
                                                     <tr>
-                                                        <td className="border border-gray-300 px-4 py-2">Total Protein (Biuret)</td>
-                                                        <td className="border border-gray-300 px-4 py-2">67 g/L</td>
-                                                        <td className="border border-gray-300 px-4 py-2">(64-83)</td>
+                                                        <td className="border bg-[#f5f7fa] border-gray-300 p-4">Total Protein (Biuret)</td>
+                                                        <td className="border bg-[#f5f7fa] border-gray-300 p-4">67 </td>
+                                                        <td className="border bg-[#f5f7fa] border-gray-300 p-4">g/L</td>
+                                                        <td className="border bg-[#f5f7fa] border-gray-300 p-4">(64-83)</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
