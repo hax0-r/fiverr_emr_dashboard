@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
 import ClinicalNotes from "../../../assets/ClinicalNotes.svg"
 import receipt from "../../../assets/receipt2.png"
+import sign from "../../../assets/sign11.png"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
 import { MdClose } from 'react-icons/md'
@@ -87,8 +88,8 @@ const ClinicalTHTPopup = ({ setPopup2 }) => {
                                         <tbody>
                                             {/* Present History */}
                                             <tr>
-                                                <td className="border border-gray-200 px-4 py-2 font-medium">Present History</td>
-                                                <td className="border border-gray-200 px-4 py-2">
+                                                <td className="border bg-[#f5f7fa] p-4 ">Present History</td>
+                                                <td className="border  p-4 font-medium">
                                                     <ul className="list-disc list-inside">
                                                         <li>Aspiration symptoms x2/52</li>
                                                         <li>Hoarseness x1/52</li>
@@ -100,52 +101,67 @@ const ClinicalTHTPopup = ({ setPopup2 }) => {
                                                 </td>
                                             </tr>
                                             {/* Previous History */}
-                                            <tr className="bg-gray-50">
-                                                <td className="border border-gray-200 px-4 py-2 font-medium">Previous History</td>
-                                                <td className="border border-gray-200 px-4 py-2">None</td>
+                                            <tr className="">
+                                                <td className="border  p-4  bg-[#f5f7fa]">Previous History</td>
+                                                <td className="border  p-4 font-medium">None</td>
                                             </tr>
                                             {/* Drug History */}
                                             <tr>
-                                                <td className="border border-gray-200 px-4 py-2 font-medium">Drug History</td>
-                                                <td className="border border-gray-200 px-4 py-2">No Allergy</td>
+                                                <td className="border  p-4  bg-[#f5f7fa]">Drug History</td>
+                                                <td className="border  p-4 font-medium">No Allergy</td>
                                             </tr>
                                             {/* Previous Admissions */}
-                                            <tr className="bg-gray-50">
-                                                <td className="border border-gray-200 px-4 py-2 font-medium">Previous Admissions</td>
-                                                <td className="border border-gray-200 px-4 py-2">No history of surgery</td>
+                                            <tr className="">
+                                                <td className="border  p-4  bg-[#f5f7fa]">Previous Admissions</td>
+                                                <td className="border  p-4 font-medium">No history of surgery</td>
                                             </tr>
                                             {/* Social History */}
                                             <tr>
-                                                <td className="border border-gray-200 px-4 py-2 font-medium">Social History</td>
-                                                <td className="border border-gray-200 px-4 py-2">
-                                                    <ul className="list-disc list-inside">
-                                                        <li>Smoked for 39 years</li>
-                                                    </ul>
-                                                </td>
+                                                <td className="border  p-4  bg-[#f5f7fa]">Social History</td>
+                                                <td className="border  p-4">Stop smoking for 39 years</td>
                                             </tr>
                                             {/* Diagnosis */}
-                                            <tr className="bg-gray-50">
-                                                <td className="border border-gray-200 px-4 py-2 font-medium">Diagnosis</td>
-                                                <td className="border border-gray-200 px-4 py-2">Treat as LPR</td>
+                                            <tr className="">
+                                                <td className="border  p-4  bg-[#f5f7fa]">Diagnosis</td>
+                                                <td className="border  p-4 font-medium">Treat as LPR</td>
                                             </tr>
                                             {/* Treatment */}
                                             <tr>
-                                                <td className="border border-gray-200 px-4 py-2 font-medium">Treatment</td>
-                                                <td className="border border-gray-200 px-4 py-2"></td>
+                                                <td className="border  p-4  bg-[#f5f7fa]">Treatment</td>
+                                                <td className="border  p-4 font-medium">T. Pantoprazole 40mg BDc</td>
                                             </tr>
                                             {/* Haematological Ix */}
-                                            <tr className="bg-gray-50">
-                                                <td className="border border-gray-200 px-4 py-2 font-medium">Haematological Ix</td>
-                                                <td className="border border-gray-200 px-4 py-2"></td>
+                                            <tr className="">
+                                                <td className="border  p-4  bg-[#f5f7fa]">Haematological Ix</td>
+                                                <td className="border  p-4 font-medium"></td>
                                             </tr>
                                             {/* Radiological Ix */}
                                             <tr>
-                                                <td className="border border-gray-200 px-4 py-2 font-medium">Radiological Ix</td>
-                                                <td className="border border-gray-200 px-4 py-2"></td>
+                                                <td className="border  p-4  bg-[#f5f7fa]">Radiological Ix</td>
+                                                <td className="border  p-4 font-medium"></td>
+                                            </tr>
+                                            <tr>
+                                                <td className="border  p-4  bg-[#f5f7fa]">Advise</td>
+                                                <td className="border  p-4 font-medium"></td>
+                                            </tr>
+                                            <tr>
+                                                <td className="border  p-4  bg-[#f5f7fa]">TCA</td>
+                                                <td className="border  p-4 font-medium">1/12 , Rescope in 1/12 , ((L)  False cord edema, possibly active )</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
+
+                                <div className="grid mt-5 text-sm  grid-cols-3 gap-6 text-[#6E6E6E]">
+                                    <div className="">
+                                        <p>Name :</p>
+                                        <p>Dr Foong Seong Kin
+                                            Pegawai Perubatan (MD, MRCSEd)Jabatan OtornalirngologiHCTM, Pusat Perubatan UKMNo <br /><br /> No Pendafataran Penuh MPM : 57763</p>
+                                    </div>
+                                    <p className='text-center'>Signature :</p>
+                                    <img src={sign} className='h-16' alt="" />
+                                </div>
+
                             </div>
                             {
                                 !previewDocument && (

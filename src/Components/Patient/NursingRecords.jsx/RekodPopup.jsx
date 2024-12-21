@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
+import { PiArrowsOutSimpleBold, PiBedBold, PiPrinterBold } from 'react-icons/pi'
 import ClinicalNotes from "../../../assets/ClinicalNotes.svg"
 import receipt from "../../../assets/receipt5.png"
 import { AiOutlineSearch } from 'react-icons/ai'
@@ -86,24 +86,42 @@ const RekodPopup = ({ setPopup2 }) => {
                             !previewDocument && (
                                 <div className="max-w-[30%]   w-full">
                                     <div className="flex flex-col gap-3 rounded-lg border border-[#CFD1D4] p-3">
-                                        <div className="border p-3 rounded-lg bg-[#f7f8fa] border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                                            <p className='text-sm pt-1 text-[#6E6E6E]'>FROSTY728</p>
+                                        <div className="border p-3 rounded-lg border-[#cfd1d4]">
+                                            <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                                            <div className="flex items-center justify-between mt-2">
+                                                <div className="flex items-center gap-2">
+                                                    <PiBedBold />
+                                                    <p className='text-sm'>SUNGKE922</p>
+                                                </div>
+                                                <p className='text-sm text-[#6E6E6E]'>N867921</p>
+                                            </div>
                                         </div>
                                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                                            <p className='text-sm pt-1 text-[#6E6E6E]'>FROSTY728</p>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                                            <div className="flex items-center justify-between mt-2">
+                                                <div className="flex items-center gap-2">
+                                                    <PiBedBold />
+                                                    <p className='text-sm'>FROSTY728</p>
+                                                </div>
+                                                <p className='text-sm text-[#6E6E6E]'>N867921</p>
+                                            </div>
                                         </div>
                                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                                            <p className='text-sm pt-1 text-[#6E6E6E]'>FROSTY728</p>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                                            <div className="flex items-center justify-between mt-2">
+                                                <div className="flex items-center gap-2">
+                                                    <PiBedBold />
+                                                    <p className='text-sm'>BREEZY314</p>
+                                                </div>
+                                                <p className='text-sm text-[#6E6E6E]'>N867921</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             )
                         }
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
-                            <div className="border p-3 rounded-lg border-[#cfd1d4]">
+                            <div className="border p-3 rounded-lg border-[#cfd1d4] max-h-[65vh] overflow-auto">
                                 <h3 className='font-semibold text-[#1D1D1D] text-xl'>Rekod Imbangan Cecair</h3>
                                 <div className="mt-4">
                                     {/* Patient Information Card */}
@@ -167,8 +185,8 @@ const RekodPopup = ({ setPopup2 }) => {
                                                         key={index}
                                                         onClick={() => handlePageChange(index + 1)}
                                                         className={`w-8 h-8 flex items-center justify-center text-sm rounded-lg ${currentPage === index + 1
-                                                                ? "bg-primary text-white"
-                                                                : "border border-[#CFD1D4] text-[#1D1D1D] hover:bg-gray-100"
+                                                            ? "bg-primary text-white"
+                                                            : "border border-[#CFD1D4] text-[#1D1D1D] hover:bg-gray-100"
                                                             }`}
                                                     >
                                                         {index + 1}

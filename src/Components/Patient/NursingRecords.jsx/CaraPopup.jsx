@@ -1,7 +1,8 @@
 
 import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
-import Senarai from "../../../assets/Senarai.svg"
+import Senarai from "../../../assets/pdf.svg"
+import pdfFile from "../../../assets/pdfFile.svg"
 import receipt from "../../../assets/receipt8.png"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
@@ -31,7 +32,7 @@ const CaraPopup = ({ setPopup5 }) => {
                 <div className="flex items-center justify-between p-4 ">
                     <div className="flex items-center justify-between gap-3">
                         <img src={Senarai} alt="" />
-                        <h2 className='text-lg font-semibold'>Post Operative Nursing Record</h2>
+                        <h2 className='text-lg font-semibold'>Cara Pemerhatian</h2>
                     </div>
                     {
                         previewDocument ? (
@@ -59,17 +60,26 @@ const CaraPopup = ({ setPopup5 }) => {
                             !previewDocument && (
                                 <div className="max-w-[30%]   w-full">
                                     <div className="flex flex-col gap-3 rounded-lg border border-[#CFD1D4] p-3">
-                                        <div className="border p-3 rounded-lg bg-[#f7f8fa] border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                                            <p className='text-sm pt-1 text-[#6E6E6E]'>BREEZY314</p>
+                                        <div className="border bg-zinc-100 p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
+                                            <img src={pdfFile} alt="" />
+                                            <div className="">
+                                                <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                                                <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
+                                            </div>
                                         </div>
-                                        <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                                            <p className='text-sm pt-1 text-[#6E6E6E]'>BREEZY314</p>
+                                        <div className="border p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
+                                            <img src={pdfFile} alt="" />
+                                            <div className="">
+                                                <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                                                <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
+                                            </div>
                                         </div>
-                                        <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                                            <p className='text-sm pt-1 text-[#6E6E6E]'>BREEZY314</p>
+                                        <div className="border p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
+                                            <img src={pdfFile} alt="" />
+                                            <div className="">
+                                                <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                                                <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -80,42 +90,27 @@ const CaraPopup = ({ setPopup5 }) => {
                                 <h3 className='font-semibold text-[#1D1D1D] text-xl'>Cara Pemerhatian</h3>
 
 
-                                <div className="mx-auto bg-[#f7f8fa] border mt-4 rounded-lg p-4">
-                                    <div className="grid grid-cols-3 gap-y-2 text-sm">
-                                        {/* Row 1 */}
-                                        <div>Nama:</div>
-                                        <div className="col-span-2">Lorem Ipsum</div>
-
-                                        {/* Row 2 */}
-                                        <div>NRP:</div>
-                                        <div className="col-span-2">V12121212</div>
-
-                                        {/* Row 3 */}
-                                        <div>Wad/Katil:</div>
-                                        <div className="col-span-2">-</div>
-
-                                        {/* Row 4 */}
-                                        <div>Tarikh:</div>
-                                        <div className="col-span-2">11/05/2024</div>
-
-                                        {/* Row 5 */}
-                                        <div>Hari Selepas Pembedahan:</div>
-                                        <div>-</div>
-                                        <div>Tinggi Badan:</div>
-                                        <div className="col-span-2 text-right">166 CM</div>
-
-                                        {/* Row 6 */}
-                                        <div>BO:</div>
-                                        <div>-</div>
-                                        <div>PU:</div>
-                                        <div className="col-span-2">-</div>
-
-                                        {/* Row 7 */}
-                                        <div>Waktu:</div>
-                                        <div>5 AM</div>
-                                        <div>Berat Badan:</div>
-                                        <div className="col-span-2 text-right">70 KG</div>
-                                    </div>
+                                <div className={`mx-auto text-sm bg-[#f7f8fa] border mt-4 rounded-lg p-3 grid gap-y-1 ${previewDocument ? "grid-cols-4" : "grid-cols-6"}`}>
+                                    <p>Nama</p>
+                                    <p className='font-semibold'>: Chia Suwe Kiea</p>
+                                    <p>Hari Selepas Pembedahan</p>
+                                    <p className='font-semibold'>: -</p>
+                                    <p>Tinggi Badan</p>
+                                    <p className='font-semibold'>: 166 CM</p>
+                                    <p>NRP</p>
+                                    <p className='font-semibold'>: N867921</p>
+                                    <p>Waktu</p>
+                                    <p className='font-semibold'>: 5 AM</p>
+                                    <p>BO</p>
+                                    <p className='font-semibold'>: -</p>
+                                    <p>Wad/Katil</p>
+                                    <p className='font-semibold'>: -</p>
+                                    <p>Berat Badan</p>
+                                    <p className='font-semibold'>70 KG</p>
+                                    <p>PU</p>
+                                    <p className='font-semibold'>: -</p>
+                                    <p>Tarikh</p>
+                                    <p className='font-semibold'>: 11/05/2024</p>
                                 </div>
 
                             </div>

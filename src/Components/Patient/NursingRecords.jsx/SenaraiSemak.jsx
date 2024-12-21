@@ -107,51 +107,52 @@ const SenaraiSemak = ({ setPopup3 }) => {
                             )
                         }
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
-                            <div className="border p-3 rounded-lg border-[#cfd1d4]">
+                            <div className="border p-3 rounded-lg border-[#cfd1d4] max-h-[65vh] overflow-auto">
                                 <h3 className='font-semibold text-[#1D1D1D] text-xl'>Sebelum Prosedur - Sila Tandakan Ya (✓) dan Tidak (X)</h3>
 
 
                                 <div className="mt-4 ">
-                                    <div className="bg-white border rounded-lg shadow p-6">
+                                    <div className="">
                                         {/* Section 1 */}
-                                        <div className="space-y-2 mb-6">
-                                            <div className="flex items-center space-x-4">
+                                        <div className="space-y-2 bg-white border text-[#1d1d1d] rounded-lg mb-6">
+                                            <div className="p-4 flex items-center justify-between space-x-4">
+                                                <label htmlFor="indikasi" className="">
+                                                    Indikasi pemasangan kateter urin dan potensi komplikasi telah diambilkira
+                                                </label>
                                                 <input
                                                     type="checkbox"
                                                     id="indikasi"
                                                     checked={checkedState.indikasi}
                                                     onChange={() => handleCheckboxChange("indikasi")}
                                                     className="w-5 h-5"
+                                                    disabled
                                                 />
-                                                <label htmlFor="indikasi" className="text-gray-800">
-                                                    Indikasi pemasangan kateter urin dan potensi komplikasi telah diambilkira
-                                                </label>
                                             </div>
-
-                                            <div className="flex items-center space-x-4">
-                                                <input
-                                                    type="checkbox"
-                                                    id="komplikasi"
-                                                    checked={checkedState.komplikasi}
-                                                    onChange={() => handleCheckboxChange("komplikasi")}
-                                                    className="w-5 h-5"
-                                                />
-                                                <label htmlFor="komplikasi" className="text-gray-800">
+                                            <div className="flex items-center justify-between border-y bg-[#f5f7fa] p-4 space-x-4">
+                                                <label htmlFor="indikasi" className="">
                                                     Prosedur pemasangan kateter urin serta komplikasi telah diterangkan oleh Pegawai Perubatan
                                                 </label>
-                                            </div>
-
-                                            <div className="flex items-center space-x-4">
                                                 <input
                                                     type="checkbox"
-                                                    id="kakitangan"
-                                                    checked={checkedState.kakitangan}
-                                                    onChange={() => handleCheckboxChange("kakitangan")}
+                                                    id="indikasi"
+                                                    checked={checkedState.indikasi}
+                                                    onChange={() => handleCheckboxChange("indikasi")}
                                                     className="w-5 h-5"
+                                                    disabled
                                                 />
-                                                <label htmlFor="kakitangan" className="text-gray-800">
+                                            </div>
+                                            <div className="p-4 flex items-center justify-between space-x-4">
+                                                <label htmlFor="indikasi" className="">
                                                     Prosedur Pemasangan kateter urin dilaksanakan oleh kakitangan terlatih
                                                 </label>
+                                                <input
+                                                    type="checkbox"
+                                                    id="indikasi"
+                                                    checked={checkedState.indikasi}
+                                                    onChange={() => handleCheckboxChange("indikasi")}
+                                                    className="w-5 h-5"
+                                                    disabled
+                                                />
                                             </div>
                                         </div>
 
@@ -168,6 +169,7 @@ const SenaraiSemak = ({ setPopup3 }) => {
                                                         checked={checkedState.retensiUrin}
                                                         onChange={() => handleCheckboxChange("retensiUrin")}
                                                         className="w-5 h-5"
+                                                        disabled
                                                     />
                                                     <label htmlFor="retensiUrin" className="text-gray-800">
                                                         Retensi Urin (<span className="italic">Urinary retention</span>)
@@ -181,38 +183,12 @@ const SenaraiSemak = ({ setPopup3 }) => {
                                                         checked={checkedState.pemantauanUrin}
                                                         onChange={() => handleCheckboxChange("pemantauanUrin")}
                                                         className="w-5 h-5"
+                                                        disabled
                                                     />
                                                     <label htmlFor="pemantauanUrin" className="text-gray-800">
                                                         Pemantauan pengeluaran urin (<span className="italic">Urine output monitoring</span>)
                                                     </label>
                                                 </div>
-
-                                                {/* <div className="flex items-center space-x-4">
-                                                    <input
-                                                        type="checkbox"
-                                                        id="sebelumPembedahan"
-                                                        checked={checkedState.sebelumPembedahan}
-                                                        onChange={() => handleCheckboxChange("sebelumPembedahan")}
-                                                        className="w-5 h-5"
-                                                    />
-                                                    <label htmlFor="sebelumPembedahan" className="text-gray-800">
-                                                        Sebelum pembedahan <span className="text-blue-500 underline">TURBYT</span> (nyatakan jenis pembedahan)
-                                                    </label>
-                                                </div>
-
-                                                <div className="flex items-center space-x-4">
-                                                    <input
-                                                        type="checkbox"
-                                                        id="imobilisasi"
-                                                        checked={checkedState.imobilisasi}
-                                                        onChange={() => handleCheckboxChange("imobilisasi")}
-                                                        className="w-5 h-5"
-                                                    />
-                                                    <label htmlFor="imobilisasi" className="text-gray-800">
-                                                        Imobilisasi berpanjangan
-                                                    </label>
-                                                </div> */}
-
                                                 <div className="flex items-center space-x-4">
                                                     <input
                                                         type="checkbox"
@@ -220,24 +196,53 @@ const SenaraiSemak = ({ setPopup3 }) => {
                                                         checked={checkedState.membantu}
                                                         onChange={() => handleCheckboxChange("membantu")}
                                                         className="w-5 h-5"
+                                                        disabled
+                                                        checked
                                                     />
                                                     <label htmlFor="membantu" className="text-gray-800">
-                                                        Membantu dalam pemulihan kudis tekanan kepada pesakit inkontinen
+                                                        Sebelum pembedahan <u>TURBTcc</u> (nyatakan jenis pembedahan)
                                                     </label>
                                                 </div>
-
-                                                <div className="flex flex-col">
-                                                    <label htmlFor="lainLain" className="text-gray-800 mb-2">
-                                                        Lain-lain:
+                                                <div className="flex items-center space-x-4">
+                                                    <input
+                                                        type="checkbox"
+                                                        id="membantu"
+                                                        checked={checkedState.membantu}
+                                                        onChange={() => handleCheckboxChange("membantu")}
+                                                        className="w-5 h-5"
+                                                        disabled
+                                                    />
+                                                    <label htmlFor="membantu" className="text-gray-800">
+                                                        Imobilisasi berpanjangan
                                                     </label>
-                                                    {/* <textarea
-                                                        id="lainLain"
-                                                        name="lainLain"
-                                                        value={checkedState.lainLain}
-                                                        onChange={handleInputChange}
-                                                        className="border rounded-md p-2"
-                                                        placeholder="Sila nyatakan"
-                                                    /> */}
+                                                </div>
+                                                <div className="flex items-center space-x-4">
+                                                    <input
+                                                        type="checkbox"
+                                                        id="membantu"
+                                                        checked={checkedState.membantu}
+                                                        onChange={() => handleCheckboxChange("membantu")}
+                                                        className="w-5 h-5"
+                                                        disabled
+                                                    />
+                                                    <label htmlFor="membantu" className="text-gray-800">
+                                                        Membantu dalam pemulihan kudis tekanan tekanan kepada pesakit inkontinen
+                                                    </label>
+                                                </div>
+                                                <div className="flex space-x-4">
+                                                    <input
+                                                        type="checkbox"
+                                                        id="membantu"
+                                                        checked={checkedState.membantu}
+                                                        onChange={() => handleCheckboxChange("membantu")}
+                                                        className="w-5 h-5"
+                                                        disabled
+                                                    />
+                                                    <label htmlFor="membantu" className="text-gray-800">
+                                                        Lain-lain: .....................................................................................................................................................................................
+                                                        <br />
+                                                        (Sila nyatakan)
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
@@ -245,44 +250,42 @@ const SenaraiSemak = ({ setPopup3 }) => {
                                         {/* Section 3 */}
                                         <div>
                                             <h2 className="font-semibold text-lg mb-4">Semasa Prosedur</h2>
-                                            <div className="space-y-2">
-                                                <div className="flex items-center space-x-4">
+                                            <div className="space-y-2 bg-white border text-[#1d1d1d] rounded-lg mb-6">
+                                                <div className="p-4 flex items-center justify-between space-x-4">
+                                                    <label htmlFor="indikasi" className="">
+                                                    Beri privasi kepada pesakit
+                                                    </label>
                                                     <input
                                                         type="checkbox"
-                                                        id="beriPrivasi"
-                                                        checked={checkedState.beriPrivasi}
-                                                        onChange={() => handleCheckboxChange("beriPrivasi")}
+                                                        id="indikasi"
+                                                        onChange={() => handleCheckboxChange("indikasi")}
                                                         className="w-5 h-5"
+                                                        disabled
                                                     />
-                                                    <label htmlFor="beriPrivasi" className="text-gray-800">
-                                                        Beri privasi kepada pesakit
-                                                    </label>
                                                 </div>
-
-                                                <div className="flex items-center space-x-4">
+                                                <div className="flex items-center justify-between border-y bg-[#f5f7fa] p-4 space-x-4">
+                                                    <label htmlFor="indikasi" className="">
+                                                    Cuci tangan
+                                                    </label>
                                                     <input
                                                         type="checkbox"
-                                                        id="cuciTangan"
-                                                        checked={checkedState.cuciTangan}
-                                                        onChange={() => handleCheckboxChange("cuciTangan")}
+                                                        id="indikasi"
+                                                        onChange={() => handleCheckboxChange("indikasi")}
                                                         className="w-5 h-5"
+                                                        disabled
                                                     />
-                                                    <label htmlFor="cuciTangan" className="text-gray-800">
-                                                        Cuci tangan
-                                                    </label>
                                                 </div>
-
-                                                <div className="flex items-center space-x-4">
+                                                <div className="p-4 flex items-center justify-between space-x-4">
+                                                    <label htmlFor="indikasi" className="">
+                                                    Pakai PPE
+                                                    </label>
                                                     <input
                                                         type="checkbox"
-                                                        id="pakaiPPE"
-                                                        checked={checkedState.pakaiPPE}
-                                                        onChange={() => handleCheckboxChange("pakaiPPE")}
+                                                        id="indikasi"
+                                                        onChange={() => handleCheckboxChange("indikasi")}
                                                         className="w-5 h-5"
+                                                        disabled
                                                     />
-                                                    <label htmlFor="pakaiPPE" className="text-gray-800">
-                                                        Pakai PPE
-                                                    </label>
                                                 </div>
                                             </div>
                                         </div>

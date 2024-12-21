@@ -1,6 +1,9 @@
 import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiBuildings, PiPackageBold, PiPrinterBold } from 'react-icons/pi'
 import receipt from "../../../assets/receipt24.png"
+import receipt44 from "../../../assets/receipt44.png"
+import receipt45 from "../../../assets/receipt45.png"
+import receipt46 from "../../../assets/receipt46.png"
 import LabReport from "../../../assets/LabReport.svg"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
@@ -114,7 +117,7 @@ const LabReportPopup = ({ setPopup1 }) => {
                                         ? "Endocrine Test"
                                         : activeTabLeft === "Liver"
                                             ? "Liver"
-                                            : activeTabLeft == "Urine Test" ? "Urine Test": "Full Blood Count"}
+                                            : activeTabLeft == "Urine Test" ? "Urine Test" : "Full Blood Count"}
                                     </h3>
                                     <div className="flex gap-3 items-center">
                                         <label className='font-medium' htmlFor="">Test Date : </label>
@@ -211,10 +214,10 @@ const LabReportPopup = ({ setPopup1 }) => {
                                                                 <tbody>
                                                                     <tr className='bg-[#f5f7fa]'>
                                                                         <td className="px-4 py-2.5">1</td>
-                                                                        <td className="px-4 py-2.5">Total/ HDL Ratio</td>
-                                                                        <td className="px-4 py-2.5">3.1</td>
-                                                                        <td className="px-4 py-2.5">-</td>
-                                                                        <td className="px-4 py-2.5">(1.04-1.55)</td>
+                                                                        <td className="px-4 py-2.5">Fasting Glucose</td>
+                                                                        <td className="px-4 py-2.5">6.7</td>
+                                                                        <td className="px-4 py-2.5">mmol/L</td>
+                                                                        <td className="px-4 py-2.5">(4.0 - 6.0)</td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -230,71 +233,78 @@ const LabReportPopup = ({ setPopup1 }) => {
                                                                 {/* Table Header */}
                                                                 <thead className=" border-b">
                                                                     <tr>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">No</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Name</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Result</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Unit</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Ref Range</th>
+                                                                        <th className="p-4 text-left font-medium">No</th>
+                                                                        <th className="p-4 text-left font-medium">Name</th>
+                                                                        <th className="p-4 text-left font-medium">Result</th>
+                                                                        <th className="p-4 text-left font-medium">Unit</th>
+                                                                        <th className="p-4 text-left font-medium">Ref Range</th>
                                                                     </tr>
                                                                 </thead>
 
                                                                 {/* Table Body */}
                                                                 <tbody>
                                                                     <tr className="border-b bg-[#f5f7fa]">
-                                                                        <td className="px-4 py-2.5">1</td>
-                                                                        <td className="px-4 py-2.5">Total Cholesterol</td>
-                                                                        <td className="px-4 py-2.5">4.4</td>
-                                                                        <td className="px-4 py-2.5">mmol/L</td>
-                                                                        <td className="px-4 py-2.5">(&lt;20)</td>
+                                                                        <td className="p-4">1</td>
+                                                                        <td className="p-4">WBC</td>
+                                                                        <td className="p-4">10.0</td>
+                                                                        <td className="p-4">10’3µL</td>
+                                                                        <td className="p-4">(3.0 - 12.0)</td>
                                                                     </tr>
                                                                     <tr className="border-b">
-                                                                        <td className="px-4 py-2.5">2</td>
-                                                                        <td className="px-4 py-2.5">HDL Cholesterol</td>
-                                                                        <td className="px-4 py-2.5">1.43</td>
-                                                                        <td className="px-4 py-2.5">mmol/L</td>
-                                                                        <td className="px-4 py-2.5">(1.04-1.55)</td>
+                                                                        <td className="p-4">2</td>
+                                                                        <td className="p-4">RBC</td>
+                                                                        <td className="p-4">5.15</td>
+                                                                        <td className="p-4">10’6µL</td>
+                                                                        <td className="p-4">(3.8 - 6.0)</td>
                                                                     </tr>
                                                                     <tr className="border-b bg-[#f5f7fa]">
-                                                                        <td className="px-4 py-2.5">3</td>
-                                                                        <td className="px-4 py-2.5">LDL Cholesterol</td>
-                                                                        <td className="px-4 py-2.5">2.7</td>
-                                                                        <td className="px-4 py-2.5">mmol/L</td>
-                                                                        <td className="px-4 py-2.5">(&lt;20)</td>
+                                                                        <td className="p-4">3</td>
+                                                                        <td className="p-4">HB</td>
+                                                                        <td className="p-4">14.6</td>
+                                                                        <td className="p-4">g/dL</td>
+                                                                        <td className="p-4">(10.0 - 18.0)</td>
                                                                     </tr>
                                                                     <tr className="border-b">
-                                                                        <td className="px-4 py-2.5">4</td>
-                                                                        <td className="px-4 py-2.5">Triglycerides</td>
-                                                                        <td className="px-4 py-2.5">0.6</td>
-                                                                        <td className="px-4 py-2.5">mmol/L</td>
-                                                                        <td className="px-4 py-2.5">(1.04-1.55)</td>
+                                                                        <td className="p-4">4</td>
+                                                                        <td className="p-4">HCT</td>
+                                                                        <td className="p-4">46.3</td>
+                                                                        <td className="p-4">%</td>
+                                                                        <td className="p-4">(33.0 - 54.0)</td>
                                                                     </tr>
                                                                     <tr className='bg-[#f5f7fa]'>
-                                                                        <td className="px-4 py-2.5">5</td>
-                                                                        <td className="px-4 py-2.5">Total/ HDL Ratio</td>
-                                                                        <td className="px-4 py-2.5">3.1</td>
-                                                                        <td className="px-4 py-2.5">-</td>
-                                                                        <td className="px-4 py-2.5">(1.04-1.55)</td>
+                                                                        <td className="p-4">5</td>
+                                                                        <td className="p-4">MCV</td>
+                                                                        <td className="p-4">89.9</td>
+                                                                        <td className="p-4">fl</td>
+                                                                        <td className="p-4">(80.0 - 100.0)</td>
+                                                                    </tr>
+                                                                    <tr className="border-b ">
+                                                                        <td className="p-4">6</td>
+                                                                        <td className="p-4">MCH</td>
+                                                                        <td className="p-4">28.3</td>
+                                                                        <td className="p-4">g/dL</td>
+                                                                        <td className="p-4">(25.0 - 33.0)</td>
                                                                     </tr>
                                                                     <tr className="border-b bg-[#f5f7fa]">
-                                                                        <td className="px-4 py-2.5">6</td>
-                                                                        <td className="px-4 py-2.5">LDL Cholesterol</td>
-                                                                        <td className="px-4 py-2.5">2.7</td>
-                                                                        <td className="px-4 py-2.5">mmol/L</td>
-                                                                        <td className="px-4 py-2.5">(&lt;20)</td>
+                                                                        <td className="p-4">7</td>
+                                                                        <td className="p-4">MCHC</td>
+                                                                        <td className="p-4">31.5</td>
+                                                                        <td className="p-4">10^3/µL</td>
+                                                                        <td className="p-4">(32.0 - 36.0)</td>
                                                                     </tr>
-                                                                    <tr className="border-b">
-                                                                        <td className="px-4 py-2.5">7</td>
-                                                                        <td className="px-4 py-2.5">Triglycerides</td>
-                                                                        <td className="px-4 py-2.5">0.6</td>
-                                                                        <td className="px-4 py-2.5">mmol/L</td>
-                                                                        <td className="px-4 py-2.5">(1.04-1.55)</td>
+                                                                    <tr className=' border-b'>
+                                                                        <td className="p-4">8</td>
+                                                                        <td className="p-4">Platelet</td>
+                                                                        <td className="p-4">234</td>
+                                                                        <td className="p-4">%</td>
+                                                                        <td className="p-4">(150 - 450)</td>
                                                                     </tr>
                                                                     <tr className='bg-[#f5f7fa]'>
-                                                                        <td className="px-4 py-2.5">8</td>
-                                                                        <td className="px-4 py-2.5">Total/ HDL Ratio</td>
-                                                                        <td className="px-4 py-2.5">3.1</td>
-                                                                        <td className="px-4 py-2.5">-</td>
-                                                                        <td className="px-4 py-2.5">(1.04-1.55)</td>
+                                                                        <td className="p-4">9</td>
+                                                                        <td className="p-4">Lymphocyte</td>
+                                                                        <td className="p-4">17.6</td>
+                                                                        <td className="p-4">%</td>
+                                                                        <td className="p-4">(3.0 - 10.0)</td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -502,7 +512,7 @@ const LabReportPopup = ({ setPopup1 }) => {
                                                                 <thead className=" border-b">
                                                                     <tr>
                                                                         <th className="px-4 py-2.5 text-left font-medium">No</th>
-                                                                        <th className="px-4 py-2.5 text-left font-medium">Name</th>
+                                                                        <th className="px-4 py-2.5 text-left font-medium">Test</th>
                                                                         <th className="px-4 py-2.5 text-left font-medium">Result</th>
                                                                         <th className="px-4 py-2.5 text-left font-medium">Unit</th>
                                                                         <th className="px-4 py-2.5 text-left font-medium">Ref Range</th>
@@ -514,8 +524,8 @@ const LabReportPopup = ({ setPopup1 }) => {
                                                                     <tr className='bg-[#f5f7fa]'>
                                                                         <td className="px-4 py-2.5">1</td>
                                                                         <td className="px-4 py-2.5">Erythrocyte Sedimentation Rate (ESR)</td>
-                                                                        <td className="px-4 py-2.5">3.1</td>
-                                                                        <td className="px-4 py-2.5">-</td>
+                                                                        <td className="px-4 py-2.5">100.0</td>
+                                                                        <td className="px-4 py-2.5">mm/hour</td>
                                                                         <td className="px-4 py-2.5">Normal Value
                                                                             <br /> MALE
                                                                             <br /> (Under 50 yrs old): 0 - 15 mm/hour
@@ -524,6 +534,13 @@ const LabReportPopup = ({ setPopup1 }) => {
                                                                             <br /> (Under 50 yrs old): 0 - 20 mm/hour
                                                                             <br /> (Over 50 yrs old): 0 - 15 mm/hour
                                                                         </td>
+                                                                    </tr>
+                                                                    <tr className=''>
+                                                                        <td className="px-4 py-2.5">2</td>
+                                                                        <td className="px-4 py-2.5">ABO Blood Group & Rhesus</td>
+                                                                        <td className="px-4 py-2.5">AB Positive</td>
+                                                                        <td className="px-4 py-2.5">-</td>
+                                                                        <td className="px-4 py-2.5">-</td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -628,41 +645,39 @@ const LabReportPopup = ({ setPopup1 }) => {
 
 
                                         <div className="">
-                                            <div className={` bg-[#f7f8fa] ${previewDocument ? " grid-cols-2" : "grid-cols-3"} border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm grid gap4`}>
-                                                <div className="grid-cols-2 grid space-y-1">
+                                            <div className={` bg-[#f7f8fa] ${previewDocument ? " grid-cols-2 gap-y-4" : "grid-cols-3"} border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm grid gap4`}>
+                                                <div className="grid-cols-2 grid gap-y-1">
                                                     <p className=''> Name</p>
-                                                    <p className='font-semibold'>: Lorem Ipsum</p>
+                                                    <p className='font-semibold'>: Chia Suwe Kiea</p>
                                                     <p className=''>Malysia New IC</p>
-                                                    <p className='font-semibold'>: 1111222233334 </p>
+                                                    <p className='font-semibold'>: 561007085677 </p>
                                                     <p className=''>DOB</p>
                                                     <p className='font-semibold'>: 07/10/1956 </p>
                                                     <p className=''>Age/Gender</p>
                                                     <p className='font-semibold'>: F241004001 </p>
                                                 </div>
-                                                <div className="grid-cols-2 grid space-y-1">
+                                                <div className="grid-cols-2 grid gap-y-1">
                                                     <p className=''>Lab No</p>
-                                                    <p className='font-semibold'>: -</p>
+                                                    <p className='font-semibold'>: UKL24003061</p>
                                                     <p className=''>MRN</p>
-                                                    <p className='font-semibold'>: Lorem Ipsum</p>
+                                                    <p className='font-semibold'>: N804297</p>
                                                     <p className=''>Location</p>
-                                                    <p className='font-semibold'>: V12121212 </p>
+                                                    <p className='font-semibold'>: Pantai Preimer Pathology </p>
                                                     <p className=''>Reference</p>
                                                     <p className='font-semibold'>: - </p>
                                                 </div>
-                                                {
-                                                    !previewDocument && (
-                                                        <div className="grid-cols-2 grid space-y-1">
-                                                            <p className=''>Branch</p>
-                                                            <p className='font-semibold'>: -</p>
-                                                            <p className=''>Collected</p>
-                                                            <p className='font-semibold'>: Lorem Ipsum</p>
-                                                            <p className=''>Received</p>
-                                                            <p className='font-semibold'>: 24/07/2024 09:18:15 </p>
-                                                            <p className=''>Reported</p>
-                                                            <p className='font-semibold'>: - </p>
-                                                        </div>
-                                                    )
-                                                }
+
+                                                <div className="grid-cols-2 grid space-y-1">
+                                                    <p className=''>Branch</p>
+                                                    <p className='font-semibold'>: HUKM Lab</p>
+                                                    <p className=''>Collected</p>
+                                                    <p className='font-semibold'>: 24/07/2024 09:18:15</p>
+                                                    <p className=''>Received</p>
+                                                    <p className='font-semibold'>: 24/07/2024 09:18:15 </p>
+                                                    <p className=''>Reported</p>
+                                                    <p className='font-semibold'>: 24/07/2024 09:18:15</p>
+                                                </div>
+
                                             </div>
                                             <div className={` ${previewDocument ? " grid-cols-2 gap-y-3" : " gap-y-2 grid-cols-2"} border p-3 rounded-lg border-[#cfd1d4] mt-3 text-sm grid gap4`}>
                                                 <p className='text-[#6E6E6E]'> Requester :</p>
@@ -781,7 +796,7 @@ const LabReportPopup = ({ setPopup1 }) => {
                         </div>
                         {
                             previewDocument && (
-                                <Print receipt={receipt} />
+                                <Print receipt={activeTabLeft == "Endocrine Test" ? receipt44 : activeTabLeft == "Liver" ? receipt45 : activeTabLeft == "Urine Test" ? receipt46 : receipt} />
                             )
                         }
 

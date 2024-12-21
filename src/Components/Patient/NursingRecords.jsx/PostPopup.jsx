@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
 import Senarai from "../../../assets/Senarai.svg"
 import receipt from "../../../assets/receipt7.png"
+import receipt47 from "../../../assets/receipt47.png"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
 import { MdClose } from 'react-icons/md'
@@ -25,19 +26,6 @@ const PostPopup = ({ setPopup4 }) => {
         }, 500)
     }
     const [currentPage, setCurrentPage] = useState(1);
-    const [rowsPerPage] = useState(10);
-
-    // Example data for table
-    const data = [
-        { id: 1, recovery: "Conscious", comment: "Spontaneously" },
-        // Add more rows as needed 
-    ];
-
-    const indexOfLastRow = currentPage * rowsPerPage;
-    const indexOfFirstRow = indexOfLastRow - rowsPerPage;
-    const currentRows = data.slice(indexOfFirstRow, indexOfLastRow);
-
-    const totalPages = Math.ceil(data.length / rowsPerPage);
 
 
     return (
@@ -94,7 +82,7 @@ const PostPopup = ({ setPopup4 }) => {
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
                             <div className="border p-3 rounded-lg border-[#cfd1d4] max-h-[65vh] overflow-auto">
                                 <div className="">
-                                    <div className={`grid grid-cols-1 items-start ${previewDocument ? "grid-cols-1" : "grid-cols-2"}gap-6 mb-8`}>
+                                    <div className={`grid grid-cols-1 items-start ${previewDocument ? "grid-cols-1" : "grid-cols-2"} gap-3 mb-8`}>
                                         <div className="border text-sm gap-y-1 grid grid-cols-4 rounded-lg bg-[#f7f8fa] p-4">
                                             <h2 className="font-semibold text-lg mb-4 col-span-4">Post Operative Nursing Record</h2>
                                             <p>Patient transferred to recovery / others</p>
@@ -165,111 +153,174 @@ const PostPopup = ({ setPopup4 }) => {
                                                     <th className="p-4  font-medium">COMMENT</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
-                                                    <tr className="border bg-[#f5f7fa]">
-                                                        <td className="p-4 font-medium" colSpan={2}>GENERAL CONDITION</td>
-                                                        <td className="p-4 font-medium" colSpan={2}>GENERAL CONDITION</td>
-                                                    </tr>
-                                                    <tr className="border ">
-                                                        <td className="p-4 flex items-center justify-between">Conscious <input type="checkbox" disabled checked className='w-8 h-5 rounded-lg' /></td>
-                                                        <td className="p-4"></td>
-                                                        <td className="p-4 flex items-center justify-between">Conscious <input type="checkbox" disabled checked className='w-8 h-5 rounded-lg' /></td>
-                                                        <td className="p-4 "></td>
-                                                    </tr>
-                                                    <tr className="border bg-[#f5f7fa]">
-                                                        <td className="p-4 flex items-center justify-between">Unconscious <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
-                                                        <td className="p-4"></td>
-                                                        <td className="p-4 flex items-center justify-between">Unconscious <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
-                                                        <td className="p-4 "></td>
-                                                    </tr>
-                                                    <tr className="border ">
-                                                        <td className="p-4 flex items-center justify-between">Others <input type="checkbox" disabled  className='w-8 h-5 rounded-lg' /></td>
-                                                        <td className="p-4"></td>
-                                                        <td className="p-4 flex items-center justify-between">Others <input type="checkbox" disabled  className='w-8 h-5 rounded-lg' /></td>
-                                                        <td className="p-4 "></td>
-                                                    </tr>
-                                                    <tr className="border bg-[#f5f7fa]">
-                                                        <td className="p-4 font-medium" colSpan={2}>BREATHING</td>
-                                                        <td className="p-4 font-medium" colSpan={2}>BREATHING</td>
-                                                    </tr>
-                                                    <tr className="border ">
-                                                        <td className="p-4 flex items-center justify-between">Spontaneously <input type="checkbox" disabled checked  className='w-8 h-5 rounded-lg' /></td>
-                                                        <td className="p-4"></td>
-                                                        <td className="p-4 flex items-center justify-between">Spontaneously <input type="checkbox" disabled checked  className='w-8 h-5 rounded-lg' /></td>
-                                                        <td className="p-4 "></td>
-                                                    </tr>
-                                                    <tr className="border bg-[#f5f7fa]">
-                                                        <td className="p-4 flex items-center justify-between">Intubated <input type="checkbox" disabled  className='w-8 h-5 rounded-lg' /></td>
-                                                        <td className="p-4"></td>
-                                                        <td className="p-4 flex items-center justify-between">Intubated <input type="checkbox" disabled  className='w-8 h-5 rounded-lg' /></td>
-                                                        <td className="p-4 "></td>
-                                                    </tr>
-                                            </tbody>
+                                            {
+                                                currentPage == 1 ? (
+                                                    <tbody>
+                                                        <tr className="border bg-[#f5f7fa]">
+                                                            <td className="p-4 font-medium" colSpan={2}>GENERAL CONDITION</td>
+                                                            <td className="p-4 font-medium" colSpan={2}>GENERAL CONDITION</td>
+                                                        </tr>
+                                                        <tr className="border ">
+                                                            <td className="p-4 flex items-center justify-between">Conscious <input type="checkbox" disabled checked className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4"></td>
+                                                            <td className="p-4 flex items-center justify-between">Conscious <input type="checkbox" disabled checked className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4 "></td>
+                                                        </tr>
+                                                        <tr className="border bg-[#f5f7fa]">
+                                                            <td className="p-4 flex items-center justify-between">Unconscious <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4"></td>
+                                                            <td className="p-4 flex items-center justify-between">Unconscious <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4 "></td>
+                                                        </tr>
+                                                        <tr className="border ">
+                                                            <td className="p-4 flex items-center justify-between">Others <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4"></td>
+                                                            <td className="p-4 flex items-center justify-between">Others <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4 "></td>
+                                                        </tr>
+                                                        <tr className="border bg-[#f5f7fa]">
+                                                            <td className="p-4 font-medium" colSpan={2}>BREATHING</td>
+                                                            <td className="p-4 font-medium" colSpan={2}>BREATHING</td>
+                                                        </tr>
+                                                        <tr className="border ">
+                                                            <td className="p-4 flex items-center justify-between">Spontaneously <input type="checkbox" disabled checked className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4"></td>
+                                                            <td className="p-4 flex items-center justify-between">Spontaneously <input type="checkbox" disabled checked className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4 "></td>
+                                                        </tr>
+                                                        <tr className="border bg-[#f5f7fa]">
+                                                            <td className="p-4 flex items-center justify-between">Intubated <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4"></td>
+                                                            <td className="p-4 flex items-center justify-between">Intubated <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4 "></td>
+                                                        </tr>
+                                                    </tbody>
+                                                ) : (
+                                                    <tbody>
+                                                        <tr className="border bg-[#f5f7fa]">
+                                                            <td className="p-4 font-medium" colSpan={2}>LINES</td>
+                                                            <td className="p-4 font-medium" colSpan={2}>LINES</td>
+                                                        </tr>
+                                                        <tr className="border ">
+                                                            <td className="p-4 flex items-center justify-between">Arterial <input type="checkbox" disabled checked className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4"></td>
+                                                            <td className="p-4 flex items-center justify-between">Arterial <input type="checkbox" disabled checked className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4 "></td>
+                                                        </tr>
+                                                        <tr className="border bg-[#f5f7fa]">
+                                                            <td className="p-4 flex items-center justify-between">Peripheral <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4"></td>
+                                                            <td className="p-4 flex items-center justify-between">Peripheral <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4 "></td>
+                                                        </tr>
+                                                        <tr className="border ">
+                                                            <td className="p-4 flex items-center justify-between">Others <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4"></td>
+                                                            <td className="p-4 flex items-center justify-between">Others <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4 "></td>
+                                                        </tr>
+                                                        <tr className="border bg-[#f5f7fa]">
+                                                            <td className="p-4 font-medium" colSpan={2}>DOCUMENT / ITEM</td>
+                                                            <td className="p-4 font-medium" colSpan={2}>DOCUMENT / ITEM</td>
+                                                        </tr>
+                                                        <tr className="border ">
+                                                            <td className="p-4 flex items-center justify-between">BHT <input type="checkbox" disabled checked className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4"></td>
+                                                            <td className="p-4 flex items-center justify-between">BHT <input type="checkbox" disabled checked className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4 "></td>
+                                                        </tr>
+                                                        <tr className="border bg-[#f5f7fa]">
+                                                            <td className="p-4 flex items-center justify-between">Post OP notes <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4"></td>
+                                                            <td className="p-4 flex items-center justify-between">Post OP notes <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4 "></td>
+                                                        </tr>
+                                                        <tr className="border">
+                                                            <td className="p-4 flex items-center justify-between">GA form <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4"></td>
+                                                            <td className="p-4 flex items-center justify-between">GA form <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4 "></td>
+                                                        </tr>
+                                                        <tr className="border bg-[#f5f7fa]">
+                                                            <td className="p-4 flex items-center justify-between">Swab count form <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4"></td>
+                                                            <td className="p-4 flex items-center justify-between">Swab count form <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4 "></td>
+                                                        </tr>
+                                                        <tr className="border">
+                                                            <td className="p-4 flex items-center justify-between">Specimen <input type="checkbox" disabled checked className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4"></td>
+                                                            <td className="p-4 flex items-center justify-between">Specimen <input type="checkbox" disabled checked className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4 "></td>
+                                                        </tr>
+                                                        <tr className="border bg-[#f5f7fa]">
+                                                            <td className="p-4 flex items-center justify-between">X-Ray / Pieces <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4"></td>
+                                                            <td className="p-4 flex items-center justify-between">X-Ray / Pieces <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4 "></td>
+                                                        </tr>
+                                                        <tr className="border">
+                                                            <td className="p-4 flex items-center justify-between">Blood <input type="checkbox" disabled checked className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4"></td>
+                                                            <td className="p-4 flex items-center justify-between">Blood <input type="checkbox" disabled checked className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4 "></td>
+                                                        </tr>
+                                                        <tr className="border bg-[#f5f7fa]">
+                                                            <td className="p-4 flex items-center justify-between">Others <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4"></td>
+                                                            <td className="p-4 flex items-center justify-between">Others <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                            <td className="p-4 "></td>
+                                                        </tr>
+                                                        <tr className="border">
+                                                            <td className="p-4 font-medium" colSpan={2}>DRAINAGE</td>
+                                                            <td className="p-4 font-medium" colSpan={2}>DRAINAGE</td>
+                                                        </tr>
+                                                    </tbody>
+                                                )
+                                            }
                                         </table>
-                                        {/* Pagination */}
-                                        <div className="flex items-center justify-between mt-4">
-                                            <div className="flex items-center gap-4">
-
-                                                <select
-                                                    className="border rounded p-2 text-sm"
-                                                    value={rowsPerPage}
-                                                    readOnly
-                                                >
-                                                    <option>10</option>
-                                                </select>
-                                                <span className="text-sm text-gray-600">
-                                                    Show {indexOfFirstRow + 1} to {Math.min(indexOfLastRow, data.length)} of {data.length} data
-                                                </span>
-                                            </div>
-                                            <div className="flex items-center space-x-2">
-                                                <button
-                                                    className="px-3 py-1 bg-white border-2 rounded-lg"
-                                                    onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-                                                    disabled={currentPage === 1}
-                                                >
-                                                    &lt;
-                                                </button>
-                                                {Array.from({ length: totalPages }, (_, i) => (
-                                                    <button
-                                                        key={i}
-                                                        className={`px-3 py-1 ${currentPage === i + 1
-                                                            ? "bg-primary text-white"
-                                                            : "bg-gray-300 text-gray-800"
-                                                            } rounded`}
-                                                        onClick={() => setCurrentPage(i + 1)}
-                                                    >
-                                                        {i + 1}
-                                                    </button>
-                                                ))}
-                                                <button
-                                                    className="px-3 py-1 bg-white border-2 rounded-lg"
-                                                    onClick={() =>
-                                                        setCurrentPage((prev) => Math.min(prev + 1, totalPages))
-                                                    }
-                                                    disabled={currentPage === totalPages}
-                                                >
-                                                    &gt;
-                                                </button>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
 
                             </div>
-                            {
-                                !previewDocument && (
-                                    <div className="flex gap-2 items-center mt-4 justify-end">
-                                        <button onClick={() => setPreviewDocument(true)} className='pl-4 border-[#cfd1d4] border-2 pr-5 py-2.5 flex items-center gap-2 rounded-lg text-[#1D1D1D] font-medium'><AiOutlineSearch className='text-xl' />
-                                            Preview Document</button>
-                                        <button className='bg-primary pr-5 pl-4 py-3 rounded-lg text-white font-medium flex items-center gap-2' ><PiPrinterBold className='text-lg' />
-                                            Print Result</button>
-                                    </div>
-                                )
-                            }
+                            <div className={`flex items-center text-[#1d1d1d] ${previewDocument ? "justify-end" :"justify-between"} mt-4`}>
+                                <div className="flex items-center space-x-2">
+                                    <button onClick={() => setCurrentPage(1)}
+                                        className="px-3 py-1 bg-white border-2 rounded-lg"
+                                    >
+                                        &lt;
+                                    </button>
+                                    <button onClick={() => setCurrentPage(1)}
+                                        className={`px-3.5 py-1 ${currentPage == 1 ? " bg-primary text-white" : "border-2"}  rounded-lg`}
+                                    >
+                                        1
+                                    </button>
+                                    <button onClick={() => setCurrentPage(2)}
+                                        className={`px-3 py-1 ${currentPage == 2 ? " bg-primary text-white" : "border-2"}  rounded-lg`}
+                                    >
+                                        2
+                                    </button>
+                                    <button onClick={() => setCurrentPage(2)}
+                                        className="px-3 py-1 bg-white border-2 rounded-lg"
+                                    >
+                                        &gt;
+                                    </button>
+                                </div>
+                                {
+                                    !previewDocument && (
+                                        <div className="flex gap-2 items-center justify-end">
+                                            <button onClick={() => setPreviewDocument(true)} className='pl-4 border-[#cfd1d4] border-2 pr-5 py-2.5 flex items-center gap-2 rounded-lg text-[#1D1D1D] font-medium'><AiOutlineSearch className='text-xl' />
+                                                Preview Document</button>
+                                            <button className='bg-primary pr-5 pl-4 py-3 rounded-lg text-white font-medium flex items-center gap-2' ><PiPrinterBold className='text-lg' />
+                                                Print Result</button>
+                                        </div>
+                                    )
+                                }
+                            </div>
                         </div>
                         {
                             previewDocument && (
-                                <Print receipt={receipt} />
+                                <Print receipt={currentPage == 1 ? receipt : receipt47} />
                             )
                         }
 
