@@ -100,21 +100,21 @@ const RadiologyReportPopup = ({ setPopup6 }) => {
 
                                 <div className="p-3 mt-5 grid grid-cols-4 text-sm gap-y-1 rounded-lg  border pb-3">
                                   <p>PATIENT NAME</p>
-                                  <p className='font-semibold'>CHUE SUWE KIEA</p>
+                                  <p className='font-semibold'>: CHUE SUWE KIEA</p>
                                   <p>ACCESSION NO</p>
-                                  <p className='font-semibold'>1204728</p>
+                                  <p className='font-semibold'>: 1204728</p>
                                   <p>PATIENT ID</p>
-                                  <p className='font-semibold'>00292086</p>
+                                  <p className='font-semibold'>: 00292086</p>
                                   <p>PATIENTS AGE</p>
-                                  <p className='font-semibold'>64 Y 2 M 21 D</p>
+                                  <p className='font-semibold'>: 64 Y 2 M 21 D</p>
                                   <p>STUDY DESCRIPTION</p>
-                                  <p className='font-semibold'>CT ABDOMEN (PRE POST CONTRAST)</p>
+                                  <p className='font-semibold'>: CT ABDOMEN (PRE POST CONTRAST)</p>
                                   <p>PATIENT GENDER</p>
-                                  <p className='font-semibold'>MALE</p>
+                                  <p className='font-semibold'>: MALE</p>
                                   <p>NRIC / PASSPORT</p>
-                                  <p className='font-semibold'>561007085677</p>
+                                  <p className='font-semibold'>: 561007085677</p>
                                   <p>STUDY DATE</p>
-                                  <p className='font-semibold'>28/12/2020 09:24</p>
+                                  <p className='font-semibold'>: 28/12/2020 09:24</p>
                                 </div>
 
                                 <div className="rounded-lg border bg-[#f7f8fa] p-3 mt-3 border-[#cfd1d4]">

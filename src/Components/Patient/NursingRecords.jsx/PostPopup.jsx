@@ -30,7 +30,7 @@ const PostPopup = ({ setPopup4 }) => {
     // Example data for table
     const data = [
         { id: 1, recovery: "Conscious", comment: "Spontaneously" },
-        // Add more rows as needed
+        // Add more rows as needed 
     ];
 
     const indexOfLastRow = currentPage * rowsPerPage;
@@ -76,102 +76,134 @@ const PostPopup = ({ setPopup4 }) => {
                                 <div className="max-w-[30%]   w-full">
                                     <div className="flex flex-col gap-3 rounded-lg border border-[#CFD1D4] p-3">
                                         <div className="border p-3 rounded-lg bg-[#f7f8fa] border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                                            <p className='text-sm pt-1 text-[#6E6E6E]'>BREEZY314</p>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                                            <p className='text-sm pt-1 text-[#6E6E6E]'>SUNGKE922</p>
                                         </div>
                                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                                            <p className='text-sm pt-1 text-[#6E6E6E]'>BREEZY314</p>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                                            <p className='text-sm pt-1 text-[#6E6E6E]'>SUNGKE922</p>
                                         </div>
                                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                                            <p className='text-sm pt-1 text-[#6E6E6E]'>BREEZY314</p>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                                            <p className='text-sm pt-1 text-[#6E6E6E]'>SUNGKE922</p>
                                         </div>
                                     </div>
                                 </div>
                             )
                         }
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
-                            <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                {/* <h3 className='font-semibold text-[#1D1D1D] text-xl'>Sebelum Prosedur - Sila Tandakan Ya (✓) dan Tidak (X)</h3> */}
-
-
+                            <div className="border p-3 rounded-lg border-[#cfd1d4] max-h-[65vh] overflow-auto">
                                 <div className="">
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                                        {/* Post Operative Nursing Record */}
-                                        <div className="border rounded-lg bg-[#f7f8fa] p-4">
-                                            <h2 className="font-semibold text-lg mb-4">Post Operative Nursing Record</h2>
-                                            <div className="space-y-1">
-                                                <p>
-                                                    <span className="font-semibold">Patient transferred:</span> : -
-                                                </p>
-                                                <p>
-                                                    <span className="font-semibold">Accompanied by:</span> SN TMA
-                                                </p>
-                                                <p>
-                                                    <span className="font-semibold">Date:</span> 18/8/23
-                                                </p>
-                                                <p>
-                                                    <span className="font-semibold">Checked by:</span> Al-Khwarizmi
-                                                </p>
-                                            </div>
-                                            <div className="mt-4 space-y-1">
-                                                <h3 className="font-semibold">Time called</h3>
-                                                <p>
-                                                    <span>1st:</span> 4.45 PM
-                                                </p>
-                                                <p>
-                                                    <span>2nd:</span> 5.15 PM
-                                                </p>
-                                            </div>
-                                            <div className="mt-4">
-                                                <p>
-                                                    <span className="font-semibold">Timeout from recovery:</span> Al-Khwarizmi
-                                                </p>
-                                            </div>
+                                    <div className={`grid grid-cols-1 items-start ${previewDocument ? "grid-cols-1" : "grid-cols-2"}gap-6 mb-8`}>
+                                        <div className="border text-sm gap-y-1 grid grid-cols-4 rounded-lg bg-[#f7f8fa] p-4">
+                                            <h2 className="font-semibold text-lg mb-4 col-span-4">Post Operative Nursing Record</h2>
+                                            <p>Patient transferred to recovery / others</p>
+                                            <p className='font-semibold'> : -</p>
+                                            <p>Received by</p>
+                                            <p className='font-semibold'> : SNDO</p>
+                                            <p>Accompanied by</p>
+                                            <p className='font-semibold'> : SN TMA</p>
+                                            <p>Time</p>
+                                            <p className='font-semibold'> : 4 PM</p>
+                                            <p>Date</p>
+                                            <p className='font-semibold'> : 18/8/23</p>
+                                            <p>Discharged by</p>
+                                            <p className='font-semibold'> : Snwal</p>
+                                            <p>Checked by</p>
+                                            <p className='font-semibold'> : Al-Khwarizmi</p>
+                                            <p className='font-semibold col-span-2'></p>
+                                            <p className='font-semibold col-span-2'> Time called</p>
+                                            <p className='font-semibold col-span-2'> Last vital sign checked</p>
+                                            <p>1 st</p>
+                                            <p className='font-semibold'> : 4.45 PM</p>
+                                            <p>Time</p>
+                                            <p className='font-semibold'> : 5 PM</p>
+                                            <p>Name</p>
+                                            <p className='font-semibold'> : -</p>
+                                            <p> B/p</p>
+                                            <p className='font-semibold'> : 145/77</p>
+                                            <p> 2 nd</p>
+                                            <p className='font-semibold'> : 5.15 PM</p>
+                                            <p> Pulse</p>
+                                            <p className='font-semibold'> : 56 bpm</p>
+                                            <p> Name</p>
+                                            <p className='font-semibold'> : -</p>
+                                            <p> Spo2</p>
+                                            <p className='font-semibold'> : 97%</p>
                                         </div>
+                                        <div className="h-full border  rounded-lg bg-[#f7f8fa]">
 
-                                        {/* Patient Transfer Out Record */}
-                                        <div className="border rounded-lg bg-[#f7f8fa] p-4">
-                                            <h2 className="font-semibold text-lg mb-4">Patient Transfer Out Record</h2>
-                                            <div className="space-y-1">
-                                                <p>
-                                                    <span className="font-semibold">Date:</span> 18/8/23
-                                                </p>
-                                                <p>
-                                                    <span className="font-semibold">Time:</span> 5.30 PM
-                                                </p>
-                                                <p>
-                                                    <span className="font-semibold">Passed over by:</span> 5.30 PM
-                                                </p>
-                                                <p>
-                                                    <span className="font-semibold">Take over by:</span> N Iman
-                                                </p>
+                                            <div className="text-sm gap-y-1 items-start grid grid-cols-4 p-4">
+                                                <h2 className="font-semibold text-lg mb-4 col-span-4">Patient Transfer Out Record</h2>
+                                                <p>Date</p>
+                                                <p className='font-semibold'> : 18/8/23</p>
+                                                <p></p>
+                                                <p></p>
+                                                <p>Time</p>
+                                                <p className='font-semibold'> : 5.30 PM</p>
+                                                <p></p>
+                                                <p></p>
+                                                <p>Passed over by</p>
+                                                <p className='font-semibold'> : 5.30 PM</p>
+                                                <p></p>
+                                                <p></p>
+                                                <p>Take over by</p>
+                                                <p className='font-semibold'> : N Iman</p>
                                             </div>
                                         </div>
                                     </div>
 
                                     {/* Assessment Table */}
-                                    <div className="bg-white border rounded-lg shadow p-4">
+                                    <div className="bg-white border rounded-lg overflow-hidden p-3">
                                         <h2 className="font-semibold text-center text-lg mb-4">ASSESSMENT</h2>
                                         <table className="table-auto w-full border-collapse">
                                             <thead>
-                                                <tr className="bg-gray-100 text-left text-gray-600">
-                                                    <th className="p-2.5 border font-medium">RECOVERY</th>
-                                                    <th className="p-2.5 border font-medium">COMMENT</th>
-                                                    <th className="p-2.5 border font-medium">RECOVERY</th>
-                                                    <th className="p-2.5 border font-medium">COMMENT</th>
+                                                <tr className=" text-left border ">
+                                                    <th className="p-4  font-medium">RECOVERY</th>
+                                                    <th className="p-4  font-medium">COMMENT</th>
+                                                    <th className="p-4  font-medium">RECEPTION</th>
+                                                    <th className="p-4  font-medium">COMMENT</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                {currentRows.map((row, index) => (
-                                                    <tr key={index} className="text-gray-700">
-                                                        <td className="p-2.5 border">{row.recovery}</td>
-                                                        <td className="p-2.5 border">{row.comment}</td>
-                                                        <td className="p-2.5 border">{row.recovery}</td>
-                                                        <td className="p-2.5 border">{row.comment}</td>
+                                                    <tr className="border bg-[#f5f7fa]">
+                                                        <td className="p-4 font-medium" colSpan={2}>GENERAL CONDITION</td>
+                                                        <td className="p-4 font-medium" colSpan={2}>GENERAL CONDITION</td>
                                                     </tr>
-                                                ))}
+                                                    <tr className="border ">
+                                                        <td className="p-4 flex items-center justify-between">Conscious <input type="checkbox" disabled checked className='w-8 h-5 rounded-lg' /></td>
+                                                        <td className="p-4"></td>
+                                                        <td className="p-4 flex items-center justify-between">Conscious <input type="checkbox" disabled checked className='w-8 h-5 rounded-lg' /></td>
+                                                        <td className="p-4 "></td>
+                                                    </tr>
+                                                    <tr className="border bg-[#f5f7fa]">
+                                                        <td className="p-4 flex items-center justify-between">Unconscious <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                        <td className="p-4"></td>
+                                                        <td className="p-4 flex items-center justify-between">Unconscious <input type="checkbox" disabled className='w-8 h-5 rounded-lg' /></td>
+                                                        <td className="p-4 "></td>
+                                                    </tr>
+                                                    <tr className="border ">
+                                                        <td className="p-4 flex items-center justify-between">Others <input type="checkbox" disabled  className='w-8 h-5 rounded-lg' /></td>
+                                                        <td className="p-4"></td>
+                                                        <td className="p-4 flex items-center justify-between">Others <input type="checkbox" disabled  className='w-8 h-5 rounded-lg' /></td>
+                                                        <td className="p-4 "></td>
+                                                    </tr>
+                                                    <tr className="border bg-[#f5f7fa]">
+                                                        <td className="p-4 font-medium" colSpan={2}>BREATHING</td>
+                                                        <td className="p-4 font-medium" colSpan={2}>BREATHING</td>
+                                                    </tr>
+                                                    <tr className="border ">
+                                                        <td className="p-4 flex items-center justify-between">Spontaneously <input type="checkbox" disabled checked  className='w-8 h-5 rounded-lg' /></td>
+                                                        <td className="p-4"></td>
+                                                        <td className="p-4 flex items-center justify-between">Spontaneously <input type="checkbox" disabled checked  className='w-8 h-5 rounded-lg' /></td>
+                                                        <td className="p-4 "></td>
+                                                    </tr>
+                                                    <tr className="border bg-[#f5f7fa]">
+                                                        <td className="p-4 flex items-center justify-between">Intubated <input type="checkbox" disabled  className='w-8 h-5 rounded-lg' /></td>
+                                                        <td className="p-4"></td>
+                                                        <td className="p-4 flex items-center justify-between">Intubated <input type="checkbox" disabled  className='w-8 h-5 rounded-lg' /></td>
+                                                        <td className="p-4 "></td>
+                                                    </tr>
                                             </tbody>
                                         </table>
                                         {/* Pagination */}

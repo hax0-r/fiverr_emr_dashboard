@@ -77,7 +77,7 @@ const ClinicalTHTPopup = ({ setPopup2 }) => {
                             )
                         }
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
-                            <div className="border p-3 rounded-lg border-[#cfd1d4]">
+                            <div className="border p-3 rounded-lg border-[#cfd1d4] max-h-[65vh] overflow-auto">
                                 <h3 className='font-semibold text-[#1D1D1D] text-xl'>Clinic Notes THT</h3>
                                 <p className='font-medium pt-1 text-[#6E6E6E]'>Date : 15 January 2024</p>
                                 <p className='font-medium text-[#6E6E6E]'>Occupation : </p>

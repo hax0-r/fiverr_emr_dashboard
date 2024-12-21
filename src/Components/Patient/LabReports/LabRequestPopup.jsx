@@ -1,6 +1,6 @@
 
 import React, { useRef, useState } from 'react'
-import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
+import { PiArrowsOutSimpleBold, PiPackageBold, PiPrinterBold } from 'react-icons/pi'
 import LabRequest from "../../../assets/LabRequest.svg"
 import receipt from "../../../assets/receipt25.png"
 import pdfFile from "../../../assets/pdfFile.svg"
@@ -59,40 +59,35 @@ const LabRequestPopup = ({ setPopup2 }) => {
                         {
                             !previewDocument && (
                                 <div className="max-w-[30%]   w-full">
-                                    <div className="flex flex-col gap-3">
-                                        <div className="border bg-zinc-100 p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
-                                            <img src={pdfFile} alt="" />
-                                            <div className="">
-                                                <h3 className='font-medium text-[#1D1D1D]'>Endocrine Test</h3>
-                                                <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
+                                    <div className=" flex flex-col gap-3">
+                                        <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
+                                            <h3 className='font-medium text-[#1D1D1D]'>Respiratory Virus Test</h3>
+                                            <div className="flex items-center justify-between mt-2">
+                                                <div className="flex items-center gap-2">
+                                                    <PiPackageBold />
+                                                    <p className='text-sm'>Histopathology</p>
+                                                </div>
+                                                <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
                                             </div>
                                         </div>
-                                        <div className="border p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
-                                            <img src={pdfFile} alt="" />
-                                            <div className="">
-                                                <h3 className='font-medium text-[#1D1D1D]'>Endocrine Test</h3>
-                                                <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
+                                        <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
+                                            <h3 className='font-medium text-[#1D1D1D]'>Full Blood Count</h3>
+                                            <div className="flex items-center justify-between mt-2">
+                                                <div className="flex items-center gap-2">
+                                                    <PiPackageBold />
+                                                    <p className='text-sm'>Histopathology</p>
+                                                </div>
+                                                <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
                                             </div>
                                         </div>
-                                        <div className="border p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
-                                            <img src={pdfFile} alt="" />
-                                            <div className="">
-                                                <h3 className='font-medium text-[#1D1D1D]'>Endocrine Test</h3>
-                                                <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
-                                            </div>
-                                        </div>
-                                        <div className="border p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
-                                            <img src={pdfFile} alt="" />
-                                            <div className="">
-                                                <h3 className='font-medium text-[#1D1D1D]'>Endocrine Test</h3>
-                                                <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
-                                            </div>
-                                        </div>
-                                        <div className="border p-3 rounded-lg border-[#cfd1d4] flex items-center gap-4">
-                                            <img src={pdfFile} alt="" />
-                                            <div className="">
-                                                <h3 className='font-medium text-[#1D1D1D]'>Endocrine Test</h3>
-                                                <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
+                                        <div className="border p-3 rounded-lg border-[#cfd1d4] w-full">
+                                            <h3 className='font-medium text-[#1D1D1D]'>Urine Test</h3>
+                                            <div className="flex items-center justify-between mt-2">
+                                                <div className="flex items-center gap-2">
+                                                    <PiPackageBold />
+                                                    <p className='text-sm'>Histopathology</p>
+                                                </div>
+                                                <p className='text-sm text-[#6E6E6E]'>15 Jan 2024</p>
                                             </div>
                                         </div>
                                     </div>
@@ -100,37 +95,52 @@ const LabRequestPopup = ({ setPopup2 }) => {
                             )
                         }
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
-                            <div className="border p-3 max-h-[65vh] overflow-auto rounded-lg border-[#cfd1d4]">
+                            <div className="border p-3 max-h-[65vh] text-[#1D1D1D]  overflow-auto rounded-lg border-[#cfd1d4]">
 
-                                <h3 className='font-semibold text-[#1D1D1D] text-xl '>Endocrine Test</h3>
+                                <div className="rounded-lg border-[#cfd1d4] border p-3">
 
-
-                                <div className="mx-auto bg-[#f7f8fa] border text-sm mt-4 rounded-lg p-4 flex gap-10">
-                                    <ul className='space-y-1'>
-                                        <li> Name : <span className='font-semibold'>Lorem Ipsum</span></li>
-                                        <li> Malysia New IC : <span className='font-semibold'>Lorem Ipsum</span></li>
-                                        <li> Date of Birth : <span className='font-semibold'>07/10/1978</span></li>
-                                    </ul>
-                                    <ul className='space-y-1'>
-                                        <li> Age/Gender : <span className='font-semibold'>64 / Lelaki</span></li>
-                                        <li> No X-Ray : <span className='font-semibold'>1122</span></li>
-                                        <li> Syarikat : <span className='font-semibold'>-</span></li>
-                                    </ul>
+                                    <h3 className='font-semibold text-xl pb-1 '>Respiratory Virus Test</h3>
+                                    <p className='text-sm'>Laboratory Reference ID: RTK10736/COV/23/26</p>
                                 </div>
-                                <div className="mx-auto text-[#1D1D1D] bg-[#f7f8fa] border text-sm mt-4 rounded-lg p-4">
-                                    <h2 className='text-sm  font-semibold mb-3'>Sejarah / Diagnosis</h2>
-                                    <p>
-                                        Pen x [circled P] Hp ~ 2 weeks chest ache <br /> A TRO PID / OA of hip
-                                    </p>
+
+
+                                <div className="bg-[#f7f8fa] border text-sm mt-4 rounded-lg p-3 grid grid-cols-4 gap-y-1 ">
+                                    <p>Patient Name</p>
+                                    <p className='font-semibold'> : CHIA SUWE KIEA</p>
+                                    <p>Gender</p>
+                                    <p className='font-semibold'> : Male</p>
+                                    <p>Patient ID</p>
+                                    <p className='font-semibold'> : 560915105691</p>
+                                    <p>Nationality</p>
+                                    <p className='font-semibold'> : Malaysian</p>
+                                    <p>Category ID</p>
+                                    <p className='font-semibold'> : NRIC Pesakit</p>
+                                    <p>Age (DOB Format D-M-Y)</p>
+                                    <p className='font-semibold'> : 66 Year & 4 Month (DOB 15/09/1596)</p>
                                 </div>
+                                <div className="bg-[#f7f8fa] border text-sm mt-4 rounded-lg p-3 grid grid-cols-4 gap-y-1 ">
+                                    <p>Facility Requestor</p>
+                                    <p className='font-semibold'> : Klinik Dr Ng (Sungai Besar) (Reference No : )</p>
+                                    <p>State</p>
+                                    <p className='font-semibold'> : Selangor</p>
+                                    <p>Location Information</p>
+                                    <p className='font-semibold'> : -</p>
+                                    <p>Name of the Requestor</p>
+                                    <p className='font-semibold'> : -</p>
+                                    <p>Facility Transit</p>
+                                    <p className='font-semibold'> : -</p>
+                                    <p>Date Received Specimen in Lab</p>
+                                    <p className='font-semibold'> : 09/02/2023</p>
+                                </div>
+
 
                                 <div className="border p-3 rounded-lg mt-4 text-sm text-[#1D1D1D] border-[#cfd1d4]">
                                     <h2 className='text-center font-medium'>Specimen Particulars</h2>
                                     <div className="grid grid-cols-2 gap-x-4 font-medium mt-4">
                                         <p className='border border-[#cfd1d4] p-1 text-center'>Type of Specimen</p>
-                                        <p className='border border-[#cfd1d4] p-1 text-center'>Type of Specimen</p>
-                                        <p className='border border-[#cfd1d4] p-1 text-center'>7th Floor, Clinic Blok UKMMC, Cheras, 65000</p>
-                                        <p className='border border-[#cfd1d4] p-1 text-center'>7th Floor, Clinic Blok UKMMC, Cheras, 65000</p>
+                                        <p className='border border-[#cfd1d4] p-1 text-center'>Date & Time Specimen Taken</p>
+                                        <p className='border border-[#cfd1d4] p-1 text-xs text-center'>Combined NPS and OPS</p>
+                                        <p className='border border-[#cfd1d4] p-1 text-xs text-center'>09-02-2023 (Masa : 19:00:00)</p>
                                     </div>
                                 </div>
 
@@ -140,80 +150,26 @@ const LabRequestPopup = ({ setPopup2 }) => {
                                             {/* Table Header */}
                                             <thead className=" border-b">
                                                 <tr>
-                                                    <th className="px-4 py-2.5 text-left font-medium">No</th>
-                                                    <th className="px-4 py-2.5 text-left font-medium">Test Name</th>
+                                                    <th className="px-4 py-2.5 text-left font-medium">Specimen</th>
+                                                    <th className="px-4 py-2.5 text-left font-medium">Test </th>
                                                     <th className="px-4 py-2.5 text-left font-medium">Result</th>
-                                                    <th className="px-4 py-2.5 text-left font-medium">Flag</th>
-                                                    <th className="px-4 py-2.5 text-left font-medium">Unit</th>
-                                                    <th className="px-4 py-2.5 text-left font-medium">Reference Range</th>
+                                                    <th className="px-4 py-2.5 text-left font-medium">Validated by</th>
+                                                    <th className="px-4 py-2.5 text-left font-medium">Validation Date</th>
                                                 </tr>
                                             </thead>
 
                                             {/* Table Body */}
                                             <tbody>
                                                 <tr className="border-b bg-[#f5f7fa]">
-                                                    <td className="px-4 py-2.5">1</td>
-                                                    <td className="px-4 py-2.5">Total Cholesterol</td>
-                                                    <td className="px-4 py-2.5">4.4</td>
-                                                    <td className="px-4 py-2.5"></td>
-                                                    <td className="px-4 py-2.5">(&lt;20)</td>
-                                                    <td className="px-4 py-2.5">(&lt;20)</td>
-                                                </tr>
-                                                <tr className="border-b">
-                                                    <td className="px-4 py-2.5">2</td>
-                                                    <td className="px-4 py-2.5">HDL Cholesterol</td>
-                                                    <td className="px-4 py-2.5">1.43</td>
-                                                    <td className="px-4 py-2.5"></td>
-                                                    <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                    <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                </tr>
-                                                <tr className="border-b bg-[#f5f7fa]">
-                                                    <td className="px-4 py-2.5">3</td>
-                                                    <td className="px-4 py-2.5">LDL Cholesterol</td>
-                                                    <td className="px-4 py-2.5">2.7</td>
-                                                    <td className="px-4 py-2.5"></td>
-                                                    <td className="px-4 py-2.5">(&lt;20)</td>
-                                                    <td className="px-4 py-2.5">(&lt;20)</td>
-                                                </tr>
-                                                <tr className="border-b">
-                                                    <td className="px-4 py-2.5">4</td>
-                                                    <td className="px-4 py-2.5">Triglycerides</td>
-                                                    <td className="px-4 py-2.5">0.6</td>
-                                                    <td className="px-4 py-2.5"></td>
-                                                    <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                    <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                </tr>
-                                                <tr className='bg-[#f5f7fa]'>
-                                                    <td className="px-4 py-2.5">5</td>
-                                                    <td className="px-4 py-2.5">Total/ HDL Ratio</td>
-                                                    <td className="px-4 py-2.5">3.1</td>
-                                                    <td className="px-4 py-2.5">-</td>
-                                                    <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                    <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                </tr>
-                                                <tr className="border-b ">
-                                                    <td className="px-4 py-2.5">6</td>
-                                                    <td className="px-4 py-2.5">LDL Cholesterol</td>
-                                                    <td className="px-4 py-2.5">2.7</td>
-                                                    <td className="px-4 py-2.5"></td>
-                                                    <td className="px-4 py-2.5">(&lt;20)</td>
-                                                    <td className="px-4 py-2.5">(&lt;20)</td>
-                                                </tr>
-                                                <tr className="border-b bg-[#f5f7fa]">
-                                                    <td className="px-4 py-2.5">7</td>
-                                                    <td className="px-4 py-2.5">Triglycerides</td>
-                                                    <td className="px-4 py-2.5">0.6</td>
-                                                    <td className="px-4 py-2.5"></td>
-                                                    <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                    <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                </tr>
-                                                <tr className=''>
-                                                    <td className="px-4 py-2.5">8</td>
-                                                    <td className="px-4 py-2.5">Total/ HDL Ratio</td>
-                                                    <td className="px-4 py-2.5">3.1</td>
-                                                    <td className="px-4 py-2.5">-</td>
-                                                    <td className="px-4 py-2.5">(1.04-1.55)</td>
-                                                    <td className="px-4 py-2.5">(1.04-1.55)</td>
+                                                    <td className="px-4 py-2.5">Combined NPS and OPS</td>
+                                                    <td className="px-4 py-2.5">Rapid Antigen Test</td>
+                                                    <td className="px-4 py-2.5">
+                                                    Test Name: <u>Coronavirus</u>
+                                                   <br /> Test Result: <u>Negative</u>
+                                                   <br /> <u>Remarks: -</u>
+                                                    </td>
+                                                    <td className="px-4 py-2.5">Ng Eng Han Owner</td>
+                                                    <td className="px-4 py-2.5">09-02-2023 <br /> Time Verified: <br /> 19:53:47 (24 Hour Format)</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -228,10 +184,10 @@ const LabRequestPopup = ({ setPopup2 }) => {
                                         className="border rounded p-2 text-sm"
                                         readOnly
                                     >
-                                        <option>10</option>
+                                        <option>5</option>
                                     </select>
                                     <span className="text-sm text-gray-600">
-                                        Show 1 of 10 data
+                                        Show 1 of 5 data
                                     </span>
                                 </div>
                                 <div className="flex items-center space-x-2">

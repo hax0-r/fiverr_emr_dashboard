@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPackageBold, PiPrinterBold } from 'react-icons/pi'
 import Histo from "../../../assets/Histo.svg"
 import receipt from "../../../assets/receipt29.png"
+import sign from "../../../assets/sign10.png"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowForward } from 'react-icons/io'
 import { MdClose } from 'react-icons/md'
@@ -104,8 +105,8 @@ const HistoPopup = ({ setPopup5 }) => {
                                 <div className=" mt-5">
                                     {/* Header Section */}
                                     <div className="flex justify-between p-3 rounded-lg items-center border-[#cfd1d4] border pb-4 mb-6">
-                                        <div className="flex items-center justify-between w-full">
-                                            <div className="">
+                                        <div className="grid grid-cols-4 w-full">
+                                            <div className="col-span-2">
                                                 <label>
                                                     <input type="checkbox" className="mr-2" />
                                                     Cash
@@ -124,9 +125,12 @@ const HistoPopup = ({ setPopup5 }) => {
                                                     Employer / GL
                                                 </label>
                                             </div>
-                                            <div className="">
-                                                <label htmlFor="">Phone : .....................................................</label>
-                                                <label htmlFor="" className='block mt-2'>Fax : .....................................................</label>
+                                            <div className="col-span-2 grid grid-cols-2">
+
+                                                <p > <input type="checkbox" /> URGENT Phone </p>
+                                                <p >: .................................</p>
+                                                <p > <span className='opacity-0 select-none'>gggggggi</span> Fax </p>
+                                                <p >: .................................</p>
                                             </div>
                                         </div>
                                     </div>
@@ -134,17 +138,31 @@ const HistoPopup = ({ setPopup5 }) => {
                                     {/* Patient Information */}
                                     <div className="my-3">
                                         <h3 className='font-semibold text-[#1D1D1D] text-xl text-center'>Patient Information</h3>
-                                        <div className="flex mt-3 justify-between p-3 rounded-lg items-center border-[#cfd1d4] border pb-3 mb-6">
-                                            <div className="flex items-center justify-between w-full">
-                                                <div className="">
-                                                    <label htmlFor="">NRIC / PASSPORT NO : .....................................................</label>
-                                                    <label htmlFor="" className='block mt-2'>MRN / REG NO : .....................................................</label>
-                                                    <label htmlFor="" className='block mt-2'>WARD / CLINIC : .....................................................</label>
+                                        <div className="flex mt-3 text-sm justify-between p-3 rounded-lg items-center border-[#cfd1d4] border pb-3 mb-6">
+                                            <div className="grid grid-cols-4 w-full">
+                                                <div className="col-span-2 grid grid-cols-2">
+                                                    <div className="col-span-2 grid grid-cols-2">
+                                                        <p > NRIC / PASSPORT NO </p>
+                                                        <p >: .........................................</p>
+                                                        <p > MRN / REG NO </p>
+                                                        <p >: .........................................</p>
+                                                        <p > WARD / CLINIC</p>
+                                                        <p className='font-semibold'>: Sutera 3A</p>
+                                                    </div>
                                                 </div>
-                                                <div className="">
-                                                    <label htmlFor="">NRIC/PASSPORT NO : .....................................................</label>
-                                                    <label htmlFor="" className='block mt-2'>DATE OF BIRTH : .....................................................</label>
-                                                    <label htmlFor="" className='block mt-2'>CONTACT NO : .....................................................</label>
+                                                <div className="col-span-2 grid grid-cols-2">
+                                                    <div className="col-span-2 gap-y-1 grid grid-cols-4">
+                                                        <p > NRIC / PASSPORT NO </p>
+                                                        <p >: .........................................</p>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p > DATE OF BIRTH </p>
+                                                        <p >: ................................</p>
+                                                            <p className='col-span-2'>Age  : ................................</p>
+                                                        <p > CONTACT NO</p>
+                                                        <p >: ................................</p>
+                                                        <p className='col-span-2'>SEX : <input type="checkbox" /> MALE <input type="checkbox" /> FEMALE</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -152,36 +170,34 @@ const HistoPopup = ({ setPopup5 }) => {
 
                                     {/* Request Information */}
                                     <div className="mb-3 grid grid-cols-2 gap-4 rounded-lg items-center border-[#cfd1d4] border p-3">
-                                        <div className='text-sm h-full border rounded-lg font-medium'>
+                                        <div className='text-sm relative h-full border rounded-lg font-medium'>
                                             <h2 className="border-b py-1 text-center">Request Information</h2>
                                             <p className='p-3'>Doctors Name Clinic stamp</p>
-                                            <textarea
-                                                className="w-full p-2 resize-none"
-                                                rows="4"
-                                            ></textarea>
-                                            <div className="flex p-3 justify-between items-center mt-2">
-                                                <h2 className='text-center'>Docto Signature</h2>
+                                            
+                                            <img src={sign} className='pl-5 mt-14 h-24' alt="" />
+                                            <div className="flex p-3 justify-between items-center ">
+                                                <h2 className='text-center'>Doctor’s Signature</h2>
                                                 <h2 className='text-center'>Date</h2>
                                             </div>
                                         </div>
                                         <div className='text-sm border rounded-lg  font-medium'>
-                                            <h2 className="border-b py-1 text-center">Histopathology Information</h2>
+                                            <h2 className="border-b py-1 text-center">HISTOPATHOLOGY EXAMINATION</h2>
                                             <div className="p-3">
 
                                                 <p className="mb-2 underline">Compulsory for HPE request :</p>
                                                 <label>
                                                     <input type="checkbox" className="mr-2" />
-                                                    Lorem
+                                                    Formalin-fixed
                                                 </label>
                                                 <br />
                                                 <label>
                                                     <input type="checkbox" className="mr-2" />
-                                                    Lorem
+                                                    Fresh tissue
                                                 </label>
-                                                <p className="mt-2">Lorem ipsum dolor sit amet</p>
+                                                <p className="mt-2">Date and time of specimen removed from the surgical field (cold ischemic time)</p>
 
                                                 <p className="mt-2">Date..../....../.....  Time :</p>
-                                                <p className="mt-2">Compulsory for HPE request :</p>
+                                                <p className="mt-2">Date and time of specimen fixed in 10% Neutral buffered formalin (NBF)</p>
                                                 <p className="mt-2">Date..../....../.....  Time :</p>
                                             </div>
                                         </div>
@@ -190,10 +206,10 @@ const HistoPopup = ({ setPopup5 }) => {
                                     {/* Clinical History */}
                                     <div className='border rounded-lg p-3 bg-[#f7f8fa]'>
                                         <h2 className="font-medium text-sm mb-14">
-                                        Doctors Name Clinic stamp
+                                        NATURE OF SPECIMEN / COLLECTOIN SITE :
                                         </h2>
                                         <h2 className="font-medium text-sm mb-2">
-                                            CLINICAL HISTORY/CLINICAL FINDINGS/DIAGNOSIS:
+                                        Urine, bladder cancer
                                         </h2>
 
                                     </div>
