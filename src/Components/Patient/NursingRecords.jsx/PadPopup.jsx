@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
+import { PiArrowsOutSimpleBold, PiBedBold, PiPrinterBold } from 'react-icons/pi'
 import ClinicalNotes from "../../../assets/ClinicalNotes.svg"
 import receipt from "../../../assets/receipt4.png"
 import { AiOutlineSearch } from 'react-icons/ai'
@@ -25,17 +25,18 @@ const PadPopup = ({ setPopup1 }) => {
     // Example data for the table
     const [data] = useState([
         { date: "25/7/2022", time: "7 PM - 9 PM", nt: "40 cc (Haematuria)", cbd: "200 cc concentrated" },
-        { date: "25/7/2022", time: "9 PM - 7 AM", nt: "80 cc (Haematuria)", cbd: "800 cc tea colour" },
-        { date: "25/7/2022", time: "7 PM - 7 AM", nt: "120 cc", cbd: "1000 cc" },
-        { date: "26/7/2022", time: "9 PM - 2 AM", nt: "42 cc (Haematuria)", cbd: "800 cc tea colour" },
-        { date: "26/7/2022", time: "3 PM - 9 PM", nt: "18 cc", cbd: "1000 cc" },
-        { date: "26/7/2022", time: "9 PM - 7 AM", nt: "30 cc (Haematuria)", cbd: "800 cc tea colour" },
-        { date: "27/7/2022", time: "7 AM - 2 PM", nt: "30 cc (Haematuria)", cbd: "800 cc tea colour" },
+        { date: "", time: "9 PM - 7 PM", nt: "80 cc (Haematuria)", cbd: "800 cc concentrated" },
+        { date: "", time: "7 PM - 7 PM", nt: "120 cc", cbd: "1000 cc" },
+        { date: "26/7/2022", time: "9 PM - 2 AM", nt: "42 cc (Haematuria)", cbd: "" },
+        { date: "", time: "3 PM - 9 AM", nt: "18 cc (Haematuria)", cbd: "" },
+        { date: "26/7/2022", time: "9 PM - 7 AM", nt: "30 cc", cbd: "" },
+        { date: "", time: "7 PM - 7 AM", nt: "30 cc", cbd: "" },
+        { date: "27/7/2022", time: "7 AM - 2 PM", nt: "", cbd: "" },
     ]);
 
     // Pagination state
     const [currentPage, setCurrentPage] = useState(1);
-    const rowsPerPage = 5;
+    const rowsPerPage = 10;
 
     // Pagination logic
     const indexOfLastRow = currentPage * rowsPerPage;
@@ -87,39 +88,54 @@ const PadPopup = ({ setPopup1 }) => {
                             !previewDocument && (
                                 <div className="max-w-[30%]   w-full">
                                     <div className="flex flex-col gap-3 rounded-lg border border-[#CFD1D4] p-3">
-                                        <div className="border p-3 rounded-lg bg-[#f7f8fa] border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                                            <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
+                                        <div className="border p-3 rounded-lg border-[#cfd1d4]">
+                                            <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                                            <div className="flex items-center justify-between mt-2">
+                                                <div className="flex items-center gap-2">
+                                                    <PiBedBold />
+                                                    <p className='text-sm'>SUNGKE922</p>
+                                                </div>
+                                                <p className='text-sm text-[#6E6E6E]'>Q839104</p>
+                                            </div>
                                         </div>
                                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                                            <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                                            <div className="flex items-center justify-between mt-2">
+                                                <div className="flex items-center gap-2">
+                                                    <PiBedBold />
+                                                    <p className='text-sm'>FROSTY728</p>
+                                                </div>
+                                                <p className='text-sm text-[#6E6E6E]'>Q839104</p>
+                                            </div>
                                         </div>
                                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
-                                            <h3 className='font-medium text-[#1D1D1D]'>Lorem Ipsum</h3>
-                                            <p className='text-sm pt-1 text-[#6E6E6E]'>15 Jan 2024</p>
+                                            <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
+                                            <div className="flex items-center justify-between mt-2">
+                                                <div className="flex items-center gap-2">
+                                                    <PiBedBold />
+                                                    <p className='text-sm'>BREEZY314</p>
+                                                </div>
+                                                <p className='text-sm text-[#6E6E6E]'>Q839104</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             )
                         }
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
-                            <div className="border p-3 rounded-lg border-[#cfd1d4]">
+                            <div className="border p-3 rounded-lg max-h-[65vh] overflow-auto border-[#cfd1d4]">
                                 <h3 className='font-semibold text-[#1D1D1D] text-xl'>Pad/Stool/Vomid Chart</h3>
                                 <div className="mt-4">
                                     {/* Patient Information Card */}
-                                    <div className="border rounded-lg p-4 mb-3 bg-[#f7f8fa]">
+                                    <div className="border rounded-lg p-4 mb-3 text-sm bg-[#f7f8fa]">
                                         <h2 className="font-medium text-sm mb-2 text-[#6E6E6E]">Patient Information</h2>
-                                        <div>
-                                            <p>
-                                                Name:<span className="font-semibold ml-2"> Lorem Ipsum</span>
-                                            </p>
-                                            <p>
-                                                NRP:<span className="font-semibold ml-2"></span>
-                                            </p>
-                                            <p>
-                                                Katil :<span className="font-semibold ml-2"> SUNGKE922</span>
-                                            </p>
+                                        <div className='grid gap-y-1 grid-cols-2 max-w-sm'>
+                                            <p>Name</p>
+                                            <p className='font-semibold'> : Chia Suwe Kiea</p>
+                                            <p>NRP</p>
+                                            <p className='font-semibold'> : N867921</p>
+                                            <p>Katil</p>
+                                            <p className='font-semibold'> : SONGKET 22</p>
                                         </div>
                                     </div>
 
@@ -127,67 +143,58 @@ const PadPopup = ({ setPopup1 }) => {
                                     <div className="border rounded-md bg-white">
                                         <table className="table-auto w-full text-left">
                                             <thead>
-                                                <tr className="bg-gray-100 text-sm font-semibold text-gray-700">
-                                                    <th className="p-3">Tarikh</th>
-                                                    <th className="p-3">Masa</th>
-                                                    <th className="p-3">NT</th>
-                                                    <th className="p-3">CBD</th>
+                                                <tr className=" ">
+                                                    <th className="p-4 font-medium">Tarikh</th>
+                                                    <th className="p-4 font-medium">Masa</th>
+                                                    <th className="p-4 font-medium">NT</th>
+                                                    <th className="p-4 font-medium">CBD</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 {currentRows.map((row, index) => (
-                                                    <tr key={index} className="border-t">
-                                                        <td className="p-3">{row.date}</td>
-                                                        <td className="p-3">{row.time}</td>
-                                                        <td className="p-3">{row.nt}</td>
-                                                        <td className="p-3">{row.cbd}</td>
+                                                    <tr key={index} className={`border-t ${index % 2 == 0 && "bg-[#f7f8fa]"}`}>
+                                                        <td className="p-4">{row.date}</td>
+                                                        <td className="p-4">{row.time}</td>
+                                                        <td className="p-4">{row.nt}</td>
+                                                        <td className="p-4">{row.cbd}</td>
                                                     </tr>
                                                 ))}
                                             </tbody>
                                         </table>
 
-                                        {/* Pagination */}
-                                        <div className="flex justify-between items-center p-4">
-                                            <span className="text-sm text-gray-600">
-                                                Showing {indexOfFirstRow + 1} to {Math.min(indexOfLastRow, data.length)} of {data.length} entries
-                                            </span>
-                                            <div className="flex space-x-2">
-                                                {/* Previous Button */}
-                                                <button
-                                                    onClick={() => handlePageChange(currentPage - 1)}
-                                                    disabled={currentPage === 1}
-                                                    className={`w-8 h-8 flex items-center justify-center border border-[#CFD1D4] text-[#1D1D1D] text-sm rounded-lg ${currentPage === 1 ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-100"
-                                                        }`}
-                                                >
-                                                    <IoIosArrowForward className="text-[#1D1D1D] rotate-180" />
-                                                </button>
-
-                                                {/* Page Numbers */}
-                                                {Array.from({ length: totalPages }, (_, index) => (
-                                                    <button
-                                                        key={index}
-                                                        onClick={() => handlePageChange(index + 1)}
-                                                        className={`w-8 h-8 flex items-center justify-center text-sm rounded-lg ${currentPage === index + 1
-                                                            ? "bg-primary text-white"
-                                                            : "border border-[#CFD1D4] text-[#1D1D1D] hover:bg-gray-100"
-                                                            }`}
-                                                    >
-                                                        {index + 1}
-                                                    </button>
-                                                ))}
-
-                                                {/* Next Button */}
-                                                <button
-                                                    onClick={() => handlePageChange(currentPage + 1)}
-                                                    disabled={currentPage === totalPages}
-                                                    className={`w-8 h-8 flex items-center justify-center border border-[#CFD1D4] text-[#1D1D1D] text-sm rounded-lg ${currentPage === totalPages ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-100"
-                                                        }`}
-                                                >
-                                                    <IoIosArrowForward className="text-[#1D1D1D]" />
-                                                </button>
-                                            </div>
-                                        </div>
+                                       
                                     </div>
+                                </div>
+                            </div>
+                            <div className="flex items-center justify-between mt-4">
+                                <div className="flex items-center gap-4">
+
+                                    <select
+                                        className="border rounded p-2 text-sm"
+                                        readOnly
+                                    >
+                                        <option>5</option>
+                                    </select>
+                                    <span className="text-sm text-gray-600">
+                                        Show 1 of 5 data
+                                    </span>
+                                </div>
+                                <div className="flex items-center space-x-2">
+                                    <button
+                                        className="px-3 py-1 bg-white border-2 rounded-lg"
+                                    >
+                                        &lt;
+                                    </button>
+                                    <button
+                                        className={`px-3 py-1 bg-primary text-white rounded`}
+                                    >
+                                        1
+                                    </button>
+                                    <button
+                                        className="px-3 py-1 bg-white border-2 rounded-lg"
+                                    >
+                                        &gt;
+                                    </button>
                                 </div>
                             </div>
                             {

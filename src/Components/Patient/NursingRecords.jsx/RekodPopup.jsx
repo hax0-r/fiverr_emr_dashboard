@@ -34,7 +34,7 @@ const RekodPopup = ({ setPopup2 }) => {
 
     // Pagination state
     const [currentPage, setCurrentPage] = useState(1);
-    const rowsPerPage = 5;
+    const rowsPerPage = 10;
 
     // Pagination logic
     const indexOfLastRow = currentPage * rowsPerPage;
@@ -108,7 +108,7 @@ const RekodPopup = ({ setPopup2 }) => {
                                         </div>
                                         <div className="border p-3 rounded-lg border-[#cfd1d4]">
                                             <h3 className='font-medium text-[#1D1D1D]'>Chia Suwe Kiea</h3>
-                                            <div className="flex items-center justify-between mt-2">
+                                            <div className="flex i  tems-center justify-between mt-2">
                                                 <div className="flex items-center gap-2">
                                                     <PiBedBold />
                                                     <p className='text-sm'>BREEZY314</p>
@@ -125,86 +125,165 @@ const RekodPopup = ({ setPopup2 }) => {
                                 <h3 className='font-semibold text-[#1D1D1D] text-xl'>Rekod Imbangan Cecair</h3>
                                 <div className="mt-4">
                                     {/* Patient Information Card */}
-                                    <div className="border rounded-md p-4 bg-white shadow mb-4">
-                                        <h2 className="font-bold text-lg mb-4">Patient Information</h2>
-                                        <div>
-                                            <p>
-                                                <span className="font-semibold">Name:</span> Lorem Ipsum
-                                            </p>
-                                            <p>
-                                                <span className="font-semibold">NRP:</span>
-                                            </p>
-                                            <p>
-                                                <span className="font-semibold">Katil:</span> SUNGKE922
-                                            </p>
+                                    <div className="border rounded-md text-sm p-4 bg-[#f7f8fa] mb-4">
+                                        <h2 className="font-medium mb-2 text-[#6E6E6E]">Patient Information</h2>
+                                        <div className='grid grid-cols-2 max-w-sm gap-y-1'>
+                                            <p>Name</p>
+                                            <p className='font-semibold'> : Chia Suwe Kiea</p>
+                                            <p>NRP</p>
+                                            <p className='font-semibold'> : N867921</p>
+                                            <p>Katil</p>
+                                            <p className='font-semibold'> : SUNGKE922</p>
                                         </div>
                                     </div>
 
-                                    {/* Data Table */}
-                                    <div className="border rounded-md bg-white shadow">
-                                        <table className="table-auto w-full text-left">
-                                            <thead>
-                                                <tr className="bg-gray-100 text-sm font-semibold text-gray-700">
-                                                    <th className="p-3">Tarikh</th>
-                                                    <th className="p-3">Masa</th>
-                                                    <th className="p-3">NT</th>
-                                                    <th className="p-3">CBD</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                {currentRows.map((row, index) => (
-                                                    <tr key={index} className="border-t">
-                                                        <td className="p-3">{row.date}</td>
-                                                        <td className="p-3">{row.time}</td>
-                                                        <td className="p-3">{row.nt}</td>
-                                                        <td className="p-3">{row.cbd}</td>
-                                                    </tr>
-                                                ))}
-                                            </tbody>
-                                        </table>
-
-                                        {/* Pagination */}
-                                        <div className="flex justify-between items-center p-4">
-                                            <span className="text-sm text-gray-600">
-                                                Showing {indexOfFirstRow + 1} to {Math.min(indexOfLastRow, data.length)} of {data.length} entries
-                                            </span>
-                                            <div className="flex space-x-2">
-                                                {/* Previous Button */}
-                                                <button
-                                                    onClick={() => handlePageChange(currentPage - 1)}
-                                                    disabled={currentPage === 1}
-                                                    className={`w-8 h-8 flex items-center justify-center border border-[#CFD1D4] text-[#1D1D1D] text-sm rounded-lg ${currentPage === 1 ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-100"
-                                                        }`}
-                                                >
-                                                    <IoIosArrowForward className="text-[#1D1D1D] rotate-180" />
-                                                </button>
-
-                                                {/* Page Numbers */}
-                                                {Array.from({ length: totalPages }, (_, index) => (
-                                                    <button
-                                                        key={index}
-                                                        onClick={() => handlePageChange(index + 1)}
-                                                        className={`w-8 h-8 flex items-center justify-center text-sm rounded-lg ${currentPage === index + 1
-                                                            ? "bg-primary text-white"
-                                                            : "border border-[#CFD1D4] text-[#1D1D1D] hover:bg-gray-100"
-                                                            }`}
-                                                    >
-                                                        {index + 1}
-                                                    </button>
-                                                ))}
-
-                                                {/* Next Button */}
-                                                <button
-                                                    onClick={() => handlePageChange(currentPage + 1)}
-                                                    disabled={currentPage === totalPages}
-                                                    className={`w-8 h-8 flex items-center justify-center border border-[#CFD1D4] text-[#1D1D1D] text-sm rounded-lg ${currentPage === totalPages ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-100"
-                                                        }`}
-                                                >
-                                                    <IoIosArrowForward className="text-[#1D1D1D]" />
-                                                </button>
-                                            </div>
+                                    <div className={`mb-4 grid ${previewDocument ? "grid-cols-1" : "grid-cols-3"} items-start gap-3`}>
+                                        <div className="col-span-2 border rounded-md grid grid-cols-8">
+                                            <p className='col-span-2 border-r py-4 px-1.5 font-medium row-span-2 text-center flex items-center justify-center'>Tarikh Masa</p>
+                                            <p className='col-span-6 border-b py-4 px-1.5 text-center font-medium'>MASUK (ml)</p>
+                                            <p className='col-span-2 py-4 px-1.5 text-center font-medium'>Oral</p>
+                                            <p className='col-span-2 py-4 px-1.5 text-center font-medium'>Intra-Vena</p>
+                                            <p className='col-span-2 py-4 px-1.5 text-center font-medium'>Lain-Lain</p>
+                                            <p className='col-span-2 py-4 px-1.5 border-y border-r text-center font-medium'>25/7/2022</p>
+                                            <p className='py-4 px-1.5 border-y border-r text-center font-medium'>Jenis</p>
+                                            <p className='py-4 px-1.5 border-y border-r text-center font-medium'>Suka...</p>
+                                            <p className='py-4 px-1.5 border-y border-r text-center font-medium'>Jenis</p>
+                                            <p className='py-4 px-1.5 border-y border-r text-center font-medium'>Suka...</p>
+                                            <p className='py-4 px-1.5 border-y border-r text-center font-medium'>Jenis</p>
+                                            <p className='py-4 px-1.5 border-y text-center font-medium'>Suka...</p>
+                                            <p className='py-4 bg-[#f5f7fa] px-1.5 text-center col-span-2'>7 PM</p>
+                                            <p className='bg-[#f5f7fa]'></p>
+                                            <p className='bg-[#f5f7fa]'></p>
+                                            <p className='py-4 bg-[#f5f7fa] px-1.5 text-center '>IV DN</p>
+                                            <p className='py-4 bg-[#f5f7fa] px-1.5 text-center '>83.3</p>
+                                            <p className='bg-[#f5f7fa]'></p>
+                                            <p className='bg-[#f5f7fa]'></p>
+                                            <p className='py-4  px-1.5 text-center col-span-2'>8 PM</p>
+                                            <p className='py-4  px-1.5'>SIP H2</p>
+                                            <p className='py-4  px-1.5'>20 cc</p>
+                                            <p className='py-4  px-1.5 text-center '></p>
+                                            <p className='py-4  px-1.5 text-center '>83.3</p>
+                                            <p className=''></p>
+                                            <p className=''></p>
+                                            <p className='py-4 bg-[#f5f7fa] px-1.5 text-center col-span-2'>9 PM</p>
+                                            <p className='bg-[#f5f7fa] py-4  px-1.5'>H2O...</p>
+                                            <p className='bg-[#f5f7fa] py-4  px-1.5'>150 cc</p>
+                                            <p className='py-4 bg-[#f5f7fa] px-1.5 text-center '></p>
+                                            <p className='py-4 bg-[#f5f7fa] px-1.5 text-center '>83.3</p>
+                                            <p className='bg-[#f5f7fa]'></p>
+                                            <p className='bg-[#f5f7fa]'></p>
+                                            <p className='py-4  px-1.5 text-center col-span-2'>7 PM-9 PM</p>
+                                            <p className='py-4  px-1.5'>Intake</p>
+                                            <p className='py-4  px-1.5'>170 cc</p>
+                                            <p className='py-4  px-1.5 text-center '>IV D</p>
+                                            <p className='py-4  px-1.5 text-center '>83.3</p>
+                                            <p className=''></p>
+                                            <p className=''></p>
+                                            <p className='py-4 bg-[#f5f7fa] px-1.5 text-center col-span-2'>10 PM</p>
+                                            <p className='bg-[#f5f7fa] py-4  px-1.5'>Intake</p>
+                                            <p className='bg-[#f5f7fa] py-4  px-1.5'>11 cc</p>
+                                            <p className='py-4 bg-[#f5f7fa] px-1.5 text-center '>IV DN...</p>
+                                            <p className='py-4 bg-[#f5f7fa] px-1.5 text-center '></p>
+                                            <p className='py-4  px-1.5  bg-[#f5f7fa]'>IV FU</p>
+                                            <p className='py-4  px-1.5  bg-[#f5f7fa]'>200</p>
+                                            <p className='py-4  px-1.5 text-center col-span-2'>11 PM</p>
+                                            <p className='py-4  px-1.5'>9 PM...</p>
+                                            <p className='py-4  px-1.5'>9 PM...</p>
+                                            <p className='py-4  px-1.5 text-center '></p>
+                                            <p className='py-4  px-1.5 text-center '>83.3</p>
+                                            <p className='py-4  px-1.5'></p>
+                                            <p className='py-4  px-1.5'></p>
+                                            <p className='py-4 bg-[#f5f7fa] px-1.5 text-center col-span-2'>12 PM</p>
+                                            <p className='py-4 bg-[#f5f7fa] px-1.5'>7 AM...</p>
+                                            <p className='py-4 bg-[#f5f7fa] px-1.5'>7 AM...</p>
+                                            <p className='py-4 bg-[#f5f7fa] px-1.5 text-center '></p>
+                                            <p className='py-4 bg-[#f5f7fa] px-1.5 text-center '>83.3</p>
+                                            <p className='py-4 bg-[#f5f7fa] px-1.5'></p>
+                                            <p className='py-4 bg-[#f5f7fa] px-1.5'></p>
+                                        </div>
+                                        <div className=" border rounded-md grid grid-cols-5">
+                                            <p className='border-r py-4 px-1.5 font-medium text-center flex items-center justify-center'></p>
+                                            <p className='border-r col-span-4 py-4 px-1.5 font-medium text-center flex items-center justify-center border-b' >KELUAR (ml)</p>
+                                            <p className=' py-4 px-1.5 font-medium text-center flex items-center justify-center'>&nbsp;</p>
+                                            <p className='border-x row-span-2 py-4 px-1.5 font-medium text-center flex items-center justify-center'>CBD</p>
+                                            <p className='border-r row-span-2 py-4 px-1.5 font-medium text-center flex items-center justify-center'>Munt..</p>
+                                            <p className='border-r row-span-2 py-4 px-1.5 font-medium text-center flex items-center justify-center'>N/T</p>
+                                            <p className='border-r row-span-2 py-4 px-1.5 font-medium text-center flex items-center justify-center'>Lain-Lain</p>
+                                            <p className='border-t  py-4 px-1.5 font-medium text-center flex items-center justify-center'>Masa</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5 font-medium text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5 font-medium text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5 font-medium text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5 font-medium text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5 font-medium text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t py-4 px-1.5  text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t py-4 px-1.5  text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t py-4 px-1.5  text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t py-4 px-1.5  text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t py-4 px-1.5  text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5  text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5  text-center flex items-center justify-center '>200 cc</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5  text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5  text-center flex items-center justify-center '>Heam..</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5  text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t py-4 px-1.5  text-center flex items-center justify-center '>O/PU</p>
+                                            <p className='border-t py-4 px-1.5  text-center flex items-center justify-center '>200 cc</p>
+                                            <p className='border-t py-4 px-1.5  text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t py-4 px-1.5  text-center flex items-center justify-center '>40 cc</p>
+                                            <p className='border-t py-4 px-1.5  text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5 font-medium text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5 font-medium text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5 font-medium text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5 font-medium text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5 font-medium text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t py-4 px-1.5  text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t py-4 px-1.5  text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t py-4 px-1.5  text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t py-4 px-1.5  text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t py-4 px-1.5  text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5 font-medium text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5 font-medium text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5 font-medium text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5 font-medium text-center flex items-center justify-center '>&nbsp;</p>
+                                            <p className='border-t bg-[#f5f7fa] py-4 px-1.5 font-medium text-center flex items-center justify-center '>&nbsp;</p>
                                         </div>
                                     </div>
+
+                                </div>
+
+
+                                
+                                
+                            </div>
+
+                            <div className="flex items-center justify-between mt-4">
+                                <div className="flex items-center gap-4">
+
+                                    <select
+                                        className="border rounded p-2 text-sm"
+                                        readOnly
+                                    >
+                                        <option>5</option>
+                                    </select>
+                                    <span className="text-sm text-gray-600">
+                                        Show 1 of 5 data
+                                    </span>
+                                </div>
+                                <div className="flex items-center space-x-2">
+                                    <button
+                                        className="px-3 py-1 bg-white border-2 rounded-lg"
+                                    >
+                                        &lt;
+                                    </button>
+                                    <button
+                                        className={`px-3 py-1 bg-primary text-white rounded`}
+                                    >
+                                        1
+                                    </button>
+                                    <button
+                                        className="px-3 py-1 bg-white border-2 rounded-lg"
+                                    >
+                                        &gt;
+                                    </button>
                                 </div>
                             </div>
                             {
