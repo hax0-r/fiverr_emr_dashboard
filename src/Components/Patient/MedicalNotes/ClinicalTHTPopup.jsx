@@ -80,8 +80,8 @@ const ClinicalTHTPopup = ({ setPopup2 }) => {
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
                             <div className="border p-3 rounded-lg border-[#cfd1d4] max-h-[65vh] overflow-auto">
                                 <h3 className='font-semibold text-[#1D1D1D] text-xl'>Clinic Notes THT</h3>
-                                <p className='font-medium pt-1 text-[#6E6E6E]'>Date : 15 January 2024</p>
-                                <p className='font-medium text-[#6E6E6E]'>Occupation : </p>
+                                <p className='font-medium text-sm pt-2 text-[#6E6E6E]'>Date : 15 January 2024</p>
+                                <p className='font-medium text-sm text-[#6E6E6E]'>Occupation : </p>
                                 <p className='text-primary text-sm font-medium inline-flex mt-1 items-center gap-2 border border-primary rounded-lg py-1.5 px-2'><RiImage2Line className='text-lg' /> Attachment - Investigation Image <PiArrowsOutSimpleBold className='text-lg' /> </p>
                                 <div className="overflow-x-auto mt-3 rounded-lg border border-gray-200">
                                     <table className="w-full border-collapse  text-sm text-left">

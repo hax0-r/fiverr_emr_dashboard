@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { PiArrowsOutSimpleBold, PiPrinterBold } from 'react-icons/pi'
-import KertasAnestesia from "../../../assets/KertasAnestesia.svg"
+import KertasAnestesia from "../../../assets/ConsentforAnaesthesia.svg"
 import receipt from "../../../assets/receipt3.png"
 import sign3 from "../../../assets/sign4.png"
 import { AiOutlineSearch } from 'react-icons/ai'
@@ -11,6 +11,7 @@ import Print from '../Print'
 const KertasPopup = ({ setPopup3 }) => {
 
     const [previewDocument, setPreviewDocument] = useState(false)
+    const [currentPage, setCurrentPage] = useState(1)
 
     const popUp = useRef()
 
@@ -79,68 +80,82 @@ const KertasPopup = ({ setPopup3 }) => {
 
                         <div className={` ${!previewDocument ? " max-w-[70%]" : " max-w-[50%]"} w-full`}>
 
-                            <div className="border p-3 rounded-lg border-[#cfd1d4] max-h-[70vh] overflow-auto">
+                            <div className="border p-3 rounded-lg border-[#cfd1d4] max-h-[65vh] overflow-auto">
                                 <h3 className='font-semibold text-[#1D1D1D] text-xl'>Consent for Anaesthesia</h3>
                                 <p className='font-medium text-[#6E6E6E]'>Patient Info </p>
                                 <div className="w-full mt-4 p-3 bg-white border border-gray-300 rounded-md text-sm">
                                     {/* Patient Details Section */}
-                                    <div className="grid border  p-3 rounded-lg grid-cols-2 gap-4 border-b border-gray-200 pb-4 mb-4">
-                                        <div>
-                                            <p>
-                                                <span className="font-semibold">Patient’s Name :</span> Lorem Ipsum
-                                            </p>
-                                            <p>
-                                                <span className="font-semibold">MRN :</span> 111222333334
-                                            </p>
-                                            <p>
-                                                <span className="font-semibold">NRIC / Passport :</span> -
-                                            </p>
-                                            <p>
-                                                <span className="font-semibold">Age :</span> 65
-                                            </p>
-                                            <p>
-                                                <span className="font-semibold">Sex :</span> Male
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p>
-                                                <span className="font-semibold">Address :</span> -
-                                            </p>
-                                            <p>
-                                                <span className="font-semibold">Diagnose :</span> Lorem Ipsum
-                                            </p>
-                                            <p>
-                                                <span className="font-semibold">Surgery :</span> Lorem Ipsum
-                                            </p>
-                                        </div>
+                                    <div className="grid border  p-3 rounded-lg grid-cols-4 gap-y-1 gap-4 border-b border-gray-200 pb-4 mb-4">
+                                        <p>Patient’s Name</p>
+                                        <p className='font-semibold'> : Chia Suwe Kiea</p>
+                                        <p>Address</p>
+                                        <p className='font-semibold'> : Lot 123, Tmn Mutiara, Subak Jaya, Selangor</p>
+                                        <p>MRN</p>
+                                        <p className='font-semibold'> : N867921</p>
+                                        <p></p>
+                                        <p></p>
+                                        <p>NRIC / Passport</p>
+                                        <p className='font-semibold'> : 560915105891</p>
+                                        <p>Diagnose</p>
+                                        <p className='font-semibold'> : Bladder tumor</p>
+                                        <p>Age</p>
+                                        <p className='font-semibold'> : 68</p>
+                                        <p>Surgery / Procedure</p>
+                                        <p className='font-semibold'> : TURBT</p>
+                                        <p>Sex</p>
+                                        <p className='font-semibold'> : Male</p>
+
                                     </div>
 
                                     {/* A. Patient Specific Information */}
-                                    <div className="mb-3 border rounded-lg p-3">
-                                        <h3 className="font-semibold text-lg mb-3">A. Patient Specific Information</h3>
-                                        <div className="grid grid-cols-12 gap-x-4 border border-gray-200 rounded-md">
+                                    <div className="mb-3 border rounded-lg">
+                                        <h3 className="font-semibold  p-3">A. Patient Specific Information</h3>
+                                        <div className="grid grid-cols-12 gap-x-4 border border-gray-200 ">
                                             <div className="col-span-7 bg-zinc-100 border-b border-gray-200 p-4">
                                                 <p>1. Specific risk of anesthesia to the *patient/parents/guardian</p>
                                             </div>
                                             <div className="col-span-5 border-b border-gray-200 p-4">
-                                                Lorem ipsum dolor sit amet consectetur. Amet vivamus vitae.
+                                                Over tumor
                                             </div>
                                             <div className="col-span-7 p-4 bg-zinc-100">
-                                                <p>2. Anesthetic plan disclosed to the *patient/parents/guardian</p>
+                                                <p>1. Anesthetic plan disclosed to the  *patient/parents/guardian</p>
                                             </div>
                                             <div className="col-span-5 p-4">
-                                                Lorem ipsum dolor sit amet consectetur. Ut iaculis ut sed quis. Id.
+                                                TCA/Sp IVU
                                             </div>
                                         </div>
                                     </div>
 
                                     {/* B. Practitioner’s Declaration */}
-                                    <div className="mb-3 border rounded-lg p-3">
-                                        <h3 className="font-semibold text-lg mb-3">B. Practitioner’s Declaration</h3>
-                                        <p className="mb-6">
-                                            Lorem ipsum dolor sit amet consectetur. Tempor viverra eget ultrices ac amet viverra et. Eu arcu quis ante orci donec nibh mus. Morbi egestas feugiat sagittis commodo ornare tempus consequat risus. Augue nulla vel ornare pulvinar.
-                                        </p>
-                                        <div className="flex max-w-lg justify-between items-center">
+                                    <div className="mb-3 border rounded-lg">
+
+                                        {
+                                            currentPage == 1 ? (
+
+
+                                                <div className="">
+                                                    <h3 className="font-semibold p-3 border-b">B. Practitioner’s Declaration</h3>
+                                                    <p className="mb-6 p-3">
+                                                        1, the undersigned, being a practitioner of anaesthesia in the Department of Anaesthesiology & Intensive Care, UKM Medical Centre hereby declare that I have explained the contents of the leaflet "Information on Anaesthesia for Patients" on page 1 and Part A therein above to the "patient's /parents/ guardian's satisfaction.
+                                                    </p>
+                                                </div>
+                                            ) : (
+                                                <div className="">
+                                                    <h3 className="font-semibold p-3 border-b">C. Consent by Patient</h3>
+                                                    <p className="mb-6 p-3">
+                                                        I, the undersigned, being of full age and of sound mind do hereby confirm that:-
+                                                        <br /><br />
+                                                        1. The necessity, type and associated risks of anaesthesia has been explained to me to my satisfaction by the practitioner named above;
+                                                        <br /><br />
+                                                        2. The contents of the leaflet "Information on Anaesthesia for Patients" on page 1 and Part A herein have been explained to me to my satisfaction by the practitioner named above;
+                                                        <br /><br />
+                                                        3. I am in full knowledge thereof and in accepting the risks associated therewith I hereby consent to the aforesaid anaesthesia.
+                                                    </p>
+                                                </div>
+                                            )
+                                        }
+
+                                        <div className="flex p-3 max-w-lg justify-between items-center">
                                             <div>
                                                 <p className="font-semibold">Signature</p>
                                             </div>
@@ -148,7 +163,7 @@ const KertasPopup = ({ setPopup3 }) => {
                                                 <p className="font-semibold">Name & Official Stamp</p>
                                             </div>
                                         </div>
-                                        <div className="flex max-w-lg justify-between items-center">
+                                        <div className="flex max-w-lg p-3 justify-between items-center">
                                             <img src={sign3} className='h-28' alt="" />
                                             <img src={sign3} className='h-28' alt="" />
                                         </div>
@@ -156,16 +171,40 @@ const KertasPopup = ({ setPopup3 }) => {
                                 </div>
                             </div>
 
-                            {
-                                !previewDocument && (
-                                    <div className="flex gap-2 items-center mt-4 justify-end">
-                                        <button onClick={() => setPreviewDocument(true)} className='pl-4 border-[#cfd1d4] border-2 pr-5 py-2.5 flex items-center gap-2 rounded-lg text-[#1D1D1D] font-medium'><AiOutlineSearch className='text-xl' />
-                                            Preview Document</button>
-                                        <button className='bg-primary pr-5 pl-4 py-3 rounded-lg text-white font-medium flex items-center gap-2' ><PiPrinterBold className='text-lg' />
-                                            Print Result</button>
-                                    </div>
-                                )
-                            }
+                            <div className="flex items-center justify-between">
+                                <div className="flex items-center space-x-2">
+                                    <button onClick={() => setCurrentPage(1)}
+                                        className="px-3 py-1 bg-white border-2 rounded-lg"
+                                    >
+                                        &lt;
+                                    </button>
+                                    <button onClick={() => setCurrentPage(1)}
+                                        className={`px-3.5 py-1 ${currentPage == 1 ? " bg-primary text-white" : "border-2"}  rounded-lg`}
+                                    >
+                                        1
+                                    </button>
+                                    <button onClick={() => setCurrentPage(2)}
+                                        className={`px-3 py-1 ${currentPage == 2 ? " bg-primary text-white" : "border-2"}  rounded-lg`}
+                                    >
+                                        2
+                                    </button>
+                                    <button onClick={() => setCurrentPage(2)}
+                                        className="px-3 py-1 bg-white border-2 rounded-lg"
+                                    >
+                                        &gt;
+                                    </button>
+                                </div>
+                                {
+                                    !previewDocument && (
+                                        <div className="flex gap-2 items-center mt-4 justify-end">
+                                            <button onClick={() => setPreviewDocument(true)} className='pl-4 border-[#cfd1d4] border-2 pr-5 py-2.5 flex items-center gap-2 rounded-lg text-[#1D1D1D] font-medium'><AiOutlineSearch className='text-xl' />
+                                                Preview Document</button>
+                                            <button className='bg-primary pr-5 pl-4 py-3 rounded-lg text-white font-medium flex items-center gap-2' ><PiPrinterBold className='text-lg' />
+                                                Print Result</button>
+                                        </div>
+                                    )
+                                }
+                            </div>
                         </div>
 
                         {

@@ -72,7 +72,7 @@ const MedicalNotes = () => {
                 <div className="border border-[#cfd1d4] rounded-lg bg-white">
                     <div className="flex items-center justify-between p-4 ">
                         <div className="flex items-center justify-between gap-3">
-                            <img src={KertasAnestesia} alt="" />
+                            <img src={ConsentforAnaesthesia} alt="" />
                             <h2 className='text-lg font-semibold'>Consent for Anaesthesia</h2>
                         </div>
                         <PiArrowsOutSimpleBold className='text-[#9F9FA1] text-2xl cursor-pointer' onClick={() => setPopup3(true)} />
@@ -97,7 +97,7 @@ const MedicalNotes = () => {
                 <div className="border border-[#cfd1d4] rounded-lg bg-white">
                     <div className="flex items-center justify-between p-4 ">
                         <div className="flex items-center justify-between gap-3">
-                            <img src={ConsentforAnaesthesia} alt="" />
+                            <img src={KertasAnestesia} alt="" />
                             <h2 className='text-lg font-semibold'>Kertas Anestesia</h2>
                         </div>
                         <PiArrowsOutSimpleBold className='text-[#9F9FA1] text-2xl cursor-pointer'  onClick={() => setPopup4(true)} />
